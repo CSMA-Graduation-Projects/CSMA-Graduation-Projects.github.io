@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>归档要求与仓库规范 | CSMA-Graduation-Projects</title>
+  <meta name="description" content="归档要求与仓库规范，覆盖学生仓库命名、课程命名、建议目录、成果一致性、交接要求和归档完成标准。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">CSMA</span><span class="brand-text">Graduation Projects</span></a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">菜单</button>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="bachelor.html">本科培养</a>
+        <a href="master.html">硕士培养</a>
+        <a href="doctor.html">博士培养</a>
+        <a href="templates.html">模板与规范</a>
+        <a class="active" href="archive.html">归档要求</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" id="top">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">首页</a> / 归档要求</div>
+        <h1>归档要求与仓库规范</h1>
+        <p>归档要求用于保证学生培养材料、论文成果、代码系统、部署说明和交接信息完整、统一、可检查。</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container rule-grid">
+        <article class="card">
+          <h2>学生仓库命名规则</h2>
+          <p class="rule-pattern"><code>YYYY-ug/ms/phd-studentname</code></p>
+          <p>年份使用入组、立项或毕业管理中确定的四位年份；层次使用 <code>ug</code>、<code>ms</code>、<code>phd</code>；学生姓名建议使用小写拼音或已确定的英文标识。</p>
+          <ul class="tag-list">
+            <li><code>2025-ms-zhoushiyu</code></li>
+            <li><code>2025-ms-oujuntong</code></li>
+            <li><code>2025-ms-lujunchen</code></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>课程命名规则</h2>
+          <p class="rule-pattern"><code>课程缩写名 + YYYY + 学期 + 层次</code></p>
+          <p>层次标识中，<code>B</code> 表示 Bachelor，<code>M</code> 表示 Master，<code>D</code> 表示 Doctor。</p>
+          <ul class="tag-list">
+            <li><code>LPD20252B</code></li>
+            <li><code>IRE20251M</code></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section soft" id="repository-structure">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">学生仓库建议目录</p>
+          <h2>目录结构应覆盖过程、成果与交接</h2>
+          <p>研究生仓库建议采用右侧结构。本科仓库可根据毕业设计规模简化，但仍应保留论文、代码、答辩和归档材料。</p>
+          <ul class="compact-list">
+            <li><code class="inline-code">README.md</code> 说明仓库用途、研究方向、运行方式和材料索引。</li>
+            <li><code class="inline-code">ROADMAP.md</code> 记录阶段目标、时间节点和计划调整。</li>
+            <li><code class="inline-code">STATUS.md</code> 记录当前完成状态、风险和待办事项。</li>
+          </ul>
+        </div>
+        <pre class="code-tree"><code>student-repository/
+├── README.md
+├── ROADMAP.md
+├── STATUS.md
+├── weekly/
+├── survey/
+├── proposal/
+├── midterm/
+├── papers/
+├── projects/
+├── experiments/
+├── thesis/
+├── defense/
+├── archive/
+└── handover/</code></pre>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container standard-grid">
+        <article class="card">
+          <h2>论文、代码、PPT、部署、归档一致性</h2>
+          <p>毕业归档以一致性为基本标准。论文中描述的问题、方法、系统、实验和结论，应能在代码、数据、部署说明、答辩材料和归档清单中找到对应支撑。</p>
+          <ul class="compact-list">
+            <li>论文题目、系统名称、仓库说明和答辩 PPT 保持一致。</li>
+            <li>论文实验与仓库中的实验配置、数据处理、结果记录保持一致。</li>
+            <li>系统部署说明与实际可运行环境保持一致。</li>
+            <li>归档清单与仓库目录、文件版本和最终材料保持一致。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>交接要求</h2>
+          <p>交接材料应帮助导师和后续学生理解项目状态、继续推进方向和维护风险，不能仅提交无法说明上下文的文件集合。</p>
+          <ul class="compact-list">
+            <li>说明项目背景、目标、当前完成情况和后续建议。</li>
+            <li>说明代码入口、运行步骤、部署环境、账号和数据位置。</li>
+            <li>说明未完成事项、已知问题、风险点和联系人信息。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section soft">
+      <div class="container">
+        <p class="section-kicker">归档完成标准</p>
+        <h2>完成归档应达到可检查、可复现、可交接</h2>
+        <table class="status-table">
+          <thead>
+            <tr>
+              <th>类别</th>
+              <th>完成标准</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>论文材料</td>
+              <td>论文终稿、检查记录、修改说明、相关评审或答辩材料完整。</td>
+            </tr>
+            <tr>
+              <td>代码系统</td>
+              <td>代码结构清晰，运行说明完整，关键模块和配置能够被复查。</td>
+            </tr>
+            <tr>
+              <td>实验材料</td>
+              <td>数据来源、实验配置、结果记录和图表来源能够对应论文内容。</td>
+            </tr>
+            <tr>
+              <td>答辩材料</td>
+              <td>PPT、演示材料、答辩问题和修改记录完成整理。</td>
+            </tr>
+            <tr>
+              <td>交接材料</td>
+              <td>后续维护者能够根据交接说明理解项目、运行系统并继续推进。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <strong>CSMA-Graduation-Projects</strong>
+      <span>Student Training, Workflow, and Archival Management</span>
+    </div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="返回顶部">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,42 +1,69 @@
 # CSMA-Graduation-Projects.github.io
 
-#
-#hjp.MDMD
-hjp.'MD''MD'
+## 仓库用途
 
-'MD'
+本仓库用于部署 CSMA-Graduation-Projects 组织的 GitHub Pages 静态网站，作为学生培养流程与归档管理主页。网站面向导师、学生和学院管理场景，集中说明本科、硕士、博士学生培养流程、关键时间节点、成果导向要求、仓库命名规范、学生仓库结构规范、模板入口和毕业归档要求。
 
-#            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 hjp./
-#/
-            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } 
-- 'MD''MD''MD'
-#            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } 
+## 网站主要内容
 
-echo}
-#- 
-#            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$--------
-#
-            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } 
-#- 'MD'
-hjp.
+- 首页：组织定位、培养理念、培养层次概览、年度关键节点、成果导向、命名规范、学生仓库建议结构、模板入口和组织说明。
+- 本科培养：本科毕业设计培养流程、关键节点、系统与论文一致性、答辩和归档要求。
+- 硕士培养：研一、研二、研三分阶段要求，综述、开题、中期、论文、答辩、归档和仓库过程材料要求。
+- 博士培养：博士阶段定位、高水平科研产出导向、阶段汇报、论文与系统沉淀、过程材料和交接要求。
+- 模板与规范：周报、综述、开题、中期检查、论文检查、归档、交接和仓库规范入口。
+- 归档要求：学生仓库命名、课程命名、建议目录、成果一致性、交接要求和归档完成标准。
 
+## 文件结构说明
 
-
-            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             }
-
-```sh
-# Python 3 hjp.'MD'echo
-python -m http.server 8000
-            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } http://localhost:8000
+```text
+.
+├── index.html        # 网站首页
+├── bachelor.html     # 本科毕业设计培养流程与要求
+├── master.html       # 硕士研究生培养流程与要求
+├── doctor.html       # 博士研究生培养流程与要求
+├── templates.html    # 模板与规范入口
+├── archive.html      # 归档要求与仓库规范
+├── assets/           # 页面视觉资源
+├── style.css         # 全站样式
+├── script.js         # 导航与返回顶部交互
+└── README.md         # 仓库说明文档
 ```
 
+## 本地修改方式
 
+本网站使用纯 HTML、CSS、JavaScript 编写，不依赖构建工具。修改页面时可直接编辑对应的 `.html` 文件；修改全站视觉样式时编辑 `style.css`；修改移动端菜单或返回顶部等交互时编辑 `script.js`。
 
-'
+本地预览可在仓库根目录运行：
 
-hjp.}
+```sh
+python -m http.server 8000
+```
 
--  ` `docs/`
-- hjp.
-            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$ `docs/`  README --------
+然后在浏览器访问：
 
+```text
+http://localhost:8000
+```
+
+## GitHub Pages 使用说明
+
+1. 将本仓库推送到 GitHub。
+2. 打开仓库的 Settings。
+3. 进入 Pages 设置。
+4. Source 选择 `Deploy from a branch`。
+5. Branch 选择 `main` 或实际使用的默认分支，目录选择 `/root`。
+6. 保存后等待 GitHub Pages 完成发布。
+
+组织主页仓库通常可通过以下形式访问：
+
+```text
+https://CSMA-Graduation-Projects.github.io/
+```
+
+## 后续扩展说明
+
+- 可在 `templates.html` 中逐步补充真实模板下载入口或文档链接。
+- 可在 `archive.html` 中细化不同培养层次的归档清单。
+- 可增加 `docs/` 目录存放规范文件、检查表和模板说明。
+- 可增加 `assets/` 目录存放组织标识、流程图或可公开展示的图片材料。
+- 页面导航和样式已统一，新增页面时建议复用现有页头、页脚和内容区结构。
