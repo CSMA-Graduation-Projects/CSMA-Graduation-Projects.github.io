@@ -1,43 +1,42 @@
 # CSMA-Graduation-Projects.github.io
 
-仓库用途
+#
+#hjp.MDMD
+hjp.'MD''MD'
 
-本仓库作为 GitHub Pages 静态站点，提供研究组学生培养流程与归档管理主页，涵盖本科、硕士、博士的培养流程、关键节点、成果导向、仓库命名与归档规范、模板入口及管理说明。
+'MD'
 
-网站内容概览
+#            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 hjp./
+#/
+            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } 
+- 'MD''MD''MD'
+#            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } 
 
-- 首页横幅与简介
-- 培养理念
-- 培养层次（本科/硕士/博士）概览
-- 年度关键时间节点与本科毕业设计流程时间轴
-- 成果导向要求
-- 仓库命名规范与学生仓库建议结构
-- 模板与规范入口（卡片式）
-- 组织说明与管理要求
+echo}
+#- 
+#            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$--------
+#
+            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } 
+#- 'MD'
+hjp.
 
-本地修改方式
 
-1. 在本地编辑文件：修改 `index.html`、`style.css`、`script.js`。
-2. 可使用简单静态服务器预览：
+
+            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             }
 
 ```sh
-# Python 3
+# Python 3 hjp.'MD'echo
 python -m http.server 8000
-# 然后访问 http://localhost:8000
+            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$EC";             } http://localhost:8000
 ```
 
-GitHub Pages 发布说明
 
-将本仓库推送至 GitHub。默认分支（main 或 master）上的根目录将作为 Pages 源；或在仓库设置中选择 "main branch" 作为 Pages 站点来源。无需构建工具。
 
-后续可扩展模块
+'
 
-- 将模板（周报、综述、开题等）放入 `templates/` 或 `docs/` 子目录并更新页面链接。
-- 将学生仓库索引或示例仓库链接加入“模板与规范”模块。
-- 可添加自动化检查脚本（独立仓库）用于规范验证，但不作为 Pages 站点依赖。
+hjp.}
 
-维护要点
-
-- 所有内容以中文为主，面向导师、学生和学院的正式说明。
-- 变更请在 PR 中说明修改理由与影响范围。
+-  ` `docs/`
+- hjp.
+            {                 echo ___BEGIN___COMMAND_OUTPUT_MARKER___;                 PS1="";PS2="";unset HISTFILE;                 EC=$?;                 echo "___BEGIN___COMMAND_DONE_MARKER___$ `docs/`  README --------
 
