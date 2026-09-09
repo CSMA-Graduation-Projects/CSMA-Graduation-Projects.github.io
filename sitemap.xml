@@ -1,6 +1,9 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://csma-graduation-projects.github.io/</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/news.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/bachelor.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/undergraduate-research.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/master.html</loc></url>
@@ -8,9 +11,11 @@
   <url><loc>https://csma-graduation-projects.github.io/milestones.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/projects.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/outcomes.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/resources.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/students.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/templates.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/archive.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/faq.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/about.html</loc></url>
+  {% for post in site.posts %}<url><loc>{{ post.url | absolute_url | xml_escape }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>{% endfor %}
 </urlset>
-

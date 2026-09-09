@@ -1,0 +1,16 @@
+{% assign news_items = site.posts | sort: 'date' | reverse %}
+{% assign news_limit = include.limit | default: news_items.size %}
+<div class="news-list">
+  {% for item in news_items limit:news_limit %}
+  <article class="news-row">
+    <time class="news-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%Y-%m-%d" }}</time>
+    <div class="news-copy">
+      <div class="news-meta"><span>{{ item.kind | escape }}</span><span>{{ item.audience | escape }}</span>{% if item.deadline %}<span>截止：{{ item.deadline | escape }}</span>{% endif %}</div>
+      <h3><a href="{{ item.url | relative_url }}">{{ item.title | escape }} <span aria-hidden="true">↗</span></a></h3>
+      <p>{{ item.summary | escape }}</p>
+    </div>
+  </article>
+  {% else %}
+  <p class="collection-empty">暂无新闻。组内安排与最新要求将在这里发布。</p>
+  {% endfor %}
+</div>

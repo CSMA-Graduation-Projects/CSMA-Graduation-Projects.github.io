@@ -15,7 +15,7 @@ exclude:
   - work
 ```
 
-当前配置还排除 `node_modules`、`dist`、`vendor` 和 `scripts`。不要添加 `.nojekyll`，否则 Jekyll 排除规则不会应用，内部目录可能被原样复制。
+当前配置还排除 `node_modules`、`dist`、`vendor`、`scripts` 和 `docs/content-templates`。不要添加 `.nojekyll`，否则新闻、数据卡片和排除规则都不会经过 Jekyll 处理。
 
 构建排除不等于仓库私有：如果 GitHub 仓库公开，`work/` 源文件仍可能通过仓库界面访问。内部报告不得包含 secret 或敏感原文；真正敏感材料应放在仓库之外。
 
@@ -46,7 +46,7 @@ bundle exec jekyll build --trace
 test ! -e _site/work
 ```
 
-并确认 `_site/` 含全部公开 HTML、CSS、JS、favicon、WebP/PNG、robots 和 sitemap。
+并确认 `_site/` 含全部公开 HTML、`news/` 下的新闻正文、CSS、JS、favicon、WebP/PNG、robots 和 sitemap。`_config.yml` 的 `url`、`baseurl` 和新闻永久链接格式需与当前公开域保持一致。
 
 ## 5. 必跑检查
 
@@ -54,6 +54,7 @@ test ! -e _site/work
 node --check script.js
 node --check scripts/validate-site.mjs
 node scripts/validate-site.mjs
+node scripts/validate-site.mjs --build
 node scripts/privacy-scan.mjs --build
 git diff --check
 ```

@@ -1,0 +1,14 @@
+{
+  "id": "student-story-short-name",
+  "name": "填写确认公开的姓名",
+  "degree": "填写学士、硕士或博士",
+  "cohort": "填写届次说明",
+  "summary": "填写学生的成长经历与特点。",
+  "highlights": [
+    "填写具体的研究或实践经历",
+    "填写代表成果或经验分享"
+  ],
+  "links": [
+    { "label": "代表作品", "url": "https://填写真实公开地址" }
+  ]
+}

@@ -10,16 +10,18 @@
 
 ## 网站主要内容
 
-- 首页：培养路径、阶段方法、资源与成果、关于与联系。
+- 首页：最新新闻、培养路径、阶段方法、资源与育人成效、研究组介绍入口。
+- 新闻：发布安排、要求、活动与动态；首页自动展示最新三条。
 - 本科毕业设计：从了解要求、课题匹配到答辩、归档和授权成果展示。
 - 本科科研：从申请匹配、基础训练和小任务到正式项目、复现写作与长期发展。
 - 硕士成长：Foundation、Exploration、Research、Validation、Dissemination、Graduation、Development。
 - 博士培养：覆盖前沿研究、阶段汇报、成果沉淀和交接，与其他三条培养路径并列展示。
 - 里程碑：三类轨道共用的 Goal / Tasks / Evidence / Review / Exit Criteria。
-- 项目与成果：只接收真实、可核验、适合公开且获得授权的条目。
-- 资源与模板：周报、综述、开题、中期、论文检查、归档和交接说明；真实下载文件待核验后补充。
+- 资源：各类培养指南、研究方法、开发工具、写作材料和归档规范；常用材料保留原模板入口。
+- 成果：展示取得的论文、软件、竞赛、创新与培养成果，项目与课题保留独立页面。
+- 榜样：展示优秀学生的成长经历、代表作品与经验分享，呈现人才培养成效。
 - 归档规范：区分受控私有过程库与公共成果库。
-- FAQ 与 About：说明使用方式、事实边界、隐私边界和公共联系入口。
+- 关于：研究组介绍、培养理念、工作方式与公开联系入口；常见问题保留独立页面。
 
 ## 公开与私有边界
 
@@ -34,6 +36,11 @@
 ```text
 .
 ├── index.html        # 网站首页
+├── news.html                     # 新闻列表
+├── _posts/                       # 新闻 Markdown，每条生成独立正文页
+├── _layouts/news.html            # 新闻正文布局
+├── _includes/                    # 新闻与展示卡片的构建模板
+├── _data/                        # 成果、学生榜样的公开 JSON 数据
 ├── bachelor.html                  # 本科毕业设计培养路径（保留 URL）
 ├── undergraduate-research.html    # 本科科研培养路径
 ├── master.html                    # 硕士学业与科研全流程（保留 URL）
@@ -41,9 +48,11 @@
 ├── milestones.html                # 里程碑与阶段门
 ├── projects.html                  # 项目与课题
 ├── outcomes.html                  # 经授权公开成果
+├── resources.html                 # 各类资源目录
+├── students.html                  # 优秀学生与成长故事（榜样）
 ├── templates.html                 # 资源与模板（保留 URL/锚点）
 ├── archive.html                   # 归档与公开边界（保留 URL/锚点）
-├── faq.html / about.html          # 常见问题、门户与联系
+├── faq.html / about.html          # 常见问题、研究组介绍与联系
 ├── assets/           # 页面视觉资源
 ├── style.css         # 全站样式
 ├── script.js         # 导航与返回顶部交互
@@ -56,7 +65,7 @@
 
 ## 本地修改方式
 
-本网站使用纯 HTML、CSS、JavaScript 编写，无 npm/pnpm/yarn 依赖。修改页面时编辑对应 `.html`；修改全站视觉样式时编辑 `style.css`；修改菜单与返回顶部交互时编辑 `script.js`。
+本网站使用 HTML、CSS、JavaScript 与 GitHub Pages 自带的 Jekyll 构建，无 npm/pnpm/yarn 依赖。修改页面时编辑对应 `.html`；修改全站样式时编辑 `style.css`；修改交互时编辑 `script.js`。新闻写在 `_posts/`，成果与榜样数据写在 `_data/`，操作方法见 [新闻发布与栏目维护](docs/news-publishing.md)。
 
 发布等价预览应先用兼容 Jekyll 环境生成 `_site/`（详见部署文档），再运行：
 
@@ -70,7 +79,7 @@ python -m http.server 8000 --directory _site
 http://localhost:8000
 ```
 
-不要把直接服务源码目录当作发布验收：`index.html` 和 `archive.html` 使用 Jekyll 前置区与构建注释，只有生成产物才体现真实公开内容。
+不要把直接服务源码目录当作发布验收：新闻、首页动态、成果与榜样卡片由 Jekyll 生成，归档页也使用构建注释；只有 `_site/` 产物才体现真实公开内容。
 
 本地检查：
 
@@ -117,6 +126,7 @@ https://CSMA-Graduation-Projects.github.io/
 
 - 站点维护：[`docs/site-maintenance.md`](docs/site-maintenance.md)
 - 内容管理：[`docs/content-management.md`](docs/content-management.md)
+- 新闻、成果与榜样发布：[`docs/news-publishing.md`](docs/news-publishing.md)
 - 隐私与发布边界：[`docs/privacy-and-publication-boundary.md`](docs/privacy-and-publication-boundary.md)
 - 部署：[`docs/deployment.md`](docs/deployment.md)
 

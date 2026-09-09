@@ -1,12 +1,24 @@
-# GitHub Pages uses Jekyll even though the public site is plain HTML/CSS/JavaScript.
+# GitHub Pages uses Jekyll to generate news and data-driven showcase pages.
 # Internal audit materials must never be copied into the generated Pages site.
+url: "https://csma-graduation-projects.github.io"
+baseurl: ""
+timezone: Asia/Shanghai
+permalink: /news/:year-:month-:day-:title.html
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: news
+
 exclude:
   - work
   - node_modules
   - dist
   - vendor
   - scripts
+  - docs/content-templates
 
 include:
   - .well-known
-

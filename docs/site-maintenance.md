@@ -11,6 +11,8 @@
 - `index.html` 为首页；各 `.html` 文件即稳定页面路由。
 - `style.css` 是唯一设计系统；`script.js` 处理渐进增强导航、返回顶部、阶段深链展开和打印完整指南。
 - `_config.yml` 控制 GitHub Pages/Jekyll 发布排除，`work/` 和 `scripts/` 不进入生成站点。
+- `_posts/` 存放新闻 Markdown；`_layouts/news.html` 为新闻正文布局；`_includes/` 生成新闻列表和公开展示卡片。
+- `_data/achievements.json` 与 `_data/students.json` 分别维护成果、榜样；发布模板位于 `docs/content-templates/`，该目录不进入生成站点。
 
 ## 3. 本地运行
 
@@ -33,7 +35,9 @@ python -m http.server 8000 --directory _site
 
 ## 5. 导航与兼容
 
-现有页面头部采用静态重复导航，以保证无 JavaScript 时仍可使用。顶部品牌文字统一为“人才培养管理体系”。主导航依次为首页、学士、硕士、博士、资源、成果、关于七项，分别指向首页、本科毕业设计、硕士培养、博士培养、资源模板、公开成果、关于页面；培养内页继续提供本科科研等路径切换。修改导航时必须同步所有公开 HTML，并运行验证脚本。
+页面头部采用静态导航，无 JavaScript 时仍可使用。顶部品牌文字统一为“人才培养管理体系”。主导航依次为首页、新闻、学士、硕士、博士、资源、成果、榜样、关于九项，对应 `index.html`、`news.html`、`bachelor.html`、`master.html`、`doctor.html`、`resources.html`、`outcomes.html`、`students.html`、`about.html`。修改导航时同步所有根目录 HTML 和 `_layouts/news.html`，验证脚本会检查顺序、链接与当前栏目。
+
+`templates.html`、`archive.html`、`milestones.html` 归入资源；`projects.html` 归入成果；`undergraduate-research.html` 归入学士；`faq.html` 归入关于。培养内页继续提供本科科研等路径切换。
 
 阶段要求使用原生 `details` / `summary`，默认折叠，点击或通过键盘展开；无需 JavaScript 即可阅读。带阶段锚点的链接会自动展开目标，打印时展示全部阶段，并在打印后恢复展开状态。
 
@@ -64,11 +68,12 @@ python -m http.server 8000 --directory _site
 node --check script.js
 node --check scripts/validate-site.mjs
 node scripts/validate-site.mjs
+node scripts/validate-site.mjs --build
 node scripts/privacy-scan.mjs --build
 git diff --check
 ```
 
-还应逐页检查：键盘导航、焦点、菜单 Escape、无 JavaScript 导航、reduced motion、内部/外部链接、下载入口、横向滚动和控制台错误。
+源文件检查覆盖页面结构、导航、资源链接与内容字段。构建检查还覆盖生成的新闻正文、首页最新三条、成果和榜样卡片、站内链接及站点地图。需要浏览器回归时，再检查键盘导航、焦点、菜单 Escape、无 JavaScript 导航、reduced motion、下载入口与横向滚动。
 
 ## 9. 清理缓存
 

@@ -1,0 +1,11 @@
+{
+  "id": "achievement-short-name",
+  "title": "填写真实成果标题",
+  "category": "填写成果类别",
+  "date": "YYYY-MM-DD",
+  "contributors": "填写确认公开的参与者",
+  "summary": "填写成果内容、已取得的进展及主要贡献。",
+  "links": [
+    { "label": "查看成果", "url": "https://填写真实公开地址" }
+  ]
+}

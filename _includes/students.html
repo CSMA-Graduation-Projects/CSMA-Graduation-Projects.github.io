@@ -1,0 +1,16 @@
+{% if site.data.students.size > 0 %}
+<div class="showcase-grid">
+  {% for student in site.data.students %}
+  <article class="showcase-card" id="{{ student.id | escape }}">
+    {% if student.photo %}<img class="student-photo" src="{{ student.photo | escape }}" alt="{{ student.name | escape }}的照片" width="160" height="160" loading="lazy">{% endif %}
+    <div class="news-meta"><span>{{ student.degree | escape }}</span><span>{{ student.cohort | escape }}</span></div>
+    <h3>{{ student.name | escape }}</h3>
+    <p>{{ student.summary | escape }}</p>
+    <ul class="compact-list">{% for highlight in student.highlights %}<li>{{ highlight | escape }}</li>{% endfor %}</ul>
+    <ul class="directory-links">{% for link in student.links %}<li><a href="{{ link.url | escape }}">{{ link.label | escape }} <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="collection-empty"><p>优秀学生的成长故事与代表作品正在整理，确认后将在这里与大家见面。</p></div>
+{% endif %}
