@@ -1,0 +1,12 @@
+# GitHub Pages uses Jekyll even though the public site is plain HTML/CSS/JavaScript.
+# Internal audit materials must never be copied into the generated Pages site.
+exclude:
+  - work
+  - node_modules
+  - dist
+  - vendor
+  - scripts
+
+include:
+  - .well-known
+

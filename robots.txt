@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://csma-graduation-projects.github.io/sitemap.xml
+
