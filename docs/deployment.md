@@ -2,9 +2,9 @@
 
 ## 1. 当前部署方式
 
-仓库是组织主页站点，公开域为 `https://csma-graduation-projects.github.io/`。现有说明采用 GitHub Pages “Deploy from a branch”，从默认分支根目录发布。页面和资源使用相对路径，适配根域 base。
+仓库是组织主页站点，公开域为 `https://csma-graduation-projects.github.io/`。GitHub Pages 使用 “Deploy from a branch”，选择 `main` 与 `/(root)`。页面和资源使用相对路径，适配根域 base。
 
-本任务不自动 push、merge 或部署。部署必须由负责人在审查后执行。
+`main` 为当前融合版，也是日常维护与发布分支。负责人可在检查后直接提交并推送到 `main`；大改版或多人协作可使用 PR。前序版本用固定标签保存，不覆盖或重写。
 
 ## 2. 发布隔离
 
@@ -27,7 +27,7 @@ exclude:
 python -m http.server 8000 --directory _site
 ```
 
-访问 `http://localhost:8000/`，抽查首页、三类培养入口、博士兼容页、项目、里程碑、资源、成果、FAQ、About 和归档页。不要直接把源码目录作为发布验收对象。
+访问 `http://localhost:8000/`，抽查首页、四类培养入口、项目、里程碑、资源、成果、FAQ、About 和归档页。不要直接把源码目录作为发布验收对象。
 
 ## 4. Pages 等价构建
 
@@ -70,15 +70,16 @@ git diff --check
 
 ## 6. 发布流程
 
-1. 从最新默认分支创建功能分支，不强制切换或覆盖本地修改。
-2. 建立仓库外 bundle 与工作区备份。
-3. 完成内容、隐私和技术审查。
-4. 在功能分支运行构建与全部回归。
-5. 由人工审查 diff、事实来源、公开授权和候选退役项。
-6. 由负责人执行普通提交、push 和 PR。
-7. 审查通过后由负责人合并；不得 force push。
-8. 等待 Pages 构建成功，逐页核对公开域。
-9. 检查构建产物不含 `work/`、secret、个人档案或未公开研究。
+1. 确认工作区状态；在 `main` 上执行 `git pull --ff-only origin main`，再开始修改。
+2. 完成页面修改，检查内容、链接与构建结果；需要浏览器回归时再执行相应检查。
+3. 用 `git diff` 审查改动，确认事实来源与公开范围。
+4. 执行 `git add .` 与 `git commit -m "Update site content"`。
+5. 执行 `git push -u origin main`；已设置上游后可简写为 `git push`。
+6. 在仓库 Actions 中等待 `pages build and deployment` 成功，再核对公开域。
+
+首次发布或发布设置变更时，确认 Settings → Pages → Source 为 `Deploy from a branch`，Branch 为 `main`，Folder 为 `/(root)`。推送其他分支不会更新这条发布来源。
+
+推送被拒绝时先同步并处理远端改动，不使用 force push。前序版本与查看方法见 [版本记录](versions.md)。
 
 ## 7. 回滚
 

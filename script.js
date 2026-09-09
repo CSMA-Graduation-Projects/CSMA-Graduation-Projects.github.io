@@ -42,7 +42,7 @@ document.documentElement.classList.add("js");
     });
 
     window.addEventListener("resize", function () {
-      if (window.innerWidth > 1120) {
+      if (window.innerWidth > 920) {
         setNavigationState(false);
       }
     });
@@ -57,4 +57,44 @@ document.documentElement.classList.add("js");
       window.scrollTo({ top: 0, behavior: reduceMotion.matches ? "auto" : "smooth" });
     });
   }
+
+  // A saved stage link should reveal its content even when the stage is folded.
+  function revealLinkedStage() {
+    if (!window.location.hash) return;
+    let id;
+    try {
+      id = decodeURIComponent(window.location.hash.slice(1));
+    } catch {
+      return;
+    }
+    const target = document.getElementById(id);
+    if (!target) return;
+    let detail = target.closest("details");
+    if (!detail) return;
+    while (detail) {
+      detail.open = true;
+      detail = detail.parentElement.closest("details");
+    }
+    window.requestAnimationFrame(function () {
+      target.scrollIntoView({ block: "start", behavior: "instant" });
+    });
+  }
+
+  window.addEventListener("hashchange", revealLinkedStage);
+  revealLinkedStage();
+
+  // Print the complete guide, then restore the reader's open/closed stages.
+  let printState = [];
+  window.addEventListener("beforeprint", function () {
+    printState = [...document.querySelectorAll("details.stage-gate")]
+      .map(function (detail) {
+        const wasOpen = detail.open;
+        detail.open = true;
+        return [detail, wasOpen];
+      });
+  });
+  window.addEventListener("afterprint", function () {
+    printState.forEach(function ([detail, wasOpen]) { detail.open = wasOpen; });
+    printState = [];
+  });
 })();

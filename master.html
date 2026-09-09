@@ -23,17 +23,14 @@
   <a class="skip-link" href="#main-content">跳到主要内容</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="CSMA 学业项目门户首页"><span class="brand-mark">CSMA</span><span class="brand-text">Learning Portal</span></a>
+      <a class="brand" href="index.html" aria-label="CSMA 学业项目门户首页"><span class="brand-mark">CSMA</span><span class="brand-text">学业与科研</span></a>
       <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="展开主导航">菜单</button>
       <nav class="main-nav" id="main-nav" aria-label="主导航">
         <a href="index.html">首页</a>
-        <a href="bachelor.html">毕业设计</a>
-        <a href="undergraduate-research.html">本科科研</a>
-        <a class="active" href="master.html" aria-current="page">硕士成长</a>
-        <a href="doctor.html">博士培养</a>
+        <a class="active" aria-current="true" href="index.html#programs">培养路径</a>
         <a href="milestones.html">里程碑</a>
+        <a href="templates.html">资源与模板</a>
         <a href="projects.html">项目成果</a>
-        <a href="templates.html">资源</a>
         <a href="about.html">关于</a>
       </nav>
     </div>
@@ -44,11 +41,15 @@
       <div class="container">
         <nav class="breadcrumb" aria-label="面包屑"><ol><li><a href="index.html">首页</a></li><li aria-current="page">硕士成长</li></ol></nav>
         <h1>硕士学业与科研全流程</h1>
-        <p>硕士培养以研究问题、工程实践、论文写作和成果归档为主线，按研一、研二、研三分阶段持续推进。新版路径补充培养计划、可信证据与长期发展，从入学适应延伸到毕业后的成长衔接。</p>
+        <p>硕士培养以研究问题、工程实践、论文写作和成果归档为主线，按研一、研二、研三分阶段持续推进。从入学适应、培养计划与研究实践，逐步衔接毕业后的长期发展。</p>
       </div>
     </section>
+    <nav class="study-nav" aria-label="培养路径"><div class="container"><a href="bachelor.html">本科毕业设计</a>
+      <a href="undergraduate-research.html">本科科研</a>
+      <a href="master.html" aria-current="page">硕士培养</a>
+      <a href="doctor.html">博士培养</a></div></nav>
 
-    <section class="page-section">
+    <section class="page-section page-guidance">
       <div class="container">
         <div class="notice safe"><strong>使用说明：</strong>本页是公开培养指引，不保存个人计划、周报、导师评价、考核材料、未公开论文或实验数据。正式培养方案、年度考核、论文和答辩要求以学校/学院当年已核验通知为准。</div>
       </div>
@@ -94,92 +95,85 @@
     <section class="page-section" id="stage-details">
       <div class="container">
         <p class="section-kicker">Seven Phases</p>
-        <h2>七个阶段建立连续的目标、证据与反馈</h2>
+        <h2>七个阶段，贯通学业与科研</h2>
         <p>Evidence 描述证据类型，不表示应把个人材料公开。导师反馈点用于支持改进，不用于公开个人评价。</p>
 
-        <article class="stage-gate" id="foundation">
-          <span class="badge">01 · Foundation</span>
-          <h3>入学适应、双向沟通、培养计划与基础能力</h3>
+        <details class="stage-gate" id="foundation">
+          <summary><span class="badge">01 · Foundation</span><span class="stage-title">入学适应、双向沟通、培养计划与基础能力</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>理解培养目标、角色责任、课程与研究关系、沟通方式和公开/私有边界。</dd></div>
-            <div><dt>Tasks</dt><dd>阅读培养说明；与导师确认沟通与反馈方式；梳理课程和能力差距；形成初始培养计划；学习学术诚信与数据安全。</dd></div>
-            <div><dt>Evidence</dt><dd>入门清单、能力自评、培养计划确认、学习记录；均默认私有。</dd></div>
-            <div><dt>Review</dt><dd>学生自查与师生双向讨论，导师反馈目标、资源与优先级。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>目标、职责、计划、资源和求助渠道清楚；正式计划已在指定系统确认。</dd></div>
+            <div><dt>阶段目标</dt><dd>理解培养目标、角色责任、课程与研究关系、沟通方式和公开/私有边界。</dd></div>
+            <div><dt>主要任务</dt><dd>阅读培养说明；与导师确认沟通与反馈方式；梳理课程和能力差距；形成初始培养计划；学习学术诚信与数据安全。</dd></div>
+            <div><dt>交付材料</dt><dd>入门清单、能力自评、培养计划确认、学习记录；均默认私有。</dd></div>
+            <div><dt>检查与反馈</dt><dd>学生自查与师生双向讨论，导师反馈目标、资源与优先级。</dd></div>
+            <div><dt>完成条件</dt><dd>目标、职责、计划、资源和求助渠道清楚；正式计划已在指定系统确认。</dd></div>
           </dl>
-        </article>
+        </details>
 
-        <article class="stage-gate" id="exploration">
-          <span class="badge">02 · Exploration</span>
-          <h3>通过文献、复现和小规模验证确定方向</h3>
+        <details class="stage-gate" id="exploration">
+          <summary><span class="badge">02 · Exploration</span><span class="stage-title">通过文献、复现和小规模验证确定方向</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>在理解领域现状的基础上形成边界合理、资源可行的候选问题。</dd></div>
-            <div><dt>Tasks</dt><dd>系统检索与比较方法；整理问题地图；复现基础工作；检查数据、伦理和知识产权可行性。</dd></div>
-            <div><dt>Evidence</dt><dd>综述、阅读清单、复现记录、候选问题和风险清单。</dd></div>
-            <div><dt>Review</dt><dd>学生陈述选择依据，导师和同伴提供方法与范围反馈。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>问题范围可控，资源合法可用，并有初步可行性证据。</dd></div>
+            <div><dt>阶段目标</dt><dd>在理解领域现状的基础上形成边界合理、资源可行的候选问题。</dd></div>
+            <div><dt>主要任务</dt><dd>系统检索与比较方法；整理问题地图；复现基础工作；检查数据、伦理和知识产权可行性。</dd></div>
+            <div><dt>交付材料</dt><dd>综述、阅读清单、复现记录、候选问题和风险清单。</dd></div>
+            <div><dt>检查与反馈</dt><dd>学生陈述选择依据，导师和同伴提供方法与范围反馈。</dd></div>
+            <div><dt>完成条件</dt><dd>问题范围可控，资源合法可用，并有初步可行性证据。</dd></div>
           </dl>
-        </article>
+        </details>
 
-        <article class="stage-gate" id="research">
-          <span class="badge">03 · Research</span>
-          <h3>以可复现方式推进开题、项目与实验</h3>
+        <details class="stage-gate" id="research">
+          <summary><span class="badge">03 · Research</span><span class="stage-title">以可复现方式推进开题、项目与实验</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>形成清晰研究方案并持续完成可追踪的核心工作。</dd></div>
-            <div><dt>Tasks</dt><dd>完善问题、路线与实验方案；维护路线图；实现系统或方法；记录版本、决策、结果和失败尝试。</dd></div>
-            <div><dt>Evidence</dt><dd>开题材料、路线图、版本化代码、实验配置、结果日志和周期总结。</dd></div>
-            <div><dt>Review</dt><dd>按约定周期进行进展、证据和风险复核，形成“记录—反馈—调整—反思”闭环。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>方案可执行，代码和实验可追踪，重大依赖与风险已有处理计划。</dd></div>
+            <div><dt>阶段目标</dt><dd>形成清晰研究方案并持续完成可追踪的核心工作。</dd></div>
+            <div><dt>主要任务</dt><dd>完善问题、路线与实验方案；维护路线图；实现系统或方法；记录版本、决策、结果和失败尝试。</dd></div>
+            <div><dt>交付材料</dt><dd>开题材料、路线图、版本化代码、实验配置、结果日志和周期总结。</dd></div>
+            <div><dt>检查与反馈</dt><dd>按约定周期进行进展、证据和风险复核，形成“记录—反馈—调整—反思”闭环。</dd></div>
+            <div><dt>完成条件</dt><dd>方案可执行，代码和实验可追踪，重大依赖与风险已有处理计划。</dd></div>
           </dl>
-        </article>
+        </details>
 
-        <article class="stage-gate" id="validation">
-          <span class="badge">04 · Validation</span>
-          <h3>验证结论并准备适用的中期或年度考核</h3>
+        <details class="stage-gate" id="validation">
+          <summary><span class="badge">04 · Validation</span><span class="stage-title">验证结论并准备适用的中期或年度考核</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>判断主要结论是否可信，识别不足并形成可执行整改计划。</dd></div>
-            <div><dt>Tasks</dt><dd>开展基线、对比、测试、消融或复现；核对问题与证据；按当年通知准备中期和年度考核。</dd></div>
-            <div><dt>Evidence</dt><dd>验证方案、实验/测试记录、复现清单、阶段总结和问题整改计划。</dd></div>
-            <div><dt>Review</dt><dd>学生自查、同伴复核、导师反馈与正式评审按各自权限进行。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>主要结论有充分证据，剩余问题和时间计划清楚，正式材料满足已核验要求。</dd></div>
+            <div><dt>阶段目标</dt><dd>判断主要结论是否可信，识别不足并形成可执行整改计划。</dd></div>
+            <div><dt>主要任务</dt><dd>开展基线、对比、测试、消融或复现；核对问题与证据；按当年通知准备中期和年度考核。</dd></div>
+            <div><dt>交付材料</dt><dd>验证方案、实验/测试记录、复现清单、阶段总结和问题整改计划。</dd></div>
+            <div><dt>检查与反馈</dt><dd>学生自查、同伴复核、导师反馈与正式评审按各自权限进行。</dd></div>
+            <div><dt>完成条件</dt><dd>主要结论有充分证据，剩余问题和时间计划清楚，正式材料满足已核验要求。</dd></div>
           </dl>
-        </article>
+        </details>
 
-        <article class="stage-gate" id="dissemination">
-          <span class="badge">05 · Dissemination</span>
-          <h3>负责任地表达成果，不承诺发表、授权或获奖</h3>
+        <details class="stage-gate" id="dissemination">
+          <summary><span class="badge">05 · Dissemination</span><span class="stage-title">负责任地表达成果，不承诺发表、授权或获奖</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>把已验证工作转化为清楚、规范、可追溯的表达。</dd></div>
-            <div><dt>Tasks</dt><dd>论文写作；确认贡献与署名；完成引用和相似性自查；评估论文、专利、竞赛或软件等合适路径。</dd></div>
-            <div><dt>Evidence</dt><dd>稿件版本、贡献说明、引用清单、实验对应关系和发布检查表。</dd></div>
-            <div><dt>Review</dt><dd>内容、学术诚信、研究伦理、知识产权、数据许可和公开边界审查。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>主张可追溯，作者与许可清楚，不含未授权数据或秘密信息。</dd></div>
+            <div><dt>阶段目标</dt><dd>把已验证工作转化为清楚、规范、可追溯的表达。</dd></div>
+            <div><dt>主要任务</dt><dd>论文写作；确认贡献与署名；完成引用和相似性自查；评估论文、专利、竞赛或软件等合适路径。</dd></div>
+            <div><dt>交付材料</dt><dd>稿件版本、贡献说明、引用清单、实验对应关系和发布检查表。</dd></div>
+            <div><dt>检查与反馈</dt><dd>内容、学术诚信、研究伦理、知识产权、数据许可和公开边界审查。</dd></div>
+            <div><dt>完成条件</dt><dd>主张可追溯，作者与许可清楚，不含未授权数据或秘密信息。</dd></div>
           </dl>
-        </article>
+        </details>
 
-        <article class="stage-gate" id="graduation">
-          <span class="badge">06 · Graduation</span>
-          <h3>完成学位论文、答辩、修改、归档与安全交接</h3>
+        <details class="stage-gate" id="graduation">
+          <summary><span class="badge">06 · Graduation</span><span class="stage-title">完成学位论文、答辩、修改、归档与安全交接</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>依据已核验学校要求完成学位环节，并留下可复查、可复现、可交接的材料。</dd></div>
-            <div><dt>Tasks</dt><dd>论文定稿；参加预答辩或答辩审查（仅在制度确认后采用正式名称）；完成正式答辩、修改、私有归档和权限交接。</dd></div>
-            <div><dt>Evidence</dt><dd>论文版本、答辩材料、修改清单、官方完成记录和私有交接确认。</dd></div>
-            <div><dt>Review</dt><dd>导师、正式评审与学校流程分别承担相应职责；个人意见不公开。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>官方环节完成、归档完整；账号、数据和权限已通过受控私有渠道移交。</dd></div>
+            <div><dt>阶段目标</dt><dd>依据已核验学校要求完成学位环节，并留下可复查、可复现、可交接的材料。</dd></div>
+            <div><dt>主要任务</dt><dd>论文定稿；参加预答辩或答辩审查（仅在制度确认后采用正式名称）；完成正式答辩、修改、私有归档和权限交接。</dd></div>
+            <div><dt>交付材料</dt><dd>论文版本、答辩材料、修改清单、官方完成记录和私有交接确认。</dd></div>
+            <div><dt>检查与反馈</dt><dd>导师、正式评审与学校流程分别承担相应职责；个人意见不公开。</dd></div>
+            <div><dt>完成条件</dt><dd>官方环节完成、归档完整；账号、数据和权限已通过受控私有渠道移交。</dd></div>
           </dl>
-        </article>
+        </details>
 
-        <article class="stage-gate" id="development">
-          <span class="badge">07 · Development</span>
-          <h3>把能力与合规成果衔接到就业、升学和长期发展</h3>
+        <details class="stage-gate" id="development">
+          <summary><span class="badge">07 · Development</span><span class="stage-title">把能力与合规成果衔接到就业、升学和长期发展</span></summary>
           <dl>
-            <div><dt>Goal</dt><dd>总结能力与责任，形成下一阶段计划并完成离组后的边界确认。</dd></div>
-            <div><dt>Tasks</dt><dd>能力总结；就业或升学规划；经授权作品集准备；权限清理；自愿校友联系。</dd></div>
-            <div><dt>Evidence</dt><dd>私人发展计划、能力反思、授权公开成果和权限移交记录。</dd></div>
-            <div><dt>Review</dt><dd>学生自评，导师或学校职业服务提供支持。</dd></div>
-            <div><dt>Exit Criteria</dt><dd>下一步清楚，公开材料均获授权，数据与系统责任边界明确。</dd></div>
+            <div><dt>阶段目标</dt><dd>总结能力与责任，形成下一阶段计划并完成离组后的边界确认。</dd></div>
+            <div><dt>主要任务</dt><dd>能力总结；就业或升学规划；经授权作品集准备；权限清理；自愿校友联系。</dd></div>
+            <div><dt>交付材料</dt><dd>私人发展计划、能力反思、授权公开成果和权限移交记录。</dd></div>
+            <div><dt>检查与反馈</dt><dd>学生自评，导师或学校职业服务提供支持。</dd></div>
+            <div><dt>完成条件</dt><dd>下一步清楚，公开材料均获授权，数据与系统责任边界明确。</dd></div>
           </dl>
-        </article>
+        </details>
       </div>
     </section>
 

@@ -33,377 +33,146 @@
   <link rel="preload" href="assets/hero-workflow.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main-content">跳到主要内容</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="CSMA-Graduation-Projects 首页">
         <span class="brand-mark">CSMA</span>
-        <span class="brand-text">Learning Portal</span>
+        <span class="brand-text">学业与科研</span>
       </a>
       <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="展开主导航">菜单</button>
       <nav class="main-nav" id="main-nav" aria-label="主导航">
         <a class="active" href="index.html" aria-current="page">首页</a>
-        <a href="bachelor.html">毕业设计</a>
-        <a href="undergraduate-research.html">本科科研</a>
-        <a href="master.html">硕士成长</a>
-        <a href="doctor.html">博士培养</a>
+        <a href="#programs">培养路径</a>
         <a href="milestones.html">里程碑</a>
+        <a href="templates.html">资源与模板</a>
         <a href="projects.html">项目成果</a>
-        <a href="templates.html">资源</a>
         <a href="about.html">关于</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content" tabindex="-1">
-    <section class="hero" id="top">
+    <section class="hero home-hero" id="top">
       <span class="anchor-alias" id="home" aria-hidden="true"></span>
       <span class="anchor-alias" id="hjp." aria-hidden="true"></span>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">CSMA Research Group · Public Learning Portal</p>
-          <h1>从当前位置，走向下一阶段</h1>
-          <p class="subtitle">学生学业项目与科研培养公共门户</p>
-          <p class="hero-lead">
-            通过清晰的培养路径、阶段任务、成果证据、反馈节点与公共资源，帮助本科生和研究生理解“现在在哪里、下一步做什么、应形成什么证据”。学生是成长主体，导师提供方向、方法、资源与反馈支持。
-          </p>
+          <p class="eyebrow">CSMA · Learning &amp; Research</p>
+          <h1>学生学业与科研培养</h1>
+          <p class="hero-lead">从本科毕业设计、科研入门到研究生成长，找到适合自己的路径，把每一阶段的工作做扎实。</p>
           <div class="hero-actions" aria-label="常用入口">
-            <a class="btn primary" href="#programs">选择培养路径</a>
-            <a class="btn secondary" href="milestones.html">查看阶段机制</a>
+            <a class="btn primary" href="#programs">查看培养路径</a>
+            <a class="btn secondary" href="templates.html">查找资源与模板</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="开始使用本门户">
-          <div class="panel-title">从这里开始</div>
-          <ul class="check-list">
-            <li>选择与你对应的培养轨道</li>
-            <li>找到当前阶段的目标与任务</li>
-            <li>按证据清单准备反馈材料</li>
-            <li>公开前完成隐私与授权检查</li>
-          </ul>
-        </aside>
       </div>
     </section>
 
-    <section class="section" id="philosophy">
-      <span class="anchor-alias" id="理念" aria-hidden="true"></span>
-      <div class="container narrow">
-        <p class="section-kicker">培养理念</p>
-        <h2>让路径可理解，让进展有证据，让反馈能促进成长</h2>
-        <p class="body-large">
-          CSMA 以项目作为培养载体，以过程证据支撑质量判断，以阶段反馈促进持续改进。学生负责规划、执行、记录与反思；导师提供方向、方法、资源和反馈。代码、论文、系统、实验与归档材料保持一致，既服务学生能力成长，也支持项目在合规边界内延续。
-        </p>
-        <div class="notice safe"><strong>公开边界：</strong>本站只承载公开指南、公共资源和经授权成果，不保存个人培养档案、成绩评价、未公开研究材料或任何账号凭据。</div>
-      </div>
-    </section>
-
-    <section class="section soft" id="programs">
+    <section class="section" id="programs">
       <span class="anchor-alias" id="overview" aria-hidden="true"></span>
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">三类培养轨道</p>
-          <h2>先选择你的路径，再定位当前阶段</h2>
-          <p>三条路径共享证据、反馈、反思和归档机制，但面向不同学习目标。页面中的任务是研究组公共培养指引；学院正式要求和时间以经核验的当年通知为准。</p>
+        <div class="home-heading">
+          <div><p class="section-kicker">培养路径</p><h2>从当前阶段开始</h2></div>
+          <p>了解目标，明确任务，逐步形成成果。</p>
         </div>
-        <div class="track-grid">
-          <article class="card track-card">
-            <div class="card-label">Track 01</div>
-            <h3>本科毕业设计</h3>
-            <dl class="info-list">
-              <div>
-                <dt>面向谁</dt>
-                <dd>正在了解、选择或推进本科毕业设计的学生。</dd>
-              </div>
-              <div>
-                <dt>解决什么</dt>
-                <dd>把选题、调研、方案、实现或实验、论文、答辩与归档连成一条可执行路径。</dd>
-              </div>
-              <div>
-                <dt>如何开始</dt>
-                <dd>先阅读生命周期，再按当前阶段的证据清单自查。</dd>
-              </div>
-            </dl>
-            <a class="text-link" href="bachelor.html">进入毕业设计路径</a>
+        <div class="home-paths">
+          <article class="home-path">
+            <span class="path-label">01 / 本科</span>
+            <h3>毕业设计</h3>
+            <p>从课题匹配到实现验证，完成论文、答辩与成果归档。</p>
+            <a class="text-link" href="bachelor.html">查看毕业设计指南 <span aria-hidden="true">↗</span></a>
           </article>
-
-          <article class="card track-card">
-            <div class="card-label">Track 02</div>
-            <h3>本科科研</h3>
-            <dl class="info-list">
-              <div>
-                <dt>面向谁</dt>
-                <dd>希望了解研究、参与训练并通过小任务逐步进入项目的本科生。</dd>
-              </div>
-              <div>
-                <dt>解决什么</dt>
-                <dd>建立文献、工具、实验、协作、写作和可复现的基础能力。</dd>
-              </div>
-              <div>
-                <dt>如何开始</dt>
-                <dd>先理解投入与边界；实际招募渠道和方向等待研究组核验后补充。</dd>
-              </div>
-            </dl>
-            <a class="text-link" href="undergraduate-research.html">进入本科科研路径</a>
+          <article class="home-path">
+            <span class="path-label">02 / 本科</span>
+            <h3>科研训练</h3>
+            <p>从阅读与小任务入手，在项目中建立研究和工程基础。</p>
+            <a class="text-link" href="undergraduate-research.html">查看科研训练指南 <span aria-hidden="true">↗</span></a>
           </article>
-
-          <article class="card track-card">
-            <div class="card-label">Track 03</div>
-            <h3>硕士学业与科研</h3>
-            <dl class="info-list">
-              <div>
-                <dt>面向谁</dt>
-                <dd>需要规划课程、研究、论文、毕业与长期发展的硕士研究生。</dd>
-              </div>
-              <div>
-                <dt>解决什么</dt>
-                <dd>从 Foundation 到 Development 建立完整、可复核的成长旅程。</dd>
-              </div>
-              <div>
-                <dt>如何开始</dt>
-                <dd>先确认培养计划和沟通方式，再进入方向探索与研究。</dd>
-              </div>
-            </dl>
-            <a class="text-link" href="master.html">进入硕士成长路径</a>
+          <article class="home-path">
+            <span class="path-label">03 / 硕士</span>
+            <h3>学业与科研</h3>
+            <p>贯通方向探索、研究验证、论文写作与毕业发展。</p>
+            <a class="text-link" href="master.html">查看硕士培养指南 <span aria-hidden="true">↗</span></a>
           </article>
-        </div>
-        <div class="notice">
-          <strong>保留的既有入口：</strong>博士培养页面及其公开 URL 继续保留。<a class="text-link" href="doctor.html">查看博士培养说明</a>
+          <article class="home-path">
+            <span class="path-label">04 / 博士</span>
+            <h3>前沿研究</h3>
+            <p>聚焦原创问题，持续推进研究、成果积累与学术表达。</p>
+            <a class="text-link" href="doctor.html">查看博士培养指南 <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="timeline">
+    <section class="section soft" id="timeline">
+      <span class="anchor-alias" id="philosophy" aria-hidden="true"></span>
+      <span class="anchor-alias" id="理念" aria-hidden="true"></span>
       <span class="anchor-alias" id="ug-timeline" aria-hidden="true"></span>
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">当前阶段与里程碑</p>
-          <h2>以权威通知确定日期，以阶段证据判断准备度</h2>
-          <p>仓库没有本学年已核验的动态通知，因此首页不推测“当前日期”。请选择对应路径查看阶段结构；硕士页保留了站内既有参考节奏，并明确标注待核验状态。</p>
+      <div class="container home-method">
+        <div class="home-method-copy">
+          <p class="section-kicker">培养理念与阶段方法</p>
+          <h2>有计划地推进，<br>有依据地改进。</h2>
+          <p>学生主动规划与实践，导师提供方向、方法和反馈。让论文、代码、实验与归档彼此对应，在持续积累中形成能力。</p>
+          <a class="text-link" href="milestones.html">查看阶段目标与里程碑 <span aria-hidden="true">↗</span></a>
         </div>
-        <ol class="timeline" aria-label="三类培养轨道的阶段入口">
-          <li class="timeline-item">
-            <span class="time">本科毕业设计</span>
-            <h3>从选题到归档</h3>
-            <p>关注课题匹配、开题与调研、实现与验证、论文答辩、修改归档。</p>
-            <a class="text-link" href="bachelor.html#lifecycle">查看完整生命周期</a>
-          </li>
-          <li class="timeline-item">
-            <span class="time">本科科研</span>
-            <h3>从入门到项目</h3>
-            <p>关注兴趣匹配、基础训练、小任务验证、正式项目、复现与能力总结。</p>
-            <a class="text-link" href="undergraduate-research.html#lifecycle">查看完整生命周期</a>
-          </li>
-          <li class="timeline-item">
-            <span class="time">硕士成长</span>
-            <h3>从入学到发展</h3>
-            <p>关注培养计划、方向探索、研究验证、成果表达、毕业与长期发展。</p>
-            <a class="text-link" href="master.html#lifecycle">查看完整生命周期</a>
-          </li>
-          <li class="timeline-item">
-            <span class="time">共性机制</span>
-            <h3>阶段门与证据</h3>
-            <p>每一阶段都用目标、任务、证据、反馈和进入条件支持持续改进。</p>
-            <a class="text-link" href="milestones.html">查看里程碑方法</a>
-          </li>
-        </ol>
-
-        <div class="process-strip" aria-label="本科毕业设计阶段摘要">
-          <h3>本科毕业设计：五个阶段组</h3>
-          <ol>
-            <li>了解与匹配</li>
-            <li>定义与计划</li>
-            <li>实现与验证</li>
-            <li>写作与评审</li>
-            <li>归档与成长</li>
+        <div id="management">
+          <ol class="home-steps" aria-label="阶段推进方法">
+            <li><span class="step-number">01</span><div><h3>明确目标</h3><p>理解要求，确定范围与计划。</p></div></li>
+            <li><span class="step-number">02</span><div><h3>推进实践</h3><p>完成阅读、实现、实验与记录。</p></div></li>
+            <li><span class="step-number">03</span><div><h3>获得反馈</h3><p>用真实材料复核进展，调整下一步。</p></div></li>
+            <li><span class="step-number">04</span><div><h3>沉淀成果</h3><p>形成一致、可复现、可交接的材料。</p></div></li>
           </ol>
+          <p class="home-footnote">具体时间与正式材料要求，以学院当年通知为准。<a href="master.html#current-milestones">查看硕士参考节点</a></p>
         </div>
-      </div>
-    </section>
-
-    <section class="section soft" id="management">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">共性培养机制</p>
-          <h2>从指导到成果，形成可持续的反馈闭环</h2>
-        </div>
-        <div class="mechanism-grid" role="list">
-          <div class="mechanism-step" role="listitem"><strong>Guidance</strong><span>理解方向、规则与边界</span></div>
-          <div class="mechanism-step" role="listitem"><strong>Planning</strong><span>明确范围、计划与风险</span></div>
-          <div class="mechanism-step" role="listitem"><strong>Execution</strong><span>推进阅读、实现与实验</span></div>
-          <div class="mechanism-step" role="listitem"><strong>Evidence</strong><span>留下可追溯的过程证据</span></div>
-          <div class="mechanism-step" role="listitem"><strong>Feedback</strong><span>获得导师与同伴反馈</span></div>
-          <div class="mechanism-step" role="listitem"><strong>Reflection</strong><span>解释结果并调整下一步</span></div>
-          <div class="mechanism-step" role="listitem"><strong>Achievement</strong><span>沉淀能力与合规成果</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="outcomes">
-      <div class="container two-column">
-        <div>
-          <p class="section-kicker">项目与公开成果</p>
-          <h2>展示真实、可核验且获得授权的内容</h2>
-          <p>
-            培养过程可以形成系统、模块、实验、技术报告、论文或其他适合课题的成果。代码、论文、PPT、运行说明与归档材料应保持一致，主张应能由真实证据支持。
-          </p>
-          <p>
-            当前仓库没有可核验的公开项目或学生成果数据，因此首页不展示示例案例。待事实、知识产权和本人授权均确认后，再通过公开成果页发布。
-          </p>
-          <div class="callout-actions">
-            <a class="btn dark" href="projects.html">项目与课题</a>
-            <a class="btn outline" href="outcomes.html">公开成果</a>
-          </div>
-        </div>
-        <div class="card checklist-card">
-          <h3>发布前检查</h3>
-          <ul class="check-list">
-            <li>项目和成果真实且来源可核验</li>
-            <li>学生姓名、图片和作品已获明确授权</li>
-            <li>不含未公开研究、私人评价或受限数据</li>
-            <li>不含账号、token、服务器入口或私有仓库地址</li>
-            <li>公开链接可访问且不夸大成果状态</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="naming">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">命名规范</p>
-          <h2>仓库与课程命名保持可识别、可检索、可延续</h2>
-        </div>
-        <div class="rule-grid">
-          <article class="card rule-card">
-            <h3>学生仓库命名规则</h3>
-            <p class="rule-pattern"><code>YYYY-level-public-project-id</code></p>
-            <p>公开仓库名称不应包含姓名、学号或其他身份标识。需要关联个人身份的内部命名与映射，应保存在受控私有系统。</p>
-            <ul class="tag-list" aria-label="不含个人身份的命名格式">
-              <li><code>YYYY-level-public-project-id</code></li>
-            </ul>
-            <!-- {% comment %}
-            Legacy identity-linked examples are retained in source pending authorization review,
-            but are removed from the generated page. Source/history exposure still requires human action.
-            <ul class="tag-list">
-              <li><code>2025-ms-zhoushiyu</code></li>
-              <li><code>2025-ms-oujuntong</code></li>
-              <li><code>2025-ms-lujunchen</code></li>
-            </ul>
-            {% endcomment %} -->
-          </article>
-          <article class="card rule-card">
-            <h3>课程命名规则</h3>
-            <p class="rule-pattern"><code>课程缩写名 + YYYY + 学期 + 层次</code></p>
-            <p>层次标识中，<code>B</code> 表示 Bachelor，<code>M</code> 表示 Master，<code>D</code> 表示 Doctor。</p>
-            <ul class="tag-list">
-              <li><code>LPD20252B</code></li>
-              <li><code>IRE20251M</code></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft" id="structure">
-      <div class="container two-column">
-        <div>
-          <p class="section-kicker">学生仓库建议结构</p>
-          <h2>过程材料应完整，但默认进入受控私有仓库</h2>
-          <p>
-            学生过程仓库用于承载培养推进、项目实现、论文写作和毕业交接。周报、评价、未公开论文、原始实验数据和访问位置等材料默认私有；公开仓库只保存获准公开且不含秘密的信息。完整目录结构与可见性说明由归档页统一维护。
-          </p>
-          <a class="text-link" href="archive.html#repository-structure">查看完整归档规范</a>
-        </div>
-        <pre class="code-tree" aria-label="学生仓库建议目录树"><code>student-repository/
-├── README.md
-├── ROADMAP.md
-├── STATUS.md
-├── weekly/
-├── survey/
-├── proposal/
-├── midterm/
-├── papers/
-├── projects/
-├── experiments/
-├── thesis/
-├── defense/
-├── archive/
-└── handover/</code></pre>
       </div>
     </section>
 
     <section class="section" id="templates">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">资源与模板入口</p>
-          <h2>按阶段查找公共说明</h2>
-          <p>当前仓库只有用途说明，尚无可下载模板文件。下列深链均保留，待真实文件、版本和更新时间核验后再补充下载。</p>
+        <div class="home-heading">
+          <div><p class="section-kicker">常用入口</p><h2>资源与成果</h2></div>
+          <a class="text-link" href="templates.html">全部资源说明 <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="template-grid">
-          <a class="template-card" href="templates.html#weekly">周报说明</a>
-          <a class="template-card" href="templates.html#survey">综述说明</a>
-          <a class="template-card" href="templates.html#proposal">开题说明</a>
-          <a class="template-card" href="templates.html#midterm">中期检查说明</a>
-          <a class="template-card" href="templates.html#thesis-check">论文检查说明</a>
-          <a class="template-card" href="templates.html#archive-template">归档说明</a>
-          <a class="template-card" href="templates.html#handover">交接说明</a>
+        <div class="home-resources">
+          <div>
+            <h3>阶段材料</h3>
+            <p>按当前任务查找准备说明。下载文件核验后补充。</p>
+            <ul class="home-resource-links" aria-label="材料准备说明">
+              <li><a href="templates.html#weekly">周报</a></li>
+              <li><a href="templates.html#survey">文献综述</a></li>
+              <li><a href="templates.html#proposal">开题报告</a></li>
+              <li><a href="templates.html#midterm">中期检查</a></li>
+              <li><a href="templates.html#thesis-check">论文检查</a></li>
+              <li><a href="templates.html#archive-template">毕业归档</a></li>
+              <li><a href="templates.html#handover">项目交接</a></li>
+            </ul>
+            <div class="home-archive" id="structure">
+              <span class="anchor-alias" id="naming" aria-hidden="true"></span>
+              <a class="text-link" href="archive.html#repository-structure">仓库结构与归档规范 <span aria-hidden="true">↗</span></a>
+              <p>过程材料妥善保存，公开成果单独整理。</p>
+            </div>
+          </div>
+          <aside class="home-outcomes" id="outcomes">
+            <p class="section-kicker">项目实践</p>
+            <h3>让工作留下可积累的成果</h3>
+            <p>课题、项目与经授权成果，在完成核验后陆续补充。</p>
+            <ul class="home-outcome-links">
+              <li><a class="text-link" href="projects.html">项目与课题 <span aria-hidden="true">↗</span></a></li>
+              <li><a class="text-link" href="outcomes.html">公开成果 <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="updates">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Latest Updates</p>
-          <h2>资料状态与待核验事项</h2>
-          <p>本区不制造新闻；仅公开说明当前仓库能够支持到什么程度。</p>
-        </div>
-        <div class="standard-grid">
-          <article class="card"><span class="status-tag pending">待核验</span><h3>正式时间与制度来源</h3><p>硕士页保留既有月份参考，但仍需补充适用届次、正式来源和最后核验日期。</p></article>
-          <article class="card"><span class="status-tag pending">待补充</span><h3>项目、成果与模板文件</h3><p>当前没有已核验项目/成果记录或真实下载模板，因此相关页面保持透明空状态。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">FAQ</p>
-          <h2>先解决最常见的路径与边界问题</h2>
-        </div>
-        <div class="standard-grid">
-          <details class="card">
-            <summary>我应该从哪个页面开始？</summary>
-            <div class="details-body"><p>按你的培养类型进入本科毕业设计、本科科研或硕士成长页面，再根据生命周期定位当前阶段。博士培养沿用既有独立页面。</p></div>
-          </details>
-          <details class="card">
-            <summary>页面中的时间是学院正式通知吗？</summary>
-            <div class="details-body"><p>不是自动等同。仓库中既有的硕士月份仅作为待核验参考；正式名称、时间、材料与渠道以适用专业当年的官方通知为准。</p></div>
-          </details>
-          <details class="card">
-            <summary>学生过程材料可以放在公开仓库吗？</summary>
-            <div class="details-body"><p>默认不可以。个人计划、周报、反馈、评审、未公开论文、原始数据、私有链接和凭据应进入学校系统或受控私有存储。</p></div>
-          </details>
-          <details class="card">
-            <summary>为什么看不到项目或成果案例？</summary>
-            <div class="details-body"><p>当前仓库没有完成事实与公开授权核验的数据。本站不使用示例冒充真实成果，待来源、知识产权和本人授权确认后再发布。</p></div>
-          </details>
-        </div>
-        <p><a class="text-link" href="faq.html">查看完整 FAQ</a></p>
-      </div>
-    </section>
-
-    <section class="section soft" id="organization">
-      <div class="container narrow">
-        <p class="section-kicker">关于与联系</p>
-        <h2>面向学生成长、项目实践与负责任公开的研究组门户</h2>
-        <p class="body-large">
-          本门户公开培养路径、共性方法、公共资源和经授权成果。学生通过规划、实践、证据和反思形成能力；导师通过方向、方法、资源和反馈提供支持。内部培养记录和未公开研究不由本站保存。
-        </p>
-        <p>仓库已核验的公共联系入口为 <a class="text-link" href="https://github.com/CSMA-Graduation-Projects">CSMA-Graduation-Projects GitHub 组织页</a>；正式邮箱、办公室和申请渠道待研究组补充。</p>
-        <div class="callout-actions">
-          <a class="btn dark" href="about.html">了解门户与发布边界</a>
-          <a class="btn outline" href="templates.html">查看资源说明</a>
+    <section class="section home-about" id="organization">
+      <div class="container home-about-inner">
+        <div><p class="section-kicker">关于 CSMA</p><h2>共同成长，持续积累。</h2><p>以项目实践支持学生成长，以规范记录支持研究延续。</p></div>
+        <div class="home-about-links" id="faq">
+          <a class="text-link" href="about.html">关于与联系 <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="faq.html">常见问题 <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -411,54 +180,17 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-copy">
-        <strong>CSMA 学生学业项目与科研培养公共门户</strong>
-        <p>Public guidance, learning pathways, resources, and authorized outcomes.</p>
-      </div>
+      <div class="footer-copy"><strong>CSMA · 学业项目与科研培养</strong><p>公共培养指南、资源与经授权成果。</p></div>
       <ul class="footer-nav" aria-label="页脚导航">
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="doctor.html">博士培养</a></li>
         <li><a href="archive.html">归档规范</a></li>
-        <li><a href="outcomes.html">公开成果</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="about.html#publication-boundary">公开边界</a></li>
         <li><a href="about.html#contact">联系</a></li>
       </ul>
     </div>
   </footer>
-
   <button class="back-to-top" id="back-to-top" type="button" aria-label="返回顶部">↑</button>
   <script src="script.js"></script>
-  <!-- {% comment %}
-  Preserved baseline copy: these original phrases remain in the same source file so the redesign
-  does not discard user-authored content. They are excluded from the generated public page because
-  the revised portal structure, privacy boundary, and source-status notices supersede them.
-  学生培养流程与归档管理门户
-  学生培养流程与归档管理主页
-  本主页用于统一说明本科、硕士、博士学生从入组或入学到毕业的培养流程、关键节点、成果要求和归档规范，服务于过程管理、成果导向与长期沉淀。
-  以流程管理支撑培养质量，以成果沉淀服务长期建设
-  CSMA-Graduation-Projects 以流程管理为基础，以成果导向为牵引，以培养质量为核心，强调代码、论文、系统、实验和归档材料的一体化沉淀。研究组通过清晰节点、持续检查和规范交接，帮助学生形成可复用的研究与工程资产；同时将个人毕业成果转化为研究组可持续积累的一部分，服务学生成长、项目延续与研究组长期建设。
-  不同培养层次采用相同的过程留痕原则，同时根据培养目标设置不同的重点和检查尺度。
-  以下节点用于年度检查、毕业推进和归档验收，具体学院安排以当年通知为准。
-  检查研究方向理解、文献阅读质量、问题意识和后续开题基础。
-  检查研究目标、技术路线、实验方案、项目基础与预期成果。
-  检查论文进展、系统实现、实验结果、成果产出和风险处理。
-  提交论文主体、实验材料、系统说明、代码仓库和相关支撑材料。
-  完成论文、成果、答辩材料、仓库状态和归档清单的预审。
-  完成正式答辩，并同步更新答辩后论文修改和成果材料。
-  完成论文终稿、代码、PPT、部署说明、数据与实验材料归档。
-  完成项目交接、账号说明、后续维护建议和离校前确认。
-  真正做事、形成成果、留下资产
-  培养过程不仅要求完成论文文本，还要求完成真实系统、真实模块、真实测试与真实材料沉淀。代码、论文、PPT、部署平台、归档材料应保持一致，避免论文描述、系统实现和归档内容相互脱节。
-  研究组鼓励围绕项目、论文、系统、实验和过程材料形成长期积累，使培养结果同时服务继续深造能力、就业竞争力与工程能力。
-  论文问题、方法和系统模块一致
-  实验数据、结果图表和代码版本一致
-  PPT 汇报内容与论文终稿一致
-  部署说明与实际运行环境一致
-  YYYY-ug/ms/phd-studentname
-  年份使用四位数字，层次使用 ug 、 ms 、 phd ，姓名建议使用小写拼音或已确定的英文标识。
-  研究生仓库应覆盖全过程材料
-  学生仓库不是临时文件夹，而是培养过程、研究推进、项目实现、论文写作和毕业交接的统一载体。目录结构可根据具体方向扩展，但核心材料应稳定保留。
-  以下入口用于后续集中维护周报、阶段检查、论文、归档和交接相关模板。
-  面向培养过程与毕业成果归档的组织主页
-  本组织用于管理学生培养过程与毕业阶段成果归档，强调过程留痕、规范管理、持续检查、按节点推进。研究组鼓励学生围绕研究组方向开展系统、论文、项目、数据与平台建设，通过可检查、可复现、可交接的方式提高培养质量，提升继续深造与就业能力。
-  {% endcomment %} -->
 </body>
 </html>

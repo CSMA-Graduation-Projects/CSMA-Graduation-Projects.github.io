@@ -6,13 +6,15 @@
 
 学生是学业与研究成长的主体；导师提供方向、方法、资源与反馈。本站不是成绩、评价或学生档案管理后台，也不会用前端登录保护本应私有的数据。
 
+当前 `main` 为融合版：延续早期版的深蓝主视觉与简洁布局，保留详实版的完整培养内容。首页集中提供四条培养路径和常用入口，内页按阶段展开详细要求。
+
 ## 网站主要内容
 
-- 首页：门户定位、三类培养入口、共性机制、里程碑、资源、项目/成果状态、FAQ 与联系。
+- 首页：培养路径、阶段方法、资源与成果、关于与联系。
 - 本科毕业设计：从了解要求、课题匹配到答辩、归档和授权成果展示。
 - 本科科研：从申请匹配、基础训练和小任务到正式项目、复现写作与长期发展。
 - 硕士成长：Foundation、Exploration、Research、Validation、Dissemination、Graduation、Development。
-- 博士培养：保留的既有兼容页面，覆盖前沿研究、阶段汇报、成果沉淀和交接。
+- 博士培养：覆盖前沿研究、阶段汇报、成果沉淀和交接，与其他三条培养路径并列展示。
 - 里程碑：三类轨道共用的 Goal / Tasks / Evidence / Review / Exit Criteria。
 - 项目与成果：只接收真实、可核验、适合公开且获得授权的条目。
 - 资源与模板：周报、综述、开题、中期、论文检查、归档和交接说明；真实下载文件待核验后补充。
@@ -35,7 +37,7 @@
 ├── bachelor.html                  # 本科毕业设计培养路径（保留 URL）
 ├── undergraduate-research.html    # 本科科研培养路径
 ├── master.html                    # 硕士学业与科研全流程（保留 URL）
-├── doctor.html                    # 博士培养既有兼容页面（保留 URL）
+├── doctor.html                    # 博士培养指南（保留 URL）
 ├── milestones.html                # 里程碑与阶段门
 ├── projects.html                  # 项目与课题
 ├── outcomes.html                  # 经授权公开成果
@@ -83,7 +85,25 @@ git diff --check
 
 ## GitHub Pages 使用说明
 
-当前方式为 GitHub Pages 从分支根目录发布。发布前应先在功能分支完成构建、链接、隐私、移动端和旧 URL 回归；本任务不自动 push、merge 或部署。
+GitHub Pages 应配置为从 `main` 分支的 `/(root)` 发布。日常修改直接在 `main` 上完成；提交并推送后，等待 Pages 构建成功即可更新网页。
+
+开始修改前：
+
+```sh
+git switch main
+git pull --ff-only origin main
+```
+
+修改并完成检查后：
+
+```sh
+git status --short
+git add .
+git commit -m "Update site content"
+git push -u origin main
+```
+
+`push` 只上传已提交的内容。设置过上游后，也可以使用 `git push`。多人协作或大改版仍可使用功能分支与 PR；普通内容维护不要求另建分支。前序版本通过标签保留，详见 [`docs/versions.md`](docs/versions.md)。
 
 `_config.yml` 必须保留 `work` 排除项。注意：构建排除只能阻止文件进入 Pages 产物，不能让公开 GitHub 仓库中的源文件变私有。
 
