@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-18",
+  "status": "local_validation_passed_release_authorized",
+  "verification_scope": "local_build_and_browser_acceptance_snapshot",
+  "release_authorized_date": "2026-10-18",
+  "deployment_verification": "Check GitHub Pages workflow and live pages for the release commit separately.",
+  "baseline_head": "16fe2487fc1a53d4ea391e89299bf0abfe68833b",
+  "tracks": 4,
+  "stages": 34,
+  "templates": 24,
+  "root_html_pages": 20,
+  "responsive": {
+    "generatedAt": "2026-10-17T19:02:52.353Z",
+    "baseUrl": "http://127.0.0.1:8766",
+    "pages": 20,
+    "viewports": [
+      {
+        "label": "1440",
+        "width": 1440,
+        "height": 1200
+      },
+      {
+        "label": "1280",
+        "width": 1280,
+        "height": 1000
+      },
+      {
+        "label": "1024",
+        "width": 1024,
+        "height": 1000
+      },
+      {
+        "label": "768",
+        "width": 768,
+        "height": 1000
+      },
+      {
+        "label": "390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "label": "320",
+        "width": 320,
+        "height": 800
+      }
+    ],
+    "assertions": 724,
+    "passed": 724,
+    "failed": 0,
+    "failures": []
+  },
+  "functional": {
+    "assertions": 39,
+    "passed": 39,
+    "failed": 0,
+    "checks": [
+      {
+        "ok": true,
+        "message": "URL 直接打开硕士送审阶段",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "清单包含进入、交付和验收的真实送审事项",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "勾选后进度与标签同步",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "刷新后保留阶段勾选",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "个人计划日期在刷新后保留",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "切换阶段不串用勾选和日期",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "返回原阶段恢复本阶段独立状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "导出生成真实 Markdown 下载文件",
+        "detail": "csma-master-review-checklist.md"
+      },
+      {
+        "ok": true,
+        "message": "导出包含当前状态、日期、依据与待审核字段",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "全部勾选仍明确需要正式复核",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "重置先显示确认，未确认不丢失状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "取消重置保留原清单",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "确认后仅清空本阶段勾选与日期",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "重置送审阶段不影响论文写作阶段",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "无效路径参数回退到有效默认路径并修正 URL",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "不属于所选路径的阶段参数安全回退",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "损坏 localStorage 不阻塞清单，安全恢复空状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "内容版本变化不沿用旧勾选，并说明原因",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "禁止存储时仍能使用清单，并提示及时导出",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "禁止存储时同一页面内切换仍保留临时状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "模板库实际呈现 24 份可用模板",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关键词与类别组合筛选返回匹配模板",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "零结果有明确说明与重置入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "重置筛选恢复全部模板并回到搜索框",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "被筛选隐藏的模板可通过直接锚点重新打开",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "模板下载确实得到完整源文件",
+        "detail": "experiment.md"
+      },
+      {
+        "ok": true,
+        "message": "模板静态预览与下载全文一致",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "复制全文成功且可核对，或给出可操作的权限失败提示",
+        "detail": "模板全文已复制。请粘贴到自己的工作文件中填写。"
+      },
+      {
+        "ok": true,
+        "message": "模拟拒绝复制权限后展开预览并提供下载替代",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关闭 JavaScript 后 24 个实际模板链接仍可用",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关闭 JavaScript 后仍可实际下载完整模板",
+        "detail": "topic.md"
+      },
+      {
+        "ok": true,
+        "message": "master.html#review 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "bachelor.html#design 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "competition.html#selection 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "undergraduate-research.html#exploration 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "390px 清单无横向溢出，路径、阶段和日期控件可用",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "390px 模板库无横向溢出，全部下载入口保留",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "模板标题保留足够阅读宽度，未被旧样式挤成纵向文字",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "全部情境没有未处理脚本异常或 console.error",
+        "detail": "含损坏与禁止存储情境"
+      }
+    ]
+  },
+  "content_acceptance": {
+    "passed": 37,
+    "failed": 0
+  },
+  "zip": {
+    "entries": 27,
+    "matched_content_hashes": 26
+  },
+  "jekyll": "3.10.0",
+  "ruby": "3.3.6",
+  "backup": {
+    "sibling_directory": "CSMA-Graduation-Projects.github.io-backup-20261018-023603",
+    "files_verified": 282,
+    "source_unchanged": true,
+    "git_fsck_passed": true
+  }
+}

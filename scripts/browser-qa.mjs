@@ -22,6 +22,14 @@ const pages = [
   "archive.html",
   "faq.html",
   "about.html",
+  "competition.html",
+  "planner.html",
+  "management.html",
+  "integrity.html",
+  "policies.html",
+  "resources.html",
+  "news.html",
+  "students.html",
 ];
 
 const viewports = [
@@ -30,6 +38,7 @@ const viewports = [
   { label: "1024", width: 1024, height: 1000 },
   { label: "768", width: 768, height: 1000 },
   { label: "390", width: 390, height: 844 },
+  { label: "320", width: 320, height: 800 },
 ];
 
 const screenshotKeys = new Set([
@@ -37,6 +46,8 @@ const screenshotKeys = new Set([
   "bachelor.html@390", "undergraduate-research.html@390", "master.html@390", "doctor.html@390",
   "milestones.html@768", "projects.html@390", "outcomes.html@390", "templates.html@390",
   "archive.html@390", "faq.html@390", "about.html@390",
+  "master.html@1440", "templates.html@1440", "planner.html@1440", "policies.html@390",
+  "index.html@320", "planner.html@390", "competition.html@390",
 ]);
 
 const failures = [];

@@ -17,5 +17,10 @@
   <url><loc>https://csma-graduation-projects.github.io/archive.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/faq.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/about.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/competition.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/planner.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/management.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/integrity.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/policies.html</loc></url>
   {% for post in site.posts %}<url><loc>{{ post.url | absolute_url | xml_escape }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>{% endfor %}
 </urlset>

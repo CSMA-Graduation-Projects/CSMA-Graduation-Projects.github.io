@@ -20,6 +20,11 @@ const expectedPages = [
   "archive.html",
   "faq.html",
   "about.html",
+  "competition.html",
+  "planner.html",
+  "management.html",
+  "integrity.html",
+  "policies.html",
 ];
 const legacyIds = {
   "index.html": [
@@ -69,6 +74,8 @@ function checkNavigation(page, source) {
     "undergraduate-research.html": "bachelor.html", "templates.html": "resources.html",
     "archive.html": "resources.html", "milestones.html": "resources.html",
     "projects.html": "outcomes.html", "faq.html": "about.html",
+    "competition.html": "bachelor.html", "planner.html": "resources.html",
+    "management.html": "resources.html", "integrity.html": "resources.html", "policies.html": "resources.html",
   }[page] || (page.startsWith("news/") || page === "_layouts/news.html" ? "news.html" : page);
   if (links.length !== navigation.length) fail(`${page}: expected nine main navigation links`);
   navigation.forEach(([target, label], i) => {

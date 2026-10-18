@@ -5,222 +5,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>归档与公开边界 | CSMA 学业项目门户</title>
-  <meta name="description" content="CSMA 项目归档与仓库规范，区分受控私有过程材料和经授权公开成果，说明命名、目录、一致性、复现与安全交接要求。">
+  <title>数据资料归档与交接 | CSMA 人才培养管理体系</title>
+  <meta name="description" content="让论文中的每个结论有出处，让接手的人找得到、看得懂、跑得通。">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#14375f">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
   <link rel="canonical" href="https://csma-graduation-projects.github.io/archive.html">
-  <meta property="og:type" content="website"><meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="CSMA 学业项目与科研培养公共门户">
-  <meta property="og:title" content="归档与公开边界">
-  <meta property="og:description" content="区分私有过程归档与公开成果，安全管理论文、代码、实验、答辩和交接材料。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="CSMA 人才培养管理体系">
+  <meta property="og:title" content="数据资料归档与交接">
+  <meta property="og:description" content="让论文中的每个结论有出处，让接手的人找得到、看得懂、跑得通。">
   <meta property="og:url" content="https://csma-graduation-projects.github.io/archive.html">
   <meta property="og:image" content="https://csma-graduation-projects.github.io/assets/hero-workflow.png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/training.css">
+
 </head>
-<body>
+<body class="training-site">
   <a class="skip-link" href="#main-content">跳到主要内容</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="CSMA 人才培养管理体系首页"><span class="brand-mark">CSMA</span><span class="brand-text">人才培养管理体系</span></a>
-      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="展开主导航">菜单</button>
-      <nav class="main-nav" id="main-nav" aria-label="主导航">
-        <a href="index.html">首页</a>
-        <a href="news.html">新闻</a>
-        <a href="bachelor.html">学士</a>
-        <a href="master.html">硕士</a>
-        <a href="doctor.html">博士</a>
-        <a class="active" aria-current="true" href="resources.html">资源</a>
-        <a href="outcomes.html">成果</a>
-        <a href="students.html">榜样</a>
-        <a href="about.html">关于</a>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="CSMA 人才培养管理体系首页"><span class="brand-mark">CSMA</span><span class="brand-text">人才培养管理体系</span></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="展开主导航">菜单</button>
+    <nav class="main-nav" id="main-nav" aria-label="主导航"><a href="index.html">首页</a>
+<a href="news.html">新闻</a>
+<a href="bachelor.html">学士</a>
+<a href="master.html">硕士</a>
+<a href="doctor.html">博士</a>
+<a class="active" aria-current="true" href="resources.html">资源</a>
+<a href="outcomes.html">成果</a>
+<a href="students.html">榜样</a>
+<a href="about.html">关于</a></nav>
+  </div></header>
+  <main id="main-content" tabindex="-1"><section class="guide-hero" id="top"><div class="container"><nav class="breadcrumb" aria-label="面包屑"><ol><li><a href="index.html">首页</a></li><li aria-current="page">数据资料归档与交接</li></ol></nav><p class="section-kicker">培养工作手册</p><h1>数据资料归档与交接</h1><p class="guide-lead">让论文中的每个结论有出处，让接手的人找得到、看得懂、跑得通。</p><p class="guide-meta">通用工作指南 · 正式要求以适用校院文件为准</p></div></section><section class="section"><div class="container reading-guide">
+  <div class="guide-intro"><p>归档从项目开始时做起。目标是让后续接收者知道材料是什么、来自哪里、怎样使用、哪些内容能够共享，并能复查论文的关键结论。学校要求的学位材料归档与研究组的代码、数据交接分别完成；提交过论文不等于研究资料已经交清。</p></div>
+  <nav class="inline-links" aria-label="归档指南目录"><a href="#repository-structure">目录与索引</a><a href="#visibility-model">材料可见性</a><a href="#archive-metadata">最少元数据</a><a href="#reproduce-and-verify">运行与校验</a><a href="#completion-standard">交接验收</a><a href="#retention-and-access">保留与权限</a></nav>
 
-  <main id="main-content" tabindex="-1">
-    <section class="page-hero" id="top">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="面包屑"><ol><li><a href="index.html">首页</a></li><li aria-current="page">归档与公开边界</li></ol></nav>
-        <h1>归档与公开边界</h1>
-        <p>通过清晰的可见性规则，使培养材料、论文成果、代码系统、运行说明和交接信息保持完整、可检查，同时避免把私人记录、未公开研究或凭据暴露到公共仓库。</p>
-      </div>
-    </section>
+  <h2 id="repository-structure">先做一份能找到材料的目录</h2>
+  <p>沿用已有项目约定，不为统一外观强制搬动或重命名正在使用的仓库。若材料分布在多个获准系统中，用归档索引说明每部分的存放位置、访问条件、负责人和版本。公开索引不包含受控地址、账号或个人评价；需要权限的索引放在对应受控空间。</p>
+  <p>新项目可以参考下面的结构，按实际工作合并或删去不适用项。学校要求的正式文件仍保存在指定系统；目录清楚比目录数量多更重要。</p>
+  <pre><code>project/
+├── README.md              # 内容、范围、入口与运行说明
+├── requirements/          # 需求、问题边界、计划与变更
+├── literature/            # 检索记录、文献索引与阅读笔记
+├── proposal/              # 方案及适用的开题材料
+├── code/                  # 源码、依赖与运行脚本
+├── data/
+│   ├── raw/               # 原始数据或获准的获取说明
+│   └── derived/           # 清洗与加工后的数据
+├── experiments/           # 配置、运行日志与环境记录
+├── results/               # 结果表、分析与制图脚本
+├── thesis/                # 稿件、图表来源与提交版本
+├── reviews/               # 受控的意见与修改记录
+└── archive/               # 交付清单、校验与验收记录</code></pre>
+  <p>阶段提交使用明确的日期和版本，避免“最终版2”“最后一次修改”等名称。论文的送审、答辩、修改后终稿分别保留，并标记正式提交状态；代码使用对应提交或发布版本。文件名一致不代表内容一致，重要交付同时保留校验值。</p>
 
-    <section class="page-section">
-      <div class="container standard-grid">
-        <article class="notice safe"><strong>受控私有过程库：</strong>保存周报、计划、导师反馈、正式报告、未公开论文与实验数据、内部评审和权限交接。</article>
-        <article class="notice"><strong>公开成果库：</strong>只保存经事实核验、隐私/IP 审查和明确授权的摘要、截图、代码或公开链接；绝不保存任何账号凭据。</article>
-      </div>
-    </section>
+  <h2 id="visibility-model">原始材料、工作材料与公开成果分开</h2>
+  <div class="table-wrap"><table><caption>材料的可见性与使用边界</caption><thead><tr><th scope="col">材料层次</th><th scope="col">典型内容</th><th scope="col">处理方法</th></tr></thead><tbody>
+    <tr><th scope="row">受控原始材料</th><td>原始采集数据、授权记录、参与者信息、原始实验输出。</td><td>保留来源和原貌，限定访问；分析使用副本或派生数据，不覆盖原始记录。</td></tr>
+    <tr><th scope="row">受控工作材料</th><td>个人计划、周报、未公开论文、评阅意见、研究过程与内部交接记录。</td><td>按职责授权访问；明确当前有效版本和负责人，不放入公共网站。</td></tr>
+    <tr><th scope="row">经确认的公开成果</th><td>获准公开的论文、代码、示例数据、演示、空白模板和说明。</td><td>单独生成发布包，检查许可、隐私、署名和保密限制，确认后发布。</td></tr>
+  </tbody></table></div>
+  <p>清洗或匿名化后的数据也要检查重新识别风险、授权条件和许可证，不能因为删掉姓名就默认可以公开。无法共享的数据可提供数据字典、申请流程、处理脚本及合成示例，明确示例只用于演示，不代表真实实验结果。</p>
+  <div class="notice"><strong>页面不可见不等于资料私有。</strong>公开 GitHub 仓库中的文件，即使不链接、被折叠或不进入网页构建，仍可能从仓库和历史访问。填写后的个人材料应保存在获准的受控空间。</div>
 
-    <section class="page-section">
-      <div class="container rule-grid">
-        <article class="card">
-          <h2>学生仓库命名规则</h2>
-          <p class="rule-pattern"><code>YYYY-level-public-project-id</code></p>
-          <p>公开仓库采用不含姓名、学号或私人联系方式的项目标识。年份可使用已确认的立项或公开年份；身份映射仅保存在受控私有系统。</p>
-          <ul class="tag-list" aria-label="安全的公开命名格式"><li><code>YYYY-level-public-project-id</code></li></ul>
-          <!-- {% comment %}
-          Legacy identity-linked examples are retained in source pending authorization review,
-          but are removed from the generated page. Source/history exposure still requires human action.
-          <ul class="tag-list">
-            <li><code>2025-ms-zhoushiyu</code></li>
-            <li><code>2025-ms-oujuntong</code></li>
-            <li><code>2025-ms-lujunchen</code></li>
-          </ul>
-          {% endcomment %} -->
-        </article>
-        <article class="card">
-          <h2>课程命名规则</h2>
-          <p class="rule-pattern"><code>课程缩写名 + YYYY + 学期 + 层次</code></p>
-          <p>层次标识中，<code>B</code> 表示 Bachelor，<code>M</code> 表示 Master，<code>D</code> 表示 Doctor。</p>
-          <ul class="tag-list">
-            <li><code>LPD20252B</code></li>
-            <li><code>IRE20251M</code></li>
-          </ul>
-        </article>
-      </div>
-    </section>
+  <h2 id="archive-metadata">每份关键材料至少说明这些信息</h2>
+  <p>在交付清单中为材料分配稳定编号，记录名称、用途、格式、版本或日期、负责人、来源、对应任务或论文位置、存放位置、访问级别、许可条件和校验值。对不适用的字段说明原因，不使用空白掩盖未确认状态。</p>
+  <p>数据另记采集或下载时间、数据版本、字段含义、单位、样本量、清洗和排除规则、划分方法及生成脚本。运行记录另记代码版本、依赖、配置、数据版本、命令、资源、起止时间、退出状态和输出位置。图表注明输入数据与生成脚本，形成“论文结论—图表—结果—运行—代码与数据”的对应关系。</p>
+  <p>受许可限制不能随包交付的材料，登记限制、获准获取方式和负责联系的岗位，不交付个人账号凭据。资料来自合作单位时，确认研究组保留、后续使用和公开的范围；共同完成的代码和论文记录贡献与署名约定。</p>
 
-    <section class="page-section soft" id="repository-structure">
-      <div class="container two-column">
-        <div>
-          <p class="section-kicker">受控私有仓库建议目录</p>
-          <h2>目录结构覆盖过程、成果与交接，可见性必须先确认</h2>
-          <p>右侧结构面向受控私有过程仓库。研究生可按需要采用，本科项目可根据规模简化；论文、代码、答辩和归档材料是否可公开，应逐项完成制度、隐私、数据许可和知识产权核验。</p>
-          <ul class="compact-list">
-            <li><code class="inline-code">README.md</code> 说明仓库用途、研究方向、运行方式和材料索引。</li>
-            <li><code class="inline-code">ROADMAP.md</code> 记录阶段目标、时间节点和计划调整。</li>
-            <li><code class="inline-code">STATUS.md</code> 记录当前完成状态、风险和待办事项。</li>
-          </ul>
-          <div class="notice critical"><strong>不得入库：</strong>密码、token、API key、私钥、恢复码或其他凭据。配置示例必须使用无效占位符。</div>
-        </div>
-        <pre class="code-tree"><code>student-repository/
-├── README.md
-├── ROADMAP.md
-├── STATUS.md
-├── weekly/
-├── survey/
-├── proposal/
-├── midterm/
-├── papers/
-├── projects/
-├── experiments/
-├── thesis/
-├── defense/
-├── archive/
-└── handover/</code></pre>
-      </div>
-    </section>
+  <h2 id="reproduce-and-verify">README 要让接收者真正运行起来</h2>
+  <ol>
+    <li><strong>说明范围。</strong>列出交付内容、论文或项目版本、已经验证的结果与已知限制，说明哪些功能需要外部账号或受限数据。</li>
+    <li><strong>说明环境。</strong>给出操作系统、语言和关键依赖版本、硬件要求、安装命令及环境文件。模型或服务依赖注明版本和访问条件。</li>
+    <li><strong>说明数据。</strong>给出合法获取方式、放置位置、预处理命令和数据校验，不要求接收者猜目录结构。</li>
+    <li><strong>给出最小运行。</strong>提供一条可验证的起步命令、预期输出、预计时间和资源需求，再给完整实验入口。</li>
+    <li><strong>说明结果。</strong>指出输出文件、指标计算与制图方法，列出可接受差异和随机性来源；不能重复的结果写明原因与复核方式。</li>
+  </ol>
+  <p>交付前从干净目录按 README 操作。确实不能完整重跑时，保留运行日志、原始输出、分析脚本及限制说明，将“完整重跑”“保存记录复算”“只核查文件”分别标记，不把结构检查写成复现成功。</p>
+  <p>校验值用于发现文件是否改变。以下示例在归档目录内执行，实际文件列表应与交付清单一致：</p>
+  <pre><code># macOS：生成与复核 SHA-256 清单
+shasum -a 256 README.md thesis/final.pdf &gt; SHA256SUMS
+shasum -a 256 -c SHA256SUMS
 
-    <section class="page-section">
-      <div class="container standard-grid">
-        <article class="card">
-          <h2>论文、代码、PPT、部署、归档一致性</h2>
-          <p>毕业归档以一致性为基本标准。论文中描述的问题、方法、系统、实验和结论，应能在代码、数据、部署说明、答辩材料和归档清单中找到对应支撑。</p>
-          <ul class="compact-list">
-            <li>论文题目、系统名称、仓库说明和答辩 PPT 保持一致。</li>
-            <li>论文实验与仓库中的实验配置、数据处理、结果记录保持一致。</li>
-            <li>不含秘密的系统运行说明与实际可运行环境保持一致；具体服务器入口和凭据不写入普通文档。</li>
-            <li>归档清单与仓库目录、文件版本和最终材料保持一致。</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2>交接要求</h2>
-          <p>交接材料应帮助导师和后续学生理解项目状态、继续推进方向和维护风险，不能仅提交无法说明上下文的文件集合。</p>
-          <ul class="compact-list">
-            <li>说明项目背景、目标、当前完成情况和后续建议。</li>
-            <li>公开说明只记录非敏感代码入口、运行步骤和环境要求；账号、受限数据位置与访问权限通过受控私有渠道移交。</li>
-            <li>说明未完成事项、已知问题和风险点；私人联系人信息保存在受控通讯录，公开材料只写责任角色或官方渠道。</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+# Linux 可使用同类命令
+sha256sum README.md thesis/final.pdf &gt; SHA256SUMS
+sha256sum -c SHA256SUMS</code></pre>
+  <p>文件修改后重新生成清单；校验通过仅表明与清单对应，不证明内容正确或来源真实。备份完成后抽取关键文件做恢复检查，确认能打开、能读取、权限有效；不要把同步成功当作已经完成恢复验证。</p>
 
-    <section class="page-section soft" id="visibility-model">
-      <div class="container">
-        <p class="section-kicker">Visibility Model</p>
-        <h2>同一项目的公开摘要与私有证据分开存放</h2>
-        <div class="table-scroll" tabindex="0" aria-label="归档可见性表，可横向滚动">
-          <table class="status-table">
-            <caption>材料类型、建议存储位置与公开条件</caption>
-            <thead><tr><th scope="col">材料</th><th scope="col">默认位置</th><th scope="col">公开条件</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">培养路径与公共检查表</th><td>公共门户</td><td>不含个人记录和内部制度材料</td></tr>
-              <tr><th scope="row">周报、反馈、考核与答辩意见</th><td>学校系统或受控私有存储</td><td>默认不公开</td></tr>
-              <tr><th scope="row">论文草稿、原始数据与私有代码</th><td>受控私有仓库/云盘</td><td>经权利、许可与授权核验后再决定</td></tr>
-              <tr><th scope="row">项目或成果摘要</th><td>公共门户</td><td>事实、知识产权、隐私和本人授权均通过</td></tr>
-              <tr><th scope="row">账号、token、密钥与恢复码</th><td>密码/秘密管理服务</td><td>绝不进入公共门户或普通仓库</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+  <h2 id="completion-standard">交接完成，以接收者验收为准</h2>
+  <div class="table-wrap"><table><caption>归档与交接的最少验收项目</caption><thead><tr><th scope="col">验收项</th><th scope="col">应留下的凭证</th></tr></thead><tbody>
+    <tr><th scope="row">正式材料</th><td>学校要求的终稿、声明、修改记录等已按规定提交，保留对应回执或状态。</td></tr>
+    <tr><th scope="row">完整与一致</th><td>交付清单逐项核对；论文版本、代码版本、数据与结果的对应关系清楚，关键文件校验一致。</td></tr>
+    <tr><th scope="row">可运行与可复查</th><td>接收者按说明运行样例或约定流程，记录命令、环境、结果和未完成项，注明验证范围。</td></tr>
+    <tr><th scope="row">权限与许可</th><td>接收者已取得所需访问权限，公开与保留范围明确，受限材料未误入公开包。</td></tr>
+    <tr><th scope="row">剩余事项</th><td>风险、后续维护责任、费用、到期事项和支持安排已记录，并有接收确认。</td></tr>
+  </tbody></table></div>
+  <p>某项未通过时，登记问题、负责人、修复日期和复查方式；不能以“已压缩上传”直接关闭交接。校方归档与研究组交接的完成情况分别记录，最终由相应接收人员确认。</p>
 
-    <section class="page-section" id="completion-standard">
-      <div class="container">
-        <p class="section-kicker">归档完成标准</p>
-        <h2>完成归档应达到可检查、可复现、可交接</h2>
-        <p>以下是材料完整性标准，不表示材料应公开；评审、答辩、论文和实验内容按权限保存在受控系统。</p>
-        <div class="table-scroll" tabindex="0" aria-label="归档完成标准表，可横向滚动">
-        <table class="status-table">
-          <caption>归档材料完整性标准</caption>
-          <thead>
-            <tr>
-              <th scope="col">类别</th>
-              <th scope="col">完成标准</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">论文材料</th>
-              <td>论文终稿、检查记录、修改说明、相关评审或答辩材料完整。</td>
-            </tr>
-            <tr>
-              <th scope="row">代码系统</th>
-              <td>代码结构清晰，运行说明完整，关键模块和配置能够被复查。</td>
-            </tr>
-            <tr>
-              <th scope="row">实验材料</th>
-              <td>数据来源、实验配置、结果记录和图表来源能够对应论文内容。</td>
-            </tr>
-            <tr>
-              <th scope="row">答辩材料</th>
-              <td>PPT、演示材料、答辩问题和修改记录完成整理。</td>
-            </tr>
-            <tr>
-              <th scope="row">交接材料</th>
-              <td>后续维护者能够根据交接说明理解项目、运行系统并继续推进。</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-copy"><strong>CSMA 学生学业项目与科研培养公共门户</strong><p>归档完整性与最小公开原则</p></div>
-      <ul class="footer-nav" aria-label="页脚导航"><li><a href="faq.html">FAQ</a></li><li><a href="templates.html">资源</a></li><li><a href="outcomes.html">公开成果</a></li><li><a href="about.html#contact">联系</a></li></ul>
-    </div>
-  </footer>
+  <h2 id="retention-and-access">明确保留期限与离组后的访问</h2>
+  <p>保留期限依据学校制度、资助项目、数据许可、伦理要求和合作协议确定，记录依据与到期处理责任人，不自行给所有材料统一设年限。到期不自动删除：先核对是否仍有保留义务、复查需求或其他限制，再按批准流程处理并留下记录。</p>
+  <p>离组交接通过组织所有权转移、成员权限调整、服务账号管理和密钥轮换完成，不交个人密码。检查代码仓库、存储、服务器、模型服务、域名或其他资源的负责人、账单和恢复方式；确认新负责人能访问后，依约撤销不再需要的权限。保留协作需要时，约定访问范围和期限。</p>
+  <div class="inline-links"><a class="btn outline" href="templates.html#archive">数据与归档清单</a><a class="btn outline" href="templates.html#handover">交接验收模板</a><a class="btn outline" href="integrity.html">学术规范与匿名检查</a></div>
+</div></section>
+</main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <div class="footer-copy"><strong>CSMA · 学习有路径，研究有依据。</strong><p>公共培养指南与空白模板 · 2026 年 10 月修订</p></div>
+    <ul class="footer-nav" aria-label="页脚导航"><li><a href="policies.html">依据与校本核对</a></li><li><a href="management.html">日常管理</a></li><li><a href="archive.html">归档规范</a></li><li><a href="about.html">关于</a></li></ul>
+  </div></footer>
   <button class="back-to-top" id="back-to-top" type="button" aria-label="返回顶部">↑</button>
-  <script src="script.js"></script>
-  <!-- {% comment %}
-  Preserved baseline copy: retained in source, excluded from the generated public page because the
-  new public/private rules supersede identity-linked naming and credential-location guidance.
-  归档要求用于保证学生培养材料、论文成果、代码系统、部署说明和交接信息完整、统一、可检查。
-  YYYY-ug/ms/phd-studentname
-  年份使用入组、立项或毕业管理中确定的四位年份；层次使用 ug 、 ms 、 phd ；学生姓名建议使用小写拼音或已确定的英文标识。
-  目录结构应覆盖过程、成果与交接
-  研究生仓库建议采用右侧结构。本科仓库可根据毕业设计规模简化，但仍应保留论文、代码、答辩和归档材料。
-  系统部署说明与实际可运行环境保持一致。
-  说明代码入口、运行步骤、部署环境、账号和数据位置。
-  说明未完成事项、已知问题、风险点和联系人信息。
-  {% endcomment %} -->
-</body>
-</html>
+  <script src="script.js"></script><script src="assets/training.js"></script>
+</body></html>

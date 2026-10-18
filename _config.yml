@@ -19,6 +19,7 @@ exclude:
   - vendor
   - scripts
   - docs/content-templates
+  - docs/training-redesign
 
 include:
   - .well-known
