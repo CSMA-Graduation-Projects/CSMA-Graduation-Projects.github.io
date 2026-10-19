@@ -1,0 +1,34 @@
+{% assign achievements = site.data.achievements | sort: 'date' | reverse %}
+{% assign achievement_fields_en = 'title,category,contributors,summary' | split: ',' %}
+{% assign achievement_count_en = 0 %}
+{% capture achievement_cards_en %}
+  {% for item in achievements %}
+    {% assign achievement_ready_en = true %}
+    {% for field in achievement_fields_en %}
+      {% assign english_text = item.en[field] | default: '' | strip %}
+      {% if english_text == empty %}{% assign achievement_ready_en = false %}{% endif %}
+    {% endfor %}
+    {% if item.links.size == 0 or item.en.link_labels.size != item.links.size %}{% assign achievement_ready_en = false %}{% endif %}
+    {% for label in item.en.link_labels %}
+      {% assign english_label = label | strip %}
+      {% if english_label == empty %}{% assign achievement_ready_en = false %}{% endif %}
+    {% endfor %}
+    {% if achievement_ready_en %}
+      {% assign achievement_count_en = achievement_count_en | plus: 1 %}
+      <article class="showcase-card" id="{{ item.id | escape }}">
+        <div class="news-meta"><span>{{ item.en.category | escape }}</span><time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time></div>
+        <h3>{{ item.en.title | escape }}</h3>
+        <p class="showcase-byline">{{ item.en.contributors | escape }}</p>
+        <p>{{ item.en.summary | escape }}</p>
+        <ul class="directory-links">
+          {% for link in item.links %}<li><a href="{{ link.url | escape }}">{{ item.en.link_labels[forloop.index0] | escape }} <span aria-hidden="true">↗</span></a></li>{% endfor %}
+        </ul>
+      </article>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% if achievement_count_en > 0 %}
+<div class="showcase-grid">{{ achievement_cards_en }}</div>
+{% else %}
+<div class="collection-empty"><p>No verified achievement entries with a complete English version are available yet. Entries will appear here after their facts, publication permissions and English text have been confirmed.</p><a class="text-link" href="projects.html">Read about projects and topics <span aria-hidden="true">↗</span></a></div>
+{% endif %}

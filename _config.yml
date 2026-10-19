@@ -11,6 +11,35 @@ defaults:
       type: posts
     values:
       layout: news
+  - scope:
+      path: ""
+      type: essays
+    values:
+      layout: essay
+      lang: zh-CN
+  - scope:
+      path: ""
+      type: essays_en
+    values:
+      layout: essay-en
+      lang: en
+  - scope:
+      path: ""
+      type: news_en
+    values:
+      layout: news-en
+      lang: en
+
+collections:
+  essays:
+    output: true
+    permalink: /essays/:name.html
+  essays_en:
+    output: true
+    permalink: /en/essays/:name.html
+  news_en:
+    output: true
+    permalink: /en/news/:name.html
 
 exclude:
   - work
@@ -23,3 +52,6 @@ exclude:
 
 include:
   - .well-known
+  # Jekyll 3.10 also prefix-matches the excluded work directory.
+  # Include this public page explicitly while keeping work/ excluded.
+  - workflows.html

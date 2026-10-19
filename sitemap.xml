@@ -22,5 +22,39 @@
   <url><loc>https://csma-graduation-projects.github.io/management.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/integrity.html</loc></url>
   <url><loc>https://csma-graduation-projects.github.io/policies.html</loc></url>
-  {% for post in site.posts %}<url><loc>{{ post.url | absolute_url | xml_escape }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>{% endfor %}
+  <url><loc>https://csma-graduation-projects.github.io/workflows.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/tools.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/essays.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/international.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/learning.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/news.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/bachelor.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/undergraduate-research.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/master.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/doctor.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/milestones.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/projects.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/outcomes.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/resources.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/students.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/templates.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/archive.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/faq.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/about.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/competition.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/planner.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/management.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/integrity.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/policies.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/workflows.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/tools.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/essays.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/international.html</loc></url>
+  <url><loc>https://csma-graduation-projects.github.io/en/learning.html</loc></url>
+{% assign now = site.time | date: '%s' | plus: 0 %}
+{% for post in site.posts %}<url><loc>{{ post.url | absolute_url | xml_escape }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>{% endfor %}
+{% for item in site.news_en %}{% assign item_time = item.date | date: '%s' | plus: 0 %}{% if item.published == true and item_time <= now %}<url><loc>{{ item.url | absolute_url | xml_escape }}</loc><lastmod>{{ item.date | date_to_xmlschema }}</lastmod></url>{% endif %}{% endfor %}
+{% for item in site.essays %}{% assign item_time = item.date | date: '%s' | plus: 0 %}{% if item.published == true and item_time <= now %}<url><loc>{{ item.url | absolute_url | xml_escape }}</loc><lastmod>{{ item.date | date_to_xmlschema }}</lastmod></url>{% endif %}{% endfor %}
+{% for item in site.essays_en %}{% assign item_time = item.date | date: '%s' | plus: 0 %}{% if item.published == true and item_time <= now %}<url><loc>{{ item.url | absolute_url | xml_escape }}</loc><lastmod>{{ item.date | date_to_xmlschema }}</lastmod></url>{% endif %}{% endfor %}
 </urlset>

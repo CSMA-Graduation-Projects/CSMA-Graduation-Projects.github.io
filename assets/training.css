@@ -76,6 +76,8 @@ input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,su
 .training-site .site-footer{padding:36px 0;background:#e6edeb;border-top:1px solid #d7e1dd;color:#334e57}
 .site-footer .footer-copy strong{font-size:.95rem}
 .site-footer .footer-copy p{font-size:.76rem;color:#586e74}
+.training-site .footer-nav a{color:#365e63}
+.training-site .footer-nav a:hover{color:#173c53}
 .guide-hero{background:#eef3f1;border-bottom:1px solid #dbe3df;padding:24px 0 38px}
 .guide-hero .breadcrumb{margin-bottom:24px;font-size:.75rem;color:#536d70}
 .guide-hero .breadcrumb li+li::before{color:#768f8c}

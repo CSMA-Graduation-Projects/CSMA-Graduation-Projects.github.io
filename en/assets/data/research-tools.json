@@ -1,0 +1,692 @@
+{
+  "updated": "2026-10-19",
+  "intro": "Start with the smallest set of tools that can produce evidence for your task; add tools only to address a specific need. These steps are general research guidance. Check software features, institutional templates and service conditions against the relevant version and official documentation.",
+  "selection_note": "The recommended combination is a starting point for the task. Alternatives accommodate established habits or specific requirements. Tools marked as requiring preparation need an environment, access and budget check first. You do not need to install every tool in this catalogue.",
+  "tools": [
+    {
+      "id": "zotero",
+      "name": "Zotero",
+      "status": "recommended",
+      "purpose": "Collect and verify reference metadata, link full texts, notes and citations, and trace each claim in your review to a specific source.",
+      "docs": [
+        "zotero-start",
+        "zotero-word",
+        "zotero-export"
+      ],
+      "boundary": "Check authors, title, year, DOI and item type first. Automatically imported metadata is not guaranteed to be correct."
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "status": "recommended",
+      "purpose": "Edit code, Markdown and configuration files, select the project interpreter, and run and debug tests. Python, Markdown, Git and LaTeX can work together in one workspace.",
+      "docs": [
+        "vscode-python"
+      ],
+      "boundary": "An installed extension does not establish that the project's interpreter, compiler or tests are correctly configured."
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "status": "recommended",
+      "purpose": "Save code and text changes in small, explainable units of work; use diffs and commit identifiers to trace results.",
+      "docs": [
+        "git-record",
+        "github-lfs"
+      ],
+      "boundary": "Git manages versions. Large datasets, model weights and complete backups need separate controlled storage and tested restoration procedures."
+    },
+    {
+      "id": "python",
+      "name": "Python + venv",
+      "status": "recommended",
+      "purpose": "Use scripts to process data, run experiments, calculate metrics and generate figures. Select NumPy, pandas, Matplotlib, SciPy or pytest according to the task.",
+      "docs": [
+        "python-venv",
+        "vscode-python"
+      ],
+      "boundary": "Record the interpreter, dependencies, operating system and commands for each project. You do not need to install every library to begin a small exercise."
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "status": "recommended",
+      "purpose": "Build literature comparison matrices, task tables and data dictionaries. Preserve formulas, inputs and analysis parameters when using spreadsheets for small checks or analyses.",
+      "docs": [
+        "excel-analysis"
+      ],
+      "boundary": "Screenshots and manually edited values cannot replace reproducible analysis. Put repeated cleaning, statistics and plotting in scripts, and preserve the raw data."
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io",
+      "status": "recommended",
+      "purpose": "Draw workflows, system architectures and experimental designs. Preserve editable .drawio source files and export SVG or PDF copies.",
+      "docs": [
+        "drawio-export"
+      ],
+      "boundary": "Check text, arrows, font sizes and cropping after export. An image without its source file is difficult to revise later."
+    },
+    {
+      "id": "word",
+      "name": "Word + Zotero citation plugin",
+      "status": "recommended",
+      "purpose": "Write and revise collaboratively in an institution-approved Word template, using styles, captions, cross-references and automatically updated bibliographies.",
+      "docs": [
+        "zotero-word",
+        "word-revisions",
+        "word-properties"
+      ],
+      "boundary": "Verify the plugin and template first. Hiding tracked changes does not remove them. Anonymization procedures differ between Mac and Windows."
+    },
+    {
+      "id": "slides",
+      "name": "PowerPoint / Keynote",
+      "status": "recommended",
+      "purpose": "Prepare proposal reviews, mid-program reviews, thesis defenses and competition pitches, including an offline presentation, supporting evidence and a backup PDF.",
+      "docs": [],
+      "url": "https://support.microsoft.com/powerpoint",
+      "boundary": "Rehearse on the actual presentation equipment. After converting between applications, check fonts, equations, video and animations on every slide."
+    },
+    {
+      "id": "notes",
+      "name": "Obsidian / OneNote",
+      "status": "optional",
+      "purpose": "Record reading ideas, meetings and work logs. Obsidian's Markdown files can connect notes with code documentation.",
+      "docs": [
+        "obsidian-files"
+      ],
+      "boundary": "Choose one note system that you can maintain over time. Important decisions and formal submissions must still enter the agreed task record or institutional system."
+    },
+    {
+      "id": "latex",
+      "name": "LaTeX + LaTeX Workshop",
+      "status": "optional",
+      "purpose": "When your institution accepts LaTeX and you know the template, maintain thesis sources and references using VS Code, a TeX distribution and latexmk.",
+      "docs": [
+        "latex-workshop",
+        "zotero-export"
+      ],
+      "boundary": "Complete a full build with the institutional template first. Choose Word or LaTeX as the primary manuscript format to avoid maintaining two diverging texts."
+    },
+    {
+      "id": "meeting",
+      "name": "Tencent Meeting / WeChat",
+      "status": "optional",
+      "purpose": "Use these tools for remote discussion, immediate coordination and reminders. After each meeting, record action items, owners and dates in retrievable minutes.",
+      "docs": [],
+      "url": "https://meeting.tencent.com/",
+      "boundary": "Arrange recording in accordance with participants' agreement. Chats and automatic transcripts are not formal approvals; decisions need human confirmation."
+    },
+    {
+      "id": "ai-assistant",
+      "name": "AI assistants such as ChatGPT",
+      "status": "optional",
+      "purpose": "Use available tools to suggest search terms, explain code, discuss structure and improve expression. Verify outputs item by item and run code yourself.",
+      "docs": [],
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "boundary": "First confirm that the material may be shared with the tool. An AI response is not an original paper, experiment log, passed test or actual research result."
+    },
+    {
+      "id": "extra-runtime",
+      "name": "Containers, notebooks or model services",
+      "status": "prepare",
+      "purpose": "Prepare Docker, Jupyter or a model runtime when a paper requires containers, interactive analysis is needed, or experiments depend on an actual model.",
+      "docs": [],
+      "url": "https://docs.docker.com/get-started/",
+      "boundary": "Check licenses, hardware, data permissions, accounts and budget first. An editor extension or application icon does not establish that a service is usable."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "literature",
+      "title": "Literature search and review",
+      "goal": "Move from having read papers to being able to compare their questions, methods, evidence and limitations.",
+      "minimal_tools": [
+        "zotero",
+        "excel",
+        "vscode"
+      ],
+      "steps": [
+        "Record the research question, search terms, databases, search date and inclusion/exclusion criteria first. Collect references by topic in Zotero, checking the metadata and full text of each paper.",
+        "Write a structured note for each core paper: question, study object, method, data, evaluation, findings and limitations. Give a page or section reference for important claims.",
+        "Build a review matrix in Excel or CSV, with one paper per row. Include task, dataset size, baselines, metrics, reproducibility materials, evidence strength and relevance to your study.",
+        "Organize the review around what is known, the limits of that evidence and what still needs testing. Use the Zotero citation plugin in Word; for LaTeX, export BibTeX / BibLaTeX and check citation keys."
+      ],
+      "outputs": [
+        "literature-matrix.xlsx or .csv, including at least source identifiers, questions, methods, evidence and limitations.",
+        "reading-notes.md, search-log.md, references.bib / .ris exports as needed, and the written review."
+      ],
+      "checks": [
+        "Sample important claims and trace each to a specific location in the original paper. Distinguish the authors' findings from your own interpretation.",
+        "The matrix explains why studies are or are not comparable; it is more than a collection of pasted abstracts.",
+        "Adding a citation correctly updates both the text and bibliography. Attachment access complies with the source's permissions."
+      ],
+      "alternatives": [
+        "For a simple matrix, use CSV + VS Code. If you already have an effective reading-note workflow, continue with Obsidian or OneNote.",
+        "Learn Zotero's built-in export and Word plugin first. Assess third-party extensions only if automatic LaTeX citation-key management is needed; they are optional."
+      ],
+      "pitfalls": [
+        "Importing a PDF does not mean its reference has been checked. Verify AI-generated authors, DOIs and claims against the original source.",
+        "Markdown is useful for recording and exchanging text. Renaming an .md extension does not create a Word document that meets institutional formatting requirements."
+      ],
+      "templates": [
+        "reading",
+        "literature",
+        "topic"
+      ],
+      "sources": [
+        "zotero-start",
+        "zotero-word",
+        "zotero-export"
+      ]
+    },
+    {
+      "id": "empirical",
+      "title": "Empirical replication, algorithm experiments and data analysis",
+      "goal": "Connect every table and conclusion to its inputs, versions, execution records and calculations.",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "python"
+      ],
+      "steps": [
+        "Define the replication target, data license, metrics, baselines and acceptable differences first. Record the authors' reported values, preserve original data and document how it was obtained.",
+        "Choose an isolated Python environment and confirm its interpreter in VS Code. Record the operating system, Python, dependencies, hardware, random seeds and full commands. Run a small example before scaling up.",
+        "Specify cleaning, splitting, execution, evaluation and plotting as explicit steps. Assign each run an identifier and save its configuration, input identifiers, exit status, full logs and raw outputs.",
+        "Recalculate metrics from saved raw outputs using scripts. Report variation across repeated runs, failures and limitations. Algorithm comparisons must also control input size, resource conditions and the scope of timing.",
+        "Rerun a minimal experiment in a new output directory by following the README. Check that the record supports the conclusion; do not describe offline recalculation as a new live execution."
+      ],
+      "outputs": [
+        "README.md, requirements.txt or the project's dependency lockfile, scripts, Git commit identifier and environment record.",
+        "run-manifest.json, config.json, full logs, raw .jsonl / .csv results, analysis scripts and .svg / .pdf figures."
+      ],
+      "checks": [
+        "Another student can locate the inputs and rerun the minimal example using the documented commands. Failures also have exit codes and records.",
+        "Thesis tables can be calculated from saved raw results, and any manual adjustments are explicitly traceable.",
+        "Check for data leakage, overlapping splits, inconsistent evaluation definitions and inappropriate exception handling or statistical methods."
+      ],
+      "alternatives": [
+        "Excel is suitable for small preliminary checks. Preserve formulas and parameters for repeated calculations used in a thesis; move complex or batch analysis into scripts.",
+        "Prepare containers, special hardware or a specific operating system when the paper explicitly requires them. If using notebooks for exploration, clear outputs and rerun all cells in order before delivery.",
+        "Understand a statistical method's assumptions and applicability before choosing SciPy or another library. Do not apply a test simply because a button makes it available."
+      ],
+      "pitfalls": [
+        "pip freeze records only part of the Python dependency information. It does not fully describe the operating system, GPU, drivers, data or model environment.",
+        "Screenshots, progress bars, successful installation and one passing example cannot replace complete experimental results."
+      ],
+      "templates": [
+        "experiment",
+        "research-task"
+      ],
+      "sources": [
+        "vscode-python",
+        "python-venv",
+        "git-record",
+        "excel-analysis"
+      ]
+    },
+    {
+      "id": "software",
+      "title": "Software prototyping and testing",
+      "goal": "Develop a demonstrable feature into a deliverable system with verifiable inputs, behavior and boundaries.",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "drawio"
+      ],
+      "steps": [
+        "Break requirements into user tasks, inputs and outputs, constraints and acceptance conditions. Use draw.io for data flows, module relationships and important failure branches.",
+        "Start with the smallest runnable feature and document dependencies and startup steps. Keep each commit focused on an explainable change, and review the diff before committing.",
+        "Use tests appropriate to the project's technology: unittest / pytest for Python, or the frontend project's existing tools. Cover normal, boundary, failure and permission scenarios.",
+        "Associate test results, demonstration steps and known limitations with the current version. After a fix, rerun affected checks and complete an end-to-end demonstration."
+      ],
+      "outputs": [
+        "Requirements and design notes, editable .drawio sources and .svg / .pdf exports.",
+        "Code, dependency declarations, startup commands, test cases and actual results, demonstration inputs and a delivery README."
+      ],
+      "checks": [
+        "Following the clean-environment instructions starts the system; key user journeys work independently, and failures produce clear feedback.",
+        "Test assertions check behavior observable by users. Record the actual execution date, version and results.",
+        "The delivery package contains no credentials, personal data, temporary caches or unrelated large files. Third-party licenses have been checked."
+      ],
+      "alternatives": [
+        "Use an established technology stack when it fits. Python is not mandatory for every software project; use Node/npm or other tools as the project requires.",
+        "EdrawMax is a suitable alternative if familiar. Deliver both the original project and a standard PDF / SVG, and check that the recipient can open them."
+      ],
+      "pitfalls": [
+        "AI-generated test code does not mean the tests have passed. A page opening successfully does not prove that its workflow is complete.",
+        "Include important decisions and return paths in a workflow. Software icons or screenshots are not substitutes for an editable design."
+      ],
+      "templates": [
+        "engineering-report",
+        "experiment",
+        "handover"
+      ],
+      "sources": [
+        "vscode-python",
+        "git-record",
+        "drawio-export"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "LLM, agent and RAG research",
+      "goal": "Validate the task and evaluation first, then control models, data, tools and costs during experiments.",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "python"
+      ],
+      "steps": [
+        "Specify the task, data scope, baselines and definitions of success and failure. Distinguish answer quality, retrieval quality and end-to-end task completion. Start with a small sample that can be checked manually.",
+        "Use authorized models or services. Record model identifiers, versions or access dates, prompts, parameters, data snapshots, tool configuration and budget. Begin with a few real requests to verify the setup.",
+        "For RAG, preserve document sources, chunking rules, retrieved candidates and citation locations before evaluating answers. For agents, record each step's input, tool calls, return values, termination reason and actual environment state.",
+        "Keep actual model executions, offline replays, hand-constructed examples and failures separately identifiable. Evaluation scripts must inspect raw traces; a model's claim that a task is complete is insufficient.",
+        "Check data separation, baseline fairness, variation across runs, costs and error types. Without actual model access, deliver only a clearly labeled offline demonstration and a list of items awaiting validation."
+      ],
+      "outputs": [
+        "Task and evaluation specifications, permission statements, data-split identifiers, prompts and model configuration.",
+        "Per-request responses or de-identified .jsonl traces, tool execution records, cost and timing tables, evaluation code and failure examples."
+      ],
+      "checks": [
+        "You can identify which actual execution produced a result and locate its data, code and model configuration.",
+        "RAG citations trace to source passages. Agent completion is supported by the actual task state or an independent check.",
+        "Resource conditions and evaluation definitions are documented for both baselines and the new method. Hand-constructed examples remain distinct from results on actual data."
+      ],
+      "alternatives": [
+        "For a small RAG study, validate evaluation with simple retrieval and a file index before deciding whether a vector database is needed.",
+        "AI assistants can help explain and draft material, but model services, GPUs, Docker, frameworks and accounts must be prepared and verified for the specific task."
+      ],
+      "pitfalls": [
+        "Having a chat application or editor extension does not establish access to an experimental API, GPU, model or publishable data.",
+        "Never describe cached replay, manually completed traces or simulated responses as live model experiments. Do not send unauthorized material to external services."
+      ],
+      "templates": [
+        "research-task",
+        "experiment",
+        "ai-use"
+      ],
+      "sources": [
+        "vscode-python",
+        "python-venv",
+        "git-record"
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Thesis writing, compliance checks and review submission",
+      "goal": "Keep the main manuscript, references, figures, revision responses and final review version consistent.",
+      "minimal_tools": [
+        "word",
+        "zotero",
+        "drawio"
+      ],
+      "steps": [
+        "Download the institutional template applicable to you and choose a primary manuscript format. In Word, use styles and the citation plugin. If permitted and familiar, use LaTeX + VS Code instead.",
+        "Organize chapters around research questions, methods, evidence and limitations. Generate figures from actual results and preserve editable sources; align captions, units and references with the text.",
+        "Keep a version and response table for each revision round. Use tracked changes and comments in Word, or Git diffs and build logs in LaTeX, while maintaining one primary manuscript.",
+        "Follow applicable institutional requirements for formatting, similarity screening, non-academic-error checks and AI-use disclosure. Confirm what your institution means by non-academic-error checks, which are distinct from similarity or AI screening. For anonymous review, create a separate copy and check the cover, acknowledgements, self-citations, filename, properties, comments, tracked changes, attachments and links.",
+        "Export PDF from the final review copy. Check fonts, equations, page breaks, cross-references and anonymity page by page. Record the submitted version, date and receipt."
+      ],
+      "outputs": [
+        "The primary .docx, or .tex + .bib + figure sources, together with the matching final .pdf.",
+        "Revision-response table, formatting and anonymity checklists, applicable policy sources, reports you are permitted to retain, and submission receipts."
+      ],
+      "checks": [
+        "The PDF matches the registered manuscript version, figures match raw results, and every citation can be located.",
+        "Hiding markup in Word does not delete revisions. Handle tracked changes and comments as required in the review copy, then check it again.",
+        "Word for Mac does not include the Windows Document Inspector. Check properties and manually inspect the text, comments, revisions and exported PDF; one button cannot establish complete anonymity."
+      ],
+      "alternatives": [
+        "Choose Word or LaTeX as the primary format. After conversion, review the entire converted document against the requirements rather than maintaining two parallel manuscripts.",
+        "Markdown is suitable for outlines and reading notes. Formatting still needs verification after transfer to the institutional Word / LaTeX template."
+      ],
+      "pitfalls": [
+        "Use the screening system and thresholds required by your institution. A generic AI tool or commercial website score cannot substitute for them.",
+        "Do not remove citation fields, comments or identifying information from the only manuscript copy. Retain both a controlled original and a review copy."
+      ],
+      "templates": [
+        "thesis",
+        "integrity",
+        "review-response"
+      ],
+      "sources": [
+        "zotero-word",
+        "zotero-export",
+        "word-revisions",
+        "word-properties",
+        "latex-workshop",
+        "drawio-export"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "title": "Competition teamwork, proposal presentations and thesis defenses",
+      "goal": "Connect team responsibilities, evidence and presentation so that the package is ready to submit and the demonstration runs reliably.",
+      "minimal_tools": [
+        "slides",
+        "git",
+        "drawio"
+      ],
+      "steps": [
+        "Maintain a task list with an owner, completion condition, review date and delivery location for each item. For competitions, first record the official rules, their version and submission requirements.",
+        "Use draw.io to clarify the system and method. In PowerPoint or Keynote, explain the problem, approach, evidence, contribution and limitations. Identify the evidence source on each results slide.",
+        "Prepare real demonstration inputs, key operations and fallback plans for the current code version. Record team contributions, material sources and any necessary ownership agreements.",
+        "Rehearse within the formal time limit, testing fonts, projection, audio, video and network dependencies on the actual equipment. Save a PDF, offline demonstration materials and anticipated questions with responses.",
+        "Before submitting, verify file formats, sizes, names and versions. Keep the receipt, then turn competition or defense feedback into action items."
+      ],
+      "outputs": [
+        "The .pptx or .key source, backup .pdf, demonstration script, project version and a demonstration video that may lawfully be shared.",
+        "Responsibility table, questions and answers, revision record, contribution statement and formal submission receipt."
+      ],
+      "checks": [
+        "Test on another target device. Key steps do not depend on last-minute login or unverified permissions.",
+        "The presentation distinguishes individual contributions, team contributions and reused work. Claims about the project match what is demonstrated.",
+        "If the network or a service fails, state which features were not verified live. Label a backup video as a recording."
+      ],
+      "alternatives": [
+        "Continue using Keynote if familiar. If the recipient requires PPTX, export early and rehearse every slide.",
+        "Tencent Meeting can support remote discussion. Boardmix / EdrawMind can support brainstorming; record agreed conclusions in deliverable documents and task records."
+      ],
+      "pitfalls": [
+        "Attractive slides and demonstration videos do not replace a runnable project or actual experiments.",
+        "Successful competition registration, an internal rehearsal and formal institutional approval of a proposal or defense are different states."
+      ],
+      "templates": [
+        "competition",
+        "defense",
+        "meeting"
+      ],
+      "sources": [
+        "drawio-export",
+        "git-record"
+      ]
+    },
+    {
+      "id": "management",
+      "title": "Routine management, data archiving and handover",
+      "goal": "Make work traceable, materials findable and results reviewable, with a usable handover for continued work.",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "excel"
+      ],
+      "steps": [
+        "Maintain goals, owners, status, dates and evidence links in one consistent task table. Use the weekly-report and meeting templates, and have relevant participants confirm important decisions.",
+        "Keep code and text in version control. Store raw data, models, original manuscripts and sensitive materials in controlled storage with appropriate permissions. Distinguish original material, processed outputs and formally released versions.",
+        "When archiving, document the directory structure, data dictionary, source licenses, environment and execution steps. Record versions, file inventories and necessary checksums. Links must point to locations the recipient is authorized to access.",
+        "Use a separate backup location or an organization-approved backup service, and test restoration. At handover, the recipient should open the materials, rerun a minimal example, and confirm access and outstanding tasks."
+      ],
+      "outputs": [
+        "weekly.md, meeting.md or corresponding Word records, a task table and an index of stage evidence.",
+        "README.md, file inventory, data dictionary, checksum list, controlled backup record and handover confirmation."
+      ],
+      "checks": [
+        "A sampled conclusion can be traced to original material, processing scripts and current outputs. Broken links have been repaired.",
+        "Backups can be restored and recipients actually have the necessary access. Transfer permissions or accounts through the organization's authorized process; do not share personal account passwords.",
+        "Public materials contain no personal information, accounts, credentials or unauthorized data. Restricted materials retain necessary provenance and permission notes."
+      ],
+      "alternatives": [
+        "Use Obsidian / OneNote for daily notes and Excel for simple plans if helpful. Continue using an established team platform instead of duplicating status tables.",
+        "EdrawProj can support more complex schedules. Add tools when dependencies across teams justify them; formal approvals still use the institution's designated channels."
+      ],
+      "pitfalls": [
+        "Git commits, cloud synchronization and complete backups serve different purposes. Deletions may synchronize to remote storage, so verify the restoration route.",
+        "Git LFS stores pointers and external large-file content. Service quotas, access and backups still need planning; it is not unconditional protection for data."
+      ],
+      "templates": [
+        "weekly",
+        "meeting",
+        "archive",
+        "handover"
+      ],
+      "sources": [
+        "git-record",
+        "github-lfs",
+        "obsidian-files"
+      ]
+    }
+  ],
+  "stage_map": {
+    "research.orientation": [
+      "management"
+    ],
+    "research.foundation": [
+      "software",
+      "literature"
+    ],
+    "research.exploration": [
+      "literature",
+      "empirical",
+      "ai"
+    ],
+    "research.project": [
+      "software",
+      "management"
+    ],
+    "research.execution": [
+      "empirical",
+      "software",
+      "ai"
+    ],
+    "research.validation": [
+      "empirical",
+      "collaboration"
+    ],
+    "research.archive": [
+      "management"
+    ],
+    "bachelor.topic": [
+      "literature",
+      "management"
+    ],
+    "bachelor.proposal": [
+      "literature",
+      "collaboration"
+    ],
+    "bachelor.design": [
+      "software"
+    ],
+    "bachelor.implementation": [
+      "software",
+      "management"
+    ],
+    "bachelor.validation": [
+      "software",
+      "empirical"
+    ],
+    "bachelor.writing": [
+      "writing"
+    ],
+    "bachelor.defense": [
+      "collaboration"
+    ],
+    "bachelor.archive": [
+      "writing",
+      "management"
+    ],
+    "competition.selection": [
+      "management",
+      "collaboration"
+    ],
+    "competition.team": [
+      "management",
+      "collaboration"
+    ],
+    "competition.prototype": [
+      "software",
+      "collaboration"
+    ],
+    "competition.build": [
+      "software",
+      "empirical",
+      "ai"
+    ],
+    "competition.submission": [
+      "collaboration"
+    ],
+    "competition.archive": [
+      "management"
+    ],
+    "master.orientation": [
+      "management"
+    ],
+    "master.topic": [
+      "literature",
+      "empirical",
+      "ai"
+    ],
+    "master.survey": [
+      "literature"
+    ],
+    "master.proposal": [
+      "literature",
+      "empirical",
+      "collaboration"
+    ],
+    "master.research": [
+      "empirical",
+      "software",
+      "ai"
+    ],
+    "master.midterm": [
+      "empirical",
+      "collaboration",
+      "management"
+    ],
+    "master.writing": [
+      "writing"
+    ],
+    "master.outcomes": [
+      "management",
+      "writing"
+    ],
+    "master.integrity": [
+      "writing"
+    ],
+    "master.review": [
+      "writing"
+    ],
+    "master.defense": [
+      "collaboration"
+    ],
+    "master.final": [
+      "writing",
+      "management"
+    ],
+    "master.archive": [
+      "management"
+    ],
+    "doctor.orientation": [
+      "management"
+    ],
+    "doctor.foundation": [
+      "literature",
+      "software"
+    ],
+    "doctor.qualification": [
+      "literature",
+      "collaboration"
+    ],
+    "doctor.proposal": [
+      "literature",
+      "empirical",
+      "collaboration"
+    ],
+    "doctor.research": [
+      "empirical",
+      "software",
+      "ai"
+    ],
+    "doctor.annual-review": [
+      "empirical",
+      "collaboration",
+      "management"
+    ],
+    "doctor.contributions": [
+      "literature",
+      "empirical"
+    ],
+    "doctor.writing": [
+      "writing"
+    ],
+    "doctor.review": [
+      "writing",
+      "collaboration"
+    ],
+    "doctor.defense": [
+      "collaboration"
+    ],
+    "doctor.archive": [
+      "management"
+    ]
+  },
+  "sources": [
+    {
+      "id": "zotero-start",
+      "title": "Zotero: getting started, items and notes",
+      "url": "https://www.zotero.org/support/quick_start_guide"
+    },
+    {
+      "id": "zotero-word",
+      "title": "Zotero: Word plugin and citation updates",
+      "url": "https://www.zotero.org/support/word_processor_plugin_usage"
+    },
+    {
+      "id": "zotero-export",
+      "title": "Zotero: bibliographies and BibTeX / RIS export",
+      "url": "https://www.zotero.org/support/creating_bibliographies"
+    },
+    {
+      "id": "vscode-python",
+      "title": "VS Code: Python environments, debugging and testing",
+      "url": "https://code.visualstudio.com/docs/languages/python"
+    },
+    {
+      "id": "python-venv",
+      "title": "Python: isolated virtual environments and recreation",
+      "url": "https://docs.python.org/3/library/venv.html"
+    },
+    {
+      "id": "git-record",
+      "title": "Git: recording changes and reviewing diffs",
+      "url": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"
+    },
+    {
+      "id": "github-lfs",
+      "title": "GitHub: limits and responsibilities of large-file storage",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
+    },
+    {
+      "id": "drawio-export",
+      "title": "draw.io: source files and SVG / PDF export",
+      "url": "https://www.drawio.com/docs/manual/export/export-diagram/"
+    },
+    {
+      "id": "word-revisions",
+      "title": "Word: tracked changes versus hidden markup",
+      "url": "https://support.microsoft.com/en-gb/word/training/track-changes-in-word"
+    },
+    {
+      "id": "word-properties",
+      "title": "Word: Document Inspector and differences on Mac",
+      "url": "https://support.microsoft.com/en-us/office/inspect-document-b0088a7a-d482-4b87-b762-7c94c7c71e23"
+    },
+    {
+      "id": "excel-analysis",
+      "title": "Excel: Analysis ToolPak",
+      "url": "https://support.microsoft.com/en-us/excel/load-the-analysis-toolpak-in-excel"
+    },
+    {
+      "id": "latex-workshop",
+      "title": "LaTeX Workshop: build toolchains",
+      "url": "https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile"
+    },
+    {
+      "id": "obsidian-files",
+      "title": "Obsidian: local Markdown files",
+      "url": "https://help.obsidian.md/Files+and+folders/How+Obsidian+stores+data"
+    }
+  ]
+}

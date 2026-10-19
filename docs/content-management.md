@@ -89,3 +89,12 @@
 - 不含账号、凭据、私人联系方式、私有 URL 或受限数据位置。
 - 不公开成绩、评价、健康、困难、处分、推荐信或未公开研究。
 - 页面 description 与正文一致，不制造搜索引擎误导。
+
+
+## 中英对应内容与导引
+
+全门户采用 `/` 与 `/en/` 对应路由。双语源目录、字段契约、生成和验收方式见[双语维护说明](training-redesign/07-双语门户与随笔.md)。新闻分别在 `_posts/`、`_news_en/`，导引分别在 `_essays/`、`_essays_en/`，保持相同 slug 与正文段落 ID。栏目显示名为“导引 / Mentoring”，页面标题为“学习与研究导引 / Mentoring for Study and Research”；保留原有集合名和 `/essays/` 路径，已有链接继续可用。
+
+新导引从[中文模板](content-templates/essay.md)与[英文模板](content-templates/essay-en.md)开始；核实作者、来源、公开权限与两语一致性后，再调整明确的 `published` 状态。发布须遵循用户确认后的提交推送流程。英文成果或学生记录采用完整 `en` 字段，不将中文占位内容自动展示到英文页。
+
+国际学生指南使用 `scripts/training-pages/international.html` 及 `scripts/training-pages/en/international.html`，同时生成网页与离线手册。保持本、硕、博锚点一致，补充正式要求时登记发布单位、适用范围与核验日期，不把通用工作建议写成学校规定。入组模板的国际学生附表只保留所需核对字段，个人证件及敏感资料由学校指定系统管理。

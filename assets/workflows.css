@@ -1,0 +1,74 @@
+/* Native HTML flowcharts: readable at narrow widths, accessible without JS. */
+.workflow-diagram{margin:30px 0 42px;padding:26px;border:1px solid #d4dfdc;border-radius:8px;background:#f8faf8;scroll-margin-top:105px;min-width:0}
+.wf-heading .section-kicker{margin-bottom:8px}
+.wf-heading h2{margin:0 0 10px;font-size:1.45rem;color:#173c53}
+.wf-heading>p:last-child{font-size:.9rem;color:#506573;margin:0 0 16px;line-height:1.85}
+.wf-downloads{display:flex;gap:8px 20px;flex-wrap:wrap;margin:20px 0 0;padding-top:16px;border-top:1px solid #d5dfd9;font-size:.82rem}
+.wf-downloads strong{font-weight:500;color:#536b72}
+.wf-downloads a{color:#205d63;text-underline-offset:4px}
+.wf-disclosure>summary{cursor:pointer;padding:13px 16px;border:1px solid #b8cbc7;border-radius:5px;background:#fff;font-size:.9rem;font-weight:650;color:#173c53}
+.wf-disclosure>summary>span{font-size:.75rem;font-weight:450;color:#536b72;margin-left:10px;display:inline-block}
+.wf-disclosure[open]>summary{margin-bottom:18px}
+.wf-reading-key{font-size:.78rem;line-height:1.8;color:#566c73;padding:10px 14px;border-left:3px solid #86a5a2;background:#edf3f0;margin:0 0 24px}
+.wf-chart{max-width:920px;margin:0 auto;min-width:0}
+.wf-row{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:0;position:relative}
+.wf-main{min-width:0;position:relative}
+.wf-node{display:flex;flex-direction:column;position:relative;padding:16px 19px;min-width:0;border:1px solid #9db5b6;border-radius:7px;background:#fff;color:#193e51;text-decoration:none;line-height:1.7;transition:border-color .15s,box-shadow .15s;scroll-margin-top:115px}
+.wf-node:hover{border-color:#3d7876;box-shadow:0 3px 12px #204c5712;text-decoration:none}
+.wf-node:target{outline:3px solid #b68a40;outline-offset:4px}
+.wf-node>strong{font-size:.96rem;line-height:1.6;font-weight:650;overflow-wrap:anywhere}
+.wf-kind{font-size:.66rem;letter-spacing:.07em;color:#526d74;margin-bottom:5px;display:flex;gap:6px;align-items:center}
+.wf-detail{font-size:.78rem;color:#526872;line-height:1.8;display:block;margin-top:6px;overflow-wrap:anywhere}
+.wf-open{font-size:.7rem;color:#286863;margin-top:9px}
+.wf-decision{background:#f7f0df;border:2px solid #b99c61;text-align:center;padding:16px 20px;border-radius:2px}
+.wf-decision .wf-kind{justify-content:center;color:#795b28}
+.wf-decision>strong{color:#684e26}
+.wf-diamond{font-size:1rem;line-height:1;color:#94702f}
+.wf-connector{height:51px;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#36756d}
+.wf-connector:before{content:"";position:absolute;left:50%;top:0;bottom:9px;width:2px;background:#78a09b;transform:translateX(-50%)}
+.wf-connector>b{position:absolute;left:50%;bottom:-3px;transform:translateX(-50%);font-size:22px;line-height:1;background:#f8faf8;font-weight:400}
+.wf-connector>span:not(:empty){font-size:.65rem;position:absolute;left:calc(50% + 12px);top:12px;line-height:1.5;max-width:45%;background:#f8faf8;padding:2px 0}
+.wf-branch{display:grid;grid-template-columns:60px minmax(0,1fr);align-items:start;gap:0;padding-left:0;align-self:start;margin-top:22px;min-width:0}
+.wf-branch-arrow{font-size:.65rem;text-align:center;color:#805b28;position:relative;margin-top:24px;padding-bottom:8px;line-height:1.4;border-bottom:2px solid #b49b6c}
+.wf-branch-arrow>span{position:absolute;right:-3px;bottom:-12px;font-size:19px;background:#f8faf8;line-height:1;padding-left:1px}
+.wf-branch-content{min-width:0;padding-left:6px}
+.wf-remedy{border:1px dashed #ae935c;background:#fffaf0;padding:13px 15px}
+.wf-remedy>strong{font-size:.86rem}
+.wf-remedy .wf-kind{color:#795b28}
+.wf-remedy .wf-detail{font-size:.75rem}
+.wf-return{display:block;font-size:.72rem;color:#795b28;border-right:2px dashed #b79d6a;border-bottom:2px dashed #b79d6a;padding:7px 10px 8px 0;margin:0 3px 22px 9px;border-radius:0 0 5px 0;line-height:1.6;text-underline-offset:3px;overflow-wrap:anywhere}
+.wf-return>span{font-size:1.15rem;font-weight:700}
+.wf-note{font-size:.78rem;line-height:1.85;color:#50636b;margin:24px 0 0;border-top:1px solid #d5dfd9;padding-top:17px}
+@media(min-width:1000px){.workflow-diagram:not(.guide-content .workflow-diagram) .wf-chart{max-width:860px}.wf-node{padding:18px 22px}}
+@media(max-width:740px){
+ .workflow-diagram{padding:18px 14px;margin:22px 0 30px}.wf-heading h2{font-size:1.22rem}.wf-heading>p:last-child{font-size:.85rem}
+ .wf-row{grid-template-columns:minmax(0,1fr)}
+ .wf-main{display:contents}.wf-node{padding:16px 17px}.wf-node>strong{font-size:.94rem}.wf-detail{font-size:.8rem}
+ .wf-main>.wf-node{grid-column:1;grid-row:1}.wf-main>.wf-connector{grid-column:1;grid-row:3}
+ .wf-branch{grid-column:1;grid-row:2;display:block;margin:0 0 0 15px;padding:0 0 0 14px;border-left:2px dashed #b79d6a;position:relative}
+ .wf-branch-arrow{display:block;border:0;text-align:left;margin:0;padding:11px 0 10px;font-size:.72rem}.wf-branch-arrow>span{position:static;font-size:16px;background:none}
+ .wf-branch-content{padding:0}.wf-remedy{padding:13px 15px}.wf-remedy .wf-detail{font-size:.78rem}
+ .wf-return{margin-bottom:8px}.wf-has-branch>.wf-main>.wf-connector{height:54px}.wf-has-branch>.wf-main>.wf-connector:after{content:"满足后继续 ↓";font-size:.7rem;color:#24685f;position:absolute;left:calc(50% + 12px);top:12px;max-width:45%;line-height:1.5}.wf-has-branch .wf-connector>span{display:none}
+ .wf-disclosure>summary>span{display:block;margin:5px 0 0 16px}.wf-reading-key{padding:9px 11px;font-size:.75rem}.wf-downloads{font-size:.78rem;gap:9px 16px}.wf-note{font-size:.76rem}
+}
+@media print{
+ .workflow-diagram{background:#fff;border-color:#aaa;padding:12px;margin:18px 0;break-inside:auto}
+ .wf-disclosure>.wf-body{display:block!important}.wf-disclosure>summary{display:none}.wf-downloads{display:none}
+ .wf-node,.wf-row,.wf-branch{break-inside:avoid}.wf-node{box-shadow:none!important;background:#fff;color:#000}.wf-open{display:none}
+ .wf-connector>b,.wf-connector>span,.wf-branch-arrow>span{background:#fff}.wf-chart{max-width:none}.wf-detail,.wf-note{color:#333}
+}
+/* Directory cards jump directly to the charts shown below. */
+.flow-directory{margin:28px 0 34px}
+.flow-directory h2{font-size:1.25rem;color:#173c53;margin:0 0 15px}
+.flow-directory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.flow-directory-grid:has(>a:nth-child(4):last-child){grid-template-columns:repeat(4,minmax(0,1fr))}
+.flow-directory-grid>a{display:flex;flex-direction:column;gap:10px;padding:19px 20px;background:#fff;border:1px solid #cbdad5;border-radius:6px;text-decoration:none;color:#173c53;min-width:0;transition:border-color .15s,background .15s}
+.flow-directory-grid>a:hover{border-color:#5c8a80;background:#f5f9f6}
+.flow-directory-grid>a>strong{font-size:.96rem;font-weight:650;line-height:1.65;overflow-wrap:anywhere}
+.flow-directory-grid>a>span{font-size:.79rem;line-height:1.85;color:#566b73;overflow-wrap:anywhere}
+.flow-directory-grid>a:after{content:"查看流程图 →";font-size:.74rem;color:#286863;margin-top:auto;padding-top:6px}
+.roadmap-diagram-link{display:inline-block;margin-top:18px}
+@media(min-width:741px){.wf-row{align-items:stretch}.wf-main{display:flex;flex-direction:column}.wf-connector{min-height:51px;flex:1}.wf-node{flex-shrink:0}}
+@media(max-width:1000px){.flow-directory-grid,.flow-directory-grid:has(>a:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.flow-directory-grid,.flow-directory-grid:has(>a:nth-child(4):last-child){grid-template-columns:minmax(0,1fr)}.flow-directory-grid>a{padding:17px 18px}.flow-directory{margin:24px 0}.flow-directory-grid>a>strong{font-size:.95rem}.flow-directory-grid>a>span{font-size:.81rem}}
+@media print{.flow-directory{display:none}}

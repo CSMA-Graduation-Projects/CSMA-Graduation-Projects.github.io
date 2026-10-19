@@ -1,0 +1,660 @@
+{
+  "date": "2026-10-19",
+  "status": "local_validation_passed_awaiting_demo_confirmation",
+  "verification_scope": "local_source_jekyll_build_browser_downloads_and_representative_native_import",
+  "baseline_head": "befdcedb28ab7ad4cc59865f6ebf7bc973c0f4d1",
+  "remote_main_verified": "befdcedb28ab7ad4cc59865f6ebf7bc973c0f4d1",
+  "current_extension_committed": false,
+  "current_extension_pushed": false,
+  "workflows": 10,
+  "flow_nodes": 124,
+  "flow_edges": 141,
+  "tool_scenarios": 7,
+  "tool_groups": 13,
+  "official_sources": 13,
+  "mapped_training_stages": 34,
+  "backup": {
+    "sibling_directory": "CSMA-Graduation-Projects.github.io-backup-20261018-184324",
+    "files_verified": 463,
+    "entries_verified": 671,
+    "source_unchanged": true,
+    "inventory_matches": true,
+    "git_fsck_passed": true
+  },
+  "generation": {
+    "files": 47,
+    "deterministic": true,
+    "changed": []
+  },
+  "build": {
+    "jekyll": "3.10.0",
+    "ruby": "3.3.6",
+    "safe_build_passed": true,
+    "root_html_pages": 22,
+    "site_links_and_fragments_passed": true,
+    "privacy_scan_passed": true,
+    "excluded_work_directory_absent": true
+  },
+  "content_acceptance": {
+    "passed": 37,
+    "failed": 0
+  },
+  "workflow_tool_acceptance": {
+    "generatedAt": "2026-10-18T18:28:54.643Z",
+    "scope": "jekyll-build",
+    "assertions": 44,
+    "passed": 44,
+    "failed": 0,
+    "checks": [
+      {
+        "label": "流程与工具数据具有日期和完整结构",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "十张图覆盖培养路径与共同科研工作",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "七类工具场景覆盖实际研究任务",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "流程目的、适用边界与节点内容可读",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "图中节点唯一，连线无悬空引用",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "从开始可以走到结束及所有分支节点",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "每个判断有通过和未通过路线",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "未通过会整改并返回当前或更早的核查点",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "四条培养图逐一覆盖原有阶段且没有复制阶段",
+        "ok": true,
+        "detail": "4 项"
+      },
+      {
+        "label": "34 个阶段图节点指向正确的详细说明",
+        "ok": true,
+        "detail": "34 项"
+      },
+      {
+        "label": "所有节点都有可到达的说明或材料",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "流程图中心有标题、分支说明与真实下载入口",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "流程图整包在图中心有明确下载入口",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "九个图示页面默认直接显示流程，无需展开或下载",
+        "ok": true,
+        "detail": "9 项"
+      },
+      {
+        "label": "每条培养页面实际包含本路径图和图中心入口",
+        "ok": true,
+        "detail": "4 项"
+      },
+      {
+        "label": "首页和资源页可抵达流程与工具中心",
+        "ok": true,
+        "detail": "2 项"
+      },
+      {
+        "label": "共用工作流程进入对应指导页面",
+        "ok": true,
+        "detail": "6 项"
+      },
+      {
+        "label": "阶段工具映射恰好覆盖现有34阶段",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "阶段映射都使用实际存在的工具场景",
+        "ok": true,
+        "detail": "34 项"
+      },
+      {
+        "label": "每个阶段正文能直接进入它的工具场景",
+        "ok": true,
+        "detail": "34 项"
+      },
+      {
+        "label": "工具场景有操作、产物、核查和替代选择",
+        "ok": true,
+        "detail": "7 项"
+      },
+      {
+        "label": "工具和官方资料引用没有孤立占位项",
+        "ok": true,
+        "detail": "7 项"
+      },
+      {
+        "label": "工具场景关联的模板实际存在且网页可达",
+        "ok": true,
+        "detail": "7 项"
+      },
+      {
+        "label": "工具、场景、来源ID各自唯一",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "工具区分推荐、可选和需另行准备的能力",
+        "ok": true,
+        "detail": "13 项"
+      },
+      {
+        "label": "来源提供明确标题与HTTPS页面",
+        "ok": true,
+        "detail": "13 项"
+      },
+      {
+        "label": "工具页面包含全部场景操作与可检查产物",
+        "ok": true,
+        "detail": "7 项"
+      },
+      {
+        "label": "场景：文献训练有原始来源、检索和逐项核对",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "场景：实验有环境、原始结果和可复查记录",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "场景：工程实现以需求、实际测试和缺陷为依据",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "场景：AI研究记录模型与提示，核实输出和数据权限",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "场景：写作和汇报要求版本、实测演示与证据",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "场景：管理与归档有任务记录、权限和恢复核验",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "公开内容没有本机路径、账号目录或安装盘点",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "流程保留校本顺序、正式审核和授位边界",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "工具建议说明AI核查和受限材料使用边界",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "新增页面无重复锚点且站内链接均能解析",
+        "ok": true,
+        "detail": "2 项"
+      },
+      {
+        "label": "新增页面无需远程脚本或远程嵌入渲染图",
+        "ok": true,
+        "detail": "2 项"
+      },
+      {
+        "label": "离线手册保留全部流程的分支与核查信息",
+        "ok": true,
+        "detail": "10 项"
+      },
+      {
+        "label": "离线手册包含全部工具场景与检查要求",
+        "ok": true,
+        "detail": "7 项"
+      },
+      {
+        "label": "十份SVG可解析且内容、连线与说明真实存在",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "十份draw.io包含可编辑节点及完整连接",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "流程图ZIP真实完整，文件与21项哈希一致",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "label": "模板ZIP内手册与当前完整手册字节一致",
+        "ok": true,
+        "detail": ""
+      }
+    ]
+  },
+  "responsive": {
+    "generatedAt": "2026-10-18T18:36:57.131Z",
+    "pages": 22,
+    "viewports": [
+      {
+        "label": "1440",
+        "width": 1440,
+        "height": 1200
+      },
+      {
+        "label": "1280",
+        "width": 1280,
+        "height": 1000
+      },
+      {
+        "label": "1024",
+        "width": 1024,
+        "height": 1000
+      },
+      {
+        "label": "768",
+        "width": 768,
+        "height": 1000
+      },
+      {
+        "label": "390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "label": "320",
+        "width": 320,
+        "height": 800
+      }
+    ],
+    "assertions": 796,
+    "passed": 796,
+    "failed": 0,
+    "failures": []
+  },
+  "functional": {
+    "generatedAt": "2026-10-18T18:36:47.187Z",
+    "assertions": 55,
+    "passed": 55,
+    "failed": 0,
+    "checks": [
+      {
+        "ok": true,
+        "message": "URL 直接打开硕士送审阶段",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "清单包含进入、交付和验收的真实送审事项",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "勾选后进度与标签同步",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "刷新后保留阶段勾选",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "个人计划日期在刷新后保留",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "切换阶段不串用勾选和日期",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "返回原阶段恢复本阶段独立状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "导出生成真实 Markdown 下载文件",
+        "detail": "csma-master-review-checklist.md"
+      },
+      {
+        "ok": true,
+        "message": "导出包含当前状态、日期、依据与待审核字段",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "全部勾选仍明确需要正式复核",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "重置先显示确认，未确认不丢失状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "取消重置保留原清单",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "确认后仅清空本阶段勾选与日期",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "重置送审阶段不影响论文写作阶段",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "无效路径参数回退到有效默认路径并修正 URL",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "不属于所选路径的阶段参数安全回退",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "损坏 localStorage 不阻塞清单，安全恢复空状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "内容版本变化不沿用旧勾选，并说明原因",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "禁止存储时仍能使用清单，并提示及时导出",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "禁止存储时同一页面内切换仍保留临时状态",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "模板库实际呈现 24 份可用模板",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关键词与类别组合筛选返回匹配模板",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "零结果有明确说明与重置入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "重置筛选恢复全部模板并回到搜索框",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "被筛选隐藏的模板可通过直接锚点重新打开",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "模板下载确实得到完整源文件",
+        "detail": "experiment.md"
+      },
+      {
+        "ok": true,
+        "message": "模板静态预览与下载全文一致",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "复制全文成功且可核对，或给出可操作的权限失败提示",
+        "detail": "模板全文已复制。请粘贴到自己的工作文件中填写。"
+      },
+      {
+        "ok": true,
+        "message": "模拟拒绝复制权限后展开预览并提供下载替代",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关闭 JavaScript 后 24 个实际模板链接仍可用",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关闭 JavaScript 后仍可实际下载完整模板",
+        "detail": "topic.md"
+      },
+      {
+        "ok": true,
+        "message": "master.html#review 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "bachelor.html#design 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "competition.html#selection 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "undergraduate-research.html#exploration 直接抵达可读阶段和模板入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "390px 清单无横向溢出，路径、阶段和日期控件可用",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "390px 模板库无横向溢出，全部下载入口保留",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "模板标题保留足够阅读宽度，未被旧样式挤成纵向文字",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "不点展开、不下载，十张流程图首次打开即可直接阅读",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "10 张流程可达，硕士图直接链接自动展开",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "硕士图有真实判断、整改和可定位的返回节点",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "点击整改返回箭头会定位到需要重新处理的节点",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "实际下载硕士 svg 文件且与发布源一致",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "实际下载硕士 drawio 文件且与发布源一致",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "实际下载流程图整包且逐字节一致",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "流程节点进入硕士送审说明并保留对应工具入口",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "阶段工具入口抵达七类工具任务中的对应说明",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "390px 展开的长流程与返工节点保持可读宽度，无整页溢出",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "390px 工具步骤与交付卡片可读，无整页溢出",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "320px 展开的长流程与返工节点保持可读宽度，无整页溢出",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "320px 工具步骤与交付卡片可读，无整页溢出",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "关闭 JavaScript 后十张流程仍默认完整显示",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "无 JavaScript 仍能用键盘收起、重新展开并阅读完整流程",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "无 JavaScript 仍可阅读七类工具说明并进入模板",
+        "detail": ""
+      },
+      {
+        "ok": true,
+        "message": "全部情境没有未处理脚本异常或 console.error",
+        "detail": "含损坏与禁止存储情境"
+      }
+    ],
+    "runtimeErrors": []
+  },
+  "downloads": {
+    "template_zip_entries": 27,
+    "template_content_hashes": 26,
+    "workflow_zip_entries": 22,
+    "workflow_content_hashes": 21,
+    "browser_download_byte_comparison_passed": [
+      "master-path.svg",
+      "master-path.drawio",
+      "csma-workflow-diagrams.zip"
+    ]
+  },
+  "native_visual_checks": {
+    "drawio_file": "assets/diagrams/master-path.drawio",
+    "application": "draw.io",
+    "opened_successfully": true,
+    "editable_vertex_selected": true,
+    "connections_and_remediation_visible": true,
+    "content_edited_or_saved": false,
+    "scope": "Representative master workflow opened in the native app; all 10 draw.io files separately passed XML structure checks.",
+    "svg_file": "assets/diagrams/reproduction.svg",
+    "svg_browser_visual_passed": true
+  },
+  "screenshots": [
+    {
+      "file": "screenshots/workflows-branch-desktop.png",
+      "sha256": "b9009d4d63ef98d6fac5836afc12a2f677078ed5f5e98421d94eca13bccd9168"
+    },
+    {
+      "file": "screenshots/workflow-branch-390.png",
+      "sha256": "7633becb627f35279fbebcd9b5a9fcadfbd7eed063a3f1382c23b6281e0be8b9"
+    },
+    {
+      "file": "screenshots/tools-scenario-desktop.png",
+      "sha256": "9aedb03db11b453444dd014141fb5771405275b231b7fdba793ad940ba611e95"
+    },
+    {
+      "file": "screenshots/tools-literature-390.png",
+      "sha256": "20bb05d952b22b56693b2009e818ce85c4111f816cb33a63f2f1df053c8398a5"
+    },
+    {
+      "file": "screenshots/workflows-inline-desktop.png",
+      "sha256": "67686572f23875c1f80540a8eda520bb4b561fb711176320018b64fe5e956157"
+    }
+  ],
+  "limits": [
+    "School-specific formal requirements require the applicable institutional documents.",
+    "Local tool inventory established installed application and executable metadata; licences, accounts, remote services, and research experiment execution were not certified.",
+    "This extension has not been published."
+  ],
+  "inline_display": {
+    "default_visible": true,
+    "pages": 9,
+    "embedded_instances": 20,
+    "javascript_required": false,
+    "download_required": false,
+    "optional_downloads_after_diagram": true
+  },
+  "followup_backup": {
+    "sibling_directory": "CSMA-Graduation-Projects.github.io-backup-20261019-022746",
+    "files_verified": 526,
+    "entries_verified": 736,
+    "source_unchanged": true,
+    "inventory_matches": true,
+    "git_fsck_passed": true
+  }
+}

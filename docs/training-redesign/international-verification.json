@@ -1,0 +1,778 @@
+{
+  "date": "2026-10-19",
+  "status": "Local changes only; awaiting user confirmation before commit and push.",
+  "backup": {
+    "sibling_directory": "CSMA-Graduation-Projects.github.io-backup-20261019-040011",
+    "files": 792,
+    "entries": 1027,
+    "inventory_modes_sha256_match": true,
+    "source_unchanged": true,
+    "git_fsck_passed": true
+  },
+  "coverage": {
+    "built_pages": 56,
+    "international_languages": [
+      "zh-CN",
+      "en"
+    ],
+    "flow_steps_per_language": 6,
+    "doctoral_rows_per_language": 6,
+    "shared_checklist_rows_per_language": 7,
+    "templates_per_language": 24
+  },
+  "validation": {
+    "site": "All expected source and built pages, local links, anchors and sitemap passed.",
+    "bilingual": {
+      "passed": 51,
+      "total": 51
+    },
+    "training": "37/37",
+    "workflow_tools": "44/44",
+    "responsive_combinations": [
+      {
+        "page": "index.html",
+        "flowSteps": 0,
+        "heading": "让每一步成长，都有清晰的方向。",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 305,
+        "switchText": "EN",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/index.html",
+        "flowSteps": 0,
+        "heading": "A clear directionfor every next step.",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 305,
+        "switchText": "ZH",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "international.html",
+        "flowSteps": 6,
+        "heading": "国际学生指南",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 305,
+        "switchText": "EN",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/international.html",
+        "flowSteps": 6,
+        "heading": "International Student Guide",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 305,
+        "switchText": "ZH",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "essays.html",
+        "flowSteps": 0,
+        "heading": "学习与研究导读",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 305,
+        "switchText": "EN",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/essays.html",
+        "flowSteps": 0,
+        "heading": "Guidance for Study and Research",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 305,
+        "switchText": "ZH",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "doctor.html",
+        "flowSteps": 0,
+        "heading": "博士研究生培养说明",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 305,
+        "switchText": "EN",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/doctor.html",
+        "flowSteps": 0,
+        "heading": "Doctoral Research Guidance",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 305,
+        "switchText": "ZH",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "templates.html",
+        "flowSteps": 0,
+        "heading": "模板库",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 305,
+        "switchText": "EN",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/templates.html",
+        "flowSteps": 0,
+        "heading": "Templates",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 305,
+        "switchText": "ZH",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "index.html",
+        "flowSteps": 0,
+        "heading": "让每一步成长，都有清晰的方向。",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 375,
+        "switchText": "EN",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/index.html",
+        "flowSteps": 0,
+        "heading": "A clear directionfor every next step.",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 375,
+        "switchText": "ZH",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "international.html",
+        "flowSteps": 6,
+        "heading": "国际学生指南",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 375,
+        "switchText": "EN",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/international.html",
+        "flowSteps": 6,
+        "heading": "International Student Guide",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 375,
+        "switchText": "ZH",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "essays.html",
+        "flowSteps": 0,
+        "heading": "学习与研究导读",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 375,
+        "switchText": "EN",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/essays.html",
+        "flowSteps": 0,
+        "heading": "Guidance for Study and Research",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 375,
+        "switchText": "ZH",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "doctor.html",
+        "flowSteps": 0,
+        "heading": "博士研究生培养说明",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 375,
+        "switchText": "EN",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/doctor.html",
+        "flowSteps": 0,
+        "heading": "Doctoral Research Guidance",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 375,
+        "switchText": "ZH",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "templates.html",
+        "flowSteps": 0,
+        "heading": "模板库",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 375,
+        "switchText": "EN",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/templates.html",
+        "flowSteps": 0,
+        "heading": "Templates",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 375,
+        "switchText": "ZH",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "index.html",
+        "flowSteps": 0,
+        "heading": "让每一步成长，都有清晰的方向。",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "EN",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "en/index.html",
+        "flowSteps": 0,
+        "heading": "A clear directionfor every next step.",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "ZH",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "international.html",
+        "flowSteps": 6,
+        "heading": "国际学生指南",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "EN",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "en/international.html",
+        "flowSteps": 6,
+        "heading": "International Student Guide",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "ZH",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "essays.html",
+        "flowSteps": 0,
+        "heading": "学习与研究导读",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "EN",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "en/essays.html",
+        "flowSteps": 0,
+        "heading": "Guidance for Study and Research",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "ZH",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "doctor.html",
+        "flowSteps": 0,
+        "heading": "博士研究生培养说明",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "EN",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "en/doctor.html",
+        "flowSteps": 0,
+        "heading": "Doctoral Research Guidance",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "ZH",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "templates.html",
+        "flowSteps": 0,
+        "heading": "模板库",
+        "nav": [
+          "首页",
+          "新闻",
+          "学士",
+          "硕士",
+          "博士",
+          "资源",
+          "成果",
+          "榜样",
+          "导读",
+          "关于"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "EN",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "en/templates.html",
+        "flowSteps": 0,
+        "heading": "Templates",
+        "nav": [
+          "Home",
+          "News",
+          "Undergraduate",
+          "Master's",
+          "Doctoral",
+          "Resources",
+          "Outcomes",
+          "Stories",
+          "Guidance",
+          "About"
+        ],
+        "scrollWidth": 1265,
+        "switchText": "ZH",
+        "width": 1280,
+        "passed": true
+      }
+    ],
+    "mobile_card_combinations": [
+      {
+        "page": "international.html",
+        "cardDisplay": "block",
+        "labels": true,
+        "rows": 13,
+        "scrollWidth": 305,
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/international.html",
+        "cardDisplay": "block",
+        "labels": true,
+        "rows": 13,
+        "scrollWidth": 305,
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "international.html",
+        "cardDisplay": "block",
+        "labels": true,
+        "rows": 13,
+        "scrollWidth": 375,
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/international.html",
+        "cardDisplay": "block",
+        "labels": true,
+        "rows": 13,
+        "scrollWidth": 375,
+        "width": 390,
+        "passed": true
+      }
+    ],
+    "interactions": [
+      "Clicked doctoral section, then language switch; corresponding #doctor retained.",
+      "English template search international returns the expanded onboarding template, 1/24."
+    ],
+    "privacy": "Configured built-value scan passed.",
+    "limit": "Targeted revision checks; previous full responsive and download suites were not rerun."
+  },
+  "screenshots": {
+    "international-flow-desktop.jpg": "310202f48b092fceb18afb4a7eca1a2aa678eec5231451d87935b6188a2f37d1",
+    "international-doctor-mobile.jpg": "f4cec6318aec98048da67f62454aad4869502c9f813e31e28666e7c30c64f760",
+    "guidance-desktop.jpg": "c3c345c16c0d4be0b95c7733fad98356e687ef240a2fdc286e9fcb1f07a3965b",
+    "mentoring-desktop.jpg": "0b01aaeb4350551660aa227ec5cefc8ef479a9d82a904c3197ac645815aeccfd"
+  },
+  "confirmed_column_name": {
+    "date": "2026-10-19",
+    "zh": "导引",
+    "en": "Mentoring",
+    "backup": "CSMA-Graduation-Projects.github.io-backup-20261019-042127",
+    "backup_files": 803,
+    "backup_entries": 1038,
+    "backup_verified": true,
+    "built_site_checks": "56 pages passed",
+    "bilingual_checks": "51/51",
+    "browser_combinations": [
+      {
+        "page": "essays.html",
+        "nav": "导引",
+        "scrollWidth": 305,
+        "title": "学习与研究导引",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "en/essays.html",
+        "nav": "Mentoring",
+        "scrollWidth": 305,
+        "title": "Mentoring for Study and Research",
+        "width": 320,
+        "passed": true
+      },
+      {
+        "page": "essays.html",
+        "nav": "导引",
+        "scrollWidth": 375,
+        "title": "学习与研究导引",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "en/essays.html",
+        "nav": "Mentoring",
+        "scrollWidth": 375,
+        "title": "Mentoring for Study and Research",
+        "width": 390,
+        "passed": true
+      },
+      {
+        "page": "essays.html",
+        "nav": "导引",
+        "scrollWidth": 1265,
+        "title": "学习与研究导引",
+        "width": 1280,
+        "passed": true
+      },
+      {
+        "page": "en/essays.html",
+        "nav": "Mentoring",
+        "scrollWidth": 1265,
+        "title": "Mentoring for Study and Research",
+        "width": 1280,
+        "passed": true
+      }
+    ],
+    "language_switch": "Actual EN switch reached Mentoring for Study and Research.",
+    "routes_preserved": true,
+    "published": false
+  }
+}

@@ -1,0 +1,18 @@
+{% assign news_items = site.news_en | where: 'published', true | sort: 'date' | reverse %}
+{% assign news_limit = include.limit | default: news_items.size %}
+{% assign now = site.time | date: '%s' | plus: 0 %}
+<div class="news-list">
+  {% for item in news_items limit:news_limit %}{% assign item_time = item.date | date: '%s' | plus: 0 %}{% if item_time <= now %}
+  <article class="news-row">
+    <time class="news-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%Y-%m-%d" }}</time>
+    <div class="news-copy">
+      <div class="news-meta"><span>{{ item.kind | escape }}</span><span>{{ item.audience | escape }}</span>{% if item.deadline %}<span>Due: {{ item.deadline | escape }}</span>{% endif %}</div>
+      <h3><a href="{{ item.url | relative_url }}">{{ item.title | escape }} <span aria-hidden="true">↗</span></a></h3>
+      <p>{{ item.summary | escape }}</p>
+    </div>
+  </article>
+  {% endif %}
+  {% else %}
+  <p class="collection-empty">No news has been published yet. Group notices and updated requirements will appear here.</p>
+  {% endfor %}
+</div>

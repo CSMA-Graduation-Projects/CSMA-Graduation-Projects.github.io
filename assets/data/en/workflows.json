@@ -1,0 +1,2508 @@
+{
+  "updated": "2026-10-19",
+  "flows": [
+    {
+      "id": "research-path",
+      "title": "Undergraduate research training workflow",
+      "summary": "The main route covers all 7 stages. Decision nodes state when to continue; side branches show where to return if conditions are not met.",
+      "note": "This is a guide to the work involved. Learning, research and writing may overlap. Formal approval, recognition of outputs and degree conferral follow the rules applicable to you and your institution's decisions.",
+      "track": "research",
+      "guide": "",
+      "order": [
+        "orientation",
+        "orientation-check",
+        "foundation",
+        "exploration",
+        "exploration-check",
+        "project",
+        "execution",
+        "validation",
+        "validation-check",
+        "archive"
+      ],
+      "nodes": [
+        {
+          "id": "orientation",
+          "label": "Orientation and mutual fit",
+          "detail": "Agree on goals, time, resources and communication.",
+          "href": "undergraduate-research.html#orientation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "orientation"
+        },
+        {
+          "id": "orientation-check",
+          "label": "Do the task and available time fit?",
+          "detail": "Both parties confirm the scope and review date.",
+          "href": "undergraduate-research.html#orientation",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "orientation-revise",
+          "label": "Revise and review",
+          "detail": "Reduce the task, strengthen foundations or adjust the schedule. Pause or leave the training if it is not a suitable fit.",
+          "href": "templates.html#onboarding",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "foundation",
+          "label": "Tools, literature and research practice",
+          "detail": "Set up the environment and establish reading and evidence-recording habits.",
+          "href": "undergraduate-research.html#foundation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "foundation"
+        },
+        {
+          "id": "exploration",
+          "label": "Reading, replication and small tasks",
+          "detail": "Use small reading and replication tasks to test whether a question merits research.",
+          "href": "undergraduate-research.html#exploration",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "exploration"
+        },
+        {
+          "id": "exploration-check",
+          "label": "Does the evidence justify continuing?",
+          "detail": "Explain the replication results, value and resource requirements.",
+          "href": "undergraduate-research.html#exploration",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "exploration-revise",
+          "label": "Revise and review",
+          "detail": "Check data and environment issues first. If the question lacks value, change it or stop, preserving negative findings.",
+          "href": "templates.html#experiment",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "project",
+          "label": "Project plan and task breakdown",
+          "detail": "Define milestones, responsibilities and verifiable deliverables.",
+          "href": "undergraduate-research.html#project",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "project"
+        },
+        {
+          "id": "execution",
+          "label": "Execution, weekly reports and reviews",
+          "detail": "Keep versions and logs; use feedback to plan the next tasks.",
+          "href": "undergraduate-research.html#execution",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "execution"
+        },
+        {
+          "id": "validation",
+          "label": "Result verification and communication",
+          "detail": "Check claims, contributions, citations and permission to publish.",
+          "href": "undergraduate-research.html#validation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "validation"
+        },
+        {
+          "id": "validation-check",
+          "label": "Can the results be checked?",
+          "detail": "Key claims match actual records, and usage permissions are clear.",
+          "href": "undergraduate-research.html#validation",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "validation-revise",
+          "label": "Revise and review",
+          "detail": "Add experiments or narrow the claims. Withhold material without clear permission, and review again before closing the project.",
+          "href": "templates.html#experiment",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "archive",
+          "label": "Closure, archiving and next steps",
+          "detail": "Complete acceptance, reflection and follow-on arrangements.",
+          "href": "undergraduate-research.html#archive",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "archive"
+        }
+      ],
+      "edges": [
+        {
+          "from": "orientation-check",
+          "to": "orientation-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "orientation-revise",
+          "to": "orientation",
+          "label": "Return to fit and agreements",
+          "type": "return"
+        },
+        {
+          "from": "exploration-check",
+          "to": "exploration-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "exploration-revise",
+          "to": "exploration",
+          "label": "Return to reading and small tests",
+          "type": "return"
+        },
+        {
+          "from": "validation-check",
+          "to": "validation-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "validation-revise",
+          "to": "execution",
+          "label": "Return to execution and evidence",
+          "type": "return"
+        },
+        {
+          "from": "orientation",
+          "to": "orientation-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "orientation-check",
+          "to": "foundation",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "foundation",
+          "to": "exploration",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "exploration",
+          "to": "exploration-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "exploration-check",
+          "to": "project",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "project",
+          "to": "execution",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "execution",
+          "to": "validation",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "validation",
+          "to": "validation-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "validation-check",
+          "to": "archive",
+          "label": "Continue when met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "bachelor-path",
+      "title": "Undergraduate capstone / thesis workflow",
+      "summary": "The main route covers all 8 stages. Decision nodes state when to continue; side branches show where to return if conditions are not met.",
+      "note": "This is a guide to the work involved. Learning, research and writing may overlap. Formal approval, recognition of outputs and degree conferral follow the rules applicable to you and your institution's decisions.",
+      "track": "bachelor",
+      "guide": "",
+      "order": [
+        "topic",
+        "proposal",
+        "proposal-check",
+        "design",
+        "implementation",
+        "implementation-check",
+        "validation",
+        "writing",
+        "defense",
+        "defense-check",
+        "archive"
+      ],
+      "nodes": [
+        {
+          "id": "topic",
+          "label": "Requirements, topic and task brief",
+          "detail": "Check formal requirements; agree on scope and individual responsibilities.",
+          "href": "bachelor.html#topic",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "topic"
+        },
+        {
+          "id": "proposal",
+          "label": "Literature review and proposal",
+          "detail": "Prepare the review, research question, approach and proposal materials.",
+          "href": "bachelor.html#proposal",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "proposal"
+        },
+        {
+          "id": "proposal-check",
+          "label": "Does the formal proposal meet requirements?",
+          "detail": "Follow the department's official decision and required revisions.",
+          "href": "bachelor.html#proposal",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "proposal-revise",
+          "label": "Revise and review",
+          "detail": "Revise the topic, approach or validation plan in response to feedback, and seek a new review as instructed.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "design",
+          "label": "Requirements analysis and detailed design",
+          "detail": "Connect core requirements to design decisions and acceptance methods.",
+          "href": "bachelor.html#design",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "design"
+        },
+        {
+          "id": "implementation",
+          "label": "Implementation and mid-program review",
+          "detail": "Complete core functions and submit an accurate progress record.",
+          "href": "bachelor.html#implementation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "implementation"
+        },
+        {
+          "id": "implementation-check",
+          "label": "Are mid-program conditions met?",
+          "detail": "Check core implementation, the official review outcome and remaining tasks.",
+          "href": "bachelor.html#implementation",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "implementation-revise",
+          "label": "Revise and review",
+          "detail": "Prioritize missing core functionality, record corrections and review again. A plan is not completed work.",
+          "href": "templates.html#change-request",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "validation",
+          "label": "Testing, experiments and analysis",
+          "detail": "Address the main goals, retaining failure and boundary-case evidence.",
+          "href": "bachelor.html#validation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "validation"
+        },
+        {
+          "id": "writing",
+          "label": "Thesis writing and compliance checks",
+          "detail": "Complete the argument, references, formatting and required institutional checks.",
+          "href": "bachelor.html#writing",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "writing"
+        },
+        {
+          "id": "defense",
+          "label": "Defense preparation and participation",
+          "detail": "Check eligibility and materials, prepare a verifiable demonstration and attend the formal defense.",
+          "href": "bachelor.html#defense",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "defense"
+        },
+        {
+          "id": "defense-check",
+          "label": "Does the official defense decision allow finalization?",
+          "detail": "Fulfil every condition, including revisions required for a conditional pass.",
+          "href": "bachelor.html#defense",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "defense-revise",
+          "label": "Revise and review",
+          "detail": "Revise, seek further review or reapply under institutional rules. Report demonstration failures accurately.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "archive",
+          "label": "Final revisions, archiving and handover",
+          "detail": "Address defense feedback, submit institutional materials and hand over research records.",
+          "href": "bachelor.html#archive",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "archive"
+        }
+      ],
+      "edges": [
+        {
+          "from": "proposal-check",
+          "to": "proposal-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "proposal-revise",
+          "to": "proposal",
+          "label": "Return to proposal revision and review",
+          "type": "return"
+        },
+        {
+          "from": "implementation-check",
+          "to": "implementation-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "implementation-revise",
+          "to": "design",
+          "label": "Return to design and implementation",
+          "type": "return"
+        },
+        {
+          "from": "defense-check",
+          "to": "defense-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "defense-revise",
+          "to": "writing",
+          "label": "Return to thesis revisions and application",
+          "type": "return"
+        },
+        {
+          "from": "topic",
+          "to": "proposal",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "proposal",
+          "to": "proposal-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "proposal-check",
+          "to": "design",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "design",
+          "to": "implementation",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "implementation",
+          "to": "implementation-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "implementation-check",
+          "to": "validation",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "validation",
+          "to": "writing",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "writing",
+          "to": "defense",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "defense",
+          "to": "defense-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "defense-check",
+          "to": "archive",
+          "label": "Continue when met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "competition-path",
+      "title": "Competitions and innovation workflow",
+      "summary": "The main route covers all 6 stages. Decision nodes state when to continue; side branches show where to return if conditions are not met.",
+      "note": "Plan registration independently around the official window. Registration and prototyping may overlap or occur in a different order under the rules; do not miss a deadline while awaiting an internal milestone. Each restricted activity still requires its formal prerequisites. This diagram guides the work; official decisions determine eligibility and results.",
+      "track": "competition",
+      "guide": "",
+      "order": [
+        "selection",
+        "selection-check",
+        "team",
+        "prototype",
+        "prototype-check",
+        "build",
+        "build-check",
+        "submission",
+        "archive"
+      ],
+      "nodes": [
+        {
+          "id": "selection",
+          "label": "Competition, eligibility and rules",
+          "detail": "Check the track, eligibility, current rules and official deadlines.",
+          "href": "competition.html#selection",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "selection"
+        },
+        {
+          "id": "selection-check",
+          "label": "Are eligibility and rules confirmed?",
+          "detail": "Use the current official notice, not assumptions from previous editions.",
+          "href": "competition.html#selection",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "selection-revise",
+          "label": "Revise and review",
+          "detail": "Change track or stop if ineligible. Ask the organizer about unclear rules before committing resources.",
+          "href": "templates.html#competition",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "team",
+          "label": "Team, topic and ownership agreement",
+          "detail": "Agree on roles, project scope and ownership of materials and outputs.",
+          "href": "competition.html#team",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "team"
+        },
+        {
+          "id": "prototype",
+          "label": "Prototype, budget and registration",
+          "detail": "Track registration separately; develop the prototype and budget against the event schedule.",
+          "href": "competition.html#prototype",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "prototype"
+        },
+        {
+          "id": "prototype-check",
+          "label": "Current work prerequisites and registration plan clear?",
+          "detail": "Meet eligibility and budget conditions for the current activity; continue tracking registration status.",
+          "href": "competition.html#prototype",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "prototype-revise",
+          "label": "Revise and review",
+          "detail": "Revise the approach, correct registration or reduce the budget. Stop and record the reason if unresolved.",
+          "href": "templates.html#competition",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "build",
+          "label": "Implementation, replication and internal acceptance",
+          "detail": "Check the project against scoring criteria, versions and licenses.",
+          "href": "competition.html#build",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "build"
+        },
+        {
+          "id": "build-check",
+          "label": "Does the project meet submission conditions?",
+          "detail": "Match scoring criteria, permissions, functionality and material versions item by item.",
+          "href": "competition.html#build",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "build-revise",
+          "label": "Revise and review",
+          "detail": "Fix defects or remove unreliable features. Replace noncompliant components, then repeat acceptance checks.",
+          "href": "templates.html#experiment",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "submission",
+          "label": "Submission, competition and confirmed results",
+          "detail": "Keep submission receipts. Record awards only from official results.",
+          "href": "competition.html#submission",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "submission"
+        },
+        {
+          "id": "archive",
+          "label": "Reflection, expense settlement and archiving",
+          "detail": "Complete the review, settle expenses and equipment, and archive authorized materials.",
+          "href": "competition.html#archive",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "archive"
+        }
+      ],
+      "edges": [
+        {
+          "from": "selection-check",
+          "to": "selection-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "selection-revise",
+          "to": "selection",
+          "label": "Return to rules and eligibility",
+          "type": "return"
+        },
+        {
+          "from": "prototype-check",
+          "to": "prototype-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "prototype-revise",
+          "to": "team",
+          "label": "Return to scope and team agreements",
+          "type": "return"
+        },
+        {
+          "from": "build-check",
+          "to": "build-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "build-revise",
+          "to": "build",
+          "label": "Return to implementation and acceptance",
+          "type": "return"
+        },
+        {
+          "from": "selection",
+          "to": "selection-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "selection-check",
+          "to": "team",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "team",
+          "to": "prototype",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "prototype",
+          "to": "prototype-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "prototype-check",
+          "to": "build",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "build",
+          "to": "build-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "build-check",
+          "to": "submission",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "submission",
+          "to": "archive",
+          "label": "Next step",
+          "type": "next"
+        }
+      ]
+    },
+    {
+      "id": "master-path",
+      "title": "Master's research and degree workflow",
+      "summary": "The main route covers all 13 stages. Decision nodes state when to continue; side branches show where to return if conditions are not met.",
+      "note": "This is a guide to the work involved. Learning, research and writing may overlap. Formal approval, recognition of outputs and degree conferral follow the rules applicable to you and your institution's decisions. Check separately whether a pre-defense is required and where it falls in relation to screening and thesis review.",
+      "track": "master",
+      "guide": "",
+      "order": [
+        "orientation",
+        "topic",
+        "survey",
+        "survey-check",
+        "proposal",
+        "proposal-check",
+        "research",
+        "midterm",
+        "midterm-check",
+        "writing",
+        "outcomes",
+        "integrity",
+        "integrity-check",
+        "review",
+        "review-check",
+        "defense",
+        "defense-check",
+        "final",
+        "archive"
+      ],
+      "nodes": [
+        {
+          "id": "orientation",
+          "label": "Enrollment, study plan and working agreements",
+          "detail": "Check training and outcome requirements at entry; agree on communication and reviews.",
+          "href": "master.html#orientation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "orientation"
+        },
+        {
+          "id": "topic",
+          "label": "Exploration and topic selection",
+          "detail": "Select a question using actual needs, preliminary tests and available resources.",
+          "href": "master.html#topic",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "topic"
+        },
+        {
+          "id": "survey",
+          "label": "Literature review and research positioning",
+          "detail": "Search, read and compare work to explain how your study relates to it.",
+          "href": "master.html#survey",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "survey"
+        },
+        {
+          "id": "proposal",
+          "label": "Research plan and formal proposal review",
+          "detail": "Align the question, methods, evaluation and schedule; attend the formal proposal review.",
+          "href": "master.html#proposal",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "proposal"
+        },
+        {
+          "id": "proposal-check",
+          "label": "Is the proposal approved or revision completed?",
+          "detail": "Use institutional procedures for a new review or substantial changes.",
+          "href": "master.html#proposal",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "proposal-revise",
+          "label": "Revise and review",
+          "detail": "Address feedback, narrowing the topic or changing methods where needed. Apply for a new review if required and retain the official decision.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "research",
+          "label": "Research, professional practice and records",
+          "detail": "Build verifiable evidence through actual execution, practice and weekly reports.",
+          "href": "master.html#research",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "research"
+        },
+        {
+          "id": "midterm",
+          "label": "Mid-program review and annual assessment",
+          "detail": "Check research progress and all compulsory components against the notice.",
+          "href": "master.html#midterm",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "midterm"
+        },
+        {
+          "id": "midterm-check",
+          "label": "Review conditions met and core claims supported?",
+          "detail": "Assess formal review and research completion separately; outline and methods drafting can proceed in parallel.",
+          "href": "master.html#midterm",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "midterm-revise",
+          "label": "Revise and review",
+          "detail": "Return to research for missing core evidence; address an unsuccessful formal review through its own process and record both states.",
+          "href": "templates.html#annual-check",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "writing",
+          "label": "Thesis structure, draft and revision",
+          "detail": "Build the argument from available results; preserve supervisory feedback and revisions.",
+          "href": "master.html#writing",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "writing"
+        },
+        {
+          "id": "outcomes",
+          "label": "Research outputs and degree eligibility",
+          "detail": "Complete the final verification of requirements checked from entry and the supporting evidence.",
+          "href": "master.html#outcomes",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "outcomes"
+        },
+        {
+          "id": "integrity",
+          "label": "Formatting, similarity, error and AI-use checks",
+          "detail": "Distinguish similarity screening, non-academic-error checks and AI-use disclosure.",
+          "href": "master.html#integrity",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "integrity"
+        },
+        {
+          "id": "integrity-check",
+          "label": "Are eligibility and all checks confirmed?",
+          "detail": "Verify output, similarity, non-academic-error and AI requirements separately.",
+          "href": "master.html#integrity",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "integrity-revise",
+          "label": "Revise and review",
+          "detail": "Address the specific cause: add evidence, revise, repeat checks or change the application date. Do not invent thresholds.",
+          "href": "templates.html#integrity",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "review",
+          "label": "Anonymous thesis review and responses",
+          "detail": "Freeze the submitted version, arrange anonymous review and address each comment.",
+          "href": "master.html#review",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "review"
+        },
+        {
+          "id": "review-check",
+          "label": "Is defense eligibility formally confirmed?",
+          "detail": "Follow official decisions on reviews, further review or appeals.",
+          "href": "master.html#review",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "review-revise",
+          "label": "Revise and review",
+          "detail": "Respond item by item; revise, seek further review or defer as required. Do not privately influence reviewers.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "defense",
+          "label": "Defense application and formal defense",
+          "detail": "Meet official prerequisites, apply and attend the formal defense.",
+          "href": "master.html#defense",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "defense"
+        },
+        {
+          "id": "defense-check",
+          "label": "Does the official decision allow the next steps?",
+          "detail": "Passing the defense does not mean the degree has been conferred.",
+          "href": "master.html#defense",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "defense-revise",
+          "label": "Revise and review",
+          "detail": "Revise or reapply according to the formal decision and institutional timetable.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "final",
+          "label": "Final revisions and degree procedures",
+          "detail": "Obtain revision confirmation, submit the final thesis and complete degree procedures.",
+          "href": "master.html#final",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "final"
+        },
+        {
+          "id": "archive",
+          "label": "Research archive, handover and departure",
+          "detail": "Complete research-material acceptance and transfer access and responsibilities separately.",
+          "href": "master.html#archive",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "archive"
+        },
+        {
+          "id": "survey-check",
+          "label": "Positioning and feasibility still supported?",
+          "detail": "Check whether the question is already resolved and essential data are accessible.",
+          "href": "master.html#survey",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "survey-revise",
+          "label": "Revise the question and search",
+          "detail": "Return to topic selection with the comparison matrix; reassess literature and resources for the revised question.",
+          "href": "templates.html#topic",
+          "kind": "remedy",
+          "lane": "return"
+        }
+      ],
+      "edges": [
+        {
+          "from": "proposal-check",
+          "to": "proposal-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "proposal-revise",
+          "to": "topic",
+          "label": "Return to topic and proposal revisions",
+          "type": "return"
+        },
+        {
+          "from": "midterm-check",
+          "to": "midterm-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "midterm-revise",
+          "to": "research",
+          "label": "Return to research and missing requirements",
+          "type": "return"
+        },
+        {
+          "from": "integrity-check",
+          "to": "integrity-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "integrity-revise",
+          "to": "writing",
+          "label": "Return to writing and eligibility checks",
+          "type": "return"
+        },
+        {
+          "from": "review-check",
+          "to": "review-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "review-revise",
+          "to": "writing",
+          "label": "Return to thesis revision and further review",
+          "type": "return"
+        },
+        {
+          "from": "defense-check",
+          "to": "defense-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "defense-revise",
+          "to": "writing",
+          "label": "Return to revision and reapplication",
+          "type": "return"
+        },
+        {
+          "from": "orientation",
+          "to": "topic",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "topic",
+          "to": "survey",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "proposal",
+          "to": "proposal-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "proposal-check",
+          "to": "research",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "research",
+          "to": "midterm",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "midterm",
+          "to": "midterm-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "midterm-check",
+          "to": "writing",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "writing",
+          "to": "outcomes",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "outcomes",
+          "to": "integrity",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "integrity",
+          "to": "integrity-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "integrity-check",
+          "to": "review",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "review",
+          "to": "review-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "review-check",
+          "to": "defense",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "defense",
+          "to": "defense-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "defense-check",
+          "to": "final",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "final",
+          "to": "archive",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "survey",
+          "to": "survey-check",
+          "label": "Check positioning",
+          "type": "next"
+        },
+        {
+          "from": "survey-check",
+          "to": "proposal",
+          "label": "Continue if met",
+          "type": "pass"
+        },
+        {
+          "from": "survey-check",
+          "to": "survey-revise",
+          "label": "Not met",
+          "type": "fail"
+        },
+        {
+          "from": "survey-revise",
+          "to": "topic",
+          "label": "Return to topic selection",
+          "type": "return"
+        }
+      ]
+    },
+    {
+      "id": "doctor-path",
+      "title": "Doctoral research and degree pathway",
+      "summary": "11 stages connect the research agenda, original contributions and formal degree milestones, with routes for revision and further evidence.",
+      "note": "Complete qualification only where required by your programme. Follow institutional rules for its order relative to the proposal, any pre-defense and thesis review. Annual and interim reviews recur throughout research; their position here is for navigation. Research, literature review and writing iterate, and outcome requirements are checked from entry. Passing the defense does not itself confer the degree.",
+      "track": "doctor",
+      "guide": "",
+      "order": [
+        "orientation",
+        "foundation",
+        "qualification",
+        "qualification-check",
+        "proposal",
+        "proposal-check",
+        "research",
+        "annual-review",
+        "annual-review-check",
+        "contributions",
+        "writing",
+        "review",
+        "review-check",
+        "defense",
+        "defense-check",
+        "archive"
+      ],
+      "nodes": [
+        {
+          "id": "orientation",
+          "label": "Programme Requirements, Supervision and Development Plan",
+          "detail": "Confirm applicable rules, outcome criteria, language and supervision arrangements.",
+          "href": "doctor.html#orientation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "orientation"
+        },
+        {
+          "id": "foundation",
+          "label": "Foundations, Research Methods and a Map of Questions",
+          "detail": "Build a literature comparison, problem map and feasibility evidence.",
+          "href": "doctor.html#foundation",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "foundation"
+        },
+        {
+          "id": "qualification",
+          "label": "Qualifying Assessment and Research Readiness, Where Applicable",
+          "detail": "Confirm whether qualification applies, its order and format, then complete the required assessment.",
+          "href": "doctor.html#qualification",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "qualification"
+        },
+        {
+          "id": "qualification-check",
+          "label": "Requirements due at this point confirmed and met?",
+          "detail": "Use your programme sequence: record a later qualification milestone if scheduled after the proposal, or the basis if it does not apply. Uncertainty is not an exemption.",
+          "href": "doctor.html#qualification",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "qualification-revise",
+          "label": "Revise and recheck",
+          "detail": "Address foundational gaps, reassessment or plan changes and retain the formal outcome.",
+          "href": "templates.html#annual-check",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "proposal",
+          "label": "Research Direction, Linked Studies and Formal Proposal",
+          "detail": "Justify the problem, original contribution, methods and contingency plans.",
+          "href": "doctor.html#proposal",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "proposal"
+        },
+        {
+          "id": "proposal-check",
+          "label": "Proposal approved and required corrections completed?",
+          "detail": "Confirm major changes in direction or methods through the required process.",
+          "href": "doctor.html#proposal",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "proposal-revise",
+          "label": "Revise and recheck",
+          "detail": "Revise the question, methods and resources in response to review; seek reassessment where required.",
+          "href": "templates.html#proposal",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "research",
+          "label": "Independent Research, Evidence Testing and Iteration",
+          "detail": "Conduct research and test counterexamples, alternative explanations and key assumptions.",
+          "href": "doctor.html#research",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "research"
+        },
+        {
+          "id": "annual-review",
+          "label": "Ongoing Annual Reflection, Interim Assessment and Replanning",
+          "detail": "Revisit progress, requirements and the research agenda at scheduled reviews.",
+          "href": "doctor.html#annual-review",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "annual-review"
+        },
+        {
+          "id": "annual-review-check",
+          "label": "Current review and evidence conditions met?",
+          "detail": "Check formal review status and core evidence separately; repeat at later scheduled reviews.",
+          "href": "doctor.html#annual-review",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "annual-review-revise",
+          "label": "Revise and recheck",
+          "detail": "Gather evidence, narrow claims or revise the agenda; handle an unsuccessful review through the formal process.",
+          "href": "templates.html#midterm",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "contributions",
+          "label": "Original Contributions, Output Recognition and Scholarly Exchange",
+          "detail": "Connect studies and verify original contributions and individual responsibility.",
+          "href": "doctor.html#contributions",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "contributions"
+        },
+        {
+          "id": "writing",
+          "label": "Dissertation Synthesis and Academic Integrity Checks",
+          "detail": "Organize the thesis around evidence and complete applicable submission checks.",
+          "href": "doctor.html#writing",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "writing"
+        },
+        {
+          "id": "review",
+          "label": "Preliminary Defence, Dissertation Review and Responses",
+          "detail": "Follow local requirements for pre-defense, thesis review and responses.",
+          "href": "doctor.html#review",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "review"
+        },
+        {
+          "id": "review-check",
+          "label": "Review resolved and defense eligibility confirmed?",
+          "detail": "Follow the official outcome for revision, re-review or appeals.",
+          "href": "doctor.html#review",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "review-revise",
+          "label": "Revise and recheck",
+          "detail": "Respond point by point, add evidence and revise; arrange re-review or deferral as required.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "defense",
+          "label": "Formal Defence, Revision Approval and Degree Application",
+          "detail": "Defend after eligibility is confirmed, then complete corrections and degree procedures.",
+          "href": "doctor.html#defense",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "defense"
+        },
+        {
+          "id": "defense-check",
+          "label": "Post-defense corrections and submissions confirmed?",
+          "detail": "Record degree-conferral status separately, based on the institution’s official decision.",
+          "href": "doctor.html#defense",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "defense-revise",
+          "label": "Revise and recheck",
+          "detail": "Revise and verify according to the defense decision; follow the required process for any further defense.",
+          "href": "templates.html#defense",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "archive",
+          "label": "Research Archive, Handover and Future Development",
+          "detail": "Verify recoverable records, handover responsibilities and future research directions.",
+          "href": "doctor.html#archive",
+          "kind": "stage",
+          "lane": "main",
+          "stage": "archive"
+        }
+      ],
+      "edges": [
+        {
+          "from": "qualification-check",
+          "to": "qualification-revise",
+          "label": "Not met",
+          "type": "fail"
+        },
+        {
+          "from": "qualification-revise",
+          "to": "foundation",
+          "label": "Return for evidence and revision",
+          "type": "return"
+        },
+        {
+          "from": "proposal-check",
+          "to": "proposal-revise",
+          "label": "Not met",
+          "type": "fail"
+        },
+        {
+          "from": "proposal-revise",
+          "to": "foundation",
+          "label": "Return for evidence and revision",
+          "type": "return"
+        },
+        {
+          "from": "annual-review-check",
+          "to": "annual-review-revise",
+          "label": "Not met",
+          "type": "fail"
+        },
+        {
+          "from": "annual-review-revise",
+          "to": "research",
+          "label": "Return for evidence and revision",
+          "type": "return"
+        },
+        {
+          "from": "review-check",
+          "to": "review-revise",
+          "label": "Not met",
+          "type": "fail"
+        },
+        {
+          "from": "review-revise",
+          "to": "writing",
+          "label": "Return for evidence and revision",
+          "type": "return"
+        },
+        {
+          "from": "defense-check",
+          "to": "defense-revise",
+          "label": "Not met",
+          "type": "fail"
+        },
+        {
+          "from": "defense-revise",
+          "to": "writing",
+          "label": "Return for evidence and revision",
+          "type": "return"
+        },
+        {
+          "from": "orientation",
+          "to": "foundation",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "foundation",
+          "to": "qualification",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "qualification",
+          "to": "qualification-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "qualification-check",
+          "to": "proposal",
+          "label": "Proceed in your official sequence",
+          "type": "pass"
+        },
+        {
+          "from": "proposal",
+          "to": "proposal-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "proposal-check",
+          "to": "research",
+          "label": "Continue if met",
+          "type": "pass"
+        },
+        {
+          "from": "research",
+          "to": "annual-review",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "annual-review",
+          "to": "annual-review-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "annual-review-check",
+          "to": "contributions",
+          "label": "Continue if met",
+          "type": "pass"
+        },
+        {
+          "from": "contributions",
+          "to": "writing",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "writing",
+          "to": "review",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "review",
+          "to": "review-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "review-check",
+          "to": "defense",
+          "label": "Continue if met",
+          "type": "pass"
+        },
+        {
+          "from": "defense",
+          "to": "defense-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "defense-check",
+          "to": "archive",
+          "label": "Continue if met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "title": "Literature: from search to research positioning",
+      "summary": "Connect search records, source checks, comparison matrices and topic decisions.",
+      "note": "Record published results, local replication results and untested hypotheses separately. If the problem is already solved, revise the question rather than merely renaming it.",
+      "track": "",
+      "guide": "resources",
+      "order": [
+        "question",
+        "search",
+        "read",
+        "read-check",
+        "compare",
+        "position",
+        "position-check",
+        "maintain"
+      ],
+      "nodes": [
+        {
+          "id": "question",
+          "label": "Define the question and search boundaries",
+          "detail": "Specify key concepts, synonyms, databases, date range and inclusion/exclusion criteria.",
+          "href": "templates.html#literature",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "search",
+          "label": "Search, deduplicate and screen",
+          "detail": "Save search queries and dates, record inclusion/exclusion reasons and obtain lawful full-text access.",
+          "href": "templates.html#literature",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "read",
+          "label": "Read closely and check original sources",
+          "detail": "Check methods, data, evaluation definitions, limitations and contrary evidence; trace citations.",
+          "href": "templates.html#reading",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "read-check",
+          "label": "Is key evidence covered and verifiable?",
+          "detail": "Check representative studies and contrary findings. Reference counts do not establish quality.",
+          "href": "templates.html#reading",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "read-revise",
+          "label": "Revise and review",
+          "detail": "Extend the search, trace original sources or mark evidence as unverifiable. Do not cite fabricated references.",
+          "href": "templates.html#literature",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "compare",
+          "label": "Build an evidence matrix and review",
+          "detail": "Compare questions and methods, marking papers read, unavailable full texts and unresolved checks.",
+          "href": "master.html#survey",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "position",
+          "label": "Position the research and define validation tasks",
+          "detail": "Identify the closest work, differences, value and testable hypotheses.",
+          "href": "templates.html#topic",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "position-check",
+          "label": "Does the question still merit research?",
+          "detail": "The difference is real, and the scope and resources support a meaningful test.",
+          "href": "templates.html#topic",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "position-revise",
+          "label": "Revise and review",
+          "detail": "Narrow the question, change direction or stop this candidate topic, preserving the reasoning.",
+          "href": "templates.html#topic",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "maintain",
+          "label": "Keep the reference collection current",
+          "detail": "Save reference metadata, reading notes and reasons for changes in research positioning.",
+          "href": "archive.html#archive-metadata",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "read-check",
+          "to": "read-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "read-revise",
+          "to": "search",
+          "label": "Return to search and screening",
+          "type": "return"
+        },
+        {
+          "from": "position-check",
+          "to": "position-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "position-revise",
+          "to": "question",
+          "label": "Return to question definition",
+          "type": "return"
+        },
+        {
+          "from": "question",
+          "to": "search",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "search",
+          "to": "read",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "read",
+          "to": "read-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "read-check",
+          "to": "compare",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "compare",
+          "to": "position",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "position",
+          "to": "position-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "position-check",
+          "to": "maintain",
+          "label": "Continue when met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "reproduction",
+      "title": "Replication: from environment to evidence",
+      "summary": "Distinguish environment checks, offline recalculation, actual execution and research conclusions.",
+      "note": "Replication does not guarantee identical numerical results. Explain differences in data, configuration or evaluation, and limit claims accordingly. Retain failure and timeout records.",
+      "track": "",
+      "guide": "integrity",
+      "order": [
+        "target",
+        "environment",
+        "environment-check",
+        "run",
+        "analysis",
+        "recheck",
+        "recheck-check",
+        "package"
+      ],
+      "nodes": [
+        {
+          "id": "target",
+          "label": "Define the replication target and baseline",
+          "detail": "Identify the paper version, target claim, data license and evaluation definitions.",
+          "href": "templates.html#experiment",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "environment",
+          "label": "Freeze the environment and run a small test",
+          "detail": "Record code version, dependencies, hardware, data splits, configuration and startup commands.",
+          "href": "undergraduate-research.html#foundation",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "environment-check",
+          "label": "Do the small test and resource conditions pass?",
+          "detail": "A successful installation is not a completed experiment.",
+          "href": "undergraduate-research.html#foundation",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "environment-revise",
+          "label": "Revise and review",
+          "detail": "Identify dependency, data, access or computing-resource issues. Reduce the trial if needed and rerun it.",
+          "href": "templates.html#experiment",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "run",
+          "label": "Run the predefined experiments",
+          "detail": "Save actual commands, times, exit status, full logs and raw outputs.",
+          "href": "master.html#research",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "analysis",
+          "label": "Analyze results and differences",
+          "detail": "Use the predefined rules for failures, statistical uncertainty and comparison conditions.",
+          "href": "integrity.html#integrity-evidence",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "recheck",
+          "label": "Check key claims against records",
+          "detail": "Repeat key steps in the declared environment, or state the exact scope of offline recalculation.",
+          "href": "archive.html#reproduce-and-verify",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "recheck-check",
+          "label": "Does the evidence support the current claims?",
+          "detail": "Each result is traceable to a specific version and original record.",
+          "href": "archive.html#reproduce-and-verify",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "recheck-revise",
+          "label": "Revise and review",
+          "detail": "Investigate differences, add experiments or narrow claims. Do not discard unfavorable cases to obtain a desired result.",
+          "href": "templates.html#experiment",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "package",
+          "label": "Prepare a verifiable experiment package",
+          "detail": "Include configuration, logs, analysis scripts, README, limitations and licenses.",
+          "href": "templates.html#archive",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "environment-check",
+          "to": "environment-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "environment-revise",
+          "to": "environment",
+          "label": "Return to environment and small test",
+          "type": "return"
+        },
+        {
+          "from": "recheck-check",
+          "to": "recheck-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "recheck-revise",
+          "to": "run",
+          "label": "Return to execution and validation",
+          "type": "return"
+        },
+        {
+          "from": "target",
+          "to": "environment",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "environment",
+          "to": "environment-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "environment-check",
+          "to": "run",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "run",
+          "to": "analysis",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "analysis",
+          "to": "recheck",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "recheck",
+          "to": "recheck-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "recheck-check",
+          "to": "package",
+          "label": "Continue when met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "Engineering: from requirements to acceptance",
+      "summary": "Connect design, implementation, testing and acceptance for capstones and competition projects.",
+      "note": "Choose tools according to risk and task size. A working interface is partial evidence; delivery should cover core requirements, failure cases and usage boundaries.",
+      "track": "",
+      "guide": "resources",
+      "order": [
+        "requirements",
+        "design",
+        "design-check",
+        "implement",
+        "test",
+        "accept",
+        "accept-check",
+        "deliver"
+      ],
+      "nodes": [
+        {
+          "id": "requirements",
+          "label": "Specify requirements and acceptance conditions",
+          "detail": "Confirm user scenarios, scope, individual responsibility and measurable goals.",
+          "href": "templates.html#engineering-report",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "design",
+          "label": "Detailed design and critical prototypes",
+          "detail": "Describe interfaces, data, error handling and dependencies. Test high-risk elements first.",
+          "href": "bachelor.html#design",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "design-check",
+          "label": "Can the design meet core acceptance conditions?",
+          "detail": "Critical dependencies and the technical approach have passed small tests.",
+          "href": "bachelor.html#design",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "design-revise",
+          "label": "Revise and review",
+          "detail": "Clarify requirements or change the design. Record the impact of significant scope changes and obtain agreement.",
+          "href": "templates.html#change-request",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "implement",
+          "label": "Implement a complete minimal user journey",
+          "detail": "Expand through version control and task records while keeping run instructions usable.",
+          "href": "bachelor.html#implementation",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "test",
+          "label": "Test and organize evidence",
+          "detail": "Cover core functions, boundary cases and failures; record the environment and results.",
+          "href": "bachelor.html#validation",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "accept",
+          "label": "Demonstrate and accept against requirements",
+          "detail": "Check the deliverable version, explaining implemented scope, defects and limitations.",
+          "href": "templates.html#engineering-report",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "accept-check",
+          "label": "Do the core goals pass acceptance?",
+          "detail": "Planned features are not described as already implemented.",
+          "href": "templates.html#engineering-report",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "accept-revise",
+          "label": "Revise and review",
+          "detail": "Fix defects and retest. If goals cannot be met, revise the scope and explanation, then seek renewed agreement.",
+          "href": "templates.html#engineering-report",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "deliver",
+          "label": "Release or hand over the agreed version",
+          "detail": "Confirm publication permission, dependency licenses, rollback procedures and receipt.",
+          "href": "templates.html#handover",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "design-check",
+          "to": "design-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "design-revise",
+          "to": "requirements",
+          "label": "Return to requirements and design",
+          "type": "return"
+        },
+        {
+          "from": "accept-check",
+          "to": "accept-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "accept-revise",
+          "to": "implement",
+          "label": "Return to implementation and retesting",
+          "type": "return"
+        },
+        {
+          "from": "requirements",
+          "to": "design",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "design",
+          "to": "design-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "design-check",
+          "to": "implement",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "implement",
+          "to": "test",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "test",
+          "to": "accept",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "accept",
+          "to": "accept-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "accept-check",
+          "to": "deliver",
+          "label": "Continue when met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "submission",
+      "title": "Thesis submission: checks, review and defense",
+      "summary": "Connect file versions, formal checks, reviewer feedback and degree procedures.",
+      "note": "Institutions differ in whether they require a pre-defense or non-academic-error checks, and in the order of these steps. Confirm the applicable policy and what each check covers. Thesis checks, review, defense and degree conferral are distinct states.",
+      "track": "",
+      "guide": "integrity",
+      "order": [
+        "rules",
+        "draft",
+        "checks",
+        "checks-check",
+        "review",
+        "review-check",
+        "defense",
+        "defense-check",
+        "final",
+        "archive"
+      ],
+      "nodes": [
+        {
+          "id": "rules",
+          "label": "Check eligibility, application window and procedures",
+          "detail": "Confirm required outputs, pre-defense arrangements, platforms, templates and deadlines.",
+          "href": "policies.html#local-check",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "draft",
+          "label": "Complete the thesis and supervisory review",
+          "detail": "Connect claims, references, figures and attachments to actual evidence.",
+          "href": "master.html#writing",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "checks",
+          "label": "Complete each required check separately",
+          "detail": "Handle similarity screening, non-academic-error checks and AI disclosure separately, with reports tied to the same version.",
+          "href": "master.html#integrity",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "checks-check",
+          "label": "Are eligibility and all required checks satisfied?",
+          "detail": "Apply institutional criteria. Do not invent universal thresholds.",
+          "href": "master.html#integrity",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "checks-revise",
+          "label": "Revise and review",
+          "detail": "Investigate the cause, revise, repeat screening or request a review. Check whether substantive changes require new screening.",
+          "href": "templates.html#integrity",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "review",
+          "label": "Submit anonymously and receive reviews",
+          "detail": "Check text, metadata, attachments and links; retain the version checksum and submission receipt.",
+          "href": "master.html#review",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "review-check",
+          "label": "Is defense eligibility formally confirmed?",
+          "detail": "Follow official decisions on review, further review or appeals.",
+          "href": "master.html#review",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "review-revise",
+          "label": "Revise and review",
+          "detail": "Address each comment and seek further review or defer as required. Do not declare a pass yourself.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "defense",
+          "label": "Apply for and attend the formal defense",
+          "detail": "Submit materials, present and answer questions under the official eligibility decision, committee arrangements and notice.",
+          "href": "master.html#defense",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "defense-check",
+          "label": "Does the formal decision permit finalization?",
+          "detail": "A conditional pass still requires every specified condition to be met.",
+          "href": "master.html#defense",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "defense-revise",
+          "label": "Revise and review",
+          "detail": "Revise, seek another review or reapply as required. A successful repeat defense cannot be guaranteed.",
+          "href": "templates.html#review-response",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "final",
+          "label": "Finalize revisions and degree procedures",
+          "detail": "Complete revisions, signatures and receipt. Degree status follows the institution's official decision.",
+          "href": "master.html#final",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "archive",
+          "label": "Submit degree materials and archive research separately",
+          "detail": "Confirm institutional submission and research-material acceptance, protecting unpublished and sensitive materials.",
+          "href": "archive.html",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "checks-check",
+          "to": "checks-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "checks-revise",
+          "to": "draft",
+          "label": "Return to thesis revision and checks",
+          "type": "return"
+        },
+        {
+          "from": "review-check",
+          "to": "review-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "review-revise",
+          "to": "draft",
+          "label": "Return to revision and formal review",
+          "type": "return"
+        },
+        {
+          "from": "defense-check",
+          "to": "defense-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "defense-revise",
+          "to": "draft",
+          "label": "Return to corrections and reapplication",
+          "type": "return"
+        },
+        {
+          "from": "rules",
+          "to": "draft",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "draft",
+          "to": "checks",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "checks",
+          "to": "checks-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "checks-check",
+          "to": "review",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "review",
+          "to": "review-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "review-check",
+          "to": "defense",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "defense",
+          "to": "defense-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "defense-check",
+          "to": "final",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "final",
+          "to": "archive",
+          "label": "Next step",
+          "type": "next"
+        }
+      ]
+    },
+    {
+      "id": "feedback",
+      "title": "Routine work: tasks, feedback and next steps",
+      "summary": "Turn each discussion into deliverable tasks, owners, evidence and review dates.",
+      "note": "Students and supervisors agree on a working rhythm that fits coursework and research. Use institutional rules and designated channels for formal attendance, leave, practice and assessment.",
+      "track": "",
+      "guide": "management",
+      "order": [
+        "plan",
+        "work",
+        "work-check",
+        "report",
+        "feedback",
+        "feedback-check",
+        "close"
+      ],
+      "nodes": [
+        {
+          "id": "plan",
+          "label": "Agree on goals and completion conditions",
+          "detail": "Specify tasks, owners, inputs, deliverables, review dates and support needed.",
+          "href": "templates.html#research-task",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "work",
+          "label": "Execute and retain process records",
+          "detail": "Update actual versions and results daily. Report blockers, their impact and attempted solutions promptly.",
+          "href": "management.html#working-rhythm",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "work-check",
+          "label": "Are inputs, resources and arrangements still workable?",
+          "detail": "Seek help early when blocked. Do not fabricate progress after a deadline.",
+          "href": "management.html#working-rhythm",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "work-revise",
+          "label": "Revise and review",
+          "detail": "Explain causes and alternatives. Agree on a smaller scope, a revised date or a necessary formal change.",
+          "href": "templates.html#change-request",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "report",
+          "label": "Submit a weekly report and discussion points",
+          "detail": "Distinguish facts, interpretations and plans; attach accessible evidence.",
+          "href": "templates.html#weekly",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "feedback",
+          "label": "Discuss and record action items",
+          "detail": "Record decisions, unresolved questions, revision locations, owners and deadlines.",
+          "href": "templates.html#meeting",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "feedback-check",
+          "label": "Does the delivery meet the agreed conditions?",
+          "detail": "Actual materials support completion status. Record official assessment outcomes separately.",
+          "href": "templates.html#meeting",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "feedback-revise",
+          "label": "Revise and review",
+          "detail": "Address feedback item by item. Keep disputed conclusions pending confirmation and arrange another review.",
+          "href": "templates.html#weekly",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "close",
+          "label": "Complete the review and plan the next cycle",
+          "detail": "Record the evidence for completion; give continuing work a new set of goals.",
+          "href": "management.html#task-status",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "work-check",
+          "to": "work-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "work-revise",
+          "to": "plan",
+          "label": "Return to tasks and arrangements",
+          "type": "return"
+        },
+        {
+          "from": "feedback-check",
+          "to": "feedback-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "feedback-revise",
+          "to": "work",
+          "label": "Return to execution and revision",
+          "type": "return"
+        },
+        {
+          "from": "plan",
+          "to": "work",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "work",
+          "to": "work-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "work-check",
+          "to": "report",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "report",
+          "to": "feedback",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "feedback",
+          "to": "feedback-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "feedback-check",
+          "to": "close",
+          "label": "Continue when met",
+          "type": "pass"
+        }
+      ]
+    },
+    {
+      "id": "archiving",
+      "title": "Archiving and handover: materials to acceptance",
+      "summary": "Ensure the recipient can locate, open and verify materials, with clear retention and access responsibilities.",
+      "note": "Submit degree materials and hand over research records separately. Keep public copies apart from controlled originals. Transfer access through organization-approved procedures; do not share personal account passwords.",
+      "track": "",
+      "guide": "archive",
+      "order": [
+        "inventory",
+        "access",
+        "access-check",
+        "package",
+        "verify",
+        "verify-check",
+        "handover",
+        "retain"
+      ],
+      "nodes": [
+        {
+          "id": "inventory",
+          "label": "Organize materials and version index",
+          "detail": "List the thesis, code, data, logs, analyses, instructions, licenses and unfinished work.",
+          "href": "templates.html#archive",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "access",
+          "label": "Check permissions and visibility",
+          "detail": "Separate public, team-controlled and restricted access. Remove sensitive information from public copies.",
+          "href": "archive.html#visibility-model",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "access-check",
+          "label": "Are publication and transfer permissions clear?",
+          "detail": "Having downloaded or accessed material does not grant permission to publish it.",
+          "href": "archive.html#visibility-model",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "access-revise",
+          "label": "Revise and review",
+          "detail": "Obtain permission, de-identify or restrict access. Keep nonpublic material only in approved locations.",
+          "href": "templates.html#archive",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "package",
+          "label": "Prepare the archive and restoration instructions",
+          "detail": "Add data provenance, versions, dependencies, commands, checksums, owners and retention periods.",
+          "href": "archive.html#archive-metadata",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "verify",
+          "label": "Have the recipient test restoration and reproduction",
+          "detail": "Open a sample of files, restore key materials using the instructions and verify core evidence.",
+          "href": "archive.html#reproduce-and-verify",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "verify-check",
+          "label": "Are materials complete and verifiable as documented?",
+          "detail": "Directory screenshots, empty files and a successful upload do not replace acceptance checks.",
+          "href": "archive.html#reproduce-and-verify",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "verify-revise",
+          "label": "Revise and review",
+          "detail": "Add missing records and repeat acceptance. State the causes and impact of anything that cannot be restored.",
+          "href": "templates.html#handover",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "handover",
+          "label": "Confirm receipt, access and outstanding responsibilities",
+          "detail": "Record the accepted scope, pending tasks, account/equipment arrangements and limits of future contact.",
+          "href": "templates.html#handover",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "retain",
+          "label": "Review backups and retention periodically",
+          "detail": "Retain materials and control access according to licenses and institutional requirements; recheck restoration as agreed.",
+          "href": "archive.html#retention-and-access",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "access-check",
+          "to": "access-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "access-revise",
+          "to": "inventory",
+          "label": "Return to materials and permissions",
+          "type": "return"
+        },
+        {
+          "from": "verify-check",
+          "to": "verify-revise",
+          "label": "Not yet met",
+          "type": "fail"
+        },
+        {
+          "from": "verify-revise",
+          "to": "package",
+          "label": "Return to missing records and restoration instructions",
+          "type": "return"
+        },
+        {
+          "from": "inventory",
+          "to": "access",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "access",
+          "to": "access-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "access-check",
+          "to": "package",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "package",
+          "to": "verify",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "verify",
+          "to": "verify-check",
+          "label": "Next step",
+          "type": "next"
+        },
+        {
+          "from": "verify-check",
+          "to": "handover",
+          "label": "Continue when met",
+          "type": "pass"
+        },
+        {
+          "from": "handover",
+          "to": "retain",
+          "label": "Next step",
+          "type": "next"
+        }
+      ]
+    }
+  ]
+}

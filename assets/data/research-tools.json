@@ -1,0 +1,692 @@
+{
+  "updated": "2026-10-19",
+  "intro": "先按任务选一套能产出证据的最小组合，再按确实遇到的问题补工具。下列步骤是通用研究工作建议；软件功能、学校模板与服务条件请以适用版本和官方说明核对。",
+  "selection_note": "推荐组合是该任务的起步选择；可选替代用于已有习惯或特定需要；需另行准备表示应先核对环境、权限和预算。无需把目录中的软件全部安装。",
+  "tools": [
+    {
+      "id": "zotero",
+      "name": "Zotero",
+      "status": "recommended",
+      "purpose": "收集和核对文献元数据，关联原文、笔记与引文；让综述中的每项判断回到具体来源。",
+      "docs": [
+        "zotero-start",
+        "zotero-word",
+        "zotero-export"
+      ],
+      "boundary": "先核对作者、题名、年份、DOI 和条目类型；自动抓取不保证正确。"
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "status": "recommended",
+      "purpose": "编辑代码、Markdown 和配置，选择项目解释器，运行与调试测试；Python、Markdown、Git、LaTeX 可在同一工作区衔接。",
+      "docs": [
+        "vscode-python"
+      ],
+      "boundary": "扩展已安装不表示当前项目的解释器、编译器或测试已配置成功。"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "status": "recommended",
+      "purpose": "按可解释的小任务保存代码与文本变更，通过差异和提交版本追踪结果。",
+      "docs": [
+        "git-record",
+        "github-lfs"
+      ],
+      "boundary": "Git 是版本管理工具；大数据、模型权重和完整备份需要另设受控存储与恢复验证。"
+    },
+    {
+      "id": "python",
+      "name": "Python + venv",
+      "status": "recommended",
+      "purpose": "用脚本处理数据、运行实验、计算指标和绘图；按任务选用 NumPy、Pandas、Matplotlib、SciPy 或 pytest。",
+      "docs": [
+        "python-venv",
+        "vscode-python"
+      ],
+      "boundary": "项目单独记录解释器、依赖、系统与运行命令；不要为了开始练习一次安装所有库。"
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "status": "recommended",
+      "purpose": "制作文献比较矩阵、任务表和数据字典；小规模检查或统计时保留公式、输入和分析参数。",
+      "docs": [
+        "excel-analysis"
+      ],
+      "boundary": "截图与手工改数不能替代可复核分析；反复运行的清洗、统计和绘图应转成脚本并留原始数据。"
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io",
+      "status": "recommended",
+      "purpose": "绘制流程、系统结构与实验设计；保留可编辑 .drawio 源文件并导出 SVG 或 PDF。",
+      "docs": [
+        "drawio-export"
+      ],
+      "boundary": "导出后检查中文、箭头、字号与裁切；只有图片而没有源文件，不便后续修改。"
+    },
+    {
+      "id": "word",
+      "name": "Word + Zotero 引文插件",
+      "status": "recommended",
+      "purpose": "以学校认可的 Word 模板撰写和协作修改，使用样式、题注、交叉引用和动态参考文献。",
+      "docs": [
+        "zotero-word",
+        "word-revisions",
+        "word-properties"
+      ],
+      "boundary": "先验证插件和模板可用；隐藏修订不等于清除修订。Mac 与 Windows 的匿名检查操作不同。"
+    },
+    {
+      "id": "slides",
+      "name": "PowerPoint / Keynote",
+      "status": "recommended",
+      "purpose": "整理开题、中期、答辩与竞赛路演，准备可脱网播放的演示、结果证据和备用 PDF。",
+      "docs": [],
+      "url": "https://support.microsoft.com/powerpoint",
+      "boundary": "以实际演示设备试放；跨软件转换后逐页检查字体、公式、视频和动画。"
+    },
+    {
+      "id": "notes",
+      "name": "Obsidian / OneNote",
+      "status": "optional",
+      "purpose": "记录阅读思路、会议和工作日志；Obsidian 的 Markdown 文件适合与代码文档串联。",
+      "docs": [
+        "obsidian-files"
+      ],
+      "boundary": "笔记系统选一个长期维护即可；重要决定和正式提交仍进入约定的任务记录或学校系统。"
+    },
+    {
+      "id": "latex",
+      "name": "LaTeX + LaTeX Workshop",
+      "status": "optional",
+      "purpose": "当学校接受 LaTeX 且已掌握模板时，用 VS Code、TeX 发行版和 latexmk 维护论文源文件及参考文献。",
+      "docs": [
+        "latex-workshop",
+        "zotero-export"
+      ],
+      "boundary": "先用学校模板完成一次完整编译；Word 与 LaTeX 选一种作为主稿，避免两份正文长期分叉。"
+    },
+    {
+      "id": "meeting",
+      "name": "腾讯会议 / 微信",
+      "status": "optional",
+      "purpose": "远程交流、即时协调与提醒；会后将行动项、负责人、日期整理成可查的会议纪要。",
+      "docs": [],
+      "url": "https://meeting.tencent.com/",
+      "boundary": "录制需按参与方约定办理；聊天和自动转写不是正式批准，决定须人工确认。"
+    },
+    {
+      "id": "ai-assistant",
+      "name": "ChatGPT 等 AI 辅助工具",
+      "status": "optional",
+      "purpose": "用现有可用工具辅助列检索词、理解代码、讨论结构和检查表达；对输出逐条核对与实际运行。",
+      "docs": [],
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "boundary": "先确认数据允许进入该工具。AI 回答不是原始文献、实验日志、已通过的测试或真实研究结果。"
+    },
+    {
+      "id": "extra-runtime",
+      "name": "容器、Notebook 或模型服务",
+      "status": "prepare",
+      "purpose": "论文指定容器、交互分析确有需要、或实验依赖真实模型时，再准备 Docker、Jupyter 或对应模型运行环境。",
+      "docs": [],
+      "url": "https://docs.docker.com/get-started/",
+      "boundary": "先核对许可证、设备、数据权限、账号与预算；不能从编辑器扩展或软件图标推断服务已可用。"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "literature",
+      "title": "文献调研与综述",
+      "goal": "从“读过若干论文”走到能比较问题、方法、证据和局限。",
+      "minimal_tools": [
+        "zotero",
+        "excel",
+        "vscode"
+      ],
+      "steps": [
+        "先写研究问题、检索词、数据库、检索日期和纳入排除条件；用 Zotero 按主题收集条目，逐篇核对元数据与原文。",
+        "给每篇核心文献写结构化阅读记录：问题、对象、方法、数据、评价、发现、局限；关键判断标明原文页码或章节。",
+        "在 Excel 或 CSV 中建立综述矩阵，一行一篇文献；列出任务、数据规模、基线、指标、可复现材料、证据强弱和与本课题的关系。",
+        "按“已知什么—证据有什么限制—还需验证什么”组织综述；写入 Word 时使用 Zotero 引文插件，LaTeX 路线导出 BibTeX / BibLaTeX 并检查引用键。"
+      ],
+      "outputs": [
+        "literature-matrix.xlsx 或 .csv：至少含来源标识、问题、方法、证据、局限。",
+        "reading-notes.md、search-log.md；按需导出的 references.bib / .ris 和综述正文。"
+      ],
+      "checks": [
+        "抽查每项重要结论，能回到原论文具体位置；区分作者报告与自己的判断。",
+        "矩阵能解释不同研究为何可比或不可比；不是摘要粘贴集合。",
+        "新增一条引用后，正文与参考文献能一致更新；附件权限符合来源要求。"
+      ],
+      "alternatives": [
+        "只需简单矩阵时用 CSV + VS Code；阅读笔记已有固定习惯时可继续用 Obsidian 或 OneNote。",
+        "优先掌握 Zotero 原生导出与 Word 插件；需要自动维护 LaTeX 引用键时再评估第三方扩展，不将其视为必需。"
+      ],
+      "pitfalls": [
+        "导入 PDF 不等于已核对文献；AI 生成的作者、DOI 或结论必须回原文验证。",
+        "Markdown 适合记录与交换文字，不能把 .md 改后缀当作符合学校格式的 Word 文件。"
+      ],
+      "templates": [
+        "reading",
+        "literature",
+        "topic"
+      ],
+      "sources": [
+        "zotero-start",
+        "zotero-word",
+        "zotero-export"
+      ]
+    },
+    {
+      "id": "empirical",
+      "title": "实证复现、算法实验与数据分析",
+      "goal": "让每张表、每条结论都有对应的输入、版本、运行记录和计算过程。",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "python"
+      ],
+      "steps": [
+        "先确定复现对象、数据许可、指标、基线与可接受差异；记录作者报告值，保留数据原件和获取说明。",
+        "选择独立 Python 环境并在 VS Code 确认解释器；记录系统、Python、依赖、硬件、随机种子和完整命令。先跑小样例，再扩大规模。",
+        "把清洗、划分、运行、评价与绘图写成明确步骤；为每次运行分配编号，保存配置、输入标识、退出状态、完整日志和原始输出。",
+        "用脚本从保存的原始输出重算指标，报告重复运行差异、失败案例与限制；算法对比同时固定输入规模、资源条件与计时范围。",
+        "在新的输出目录按 README 重跑一个最小实验；核对结论能否由该记录支持，不能把离线重算写成新一轮真实运行。"
+      ],
+      "outputs": [
+        "README.md、requirements.txt 或项目锁定文件、脚本、Git 提交号和环境记录。",
+        "run-manifest.json、config.json、完整日志、原始结果 .jsonl / .csv、分析脚本与图表 .svg / .pdf。"
+      ],
+      "checks": [
+        "另一位同学能按命令定位输入并复跑最小样例；失败也有退出码与记录。",
+        "论文表格能从保存的原始结果计算得到，手工修改有明确追踪。",
+        "检查数据泄漏、划分重叠、评价口径、异常处理与统计方法是否适合研究问题。"
+      ],
+      "alternatives": [
+        "小规模初查可用 Excel；用于论文的重复计算应保留公式和参数，复杂或批量统计转为脚本。",
+        "只有论文明确依赖容器、特殊硬件或操作系统时再准备对应环境；Notebook 用于探索时，交付前清空输出并按顺序重跑。",
+        "学习统计方法先理解假设与适用条件，再选择 SciPy 或其它库，避免因某个按钮可用就直接套用检验。"
+      ],
+      "pitfalls": [
+        "pip freeze 只反映部分 Python 依赖信息，不等于系统、GPU、驱动、数据和模型环境已完整记录。",
+        "截图、进度条、安装成功和一个示例通过，都不能代替完整实验结果。"
+      ],
+      "templates": [
+        "experiment",
+        "research-task"
+      ],
+      "sources": [
+        "vscode-python",
+        "python-venv",
+        "git-record",
+        "excel-analysis"
+      ]
+    },
+    {
+      "id": "software",
+      "title": "软件原型开发与测试",
+      "goal": "从可演示功能走到输入、行为和边界都能验证的可交付系统。",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "drawio"
+      ],
+      "steps": [
+        "把需求拆成用户任务、输入输出、约束和验收条件；用 draw.io 画数据流、模块关系及关键异常分支。",
+        "按最小可运行功能建立项目，明确依赖与启动方法；每次提交只处理可说明的变更，提交前查看差异。",
+        "按项目技术栈运行测试：Python 项目可用 unittest / pytest，前端项目使用项目已有工具；覆盖正常、边界、失败与权限场景。",
+        "将测试结果、演示步骤和已知限制关联到当前版本；修复问题后重跑受影响检查，再完成一次端到端演示。"
+      ],
+      "outputs": [
+        "需求与设计说明、可编辑 .drawio 源文件及 .svg / .pdf 导出。",
+        "代码、依赖声明、启动命令、测试用例与实际运行结果、演示输入和交付 README。"
+      ],
+      "checks": [
+        "按清洁环境说明启动，关键用户路径可独立完成，失败情况有清楚反馈。",
+        "测试断言检查用户可观察的行为；记录实际运行日期、版本和结果。",
+        "提交包不含密钥、个人数据、临时缓存与无关的大文件；第三方许可已核对。"
+      ],
+      "alternatives": [
+        "已有成熟技术栈时优先沿用，Python 并非所有软件项目的必选语言；Node/npm 等按项目需要使用。",
+        "EdrawMax 可作熟悉的绘图替代，但交付时同时保存原始工程与通用 PDF / SVG，并检查接收方能打开。"
+      ],
+      "pitfalls": [
+        "AI 生成了测试代码不等于测试已通过；页面能打开也不等于流程完整。",
+        "流程图应画出关键判断与回退；不要只堆软件图标或用截图代替可编辑设计。"
+      ],
+      "templates": [
+        "engineering-report",
+        "experiment",
+        "handover"
+      ],
+      "sources": [
+        "vscode-python",
+        "git-record",
+        "drawio-export"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "LLM、Agent 与 RAG 研究",
+      "goal": "先验证任务与评价是否成立，再控制模型、数据、工具和费用开展实验。",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "python"
+      ],
+      "steps": [
+        "写清任务、数据范围、基线、成功与失败定义，区分模型回答质量、检索质量与端到端完成率；先建立可人工核对的小样本。",
+        "使用已获授权的模型或服务，记录模型标识、版本或访问日期、提示词、参数、数据快照、工具配置和预算；先做少量真实调用验证。",
+        "RAG 先保存文档来源、切分规则、检索候选与引用位置，再评估回答；Agent 记录每步输入、工具调用、返回值、终止原因和实际环境状态。",
+        "分别保存真实模型运行、离线回放、手工构造样例和失败记录；评测脚本检查原始轨迹，不能只看模型自评“已完成”。",
+        "检查数据隔离、基线公平性、重复运行差异、成本与错误类型；无真实模型权限时仅交付明确标注的离线演示和待验证项。"
+      ],
+      "outputs": [
+        "任务与评价规范、许可说明、数据划分标识、提示词和模型配置。",
+        "逐次请求 / 响应或脱敏轨迹 .jsonl、工具执行记录、费用与耗时表、评测代码和失败样例。"
+      ],
+      "checks": [
+        "能回答“这条结果是哪次真实执行产生的”，并定位到数据、代码与模型配置。",
+        "RAG 引用能回到来源片段；Agent 的完成判断由实际任务状态或独立检查支持。",
+        "基线与新方法的资源和评价口径已说明，人工样例与真实数据结果明确分开。"
+      ],
+      "alternatives": [
+        "小型 RAG 起步可先用简单检索与文件索引验证评价，再决定是否需要向量数据库。",
+        "AI 辅助工具可帮助解释和起草，但模型服务、GPU、Docker、框架与账号需要按任务另行准备和验证。"
+      ],
+      "pitfalls": [
+        "有聊天软件或编辑器扩展，不等于有实验 API、GPU、模型权限或可公开的数据。",
+        "不得把缓存回放、手工填写轨迹或模拟响应描述成实时模型实验；也不要将未授权材料发给外部服务。"
+      ],
+      "templates": [
+        "research-task",
+        "experiment",
+        "ai-use"
+      ],
+      "sources": [
+        "vscode-python",
+        "python-venv",
+        "git-record"
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "论文撰写、规范检查与送审",
+      "goal": "让主稿、引文、图表、修改说明和最终送审版本保持一致。",
+      "minimal_tools": [
+        "word",
+        "zotero",
+        "drawio"
+      ],
+      "steps": [
+        "先下载本人适用的学校模板并选定主稿格式：Word 路线使用样式与引文插件；学校允许且已有基础时，选 LaTeX + VS Code 作为主稿。",
+        "按研究问题、方法、证据和局限组织章节；图表从真实结果生成，保存可编辑源文件，题注、单位、引用与正文一致。",
+        "每轮修改保留版本和问题回复表；Word 使用修订与批注协作，LaTeX 使用 Git 差异与编译日志，统一维护同一份主稿。",
+        "按学校要求检查格式、查重、非学术性差错与 AI 使用说明。匿名送审另存副本，检查封面、致谢、正文自引、文件名、属性、批注、修订、附件和链接。",
+        "从最终副本导出 PDF 并逐页检查字体、公式、分页、交叉引用和匿名性；登记送审文件版本、日期与提交回执。"
+      ],
+      "outputs": [
+        "主稿 .docx，或 .tex + .bib + 图表源文件；对应最终 .pdf。",
+        "修改回复表、格式与匿名核对表、适用制度依据、允许保留的检测报告和提交回执。"
+      ],
+      "checks": [
+        "PDF 与所登记主稿一一对应，图表与原始结果一致，所有引文都能定位。",
+        "Word 隐藏标记不代表删除修订；在送审副本中按要求处理修订与批注后重新检查。",
+        "Word for Mac 没有 Windows 的 Document Inspector；应核对属性并人工检查正文、批注、修订和导出 PDF，不能仅凭某个按钮宣称已完全匿名。"
+      ],
+      "alternatives": [
+        "Word 和 LaTeX 二选一作为主稿；需要格式转换时以转换后的全文重新验收，避免同时维护两套正文。",
+        "Markdown 适合提纲和阅读笔记；转入学校 Word / LaTeX 模板后仍需完成排版核验。"
+      ],
+      "pitfalls": [
+        "学校认可的检测系统与阈值以适用规定为准，不用通用 AI 或商业网站的分数替代。",
+        "不要在唯一主稿上删除引文域、批注或身份信息；保留受控原稿与送审副本。"
+      ],
+      "templates": [
+        "thesis",
+        "integrity",
+        "review-response"
+      ],
+      "sources": [
+        "zotero-word",
+        "zotero-export",
+        "word-revisions",
+        "word-properties",
+        "latex-workshop",
+        "drawio-export"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "title": "竞赛协作、开题汇报与答辩",
+      "goal": "把团队分工、作品证据和现场表达连接起来，保证材料能交、演示能跑。",
+      "minimal_tools": [
+        "slides",
+        "git",
+        "drawio"
+      ],
+      "steps": [
+        "建立任务清单，给每项任务写负责人、完成条件、检查日期与交付位置；竞赛先记录官方规则、版本和提交要求。",
+        "用 draw.io 梳理系统与方法，用 PowerPoint 或 Keynote 组织“问题—方案—证据—贡献—局限”；每张结果页标明证据来源。",
+        "按当前代码版本准备真实演示输入、关键操作和失败预案；记录团队贡献、素材来源与必要的权属约定。",
+        "按正式时长彩排，使用实际设备测试字体、投屏、音视频和网络依赖；另存 PDF、可脱网演示材料和问题回应清单。",
+        "提交前核对文件格式、大小、命名与版本；保存回执，赛后或答辩后把修改意见转成行动项。"
+      ],
+      "outputs": [
+        ".pptx 或 .key 主文件、备用 .pdf、演示脚本、作品版本和合法可分享的演示视频。",
+        "任务分工表、问答清单、修改记录、贡献说明与正式提交回执。"
+      ],
+      "checks": [
+        "在另一台目标设备试放，关键步骤不依赖临时登录或未知权限。",
+        "陈述能区分个人贡献、团队贡献和复用内容；作品成果与现场展示一致。",
+        "断网或服务失效时能说明哪些功能未现场验证，备用视频标明为录制材料。"
+      ],
+      "alternatives": [
+        "熟悉 Keynote 可继续使用；接收方要求 PPTX 时提前导出并逐页试放。",
+        "远程讨论可用腾讯会议；Boardmix / EdrawMind 适合头脑风暴，定稿结论要落入可交付文档与任务记录。"
+      ],
+      "pitfalls": [
+        "漂亮幻灯片和演示视频不能代替可运行作品或实际实验。",
+        "竞赛报名成功、内部彩排通过与学校正式开题或答辩通过是不同状态。"
+      ],
+      "templates": [
+        "competition",
+        "defense",
+        "meeting"
+      ],
+      "sources": [
+        "drawio-export",
+        "git-record"
+      ]
+    },
+    {
+      "id": "management",
+      "title": "日常管理、数据归档与交接",
+      "goal": "让工作能追踪、资料能找到、结果能复查，交接后仍可继续使用。",
+      "minimal_tools": [
+        "vscode",
+        "git",
+        "excel"
+      ],
+      "steps": [
+        "用一个固定任务表维护目标、负责人、状态、日期和证据链接；周报与会议纪要沿用模板，重要决定由相关人员确认。",
+        "代码和文本放版本库；原始数据、模型、文稿原件与敏感材料按权限放受控存储，区分原始资料、处理产物和正式发布版本。",
+        "归档时写目录说明、数据字典、来源许可、环境与运行步骤，记录版本、文件清单和必要校验值；链接要指向接收方有权访问的位置。",
+        "另设备份位置或单位认可的备份服务并检查恢复；交接时由接收者实际打开材料、重跑最小样例、确认权限和待办事项。"
+      ],
+      "outputs": [
+        "weekly.md、meeting.md 或对应 Word 记录；任务表与阶段证据索引。",
+        "README.md、文件清单、数据字典、校验清单、受控备份记录和交接确认。"
+      ],
+      "checks": [
+        "随机抽一个结论能追溯到原始资料、处理脚本和当前输出；无效链接已修复。",
+        "备份能恢复，接收者实际拥有所需访问权限；通过组织授权的权限转移或账号移交程序办理，不共享个人账号密码。",
+        "公开材料无个人信息、账号、密钥和未授权数据；受限资料保留必要来源与权限说明。"
+      ],
+      "alternatives": [
+        "日常笔记可用 Obsidian / OneNote，简单计划可用 Excel；已有团队平台时继续沿用，避免重复维护多个状态表。",
+        "EdrawProj 可辅助较复杂的进度安排；只有跨团队依赖较多时再增加工具，正式审批仍走学校指定渠道。"
+      ],
+      "pitfalls": [
+        "Git 提交、网盘同步和完整备份是不同工作；删除也可能同步到远端，应验证恢复路径。",
+        "Git LFS 存放大文件指针与外部内容，仍需考虑服务配额、访问权限与备份；不是无条件的数据保险箱。"
+      ],
+      "templates": [
+        "weekly",
+        "meeting",
+        "archive",
+        "handover"
+      ],
+      "sources": [
+        "git-record",
+        "github-lfs",
+        "obsidian-files"
+      ]
+    }
+  ],
+  "stage_map": {
+    "research.orientation": [
+      "management"
+    ],
+    "research.foundation": [
+      "software",
+      "literature"
+    ],
+    "research.exploration": [
+      "literature",
+      "empirical",
+      "ai"
+    ],
+    "research.project": [
+      "software",
+      "management"
+    ],
+    "research.execution": [
+      "empirical",
+      "software",
+      "ai"
+    ],
+    "research.validation": [
+      "empirical",
+      "collaboration"
+    ],
+    "research.archive": [
+      "management"
+    ],
+    "bachelor.topic": [
+      "literature",
+      "management"
+    ],
+    "bachelor.proposal": [
+      "literature",
+      "collaboration"
+    ],
+    "bachelor.design": [
+      "software"
+    ],
+    "bachelor.implementation": [
+      "software",
+      "management"
+    ],
+    "bachelor.validation": [
+      "software",
+      "empirical"
+    ],
+    "bachelor.writing": [
+      "writing"
+    ],
+    "bachelor.defense": [
+      "collaboration"
+    ],
+    "bachelor.archive": [
+      "writing",
+      "management"
+    ],
+    "competition.selection": [
+      "management",
+      "collaboration"
+    ],
+    "competition.team": [
+      "management",
+      "collaboration"
+    ],
+    "competition.prototype": [
+      "software",
+      "collaboration"
+    ],
+    "competition.build": [
+      "software",
+      "empirical",
+      "ai"
+    ],
+    "competition.submission": [
+      "collaboration"
+    ],
+    "competition.archive": [
+      "management"
+    ],
+    "master.orientation": [
+      "management"
+    ],
+    "master.topic": [
+      "literature",
+      "empirical",
+      "ai"
+    ],
+    "master.survey": [
+      "literature"
+    ],
+    "master.proposal": [
+      "literature",
+      "empirical",
+      "collaboration"
+    ],
+    "master.research": [
+      "empirical",
+      "software",
+      "ai"
+    ],
+    "master.midterm": [
+      "empirical",
+      "collaboration",
+      "management"
+    ],
+    "master.writing": [
+      "writing"
+    ],
+    "master.outcomes": [
+      "management",
+      "writing"
+    ],
+    "master.integrity": [
+      "writing"
+    ],
+    "master.review": [
+      "writing"
+    ],
+    "master.defense": [
+      "collaboration"
+    ],
+    "master.final": [
+      "writing",
+      "management"
+    ],
+    "master.archive": [
+      "management"
+    ],
+    "doctor.orientation": [
+      "management"
+    ],
+    "doctor.foundation": [
+      "literature",
+      "software"
+    ],
+    "doctor.qualification": [
+      "literature",
+      "collaboration"
+    ],
+    "doctor.proposal": [
+      "literature",
+      "empirical",
+      "collaboration"
+    ],
+    "doctor.research": [
+      "empirical",
+      "software",
+      "ai"
+    ],
+    "doctor.annual-review": [
+      "empirical",
+      "collaboration",
+      "management"
+    ],
+    "doctor.contributions": [
+      "literature",
+      "empirical"
+    ],
+    "doctor.writing": [
+      "writing"
+    ],
+    "doctor.review": [
+      "writing",
+      "collaboration"
+    ],
+    "doctor.defense": [
+      "collaboration"
+    ],
+    "doctor.archive": [
+      "management"
+    ]
+  },
+  "sources": [
+    {
+      "id": "zotero-start",
+      "title": "Zotero：入门、条目与笔记",
+      "url": "https://www.zotero.org/support/quick_start_guide"
+    },
+    {
+      "id": "zotero-word",
+      "title": "Zotero：Word 插件与引用更新",
+      "url": "https://www.zotero.org/support/word_processor_plugin_usage"
+    },
+    {
+      "id": "zotero-export",
+      "title": "Zotero：书目与 BibTeX / RIS 导出",
+      "url": "https://www.zotero.org/support/creating_bibliographies"
+    },
+    {
+      "id": "vscode-python",
+      "title": "VS Code：Python 环境、调试与测试",
+      "url": "https://code.visualstudio.com/docs/languages/python"
+    },
+    {
+      "id": "python-venv",
+      "title": "Python：独立虚拟环境与重建",
+      "url": "https://docs.python.org/3/library/venv.html"
+    },
+    {
+      "id": "git-record",
+      "title": "Git：记录变更与检查差异",
+      "url": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"
+    },
+    {
+      "id": "github-lfs",
+      "title": "GitHub：大文件存储的边界",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
+    },
+    {
+      "id": "drawio-export",
+      "title": "draw.io：源文件与 SVG / PDF 导出",
+      "url": "https://www.drawio.com/docs/manual/export/export-diagram/"
+    },
+    {
+      "id": "word-revisions",
+      "title": "Word：修订与隐藏标记的区别",
+      "url": "https://support.microsoft.com/en-gb/word/training/track-changes-in-word"
+    },
+    {
+      "id": "word-properties",
+      "title": "Word：文档检查与 Mac 版本差异",
+      "url": "https://support.microsoft.com/en-us/office/inspect-document-b0088a7a-d482-4b87-b762-7c94c7c71e23"
+    },
+    {
+      "id": "excel-analysis",
+      "title": "Excel：分析工具库",
+      "url": "https://support.microsoft.com/en-us/excel/load-the-analysis-toolpak-in-excel"
+    },
+    {
+      "id": "latex-workshop",
+      "title": "LaTeX Workshop：编译工具链",
+      "url": "https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile"
+    },
+    {
+      "id": "obsidian-files",
+      "title": "Obsidian：本地 Markdown 文件",
+      "url": "https://help.obsidian.md/Files+and+folders/How+Obsidian+stores+data"
+    }
+  ]
+}

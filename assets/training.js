@@ -27,13 +27,26 @@
   $$('[data-print]').forEach(button => button.addEventListener('click', () => window.print()));
   let printDetails = [];
   window.addEventListener('beforeprint', () => {
-    printDetails = $$('.correction,.template-preview').map(detail => [detail, detail.open]);
+    printDetails = $$('.correction,.template-preview,[data-flow-disclosure]').map(detail => [detail, detail.open]);
     printDetails.forEach(([detail]) => { detail.open = true; });
   });
   window.addEventListener('afterprint', () => {
     printDetails.forEach(([detail, open]) => { detail.open = open; });
     printDetails = [];
   });
+  function revealFlowTarget() {
+    let target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch { return; }
+    if (!target) return;
+    const enclosing = target.closest('[data-flow-disclosure]');
+    const disclosure = enclosing || target.querySelector('[data-flow-disclosure]');
+    if (disclosure) {
+      disclosure.open = true;
+      requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    }
+  }
+  window.addEventListener('hashchange', revealFlowTarget);
+  revealFlowTarget();
   $$('.pathway-tabs a').forEach(anchor => {
     if (new URL(anchor.href).pathname === location.pathname) anchor.setAttribute('aria-current', 'page');
   });
@@ -81,7 +94,7 @@
       const status = $('#copy-status');
       button.disabled = true;
       try {
-        const response = await fetch(button.dataset.copyTemplate);
+        const response = await fetch(button.dataset.copyTemplate, { cache: 'no-cache' });
         if (!response.ok) throw new Error('Template unavailable');
         const content = await response.text();
         await navigator.clipboard.writeText(content);
@@ -215,7 +228,7 @@
     render();
   }
   dateInput.addEventListener('change', () => { state.date = dateInput.value; persist(); });
-  fetch('assets/data/pathways.json').then(response => {
+  fetch('assets/data/pathways.json', { cache: 'no-cache' }).then(response => {
     if (!response.ok) throw new Error('Unable to load pathways');
     return response.json();
   }).then(data => {

@@ -9,7 +9,7 @@ const baseUrl = process.env.CSMA_QA_BASE_URL || "http://127.0.0.1:8765";
 const qaRoot = process.env.CSMA_QA_OUTPUT || "/private/tmp/csma-site-qa-20260904";
 const profileRoot = path.join(qaRoot, `cdp-profile-${process.pid}`);
 
-const pages = [
+const rootPages = [
   "index.html",
   "bachelor.html",
   "undergraduate-research.html",
@@ -30,7 +30,26 @@ const pages = [
   "resources.html",
   "news.html",
   "students.html",
+  "workflows.html",
+  "tools.html",
+  "essays.html",
+  "international.html",
+  "learning.html",
 ];
+const pages = [
+  ...rootPages,
+  ...rootPages.map(page => `en/${page}`),
+  ...["small-research-tasks", "guidance-to-action"].flatMap(slug => [`essays/${slug}.html`, `en/essays/${slug}.html`]),
+];
+for (const directory of ["news", "en/news"]) {
+  const builtDirectory = path.join(process.cwd(), "_site", directory);
+  if (fs.existsSync(builtDirectory)) pages.push(...fs.readdirSync(builtDirectory).filter(name => name.endsWith(".html")).map(name => `${directory}/${name}`));
+}
+if (process.env.CSMA_QA_PAGES) {
+  const selected = new Set(process.env.CSMA_QA_PAGES.split(","));
+  for (let index = pages.length - 1; index >= 0; index--) if (!selected.has(pages[index])) pages.splice(index, 1);
+  if (!pages.length) throw new Error("CSMA_QA_PAGES did not select a known page");
+}
 
 const viewports = [
   { label: "1440", width: 1440, height: 1200 },
@@ -42,6 +61,12 @@ const viewports = [
 ];
 
 const screenshotKeys = new Set([
+  "essays.html@1440", "essays.html@390", "essays.html@320",
+  "essays/small-research-tasks.html@1440", "essays/small-research-tasks.html@390", "essays/small-research-tasks.html@320",
+  "en/index.html@1440", "en/index.html@1280", "en/index.html@390", "en/index.html@320",
+  "en/essays.html@1440", "en/essays.html@390", "en/essays.html@320",
+  "en/essays/small-research-tasks.html@1440", "en/essays/small-research-tasks.html@390", "en/essays/small-research-tasks.html@320",
+  "workflows.html@1440", "workflows.html@390", "workflows.html@320", "tools.html@1440", "tools.html@390", "tools.html@320",
   "index.html@1440", "index.html@1280", "index.html@1024", "index.html@768", "index.html@390",
   "bachelor.html@390", "undergraduate-research.html@390", "master.html@390", "doctor.html@390",
   "milestones.html@768", "projects.html@390", "outcomes.html@390", "templates.html@390",
@@ -234,6 +259,9 @@ try {
           brokenImages,
           toggleDisplay: toggle ? getComputedStyle(toggle).display : "missing",
           navDisplay: nav ? getComputedStyle(nav).display : "missing",
+          language: root.lang,
+          navLinks: nav ? [...nav.querySelectorAll("a")].map(link => ({ label: link.textContent.trim(), href: link.getAttribute("href"), current: link.getAttribute("aria-current") })) : [],
+          languageAlternates: [...document.querySelectorAll('link[rel="alternate"][hreflang]')].map(link => link.hreflang),
         };
       })()`);
 
@@ -243,8 +271,13 @@ try {
       record(metrics.scrollWidth <= metrics.clientWidth + 1, `${label}: no page-level horizontal overflow (${metrics.scrollWidth}/${metrics.clientWidth})`);
       record(metrics.brokenImages.length === 0, `${label}: all images loaded`);
       record(pageConsoleErrors.length === 0, `${label}: no browser console errors`);
+      const english = page.startsWith("en/");
+      const navLabels = english ? ["Home", "News", "Undergraduate", "Master's", "Doctoral", "Resources", "Outcomes", "Stories", "Mentoring", "About"] : ["首页", "新闻", "学士", "硕士", "博士", "资源", "成果", "榜样", "导引", "关于"];
+      const navTargets = ["index.html", "news.html", "bachelor.html", "master.html", "doctor.html", "resources.html", "outcomes.html", "students.html", "essays.html", "about.html"];
+      record(metrics.navLinks.length === 10 && metrics.navLinks.every((link, i) => link.label === navLabels[i] && link.href.replace(/^\//, "") === `${english ? "en/" : ""}${navTargets[i]}`) && metrics.navLinks.filter(link => link.current).length === 1, `${label}: ten localized navigation links and one current section`);
+      record(metrics.language === (english ? "en" : "zh-CN") && metrics.languageAlternates.includes("zh-CN") && metrics.languageAlternates.includes("en"), `${label}: document language and paired language alternates`);
 
-      if (viewport.width <= 1120) {
+      if (metrics.toggleDisplay !== "none" && metrics.toggleDisplay !== "missing") {
         const menuState = await evaluate(client, `(() => {
           const toggle = document.getElementById("nav-toggle");
           const nav = document.getElementById("main-nav");
@@ -262,7 +295,7 @@ try {
       const screenshotKey = `${page}@${viewport.label}`;
       if (screenshotKeys.has(screenshotKey)) {
         const screenshot = await client.send("Page.captureScreenshot", { format: "png", fromSurface: true });
-        const screenshotName = `${page.replace(/\.html$/, "")}-${viewport.label}.png`;
+        const screenshotName = `${page.replace(/\.html$/, "").replaceAll("/", "-")}-${viewport.label}.png`;
         fs.writeFileSync(path.join(qaRoot, screenshotName), Buffer.from(screenshot.data, "base64"));
       }
     }

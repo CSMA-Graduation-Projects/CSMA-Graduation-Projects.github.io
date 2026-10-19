@@ -1,0 +1,37 @@
+{% assign student_fields_en = 'name,degree,cohort,summary' | split: ',' %}
+{% assign student_count_en = 0 %}
+{% capture student_cards_en %}
+  {% for student in site.data.students %}
+    {% assign student_ready_en = true %}
+    {% for field in student_fields_en %}
+      {% assign english_text = student.en[field] | default: '' | strip %}
+      {% if english_text == empty %}{% assign student_ready_en = false %}{% endif %}
+    {% endfor %}
+    {% if student.highlights.size == 0 or student.en.highlights.size != student.highlights.size %}{% assign student_ready_en = false %}{% endif %}
+    {% for highlight in student.en.highlights %}
+      {% assign english_highlight = highlight | strip %}
+      {% if english_highlight == empty %}{% assign student_ready_en = false %}{% endif %}
+    {% endfor %}
+    {% if student.links.size == 0 or student.en.link_labels.size != student.links.size %}{% assign student_ready_en = false %}{% endif %}
+    {% for label in student.en.link_labels %}
+      {% assign english_label = label | strip %}
+      {% if english_label == empty %}{% assign student_ready_en = false %}{% endif %}
+    {% endfor %}
+    {% if student_ready_en %}
+      {% assign student_count_en = student_count_en | plus: 1 %}
+      <article class="showcase-card" id="{{ student.id | escape }}">
+        {% if student.photo %}<img class="student-photo" src="{{ student.photo | escape }}" alt="Portrait of {{ student.en.name | escape }}" width="160" height="160" loading="lazy">{% endif %}
+        <div class="news-meta"><span>{{ student.en.degree | escape }}</span><span>{{ student.en.cohort | escape }}</span></div>
+        <h3>{{ student.en.name | escape }}</h3>
+        <p>{{ student.en.summary | escape }}</p>
+        <ul class="compact-list">{% for highlight in student.en.highlights %}<li>{{ highlight | escape }}</li>{% endfor %}</ul>
+        <ul class="directory-links">{% for link in student.links %}<li><a href="{{ link.url | escape }}">{{ student.en.link_labels[forloop.index0] | escape }} <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul>
+      </article>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% if student_count_en > 0 %}
+<div class="showcase-grid">{{ student_cards_en }}</div>
+{% else %}
+<div class="collection-empty"><p>No verified student stories with a complete English version are available yet. Stories and representative work will appear after the students have confirmed the public scope and the English text has been reviewed.</p></div>
+{% endif %}

@@ -1,10 +1,10 @@
 # 新闻发布与栏目维护
 
-顶部导航为：首页、新闻、学士、硕士、博士、资源、成果、榜样、关于。“榜样”展示优秀学生的成长经历和代表作品，与展示各项产出的“成果”相互关联。
+顶部导航为：首页、新闻、学士、硕士、博士、资源、成果、榜样、导引、关于。“榜样”展示优秀学生的成长经历和代表作品，与展示各项产出的“成果”相互关联。“导引 / Mentoring”承载学习与研究指导文章。
 
 ## 发布一条新闻
 
-1. 复制 `docs/content-templates/news.md` 到 `_posts/`。
+1. 复制 `docs/content-templates/news.md` 到 `_posts/`，英文配对稿放在 `_news_en/`，保持相同文件名及正文锚点。
 2. 将文件命名为 `YYYY-MM-DD-英文短标题.md`，例如 `2026-09-10-weekly-arrangement.md`。
 3. 填写文件开头的标题、日期、类型、适用对象和摘要，然后填写正文。日期与文件名一致，使用 `YYYY-MM-DD`；同日新闻使用不同的英文短标题。
 4. 有截止时间时填写 `deadline`，没有则删除这一行。安排与要求应说明任务、时间、完成方式和相关材料。
@@ -38,8 +38,9 @@ GitHub Pages 构建成功后，新闻页自动列出文章，首页自动展示�
 
 ## 维护其他栏目
 
-- **资源**：在 `resources.html` 按类别增加指南、工具、课程、数据、文献或材料入口。七项常用材料仍在 `templates.html`，旧链接继续有效。
+- **资源**：修改 `scripts/build-training.py` 的资源入口和对应英文文案，再重新生成页面。25 份模板在 `templates.html`；模板元数据维护于 `assets/data/templates.json` 和 `assets/data/en/templates.json`。
 - **关于**：在 `about.html` 更新研究组介绍、培养理念、工作方式与公开联系信息。
-- **导航**：修改时同步所有根目录 HTML 和 `_layouts/news.html`；验证脚本会检查九项顺序、链接与当前栏目。
+- **导引**：中英文章分别维护于 `_essays/` 和 `_essays_en/`，保持相同 slug，参考配对的导引模板。
+- **导航**：维护 `scripts/i18n.py` 中的共享十项导航，再执行 `python3 scripts/build-training.py`；验证脚本检查两种语言的顺序、链接与当前栏目。
 
 有本地 Jekyll 环境时，构建后运行 `node scripts/validate-site.mjs --build` 和 `node scripts/privacy-scan.mjs --build`，以检查生成的新闻正文、列表、数据卡片和站内链接。

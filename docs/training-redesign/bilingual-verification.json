@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-19",
+  "status": "Local implementation, demonstration and validation complete; awaiting user confirmation before commit and push.",
+  "baseline_commit": "befdcedb28ab7ad4cc59865f6ebf7bc973c0f4d1",
+  "backup": {
+    "sibling_directory": "CSMA-Graduation-Projects.github.io-backup-20261019-024632",
+    "files": 527,
+    "entries": 737,
+    "verified": "inventory, modes, SHA-256, source unchanged during copy and git fsck"
+  },
+  "coverage": {
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "top_level_pages_per_language": 23,
+    "built_html_pages": 54,
+    "stages_per_language": 34,
+    "flowcharts_per_language": 10,
+    "nodes_per_language": 124,
+    "edges_per_language": 141,
+    "tool_scenarios_per_language": 7,
+    "templates_per_language": 24,
+    "essays_per_language": 2,
+    "news_per_language": 2
+  },
+  "validation": {
+    "responsive": {
+      "generatedAt": "2026-10-18T19:15:01.585Z",
+      "assertions": 2596,
+      "passed": 2596,
+      "failed": 0,
+      "pages": 54
+    },
+    "essays_final": {
+      "generatedAt": "2026-10-18T19:25:19.062Z",
+      "assertions": 196,
+      "passed": 196,
+      "failed": 0,
+      "pages": 4
+    },
+    "functional": {
+      "generatedAt": "2026-10-18T19:25:34.555Z",
+      "assertions": 82,
+      "passed": 82,
+      "failed": 0
+    },
+    "bilingual": {
+      "total": 48,
+      "passed": 48
+    },
+    "training_content": {
+      "passed": 37,
+      "total": 37
+    },
+    "workflow_tools": {
+      "passed": 44,
+      "total": 44
+    },
+    "site": "46 top-level source pages and all 54 built pages passed links, anchors, language metadata, article pairing and sitemap checks.",
+    "privacy": "Configured source and built-value pattern checks passed; this is not a claim of exhaustive personal-data detection.",
+    "packages": "Both language editions: 27-entry template bundle and 22-entry diagram bundle have exact membership and valid SHA-256 manifests.",
+    "syntax": "Python generator and JavaScript syntax checks, git diff --check passed."
+  },
+  "native_review": {
+    "browser": "Chinese Essays, English home, English master review stage and language switch observed in Chrome. Desktop and mobile screenshots reviewed.",
+    "drawio": "English master-path.drawio opened in the installed draw.io application; proposal decision, corrective branch, return label and following stages visually checked at 75 percent. No source edits. This does not claim native inspection of all ten diagrams.",
+    "geometry": "All ten English SVG and draw.io files checked structurally; 124 nodes, 141 edges, 706 visible SVG text lines, 119 diamond text lines and 27 return labels checked by independent geometric review.",
+    "limits": "Institutional eligibility, formal approval, account/software licences and live research results are outside this site acceptance."
+  },
+  "issues_resolved": [
+    "No-JavaScript mobile navigation scrolled normally after removing its sticky positioning, restoring usable downloads.",
+    "English export word wrapping and diamond text bounds adjusted; return paths do not cross their labels.",
+    "Footer and essay breadcrumb contrast corrected for light backgrounds.",
+    "QA now associates downloads with URL/GUID completion events and waits for stable unobscured click targets; duplicate filenames and in-progress scrolling no longer cause false failures."
+  ],
+  "repeat_generation": {
+    "files_compared": 137,
+    "byte_identical": true
+  },
+  "screenshots": {
+    "english-essays-desktop.png": "87df85f058981e5da8254ea50d88c128d7ed365c1112b418c9bb7ed47d12ad40",
+    "english-master-review-desktop.png": "8f826e000841599e5997a4e99bbc183e45af56d96b3cd8bd1dce85c19a6ae91c",
+    "english-essay-mobile.png": "236f0fa98659522efab1b783085a342b2e6bb05966d667b83e5cd6152736e60c",
+    "essays-desktop.png": "a9af39fdddf4e4c6338554bd59bd96893104e8066cfdae125f45d3499cfc5166",
+    "english-home-desktop.png": "90040d4aa392c2e677c78c3e025c475d10ccfdfa52d45abed86719cfa8392dba",
+    "essay-reading-desktop.png": "b96c3d7eac75e3d089c768259fa504822c0889141c6ae44c7cc5a8c13c39d9e9",
+    "language-switch-desktop.jpg": "888d9a630972d141af0e3d5b39994a724237f4daae9d315f91d315a12e543019",
+    "language-switch-mobile.jpg": "434240b1f89896398edf139c0ed0848e6abde42faad6e0c1270f00cbcefec1d0"
+  },
+  "language_switch_revision": {
+    "date": "2026-10-19",
+    "backup": "CSMA-Graduation-Projects.github.io-backup-20261019-034341",
+    "backup_files": 790,
+    "backup_entries": 1025,
+    "backup_verified": true,
+    "visible_labels": {
+      "zh-CN": "EN",
+      "en": "ZH"
+    },
+    "tooltips": {
+      "zh-CN": "English",
+      "en": "中文"
+    },
+    "built_page_checks": {
+      "passed": 54,
+      "total": 54
+    },
+    "bilingual_checks": {
+      "passed": 48,
+      "total": 48
+    },
+    "browser_review": "Chrome desktop and 390px mobile; real clicks preserve master/review planner query and essay chapter fragment. Original preview origin failed before shared-script cache versioning and passed after it.",
+    "script_cache_revision": "SHA-256 prefix of script.js",
+    "repeat_generation_pages": 50,
+    "repeat_generation_identical": true,
+    "scope": "Targeted revision verification; earlier full-suite results above were not rerun for this label change.",
+    "published": false
+  }
+}

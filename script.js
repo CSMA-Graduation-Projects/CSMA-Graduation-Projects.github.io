@@ -5,6 +5,20 @@ document.documentElement.classList.add("js");
   const mainNav = document.getElementById("main-nav");
   const backToTop = document.getElementById("back-to-top");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const english = document.documentElement.lang === "en";
+  // A paired page keeps the same stage, selected path and URL fragment.
+  function updateLanguageLink() {
+    document.querySelectorAll("[data-language-switch]").forEach(link => {
+      const url = new URL(link.href);
+      url.search = location.search;
+      url.hash = location.hash;
+      link.href = url.href;
+    });
+  }
+  updateLanguageLink();
+  window.addEventListener("hashchange", updateLanguageLink);
+  document.addEventListener("change", updateLanguageLink);
+  document.querySelectorAll("[data-language-switch]").forEach(link => link.addEventListener("click", updateLanguageLink));
 
   function setNavigationState(isOpen) {
     if (!navToggle || !mainNav) {
@@ -13,7 +27,7 @@ document.documentElement.classList.add("js");
 
     mainNav.classList.toggle("open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? "收起主导航" : "展开主导航");
+    navToggle.setAttribute("aria-label", english ? (isOpen ? "Collapse main navigation" : "Expand main navigation") : (isOpen ? "收起主导航" : "展开主导航"));
   }
 
   if (navToggle && mainNav) {
@@ -42,7 +56,7 @@ document.documentElement.classList.add("js");
     });
 
     window.addEventListener("resize", function () {
-      if (window.innerWidth > 920) {
+      if (getComputedStyle(navToggle).display === "none") {
         setNavigationState(false);
       }
     });

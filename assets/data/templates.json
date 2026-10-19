@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "templates": [
     {
       "id": "onboarding",
       "title": "入组与阶段计划",
       "category": "入门与计划",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（含国际学生）",
       "stage": "入组、阶段启动",
-      "description": "对齐培养依据、阶段目标、资源条件、协作方式和可验收任务。",
+      "description": "对齐培养依据、阶段目标、资源条件与可验收任务；附国际学生语言、培养环节与手续核对表。",
       "file": "assets/templates/onboarding.md"
     },
     {
       "id": "research-task",
       "title": "科研训练任务卡",
       "category": "入门与计划",
-      "audience": "本科科研训练、硕士研究",
+      "audience": "本科科研训练、硕士研究、博士生（按适用要求使用）",
       "stage": "科研训练、研究执行",
       "description": "把一个研究问题拆成最小目标、执行步骤、证据和反馈行动。",
       "file": "assets/templates/research-task.md"
@@ -23,7 +23,7 @@
       "id": "topic",
       "title": "选题论证与范围界定",
       "category": "入门与计划",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "选题、研究问题收敛",
       "description": "比较候选问题，核对真实需求、研究边界、可行性和退出条件。",
       "file": "assets/templates/topic.md"
@@ -41,7 +41,7 @@
       "id": "literature",
       "title": "文献综述与证据矩阵",
       "category": "研究与过程",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "综述、开题、论文写作",
       "description": "保存检索和筛选依据，比较文献证据，形成可追溯的研究判断。",
       "file": "assets/templates/literature.md"
@@ -50,7 +50,7 @@
       "id": "reading",
       "title": "论文阅读与复现判断",
       "category": "研究与过程",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "文献阅读、复现准备",
       "description": "说明论文的问题、方法、证据、局限以及是否值得复现。",
       "file": "assets/templates/reading.md"
@@ -59,7 +59,7 @@
       "id": "proposal",
       "title": "开题方案与评审准备",
       "category": "入门与计划",
-      "audience": "本科毕业设计、硕士生",
+      "audience": "本科毕业设计、硕士生、博士生（按适用要求使用）",
       "stage": "开题、方案评审",
       "description": "衔接研究问题、方法、评价、里程碑和评审修改，学校正式表单优先。",
       "file": "assets/templates/proposal.md"
@@ -68,7 +68,7 @@
       "id": "experiment",
       "title": "实验、复现与运行证据",
       "category": "研究与过程",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "实验设计、执行与复核",
       "description": "记录配置、原始日志、失败、指标和复核，区分真实运行与保存回放。",
       "file": "assets/templates/experiment.md"
@@ -77,7 +77,7 @@
       "id": "engineering-report",
       "title": "需求、详细设计与测试报告",
       "category": "研究与过程",
-      "audience": "本科毕业设计、本科竞赛、硕士工程项目",
+      "audience": "本科毕业设计、本科竞赛、硕士工程项目、博士生（按适用要求使用）",
       "stage": "需求分析、设计、实现与测试",
       "description": "把需求编号关联到设计、实现、真实测试和缺陷，形成工程交付证据。",
       "file": "assets/templates/engineering-report.md"
@@ -95,7 +95,7 @@
       "id": "weekly",
       "title": "周报与下一阶段计划",
       "category": "研究与过程",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "日常研究、周期汇报",
       "description": "对照上期承诺汇报实际产出、阻碍和证据，提出可完成的下一步。",
       "file": "assets/templates/weekly.md"
@@ -104,7 +104,7 @@
       "id": "meeting",
       "title": "会议、讨论与决策记录",
       "category": "协作与归档",
-      "audience": "本科生、硕士生、项目团队",
+      "audience": "本科生、硕士生、项目团队、博士生（按适用要求使用）",
       "stage": "例会、指导讨论、项目协作",
       "description": "区分建议、决定与待审批事项，落实责任人、交付物、期限和复核。",
       "file": "assets/templates/meeting.md"
@@ -122,7 +122,7 @@
       "id": "change-request",
       "title": "课题、计划与资源变更",
       "category": "入门与计划",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "范围、时间、数据或资源调整",
       "description": "保存原计划，说明变更证据、影响、替代安排与实际确认状态。",
       "file": "assets/templates/change-request.md"
@@ -131,7 +131,7 @@
       "id": "annual-check",
       "title": "校本要求核对与年度培养记录",
       "category": "协作与归档",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "学期、学年及阶段检查",
       "description": "登记适用校院规则、版本和核验结果，逐项核对课程、实践、论文检查、送审答辩及学位手续。",
       "file": "assets/templates/annual-check.md"
@@ -140,7 +140,7 @@
       "id": "midterm",
       "title": "中期检查与差距整改",
       "category": "论文与毕业",
-      "audience": "本科毕业设计、硕士生",
+      "audience": "本科毕业设计、硕士生、博士生（按适用要求使用）",
       "stage": "中期检查、整改与复核",
       "description": "对照批准计划核实进展和证据，评估剩余工作并跟踪评审整改。",
       "file": "assets/templates/midterm.md"
@@ -149,7 +149,7 @@
       "id": "thesis",
       "title": "学位论文写作与版本检查",
       "category": "论文与毕业",
-      "audience": "本科毕业设计、硕士生",
+      "audience": "本科毕业设计、硕士生、博士生（按适用要求使用）",
       "stage": "论文写作、审阅、定稿",
       "description": "把章节论点关联证据，核对图表、引用、匿名版和最终归档版本。",
       "file": "assets/templates/thesis.md"
@@ -158,7 +158,7 @@
       "id": "outcomes",
       "title": "成果要求核对与成果台账",
       "category": "论文与毕业",
-      "audience": "本科生、学术硕士、专业硕士",
+      "audience": "本科生、学术硕士、专业硕士、博士生（按适用要求使用）",
       "stage": "成果规划、申请资格核对",
       "description": "按本人适用制度核对成果条件，分别记录投稿、接收、发表等实际状态。",
       "file": "assets/templates/outcomes.md"
@@ -167,7 +167,7 @@
       "id": "integrity",
       "title": "学术规范、查非与查重",
       "category": "论文与毕业",
-      "audience": "本科毕业设计、硕士生",
+      "audience": "本科毕业设计、硕士生、博士生（按适用要求使用）",
       "stage": "送审前、答辩前、终稿提交前",
       "description": "分别记录学术规范、非学术性问题检查、查重和 AI 披露的适用依据与整改。",
       "file": "assets/templates/integrity.md"
@@ -176,7 +176,7 @@
       "id": "ai-use",
       "title": "AI 辅助使用与披露记录",
       "category": "研究与过程",
-      "audience": "本科生、硕士生",
+      "audience": "本科生、硕士生、博士生（按适用要求使用）",
       "stage": "研究、写作、参赛与提交全过程",
       "description": "记录实际用途、采用内容、数据输入边界、人工核验和适用披露要求。",
       "file": "assets/templates/ai-use.md"
@@ -185,7 +185,7 @@
       "id": "review-response",
       "title": "送审准备与意见逐条回复",
       "category": "论文与毕业",
-      "audience": "本科毕业设计、硕士生",
+      "audience": "本科毕业设计、硕士生、博士生（按适用要求使用）",
       "stage": "送审、评阅修改、复审",
       "description": "核验送审版本与匿名范围，逐条记录意见、正文修改及实际复核。",
       "file": "assets/templates/review-response.md"
@@ -194,7 +194,7 @@
       "id": "defense",
       "title": "答辩准备与修改验收",
       "category": "论文与毕业",
-      "audience": "本科毕业设计、硕士生",
+      "audience": "本科毕业设计、硕士生、博士生（按适用要求使用）",
       "stage": "预答辩、正式答辩、修改",
       "description": "准备资格、陈述、证据与演示，记录现场问题并完成修改闭环。",
       "file": "assets/templates/defense.md"
@@ -203,7 +203,7 @@
       "id": "archive",
       "title": "数据、代码与毕业材料归档",
       "category": "协作与归档",
-      "audience": "本科生、硕士生、项目团队",
+      "audience": "本科生、硕士生、项目团队、博士生（按适用要求使用）",
       "stage": "阶段冻结、投稿、毕业归档",
       "description": "核对材料、权限、版本、SHA-256 校验和恢复入口，记录实际验证范围。",
       "file": "assets/templates/archive.md"
@@ -212,10 +212,19 @@
       "id": "handover",
       "title": "阶段移交与离组交接",
       "category": "协作与归档",
-      "audience": "本科生、硕士生、项目团队",
+      "audience": "本科生、硕士生、项目团队、博士生（按适用要求使用）",
       "stage": "项目换人、毕业、离组",
       "description": "交接材料、系统、权限、资产和未完成工作，由接管者实际抽检确认。",
       "file": "assets/templates/handover.md"
+    },
+    {
+      "id": "learning-review",
+      "title": "学习复盘与成长计划",
+      "category": "研究与过程",
+      "audience": "本科生、硕士生、博士生（含国际学生）",
+      "stage": "反馈后、阶段完成、任务迁移",
+      "description": "把起点、实际证据、反馈与迁移任务连起来，明确下一项能力目标和复查日期。",
+      "file": "assets/templates/learning-review.md"
     }
   ]
 }

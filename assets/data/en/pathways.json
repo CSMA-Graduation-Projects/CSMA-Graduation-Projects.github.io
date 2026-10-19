@@ -1,0 +1,1678 @@
+{
+  "updated": "2026-10-19",
+  "tracks": [
+    {
+      "id": "research",
+      "title": "Undergraduate research training",
+      "subtitle": "Start with manageable tasks and learn to ask questions, test ideas and communicate evidence.",
+      "audience": "Undergraduates taking part in research training, undergraduate innovation programs or research-group projects. Choose a starting point that fits your preparation and available time.",
+      "duration": "Progress according to your skills and project needs, with agreed work cycles and review dates.",
+      "note": "Research training prioritizes skill development and verifiable evidence. It does not guarantee publications, awards or admission to further study. Before reusing results in a capstone or thesis, check institutional requirements, your contribution and the permitted scope of reuse.",
+      "page": "undergraduate-research.html",
+      "stages": [
+        {
+          "id": "orientation",
+          "title": "Orientation and mutual fit",
+          "timing": "Before formally accepting a task",
+          "goal": "Explain why you want to participate, how much time you can commit and what support you need, then agree on a suitable starting point.",
+          "entry": [
+            "You have read the group's public introduction and considered how research training fits around coursework.",
+            "Use channels confirmed by the coordinator. Do not submit personal application materials to a public repository."
+          ],
+          "actions": [
+            "Summarize relevant courses, assignments or projects and questions that interest you. State honestly which tools you have not yet learned.",
+            "List your weekly availability, examinations and timetable conflicts. Agree with your supervisor on the trial task, feedback method and how arrangements can be adjusted.",
+            "Confirm the task owner, storage location, available equipment and accounts. Understand the boundaries for citation, data licenses, confidentiality and AI use.",
+            "Turn the discussion into an onboarding checklist, separating confirmed arrangements from matters still requiring verification."
+          ],
+          "deliverables": [
+            "A summary of your background and interests, and an availability schedule.",
+            "An onboarding checklist and trial-task agreement, including the owner and review date."
+          ],
+          "review": [
+            "The student can explain the trial task's purpose and completion conditions in their own words.",
+            "The supervisor confirms that the difficulty and resource needs are manageable and that coursework conflicts have been addressed.",
+            "Both parties know how to communicate about blockers, leave requests or withdrawal."
+          ],
+          "failure": "If preparation or time is insufficient, reduce the task or complete prerequisite coursework first. Record the discussion and agree on a review date. Registration or joining a group chat does not complete this stage.",
+          "templates": [
+            "onboarding",
+            "research-task"
+          ],
+          "next": "After the coordinator confirms the trial task, begin tools and research-practice training."
+        },
+        {
+          "id": "foundation",
+          "title": "Tools, literature and research practice",
+          "timing": "Early in the trial period, adapted to your starting skills",
+          "goal": "Independently run a small example, record the process and correctly explain where materials and code came from.",
+          "entry": [
+            "Agree on a small exercise, an available environment and a review date. Existing work may demonstrate a skill if you can explain and rerun it; practise the gaps identified, rather than repeating mastered exercises or skipping checks because of year of study.",
+            "You know which materials must remain in controlled storage."
+          ],
+          "actions": [
+            "Set up the development environment and record the operating system, dependency versions and startup commands. Use a minimal example to check the installation.",
+            "Practice Git commits, branches, diffs and recovery. Check for credentials, personal information and unrelated large files before committing.",
+            "Find representative literature, distinguishing original papers, tutorials and secondary summaries. Produce a reading note covering the question, method, evidence and limitations.",
+            "Complete the exercise and necessary tests. If using AI assistance, record its purpose and personally run the code, check sources and explain key implementation choices."
+          ],
+          "deliverables": [
+            "A runnable exercise, environment instructions and actual test records.",
+            "Reading notes and a source list.",
+            "Commit history and explanations of fixes to identified problems."
+          ],
+          "review": [
+            "The exercise can be rerun from the instructions, without omitted failure information.",
+            "The student can explain inputs, processing, outputs and any cited or reused elements.",
+            "Installation, screenshots and AI output are not treated as evidence that the task has been verified."
+          ],
+          "failure": "If execution fails, reduce it to a minimal example and record the error. If key concepts cannot be explained, practice and review them before starting a complex project.",
+          "templates": [
+            "onboarding",
+            "reading",
+            "experiment",
+            "ai-use"
+          ],
+          "next": "Once the foundational exercise passes review, take on a clearly bounded research task."
+        },
+        {
+          "id": "exploration",
+          "title": "Reading, replication and small tasks",
+          "timing": "Before formal project planning",
+          "goal": "Use a small amount of actual work to judge whether a candidate question is worth pursuing and whether you understand the task.",
+          "entry": [
+            "The foundational exercise runs, and the task owner has identified public materials or data that may lawfully be used.",
+            "The task has defined inputs, outputs, budget and stopping conditions."
+          ],
+          "actions": [
+            "Turn a broad direction into a specific question, such as which inputs cause a method to fail and how that failure can be observed.",
+            "Read related work and perform a replication, error analysis, data-curation task or module fix. Record the original method and your changes.",
+            "Specify metrics and comparisons in advance. Distinguish authors' reported values, local rerun results, offline analyses and unverified conjectures.",
+            "Collect successful and failed examples. Explain what the evidence does and does not support, then propose next steps."
+          ],
+          "deliverables": [
+            "A research task sheet and literature comparison table.",
+            "Verifiable code, configuration, logs and examples.",
+            "A short task report covering conclusions, limitations, unresolved questions and recommendations."
+          ],
+          "review": [
+            "Results trace to specific inputs, versions and execution records.",
+            "The student can explain sources of differences without claiming general effectiveness from one or two examples.",
+            "The supervisor confirms the value, scope and resources for further work."
+          ],
+          "failure": "If replication fails, check dependencies, data and evaluation definitions first. If the question lacks value, close it honestly or change topic, retaining failure records in the report.",
+          "templates": [
+            "research-task",
+            "literature",
+            "experiment"
+          ],
+          "next": "Make an evidence-based decision to continue or adjust before setting the project scope."
+        },
+        {
+          "id": "project",
+          "title": "Project plan and task breakdown",
+          "timing": "After the small task is accepted, before sustained work",
+          "goal": "Turn a research idea into a plan with owners, deadlines and individually verifiable tasks.",
+          "entry": [
+            "Preliminary feasibility evidence exists, and the project fits your current skills.",
+            "If applying to a formal innovation program, you have obtained the current year's notice."
+          ],
+          "actions": [
+            "Specify the real setting, target users or study objects, central question, exclusions and expected outputs.",
+            "Divide the work into literature, data, implementation, validation and writing tasks. Give each an owner, dependencies, deadline and acceptance evidence.",
+            "Check computing resources, equipment, funding and data licenses. For human-participant research or sensitive material, confirm required approvals before collection or use.",
+            "Agree on reporting intervals, collaborative contributions, authorship discussions and change procedures. Submit formal applications through the designated system and retain receipts."
+          ],
+          "deliverables": [
+            "A project description and milestone plan.",
+            "A task list, resource budget and risk register.",
+            "Application materials, approvals and submission receipts where applicable."
+          ],
+          "review": [
+            "Every milestone has an observable output, rather than only labels such as learning or optimization.",
+            "Scope, resources, permissions and responsibilities support the plan.",
+            "Team members understand their responsibilities, and formal application status is supported by records."
+          ],
+          "failure": "If resources or dependencies are missing, reduce the scope first. Do not describe an unsuccessful application as an approved project. Revise in response to feedback and clarify whether work will continue as a training exercise.",
+          "templates": [
+            "proposal",
+            "research-task",
+            "change-request"
+          ],
+          "next": "After the plan and necessary approvals are confirmed, proceed with research and implementation against the milestones."
+        },
+        {
+          "id": "execution",
+          "title": "Execution, weekly reports and reviews",
+          "timing": "Throughout the project, at the agreed frequency",
+          "goal": "Deliver inspectable progress consistently so that blockers and risks are identified early.",
+          "entry": [
+            "Tasks, storage locations, owners and feedback intervals are confirmed.",
+            "The current work cycle has prioritized tasks and acceptance conditions."
+          ],
+          "actions": [
+            "Advance code, experiments or analysis through small commits, recording changes, execution conditions and actual results.",
+            "Report completed work, evidence links, reasons for unfinished tasks, support needed and plans for the next cycle. Time online does not replace outputs.",
+            "Prepare specific questions and attempted solutions before discussions. Afterwards, record decisions, owners and deadlines; add important verbal decisions to the agreed record.",
+            "If data changes, resources are insufficient or failures recur, submit a change note and revise scope and timing. Do not delay silently or show only favorable results."
+          ],
+          "deliverables": [
+            "Versioned outputs, configuration and experiment/test logs.",
+            "Periodic reports, meeting action items and updated task status.",
+            "Stage demonstrations or review records, and change requests where applicable."
+          ],
+          "review": [
+            "Reported progress matches actual files, commits and execution records.",
+            "Blockers have assigned owners, and evidence shows how feedback was addressed.",
+            "Stage outputs can be run or reviewed, and practical conflicts involving coursework, health or other needs have been reasonably accommodated."
+          ],
+          "failure": "If a milestone is missed, document the gap and cause, reduce the next cycle's tasks and agree on a review. If sustained participation is not possible, explicitly arrange a pause or handover.",
+          "templates": [
+            "weekly",
+            "meeting",
+            "experiment",
+            "change-request"
+          ],
+          "next": "Once core tasks meet the agreed conditions, move to independent checking and communicating the results."
+        },
+        {
+          "id": "validation",
+          "title": "Result verification and communication",
+          "timing": "Before closure, publication submission, competition entry or public release",
+          "goal": "Align claims, code and explanations so that others can understand and inspect the work.",
+          "entry": [
+            "Core outputs are available and original records are traceable.",
+            "The intended output is identified: a report, software, demonstration, paper or another form."
+          ],
+          "actions": [
+            "Check the work from a clean environment or have another member follow the instructions. Review data processing, metric calculations, failure cases and limitations.",
+            "Write around the question, method, evidence and limitations. Give sources, units and version information for figures and tables, and cite original materials.",
+            "List individual contributions, reused work, collaborative support and AI assistance. Confirm authorship and licenses; do not present others' work as your own.",
+            "Check formatting, intellectual property, visibility and submission conditions for the intended venue or competition. Submit after the relevant confirmation."
+          ],
+          "deliverables": [
+            "A technical report or manuscript, verification records and reproduction instructions.",
+            "Contribution and citation lists, permission records and public-release check results.",
+            "Formal submission receipts and output-status records where applicable."
+          ],
+          "review": [
+            "Key conclusions have direct evidence, and limitations and negative results are reported accurately.",
+            "An independent reader can locate the outputs and understand how to check them.",
+            "Submission, acceptance, publication, rights granted and awards are recorded as distinct states."
+          ],
+          "failure": "If verification fails, locate the discrepancy, add evidence and revise the claims accordingly. Do not publish material with unclear permissions; obtain permission or replace it first.",
+          "templates": [
+            "thesis",
+            "outcomes",
+            "integrity",
+            "ai-use",
+            "experiment"
+          ],
+          "next": "After the outputs pass review, complete closure, archiving and handover."
+        },
+        {
+          "id": "archive",
+          "title": "Closure, archiving and next steps",
+          "timing": "Before project completion, transition to a capstone or withdrawal",
+          "goal": "Preserve a complete record and usable outputs, clarifying completed work and remaining responsibilities.",
+          "entry": [
+            "Outputs and outstanding problems are organized, and formal project-closure requirements have been checked.",
+            "A recipient or approved storage location is identified."
+          ],
+          "actions": [
+            "Organize tasks, reports, code, data provenance, environments, execution records and permissions against a checklist. Create a version index and backup.",
+            "Have the recipient inspect key files and actually restore or run them. Record missing items, fixes and access permissions.",
+            "Complete project closure, return equipment and settle outstanding expenses. Transfer ownership and access for organizational resources through the platform's authorized process; do not transfer personal account passwords.",
+            "Reflect on skills gained and gaps, then agree on further study or a capstone transition. Include only authorized work with explainable personal contributions in your portfolio."
+          ],
+          "deliverables": [
+            "An archive index, final versions and backup-verification records.",
+            "A handover checklist, outstanding tasks and their owners.",
+            "A skills reflection and formal closure confirmation where applicable."
+          ],
+          "review": [
+            "The recipient can locate, open and verify core materials.",
+            "Equipment, expenses, accounts and unfinished work all have handling records.",
+            "Public presentations have not disclosed personal information or unpublished work without permission."
+          ],
+          "failure": "If records are missing or cannot be restored, repair the archive and repeat handover. State the cause and impact of irrecoverable material; do not mark an incomplete package as accepted.",
+          "templates": [
+            "archive",
+            "handover",
+            "outcomes",
+            "learning-review"
+          ],
+          "next": "Close the project before starting a new one. A transition to a capstone requires a fresh check of task and degree-stage requirements."
+        }
+      ],
+      "growth": {
+        "capabilities": [
+          "Explain a bounded task in terms of its inputs, actions and observable results, using an actual example to demonstrate understanding.",
+          "Complete a reading, reproduction or module task independently, preserving sources, versions, commands, successes and failures so another person can check the work.",
+          "Use evidence to explain results and limitations, turn feedback into a manageable next task, and gradually rely less on step-by-step instructions."
+        ],
+        "starting_check": [
+          "Bring a course assignment or project you completed and explain its inputs, outputs, key implementation and one limitation. If you do not yet have relevant work, identify the missing foundations and agree on an introductory exercise with your mentor.",
+          "Run a small public example that you are permitted to use on an available device, saving the environment, commands and actual output. If it fails, provide the full error and attempted fixes rather than claiming proficiency.",
+          "Read a source directly relevant to the proposed task and cite the passages supporting your account of its problem, method and limitations. Also provide an availability plan that includes classes and examinations."
+        ],
+        "student_role": "Identify the point you understand least, offer your own explanation or attempt, complete the agreed minimum task and submit evidence. Ask for help with your records when you still cannot explain a key step at the agreed checkpoint, or when data access, equipment or course commitments block progress; do not wait to be prompted about every item.",
+        "support_role": "The mentor chooses a suitable difficulty based on demonstrated foundations, initially models how to turn a question into checkable steps, and explains the expected quality and review date. An experienced member may help troubleshoot the environment. The agreed mentor remains responsible for direction, scope and quality judgments; receiving help does not itself establish that the task has passed review.",
+        "feedback": "At the first review, examine both the actual output and the student's explanation, identify one essential piece of missing evidence, and set a review date. After revision, try a related task with different inputs and compare how independently the student can diagnose problems. If the example runs but the student cannot explain why, strengthen the foundations before expanding the task.",
+        "transition": "Before taking on a more independent project, assemble a checkable task, an explained failure case and a next-step plan. When moving into a capstone or competition, carry forward skills, records and authorized materials, then confirm the new task specification or current competition rules, individual contribution and formal requirements. Training review does not replace those requirements."
+      }
+    },
+    {
+      "id": "bachelor",
+      "title": "Undergraduate capstone / bachelor's thesis",
+      "subtitle": "Connect the topic, implementation, thesis and defense with clear deliverables at every stage.",
+      "audience": "Undergraduates undertaking a capstone project or thesis. Select evidence appropriate to an engineering, experimental or theoretical topic.",
+      "duration": "Work backwards from the department's current annual schedule. Official dates, formats and eligibility follow the notice applicable to your program.",
+      "note": "The capstone must demonstrate your own integrated learning. Before reusing research, competition or internship work, check topic suitability, individual contribution, permissions and institutional rules. All required capstone stages still apply.",
+      "page": "bachelor.html",
+      "stages": [
+        {
+          "id": "topic",
+          "title": "Requirements, topic and task brief",
+          "timing": "During the department's topic-selection and task-allocation window",
+          "goal": "Secure a formally recognized topic with a manageable scope and accessible resources.",
+          "entry": [
+            "You have the current capstone notice, templates and system entry point for your program.",
+            "You understand the applicable credit, eligibility and supervisory requirements."
+          ],
+          "actions": [
+            "Create a schedule of topic selection, proposal review, mid-program review, thesis checks, defense and archiving windows, recording each notice's source.",
+            "Compare candidate topics by problem, existing foundation, personal contribution, technical risk and workload. Test whether critical resources are available.",
+            "Agree with your supervisor on required work, optional extensions and explicit exclusions. Define acceptance evidence for each core goal.",
+            "Confirm the topic and task brief through the institutional process. Check the title, supervisor, student details and output requirements, and retain submission confirmation."
+          ],
+          "deliverables": [
+            "An institutional-requirements checklist and timetable.",
+            "A topic comparison, confirmed title and task brief.",
+            "Core scope, acceptance conditions and a resource-risk list."
+          ],
+          "review": [
+            "The topic fits the program's educational requirements, and the student can explain their own responsibilities.",
+            "The task brief matches the information in the official system.",
+            "The scope is feasible within the actual deadline, with plans for critical dependencies."
+          ],
+          "failure": "Remove nonessential features if the topic is too broad, or change approach if resources are unavailable. Follow required procedures for a topic change so that the thesis and official registration remain consistent.",
+          "templates": [
+            "onboarding",
+            "topic",
+            "bachelor-task",
+            "change-request",
+            "annual-check"
+          ],
+          "next": "After the topic and task brief are confirmed, conduct focused research and prepare the proposal."
+        },
+        {
+          "id": "proposal",
+          "title": "Literature review and proposal",
+          "timing": "Before the formal proposal review, allowing time for revision",
+          "goal": "Explain why the work is needed, what existing work achieves, and how you will complete and validate your contribution.",
+          "entry": [
+            "The topic, task brief and scope are confirmed.",
+            "You have the applicable proposal template and review arrangements."
+          ],
+          "actions": [
+            "Search relevant literature and existing systems, recording search terms, sources and screening criteria. Compare approaches and limitations.",
+            "Turn the background motivation into requirements or research questions. Distinguish existing technology, intended reuse and your planned contribution.",
+            "Describe the technical approach, data sources, evaluation or testing methods, schedule and risk responses. Run small tests of critical technology first.",
+            "Prepare the proposal and presentation, responding to each comment. After formal submission, preserve the version, feedback and approval or revision record."
+          ],
+          "deliverables": [
+            "A literature comparison, reference list and critical-technology test records.",
+            "A proposal report, presentation materials and stage plan.",
+            "A comment-response table and the official proposal outcome."
+          ],
+          "review": [
+            "Literature claims come from actual reading, rather than citation counts alone.",
+            "The question, approach and validation method align.",
+            "The formal proposal outcome is verifiable, and required revisions have owners and deadlines."
+          ],
+          "failure": "If the proposal is not approved, revise the question or approach in response to feedback and follow the institution's repeat-review arrangements. Rewording alone does not make an infeasible plan workable.",
+          "templates": [
+            "literature",
+            "reading",
+            "proposal",
+            "review-response"
+          ],
+          "next": "After the formal proposal review and required revisions are complete, refine the requirements and design."
+        },
+        {
+          "id": "design",
+          "title": "Requirements analysis and detailed design",
+          "timing": "Before substantial implementation",
+          "goal": "Refine the approach into a structure that can be implemented, tested and explained.",
+          "entry": [
+            "The proposal is confirmed and outstanding issues have recorded resolutions.",
+            "The implementation environment, data and main constraints are clear."
+          ],
+          "actions": [
+            "For engineering topics, specify user scenarios, functions, failures and quality requirements. For research topics, define hypotheses, variables, baselines, metrics and experimental conditions.",
+            "Diagram modules, data flows or the research process. Define interfaces, inputs and outputs, data dictionaries and key algorithms.",
+            "Map core requirements to tests or validation methods, covering normal, boundary, erroneous and resource-limited conditions.",
+            "Assess privacy, data licenses, security and maintainability. Test high-risk elements with small prototypes before confirming the design version."
+          ],
+          "deliverables": [
+            "A requirements or research-question statement, scope and acceptance table.",
+            "Overall and detailed designs, with interface or experimental-design documents.",
+            "High-risk prototype results and a testing/validation plan."
+          ],
+          "review": [
+            "Choose one core requirement or research question and explain its design interface or experimental variables, the planned test and expected observations. The chain must show how the requirement can be checked.",
+            "Data sources, error handling and critical dependencies are clear.",
+            "The supervisor can assess workload and main risks from the design."
+          ],
+          "failure": "If the design cannot support acceptance conditions, clarify requirements again. If critical technology fails its test, change the approach and record the impact, completing formal change procedures if needed.",
+          "templates": [
+            "engineering-report",
+            "experiment",
+            "change-request"
+          ],
+          "next": "After the design baseline is confirmed, implement modules and prepare mid-program evidence."
+        },
+        {
+          "id": "implementation",
+          "title": "Implementation and mid-program review",
+          "timing": "From design confirmation to the department's mid-program review window",
+          "goal": "Produce demonstrable core progress and adjust the remaining plan using the actual gaps.",
+          "entry": [
+            "The design and current task list are clear, and version control is working.",
+            "Mid-program review materials, timing and submission methods are confirmed."
+          ],
+          "actions": [
+            "Implement and test modules incrementally, retaining commits, environment details and execution records. Demonstrate core user journeys regularly to reduce late integration risks.",
+            "Continue drafting the requirements, design and methods chapters. Record decisions that depart from the original design and explain why.",
+            "Compare progress with the task brief, marking work completed, in progress or not started. Support the status with code, tests or analysis results.",
+            "Prepare the mid-program report and demonstration, explaining key problems, remaining work and plan adjustments. Turn review comments into action items."
+          ],
+          "deliverables": [
+            "A stage version, run instructions and a core demonstration.",
+            "A mid-program report, progress evidence and thesis outline/draft.",
+            "Review comments, a revision table and subsequent milestones."
+          ],
+          "review": [
+            "Key workflows actually run, and screenshots and demonstrations match the current version.",
+            "Review materials distinguish completed work from plans, with feasible arrangements for unfinished tasks.",
+            "The official review outcome and follow-up requirements are recorded."
+          ],
+          "failure": "If the core user journey is incomplete, prioritize a minimal complete path and pause optional extensions. Where corrections or another review are required, submit evidence according to the official instructions.",
+          "templates": [
+            "weekly",
+            "meeting",
+            "midterm",
+            "change-request"
+          ],
+          "next": "After addressing mid-program issues, complete the system or research outputs and validate them comprehensively."
+        },
+        {
+          "id": "validation",
+          "title": "Testing, experiments and analysis",
+          "timing": "After core implementation, before finalizing conclusions",
+          "goal": "Use sufficient, verifiable evidence to establish whether the task brief's goals were achieved.",
+          "entry": [
+            "The version under evaluation is identified, and the environment and data can be located.",
+            "Test cases or experimental procedures have explicit expectations."
+          ],
+          "actions": [
+            "Use the requirements mapping to execute functional, boundary, failure and applicable performance/security checks. Record actual results and defects.",
+            "For research topics, check data splits, controls, metric implementations and repeated-run conditions. Prevent test information from influencing method tuning.",
+            "Fix problems affecting core goals and run regression checks. For unresolved limitations, state their triggers and impact.",
+            "Generate figures and tables from raw records. Explain results, failures and applicability, distinguishing self-testing, independent checks and unverified claims."
+          ],
+          "deliverables": [
+            "Test/experiment plans, raw records and results summaries.",
+            "Defect and fix lists, with regression results.",
+            "A requirements-to-evidence mapping and results analysis."
+          ],
+          "review": [
+            "Every core goal has relevant evidence; successful interface screenshots alone do not leave requirements untested.",
+            "Results correspond to identifiable versions, inputs and execution conditions.",
+            "Conclusions remain within the tested scope, and a reviewer can follow the verification instructions."
+          ],
+          "failure": "Fix and rerun failed critical tests. Add experiments or narrow claims where evidence is insufficient. Do not remove failure records to declare completion.",
+          "templates": [
+            "engineering-report",
+            "experiment",
+            "integrity"
+          ],
+          "next": "Once core acceptance conditions are met, finish the thesis and prepare formal checks."
+        },
+        {
+          "id": "writing",
+          "title": "Thesis writing and compliance checks",
+          "timing": "Write throughout the project; prepare a complete draft before checks",
+          "goal": "Accurately present your own work and meet applicable formatting and academic-practice requirements.",
+          "entry": [
+            "Main implementation or research results are complete, with the evidence needed for the argument.",
+            "You have the department's latest thesis template and checking notice."
+          ],
+          "actions": [
+            "Organize the thesis around the problem, related work, design/methods, implementation/validation and conclusions. Identify your own work and reused components.",
+            "Check text, figures, tables, equations, references and attachments item by item. Every number must trace to an actual record, and you must review AI-assisted content personally.",
+            "Complete supervisory review, formatting checks, similarity screening and other applicable checks as required. Record the checked version and official reports.",
+            "Address feedback and verify revisions. Ensure consistency among the thesis title, system registration, submitted files and demonstration version."
+          ],
+          "deliverables": [
+            "A complete thesis draft, reference materials and figure/table provenance records.",
+            "A compliance self-check, applicable screening reports and AI-use statement.",
+            "A revision-response table, proposed submission version and confirmation records."
+          ],
+          "review": [
+            "The student can explain the methods and results throughout the thesis, which reflects their actual work.",
+            "Formatting and academic-practice checks follow institutional criteria, without self-invented pass thresholds.",
+            "Similarity results, AI-detection results and judgments of academic integrity are not treated as the same conclusion."
+          ],
+          "failure": "Correct unsupported statements and faulty citations using original sources. If formal checking requirements are unmet, revise, repeat checks or adjust defense arrangements under the applicable rules.",
+          "templates": [
+            "thesis",
+            "integrity",
+            "ai-use",
+            "review-response"
+          ],
+          "next": "After required reviews and checks are complete and defense eligibility is confirmed, prepare the formal defense."
+        },
+        {
+          "id": "defense",
+          "title": "Defense preparation and participation",
+          "timing": "After eligibility is confirmed, following the defense notice",
+          "goal": "Explain the problem, your contribution, results and limitations within the time limit, and respond accurately to questions.",
+          "entry": [
+            "Defense eligibility, session, time and required materials are formally confirmed.",
+            "The thesis, demonstration and presentation use consistent versions."
+          ],
+          "actions": [
+            "Prepare a presentation within the allotted time, emphasizing your key work, validation results and limitations rather than letting background dominate.",
+            "Prepare repeatable demonstration steps, sample inputs and an offline fallback. Clearly label backup videos or screenshots as prerecorded material.",
+            "Rehearse with timing, check equipment, fonts and network dependencies, and practice explaining sources, design trade-offs and failures.",
+            "Answer honestly during the defense and record uncertain points for verification. Keep a complete record of committee comments and the official outcome."
+          ],
+          "deliverables": [
+            "Defense slides, a demonstration package and rehearsal checks.",
+            "Committee questions and responses, and the formal defense result.",
+            "A post-defense revision list and deadlines."
+          ],
+          "review": [
+            "The presentation, thesis and system behavior agree, and individual contributions are clear.",
+            "Materials and on-site arrangements meet the official notice.",
+            "The student understands follow-up requirements for a pass, conditional pass or other outcome."
+          ],
+          "failure": "If the demonstration fails, explain accurately and use clearly labeled backup material. If the formal defense is unsuccessful, revise and apply for subsequent arrangements under institutional rules.",
+          "templates": [
+            "defense",
+            "review-response"
+          ],
+          "next": "Complete and confirm revisions according to the defense decision, then submit final materials."
+        },
+        {
+          "id": "archive",
+          "title": "Final revisions, archiving and handover",
+          "timing": "After the defense, before the department's archiving deadline",
+          "goal": "Complete formal delivery with consistent thesis, outputs and process records that remain usable.",
+          "entry": [
+            "You have received the defense decision and revision requirements.",
+            "The archive checklist, platform, naming conventions and signature requirements are confirmed."
+          ],
+          "actions": [
+            "Address every comment and obtain confirmation from the appropriate person. Produce the final thesis and revision explanation, rather than revising only the slides.",
+            "Package code, configuration, data you may retain, test records and run instructions. For data that cannot be included, explain how it may lawfully be obtained.",
+            "Check consistency among the institutional system, printed materials and local final version. Retain upload confirmation or acknowledgment of receipt.",
+            "Hand over equipment, accounts, materials and collaborative tasks. Before public presentation, recheck personal information, permissions and intellectual property."
+          ],
+          "deliverables": [
+            "The final thesis, revision confirmation and formal submission receipt.",
+            "An output archive, directory index and verification records.",
+            "A handover checklist and authorized presentation materials."
+          ],
+          "review": [
+            "Every revision required by the defense has a recorded resolution.",
+            "The archive can be opened and checked, and important files are backed up.",
+            "Graduation and degree status follow official institutional decisions. A successful defense is not described as completed graduation or degree conferral."
+          ],
+          "failure": "If the wrong version was submitted, promptly contact the designated officer and use the correction procedure. Repair incomplete or nonworking archives, then obtain renewed acceptance.",
+          "templates": [
+            "archive",
+            "handover",
+            "outcomes",
+            "learning-review"
+          ],
+          "next": "After archive acceptance, follow up on formal graduation and degree procedures and retain an agreed contact route."
+        }
+      ],
+      "growth": {
+        "capabilities": [
+          "Translate the approved task into verifiable requirements or research questions, linking each to design, implementation and test evidence.",
+          "Complete your own work within actual time and resource constraints, explain key design choices, and manage exceptions, defects and scope changes.",
+          "Use a consistent thesis, demonstration and archive to explain your contribution, results and limitations, and answer challenges with evidence."
+        ],
+        "starting_check": [
+          "Bring the capstone notice and official templates that apply to you, together with planned dates. Mark which eligibility, milestone and submission requirements are confirmed and which need clarification.",
+          "Choose one central objective of a proposed topic, write a checkable acceptance condition, and provide relevant course work, a prototype or a small feasibility result as evidence of your current foundations.",
+          "Sketch the proposed solution and actually check access to data, dependencies, equipment and permissions. Record critical gaps, who will resolve them and when they will be checked."
+        ],
+        "student_role": "Maintain the link between approved objectives and actual evidence, schedule implementation, validation and writing, and submit reviewable drafts with specific questions. If a design cannot meet an acceptance condition, a core test fails or a formal deadline is at risk, propose an evidence-based adjustment and seek confirmation from the supervisor and relevant administrative staff.",
+        "support_role": "The supervisor helps assess workload, disciplinary depth and design feasibility, reviews key evidence before proposal review, midterm review and final submission, and identifies revision priorities. Collaborators may check work or offer technical advice, but individual work must remain identifiable. Formal eligibility, defense and archiving decisions follow institutional procedures.",
+        "feedback": "At each stage, use the same core objectives to check available evidence and gaps. After a change, rerun affected tests or analyses and update the thesis and demonstration. Close a feedback item by recording its location, new version, verification result and reviewer, rather than writing only 'revised'.",
+        "transition": "Before entering postgraduate study or a more complex project, retain evidence of a complete problem-solving process and assess whether you can identify an unresolved question, compare existing methods and design a suitable investigation. Completing an undergraduate engineering system does not by itself establish research novelty; begin the next step with evidence for the new question and an appropriate research design."
+      }
+    },
+    {
+      "id": "competition",
+      "title": "Competitions and innovation practice",
+      "subtitle": "Verify the rules before forming a team and building the project; retain submission, result and reflection records.",
+      "audience": "Undergraduate and postgraduate students entering subject, innovation, entrepreneurship or technical competitions. Check eligibility against the current competition rules.",
+      "duration": "Plan backwards from the current schedule, allowing for institutional selection, registration approval, version freeze, upload and corrections.",
+      "note": "Eligibility, format, fees and award recognition may change between editions. An award does not automatically replace course or degree requirements. Check rules, permissions and contributions before reusing a project.",
+      "page": "competition.html",
+      "stages": [
+        {
+          "id": "selection",
+          "title": "Competition, eligibility and rules",
+          "timing": "Before registration or equipment purchases",
+          "goal": "Confirm that the competition is worthwhile, that you can enter, and that the commitment fits your learning goals.",
+          "entry": [
+            "You have the organizer's official notice and rules for the current edition.",
+            "You understand applicable institutional registration, recognition or nomination procedures."
+          ],
+          "actions": [
+            "Verify the organizer, track, year/enrollment eligibility, team size, cross-institution restrictions, supervisor requirements and schedule.",
+            "Extract project-format requirements, scoring criteria and restrictions on originality, repeat entries, public data and AI tools.",
+            "Assess potential benefits, timetable conflicts, fees, equipment and computing needs. Compare whether another task or competition would be a better fit.",
+            "Ask official channels about ambiguous rules and retain responses. Complete any required institutional nomination, seal or registration approval procedures first."
+          ],
+          "deliverables": [
+            "A rules summary, original links and verification date.",
+            "An eligibility self-check, competition schedule and initial budget.",
+            "A participation decision and applicable institutional approval records."
+          ],
+          "review": [
+            "Every eligibility condition is met; rules from a past edition are not used as authority for the current one.",
+            "Core scoring criteria and restrictions have been translated into task conditions.",
+            "Costs and timing are manageable, and the official registration route is clear."
+          ],
+          "failure": "If ineligible, change track or stop registration. Avoid irreversible investment in high-risk matters with unclear rules until the organizer responds.",
+          "templates": [
+            "competition",
+            "onboarding"
+          ],
+          "next": "After confirming the rules and participation decision, form the team and assign responsibilities."
+        },
+        {
+          "id": "team",
+          "title": "Team, topic and ownership agreement",
+          "timing": "Before team registration and development",
+          "goal": "Establish a shared understanding of the problem, roles, commitment, authorship and rights to use the work.",
+          "entry": [
+            "Competition eligibility and rules are verified.",
+            "Prospective members understand timetable conflicts and their available time."
+          ],
+          "actions": [
+            "Assign a team lead and responsibilities for development, research, design and presentation, including backups. Assign tasks to individuals rather than only to subgroups.",
+            "Choose a real problem suited to the track. Specify user needs, core innovation, the minimal project and its mapping to scoring criteria.",
+            "List existing code, data, models, images and collaborative resources. Confirm licenses, permitted use and whether ethics or confidentiality approval is required.",
+            "Discuss contribution records, author order, applicable reward-distribution rules and withdrawal/handover arrangements. Handle institutional or partner ownership under formal policies."
+          ],
+          "deliverables": [
+            "Team details, responsibilities and communication agreements.",
+            "A project brief, scoring-criteria mapping and milestones.",
+            "A resource-provenance, ownership and permission list."
+          ],
+          "review": [
+            "Every member confirms their tasks and commitment, and team registration meets the rules.",
+            "The scope is executable and individual contributions are traceable.",
+            "Rights to use materials and outputs are clear. No one has privately promised intellectual property they lack authority to transfer."
+          ],
+          "failure": "If roles or ownership remain disputed, pause the affected development or publication. Process membership changes under competition procedures and reconfirm responsibilities.",
+          "templates": [
+            "competition",
+            "topic",
+            "research-task",
+            "handover"
+          ],
+          "next": "After confirming the team and project plan, secure the budget and build a prototype."
+        },
+        {
+          "id": "prototype",
+          "title": "Prototype, budget and registration",
+          "timing": "Check the official registration window separately; validate high-risk assumptions before committing major resources.",
+          "goal": "Demonstrate feasibility with a minimal prototype while completing registration and resource preparation.",
+          "entry": [
+            "Responsibilities, project scope and ownership boundaries are confirmed.",
+            "Confirm registration fields, attachments, payment and institutional approvals. Treat the official deadline as an independent milestone; registration and prototyping may overlap or occur in a different order under the rules."
+          ],
+          "actions": [
+            "Test the most failure-prone technical or data element first. Build a prototype that demonstrates the core value, recording success and failure conditions.",
+            "Detail the equipment, computing, travel and registration budget. Check reimbursement rules and approval authority; do not treat unconfirmed funding as available.",
+            "Prepare the registration form, declarations and applicable attachments. Check member names, institutions, supervisors and track details item by item.",
+            "Register through the official channel within its window and retain the receipt and review status. If a complete prototype is not required, do not wait for internal prototype review before registering; if it is required, plan backward to meet it. Track corrections and later deadlines."
+          ],
+          "deliverables": [
+            "A prototype, feasibility evidence and revision plan.",
+            "A detailed budget and applicable approval records.",
+            "Registration materials, receipts and review-status records."
+          ],
+          "review": [
+            "The prototype answers the critical feasibility question; a concept diagram is not described as an implementation.",
+            "Costs have identified funding sources and owners, and purchases are authorized.",
+            "Registration has actually been submitted or approved, with verifiable status evidence."
+          ],
+          "failure": "If the prototype fails, change approach before the deadline. Correct returned applications according to feedback. Stop further losses and record the decision if eligibility or funding issues cannot be resolved.",
+          "templates": [
+            "competition",
+            "experiment",
+            "change-request"
+          ],
+          "next": "Proceed to development as eligibility and resources permit, while tracking any pending official registration decision. Complete the required approval before restricted activities; follow the published event schedule rather than treating this diagram as a fixed registration order."
+        },
+        {
+          "id": "build",
+          "title": "Implementation, replication and internal acceptance",
+          "timing": "Before formal submission, allowing time for fixes",
+          "goal": "Make the project run reliably in the prescribed environment and explain the source of every claimed score or performance result.",
+          "entry": [
+            "Project requirements and the scoring mapping are frozen as the baseline for this cycle.",
+            "The team has working version control and a test environment."
+          ],
+          "actions": [
+            "Implement against scoring criteria and maintain task status, recording contributions, versions and changes. Integrate regularly instead of merging everything near the deadline.",
+            "Test normal, boundary and failure scenarios on the required equipment or conditions. Check restrictions on networking, external services and data use.",
+            "Have a member who did not implement a module reproduce it from the instructions. Check dependencies, licenses, data paths, runtime and demonstration reliability.",
+            "Complete manuals, posters, videos or presentation slides. Distinguish implemented prototype features from planned features, then freeze a submission candidate after item-by-item acceptance."
+          ],
+          "deliverables": [
+            "A runnable project, dependencies and operating instructions.",
+            "Testing/replication records, a defect list and contribution records.",
+            "Candidate submission materials and an internal acceptance checklist."
+          ],
+          "review": [
+            "Scoring criteria map to evidence, and unimplemented features are not claimed as complete.",
+            "The project can be reproduced in the agreed environment, with failures and limitations disclosed.",
+            "Code, data, video and manuals use consistent versions, and AI use complies with the current rules."
+          ],
+          "failure": "If critical defects cannot be fixed, remove unreliable features and update the description. Replace components that violate the rules and retest; do not conceal dependencies.",
+          "templates": [
+            "experiment",
+            "integrity",
+            "ai-use",
+            "competition",
+            "engineering-report"
+          ],
+          "next": "After internal acceptance and confirmation to submit, upload the final materials and enter the competition."
+        },
+        {
+          "id": "submission",
+          "title": "Submission, competition and confirmed results",
+          "timing": "Follow the official deadline, time zone and session",
+          "goal": "Submit the correct version, keep valid evidence and follow the rules for demonstrations and appeals.",
+          "entry": [
+            "The submission candidate has passed acceptance, with confirmation from all required members or supervisors.",
+            "File sizes, names, formats, upload limits and the final deadline are verified."
+          ],
+          "actions": [
+            "Check package contents, sensitive information, permission statements and member details. Record the final version and checksum, allowing time to resolve upload failures.",
+            "After uploading, download or preview the files to check the contents. Save the submission identifier, time, receipt and platform status.",
+            "Demonstrate the work as required, recording the version and judges' questions. Explain unexpected failures accurately; do not present edited footage as a live execution.",
+            "Use official notices to confirm progression, awards and certificate details. Request a review of disputed results through the required channel, within the deadline and with the required evidence."
+          ],
+          "deliverables": [
+            "The final submission package, version record and receipt.",
+            "On-site materials, question records and correction records where applicable.",
+            "Official results or certificates, and review decisions where applicable."
+          ],
+          "review": [
+            "Submission status is verifiable, with no accidentally uploaded old versions or empty files.",
+            "The demonstration follows the rules, and the team knows the next notification and correction windows.",
+            "Award names, levels and members match the official record, without inferring recognition from predictions or screenshots."
+          ],
+          "failure": "If upload fails, use the organizer's emergency channel immediately and retain evidence. Raise disputes through the formal process; do not alter results, certificates or public claims yourself.",
+          "templates": [
+            "competition",
+            "defense",
+            "outcomes",
+            "review-response"
+          ],
+          "next": "After official results or the current round ends, reflect, settle expenses and archive the work."
+        },
+        {
+          "id": "archive",
+          "title": "Reflection, expense settlement and archiving",
+          "timing": "After the competition ends or withdrawal is agreed",
+          "goal": "Turn competition experience into resources for continued learning and use, while completing team responsibilities.",
+          "entry": [
+            "Submission, result and expense records for the current round are collected.",
+            "Applicable institutional recognition and reimbursement procedures are confirmed."
+          ],
+          "actions": [
+            "Compare goals, scoring criteria and actual results to identify strengths and mistakes. Distinguish technical, organizational, presentation and rule-interpretation issues.",
+            "Check receipts, cost-sharing, equipment and borrowed resources. Complete reimbursement and settlement as required; estimates cannot replace actual documents.",
+            "Archive the project, reports, rules version, submission receipts, result evidence and individual contributions. Decide who will maintain the system or arrange shutdown.",
+            "Confirm rules and permissions for later open-source release, patents, papers or capstone reuse. Use official status and authorized materials in public presentations."
+          ],
+          "deliverables": [
+            "A reflection report, follow-up actions and individual contribution statement.",
+            "An archive index, final project and official result evidence.",
+            "Expense settlement, equipment return and handover records."
+          ],
+          "review": [
+            "The team can reuse lessons learned, with concrete improvements for key problems.",
+            "Funding, equipment, accounts and unfinished tasks all have recorded dispositions.",
+            "Output recognition follows official institutional decisions, and publication scope and intellectual property are confirmed."
+          ],
+          "failure": "Mark missing receipts, permissions or unconfirmed results as outstanding tasks with owners. Do not fabricate closure evidence or describe participation itself as an award.",
+          "templates": [
+            "competition",
+            "archive",
+            "handover",
+            "outcomes",
+            "learning-review"
+          ],
+          "next": "Decide future directions after handover. Turning the work into a paper or capstone requires renewed project planning and a requirements check."
+        }
+      ],
+      "growth": {
+        "capabilities": [
+          "Extract eligibility, scoring criteria, restrictions and submission conditions from the current rules, then turn the project objectives into checkable team tasks.",
+          "Coordinate responsibilities, integration, testing and backup arrangements within limited time and resources, recording individual contributions and shared interfaces.",
+          "Demonstrate the actual work under the required conditions, explain failures and trade-offs, and derive transferable lessons from judging feedback and process records."
+        ],
+        "starting_check": [
+          "Provide the organizer's rules for the current event and its registration window, then complete an eligibility and scoring checklist. For ambiguous clauses, attach the official inquiry record and its current status.",
+          "Each member demonstrates an existing project or small exercise relevant to their proposed role and provides availability after course and research commitments. Record how missing roles will be covered.",
+          "Test the dependency most likely to fail, recording actual results, permissions and resource costs. A component that cannot be used in the competition environment needs a verifiable alternative."
+        ],
+        "student_role": "The team lead maintains dependencies, integration dates and submission status. Members own their deliverables and understand the shared demonstration path. Report the impact and alternatives when interfaces change, critical defects emerge, members leave or rules are unclear. Follow the event's required sequence for registration and submission; do not miss a registration window while waiting for a complete prototype.",
+        "support_role": "The mentor helps assess direction, rule boundaries and high-risk decisions. A member who did not implement the relevant module checks its instructions and interfaces. Authorized people confirm funding, permissions and team changes through the appropriate procedures. Keep advice separate from official eligibility and result decisions.",
+        "feedback": "At integration checkpoints, actually run the candidate version against the scoring criteria, recording failures, owners and review dates. Another member then reruns the critical path. After the event, compare judging feedback with existing tests and choose a concrete improvement. Record awards separately; ranking does not replace analysis of individual learning or project quality.",
+        "transition": "Before continuing as research, a capstone or a maintained product, distinguish competition features, research hypotheses and engineering responsibilities, then establish the new question, evaluation and individual tasks. Reuse existing work with permission and add evidence required by the new setting. An award does not automatically establish a thesis contribution or satisfy course or degree requirements."
+      }
+    },
+    {
+      "id": "master",
+      "title": "Master's research and degree pathway",
+      "subtitle": "From topic selection to degree procedures, complete research, reviews and handover step by step.",
+      "audience": "Students in academic or professional master's programs, with different program lengths and study modes, must use their own applicable study plan. International students should also confirm which provisions apply to their admission cohort and enrollment category.",
+      "duration": "Plan backwards from your individual study plan and annual notices. Research and writing can run in parallel; formal stages follow institutional prerequisites.",
+      "note": "Academic master's programs emphasize academic research capability. Professional master's programs also address professional practice and application. Specific outputs and standards depend on the discipline or professional degree category. This page does not set institutional output counts, publication levels, screening percentages or deadlines.",
+      "page": "master.html",
+      "stages": [
+        {
+          "id": "orientation",
+          "title": "Enrollment, study plan and working agreements",
+          "timing": "Complete after enrollment as required by the study plan; review each semester",
+          "goal": "Clarify the program type, compulsory components, communication responsibilities and information management, establishing a sustainable research rhythm.",
+          "entry": [
+            "Your degree category, field, program length and supervisory arrangements are confirmed.",
+            "You have the study plan applicable to you and access to departmental notices."
+          ],
+          "actions": [
+            "List courses, credits, practice, academic activities, annual review, proposal and degree milestones. Check outcome types, authorship, timing and recognition rules at entry; record the applicable document version, scope and unresolved requirements.",
+            "Prepare your individual study plan. Professional master's students should check practice placements, duration, internal/external supervision and assessment; academic master's students should check disciplinary training requirements.",
+            "Agree on the purposes of weekly reports, group meetings, email and the task system, including feedback frequency and how to seek help. Handle leave, travel and attendance under policies currently in force.",
+            "Set up research directories, version control, backups and access permissions, and complete integrity, ethics and safety training. Report health issues or major difficulties promptly and agree on adjustments."
+          ],
+          "deliverables": [
+            "An individual study plan and institutional-requirements checklist.",
+            "A semester plan, skills-development list and communication agreement.",
+            "A materials directory, backup plan and applicable training records."
+          ],
+          "review": [
+            "The formal plan is confirmed as required, and compulsory components and responsible people are clear.",
+            "The student leads the work, with clear supervisory guidance and feedback responsibilities.",
+            "Missing attendance or reporting entries are checked and may be corrected. An automated summary cannot by itself establish misconduct."
+          ],
+          "failure": "If credit, practice or scheduling conflicts arise, consult the academic office promptly and revise the plan. Mark unconfirmed requirements as pending; do not assume another student's conditions apply to you.",
+          "templates": [
+            "onboarding",
+            "professional-practice",
+            "weekly",
+            "meeting",
+            "annual-check",
+            "outcomes"
+          ],
+          "next": "Once the study plan and working arrangements are clear, propose candidate research questions within your field."
+        },
+        {
+          "id": "topic",
+          "title": "Exploration and topic selection",
+          "timing": "Before proposal review, after necessary preliminary tests",
+          "goal": "Choose a question supported by real evidence, with a clear personal contribution and feasible resource and time requirements.",
+          "entry": [
+            "You understand the field's foundations, existing projects and available resources.",
+            "You can access representative literature and lawful preliminary-validation materials."
+          ],
+          "actions": [
+            "Propose topics from practical problems, limitations of existing research or professional needs. Describe where the problem occurs and the supporting evidence.",
+            "Compare value, novelty, related methods, testability, resources and risks. Distinguish actual observations from constructed illustrations.",
+            "Run a small baseline replication or feasibility experiment, defining success, failure and stopping conditions. An idea alone does not establish feasibility.",
+            "Discuss the main question, subquestions and contribution boundaries with your supervisor. Professional master's students should also check the practice setting, applied outputs and partner permissions."
+          ],
+          "deliverables": [
+            "A candidate-topic comparison and topic statement.",
+            "Preliminary replication/experiment records and a resource-risk table.",
+            "Question boundaries, intended contribution and a decision to continue or adjust."
+          ],
+          "review": [
+            "The problem demonstrably exists or is expressed as a testable hypothesis, and its value has supporting sources.",
+            "Individual work is distinguishable from the team's existing outputs.",
+            "Data, equipment, funding and time support a minimum feasible study."
+          ],
+          "failure": "If real evidence or critical resources are missing, narrow the question, change methods or change topic. Preserve negative results and discuss again before committing to large experiments.",
+          "templates": [
+            "topic",
+            "research-task",
+            "experiment"
+          ],
+          "next": "Once a candidate question has a feasible basis, refine its positioning through a systematic review of the literature."
+        },
+        {
+          "id": "survey",
+          "title": "Literature review and research positioning",
+          "timing": "Draft before proposal review; update throughout the research",
+          "goal": "Identify established findings, disagreements and your research entry point through traceable searching and comparison.",
+          "entry": [
+            "You have a candidate question and search scope.",
+            "Relevant databases, papers and necessary original materials are accessible."
+          ],
+          "actions": [
+            "Define keywords, synonyms, date ranges, databases and inclusion/exclusion criteria. Save search dates and screening records.",
+            "Read core work closely and build a matrix covering questions, assumptions, methods, data, evaluation, results and limitations. Trace key original references.",
+            "Check how papers relate to their code, data and later revisions. Describe work you have not run as reported literature, not local replication.",
+            "Organize the review by questions and methods, explaining conflicting evidence, untested conditions and how your study contributes, rather than stitching together paper summaries."
+          ],
+          "deliverables": [
+            "Search records, a reference collection and screening rationale.",
+            "Core reading notes, a comparison matrix and a map of research questions.",
+            "A review draft, research positioning and a list of missing evidence."
+          ],
+          "review": [
+            "Representative methods and contrary evidence are considered, and citations trace to original texts.",
+            "Claims such as not previously studied state their search boundaries and avoid unsupported absolutes.",
+            "The research positioning explains differences from the closest work and how those differences will be tested."
+          ],
+          "failure": "If important related work was missed, extend the search and rewrite the positioning. If the main question is already solved, change the question rather than inventing novelty through terminology.",
+          "templates": [
+            "literature",
+            "reading",
+            "topic"
+          ],
+          "next": "If the closest work already resolves the main question, or essential data are unavailable, return to topic selection with the comparison matrix and feasibility evidence. Proceed to the proposal when the question, literature and feasibility agree; continue updating the review during research."
+        },
+        {
+          "id": "proposal",
+          "title": "Research plan and formal proposal review",
+          "timing": "Within the institution's prescribed proposal-review window",
+          "goal": "Develop an executable research plan and obtain an official outcome from the proposal-review process.",
+          "entry": [
+            "The topic, review and preliminary feasibility materials are available.",
+            "Proposal eligibility, timing, review format and submission templates are checked."
+          ],
+          "actions": [
+            "Break the main question into testable subquestions, assigning methods, baselines, data, metrics and expected evidence to each.",
+            "Prepare the schedule, computing and funding budget, ethics/data-permission arrangements, and alternatives for failure, delay or topic changes.",
+            "Explain research or practice outputs and skill objectives appropriate to your degree type. Prepare the report, presentation and any required evidence of preliminary work.",
+            "Submit and attend the proposal review through the designated process. Record comments, the decision and revision deadlines; respond item by item and complete any required further review."
+          ],
+          "deliverables": [
+            "A proposal report, research plan and presentation.",
+            "A stage plan, budget, risks and applicable approval records.",
+            "The proposal decision, revision-response table and approved or revision-pending status."
+          ],
+          "review": [
+            "Questions, methods and evaluation align, and the plan fits the remaining program duration.",
+            "The formal process, responses and versions are traceable.",
+            "Research requiring approval has the appropriate permission before it begins."
+          ],
+          "failure": "If the proposal is not approved, revise according to feedback and follow repeat-review rules. For major topic or method changes, check whether a new proposal review is needed. Verbal supervisory agreement cannot replace formal procedures.",
+          "templates": [
+            "proposal",
+            "experiment",
+            "review-response",
+            "change-request"
+          ],
+          "next": "After proposal review, required revisions and approvals are complete, conduct the research under the confirmed plan."
+        },
+        {
+          "id": "research",
+          "title": "Research, professional practice and records",
+          "timing": "Continue after proposal review, with reflection at agreed intervals",
+          "goal": "Build reliable evidence sufficient for the thesis while completing applicable practice and process requirements.",
+          "entry": [
+            "The research plan, permissions and resources are in place.",
+            "Experiment, practice or analysis tasks have identified versions and owners."
+          ],
+          "actions": [
+            "Organize experiments or practice around the questions. Save data provenance, processing steps, parameters, environments, random settings and raw logs, including failed runs.",
+            "Use baselines, controls, ablations or case validation, avoiding data leakage, changing evaluation definitions and selective reporting of favorable results.",
+            "Include evidence and blockers in weekly reports, and turn group-meeting decisions into action items. Check coursework and annual requirements each semester; professional master's students should also retain practice plans, process records and assessment evidence.",
+            "Back up regularly and test restoration. Before using new data, changing its purpose, changing collaborations or exceeding the budget, check permissions and change procedures."
+          ],
+          "deliverables": [
+            "Versioned code/analysis outputs, data documentation, environments and original records.",
+            "Experimental results, failure analyses, weekly reports and meeting action items.",
+            "Applicable practice reports, annual materials and change records."
+          ],
+          "review": [
+            "Conclusions trace to actual execution or practice records. Preflight checks and offline recalculation are not presented as complete experiments.",
+            "Key results can be checked repeatedly, and risks and negative evidence are not hidden.",
+            "Coursework, practice and annual requirements are tracked alongside research progress."
+          ],
+          "failure": "If results are unstable, check data, configuration and statistical definitions first. If evidence repeatedly fails to support a hypothesis, narrow the claims or revise the plan, recording supervisory feedback and necessary approvals.",
+          "templates": [
+            "professional-practice",
+            "experiment",
+            "weekly",
+            "annual-check",
+            "change-request",
+            "meeting"
+          ],
+          "next": "Prepare mid-program materials on the institutional timetable; do not wait until all research is complete to review progress."
+        },
+        {
+          "id": "midterm",
+          "title": "Mid-program review and annual assessment",
+          "timing": "Follow the applicable rules for each; do not assume one replaces the other",
+          "goal": "Review program requirements, research progress and completion prospects, and agree on practical adjustments promptly.",
+          "entry": [
+            "You have the current mid-program and annual-assessment notices.",
+            "Research, coursework, practice and output statuses have actual supporting records."
+          ],
+          "actions": [
+            "Compare progress with the proposal plan, identifying completed, delayed and changed work. Provide core results, a prototype demonstration or practice outputs.",
+            "Check applicable credits, academic activities, professional practice, ethics and research-plan requirements, addressing missing items early.",
+            "Assess remaining questions, thesis structure, resources and the graduation window. Submit a realistic follow-up schedule rather than deferring all unfinished work to the end.",
+            "Attend the formal review and distinguish supervisory advice from the assessment decision. Turn each required revision into a task, owner, deadline and review evidence."
+          ],
+          "deliverables": [
+            "A mid-program report, presentation and evidence index.",
+            "Applicable annual-assessment and practice materials.",
+            "The official decision, revision plan and updated timetable."
+          ],
+          "review": [
+            "Existing materials support the progress report, with key gaps and risks identified.",
+            "Coursework, practice and other required training components have not been overlooked.",
+            "Revision conditions, review dates and possible consequences are formally confirmed."
+          ],
+          "failure": "If unsuccessful or revisions are required, provide missing materials, change the plan or apply for an extension under institutional rules. Claim a pass only after the required review, and disclose issues affecting later eligibility.",
+          "templates": [
+            "midterm",
+            "annual-check",
+            "professional-practice",
+            "review-response",
+            "change-request"
+          ],
+          "next": "Close the required corrective actions. If core evidence is missing, return to research and update the validation plan; draft the outline and methods in parallel. Write the main conclusions only once the supporting evidence has been checked. Passing the interim review does not mean the research is complete; do not present placeholder results as findings."
+        },
+        {
+          "id": "writing",
+          "title": "Thesis structure, draft and revision",
+          "timing": "Write throughout the research; complete substantive review before external submission",
+          "goal": "Present your own research through a complete argument, with consistent thesis text, data, code and conclusions.",
+          "entry": [
+            "The main thesis question and core evidence are clear.",
+            "You have the thesis standards, template and confidentiality requirements for your degree type."
+          ],
+          "actions": [
+            "Map chapters to research questions, stating each chapter's purpose, claims and evidence. Professional master's students should present practice and applied contributions under the applicable standards.",
+            "Draft core methods and results chapters first, then align the introduction, related work and conclusions. Explain how previously published collaborative work relates to your own contribution.",
+            "Check original data, units, statistical methods and execution versions for every figure and table. Examine gaps in reasoning, counterexamples and limitations.",
+            "Submit a complete, reviewable version and question list to your supervisor. Retain feedback and itemized revisions, then check abstracts, references, appendices and formatting consistency."
+          ],
+          "deliverables": [
+            "A thesis outline, chapter-evidence mapping and complete first draft.",
+            "Figure/table provenance, references and a contribution statement.",
+            "Review comments, a revision-response table and candidate final version."
+          ],
+          "review": [
+            "The thesis makes a complete argument, without substituting plans or placeholder text for results.",
+            "The student can explain all core content, with clear citation and reuse boundaries.",
+            "Supervisory review, formatting and later submission have a feasible schedule."
+          ],
+          "failure": "Add validation or narrow arguments where core evidence is insufficient. Fix structural problems before polishing language. If time is insufficient, assess an extension through the formal process.",
+          "templates": [
+            "thesis",
+            "reading",
+            "review-response",
+            "ai-use"
+          ],
+          "next": "Check program-output requirements while writing. Once both writing and applicable output conditions are met, prepare the formal pre-review checks."
+        },
+        {
+          "id": "outcomes",
+          "title": "Research outputs and degree eligibility",
+          "timing": "Understand at enrollment; confirm each item before the degree application",
+          "goal": "Complete the final verification of the requirements first checked at entry and topic selection, using official sources and supporting records. Recheck them whenever rules or plans change; do not wait until thesis completion to discover a gap.",
+          "entry": [
+            "Your admission cohort, degree type and discipline or professional category are clear.",
+            "You have the effective versions of the corresponding output and degree-application requirements."
+          ],
+          "actions": [
+            "Check coursework, practice, assessments, outputs and other application conditions item by item, recording policy sources, applicability and consultation outcomes.",
+            "If papers or other outputs are required, check output type, authorship and affiliation, timing definitions and recognition procedures. Do not assume professional-program or another student's standards apply to you.",
+            "Record actual states separately: submission, acceptance, online publication, formal publication, patent application/grant, software registration, awards and practice acceptance.",
+            "Collect official evidence and request verification from the designated office. Record missing requirements, remedies and expected completion dates; follow the prescribed arrangements if outputs are insufficient."
+          ],
+          "deliverables": [
+            "An applicable-conditions checklist and policy sources.",
+            "An output register, contribution statements and official evidence.",
+            "Recognition or eligibility-check results and a plan for missing requirements."
+          ],
+          "review": [
+            "Each condition has an applicable source and current status; unverified items are explicitly marked.",
+            "Output evidence is verifiable, statuses are not exaggerated, and collaborative authorship and affiliations meet the rules.",
+            "Eligibility is confirmed through the institution's required review process."
+          ],
+          "failure": "If evidence is incomplete, obtain formal documents or consult the recognition office. Report unmet conditions honestly and adjust application timing under the rules. Do not promise acceptance, patent grants or special exemptions.",
+          "templates": [
+            "outcomes",
+            "annual-check",
+            "change-request"
+          ],
+          "next": "After confirming applicable conditions and evidence, complete compliance and eligibility checks before thesis review."
+        },
+        {
+          "id": "integrity",
+          "title": "Formatting, similarity, error and AI-use checks",
+          "timing": "Follow the institution's screening and thesis-review submission windows",
+          "goal": "Complete the separate required checks and ensure reports match the thesis version actually intended for submission.",
+          "entry": [
+            "The candidate final thesis, references, contribution statement and output evidence are complete.",
+            "You have verified the institutional names, scope, platforms, thresholds and repeat-check rules for each check.",
+            "You have checked whether a pre-defense is required and its place in the process. If it is a prerequisite to thesis review, complete it and the required revisions before submission."
+          ],
+          "actions": [
+            "Check academic integrity, citations, data authenticity, authorship and confidentiality first, then formatting, attachments and thesis details.",
+            "Use the official similarity-screening process, checking matched sources and citations individually. Do not evade screening through cosmetic paraphrasing or character manipulation.",
+            "Some Chinese institutions call checks for typographical, formatting, figure/table, numbering, reference-format and layout errors non-academic-error checks (查非). Record each issue's location, correction and verification. Confirm whether your institution requires this as a formal stage and which scope and standards apply; it is distinct from similarity screening and AI detection.",
+            "Disclose AI tools, purposes, scope and human verification as required by the institution and output venue. If AI-detection results are required, retain them separately from the use statement and similarity report."
+          ],
+          "deliverables": [
+            "A compliance self-check, official screening version and file-verification record.",
+            "The similarity report and applicable non-academic-error or other checking materials.",
+            "An AI-use statement, correction records and repeat-check results."
+          ],
+          "review": [
+            "Each report identifies a specific file version, checking time and official platform.",
+            "Each required check independently meets institutional conditions; passing one does not establish that all have passed.",
+            "Screening scores are indicators or procedural evidence. Alone, they neither prove the absence of misconduct nor replace human review."
+          ],
+          "failure": "If requirements are unmet, investigate, revise, repeat checks or request a review as prescribed. After substantive changes, check whether rescreening is required; do not reuse a report for a different version.",
+          "templates": [
+            "integrity",
+            "ai-use",
+            "outcomes"
+          ],
+          "next": "After eligibility and required checks are confirmed and the review version is finalized, submit through the institutional thesis-review process."
+        },
+        {
+          "id": "review",
+          "title": "Anonymous thesis review and responses",
+          "timing": "Within the institution's designated review window",
+          "goal": "Submit the correct version under the anonymity rules, then respond and complete next steps according to the formal review outcome.",
+          "entry": [
+            "Review eligibility and prerequisite checks are confirmed.",
+            "You have the anonymity rules, submission checklist, review procedures and appeal rules, including any applicable external-review arrangements."
+          ],
+          "actions": [
+            "Generate a complete archival copy and an anonymous review copy from the same thesis baseline. Handle names, affiliations, acknowledgements, output information, file metadata and identifying links according to the rules.",
+            "Check that references, attachments and necessary research information remain complete after anonymization. Do not remove or alter substantive content affecting review unless the rules permit it.",
+            "Submit through the designated institutional system, checking file previews, versions, details and receipts. Preserve reviewer independence; do not privately seek or contact reviewers.",
+            "Respond to every comment, revise and retain evidence. For factual errors or disputed findings, use the formal review or appeal channel within the prescribed deadline."
+          ],
+          "deliverables": [
+            "Complete archival and anonymous review copies from the same source, with an anonymity checklist.",
+            "The formal submission receipt, reviewer comments and official outcome.",
+            "Itemized responses, revised thesis and applicable further-review/appeal materials."
+          ],
+          "review": [
+            "Anonymity and accuracy requirements are both met, and the submitted version is traceable.",
+            "Every comment has a clear disposition, with reasons and evidence for suggestions not adopted.",
+            "The need for another review or further assessment, and eligibility for defense, follow the official institutional decision."
+          ],
+          "failure": "If the review does not permit defense, revise, seek further review or defer as required. Do not declare a pass before an appeal decision, or influence assessment through informal contact.",
+          "templates": [
+            "integrity",
+            "review-response",
+            "thesis"
+          ],
+          "next": "After the formal review and revision requirements are met and defense eligibility is confirmed, proceed to the defense."
+        },
+        {
+          "id": "defense",
+          "title": "Defense application and formal defense",
+          "timing": "After formal defense eligibility, following departmental notices",
+          "goal": "Explain the contribution, evidence and limitations through the prescribed process and undergo formal academic assessment.",
+          "entry": [
+            "You have a clear review outcome and defense-eligibility confirmation.",
+            "The defense application, committee arrangements and public/confidential status are confirmed through the prescribed procedure."
+          ],
+          "actions": [
+            "Complete the application and submission checklist, checking versions of the thesis, reviewer responses and eligibility documents. If institutional rules place a pre-defense after review, complete it and its revisions first.",
+            "Present the question, method, evidence and contribution, clearly stating your own work and limitations. Rehearse with timing and prepare a verifiable demonstration.",
+            "Prepare responses to reviewer comments and check the venue, equipment, online arrangements and confidentiality conditions. Do not independently publish restricted theses or meeting links.",
+            "Answer honestly at the formal defense. Record questions, revision requests and the decision completely, and confirm subsequent deadlines and responsible people."
+          ],
+          "deliverables": [
+            "The defense application and eligibility documents, presentation and rehearsal record.",
+            "Pre-defense comments and revision outcomes where applicable.",
+            "The formal defense record, decision and follow-up revision list."
+          ],
+          "review": [
+            "All prerequisites and defense procedures meet institutional requirements.",
+            "The presentation, thesis, output evidence and actual research are consistent.",
+            "Use the official wording for the defense outcome. Passing the defense does not mean the degree has been conferred."
+          ],
+          "failure": "If unsuccessful or major revisions are required, follow institutional rules for revision, reapplication and waiting periods. Do not promise the outcome of another defense.",
+          "templates": [
+            "defense",
+            "review-response",
+            "outcomes"
+          ],
+          "next": "Complete revisions, review and subsequent degree-application procedures according to the defense decision."
+        },
+        {
+          "id": "final",
+          "title": "Final revisions and degree procedures",
+          "timing": "After the defense, before the deadline for the current application round",
+          "goal": "Apply defense feedback to the final thesis and complete the required institutional review and submission.",
+          "entry": [
+            "You have the formal defense decision, revision comments and submission deadlines.",
+            "The revision reviewer and degree-material submission channels are identified."
+          ],
+          "actions": [
+            "Address each defense comment and give revision locations. Explain any suggestion not adopted, and obtain supervisory or designated-person review as required.",
+            "Check the final title, authorship, abstracts, figures, tables, appendices and references. Confirm whether substantive revisions require additional screening or review.",
+            "Complete the degree application, library deposit, paper archive and required signatures. Ensure consistent versions across channels and retain receipts.",
+            "Check official graduation and degree-review statuses, recording defense approval, material acceptance, graduation review and degree conferral separately."
+          ],
+          "deliverables": [
+            "The final thesis, itemized revision explanation and review confirmation.",
+            "Degree-application and applicable archival submission materials and receipts.",
+            "A formal status table and outstanding items."
+          ],
+          "review": [
+            "Every requested revision has a recorded outcome, and the final thesis matches the reviewed files.",
+            "Signatures, uploads and acceptance records are complete; outstanding tasks have owners and deadlines.",
+            "Degree status follows the institution's official decision, not an inference from a defense or draft system entry."
+          ],
+          "failure": "If the thesis or paperwork is returned, correct the specified issues and obtain renewed receipt. If a deadline is missed, contact the responsible office promptly and use the formal procedure.",
+          "templates": [
+            "thesis",
+            "review-response",
+            "archive",
+            "outcomes"
+          ],
+          "next": "After submitting the final thesis and official materials, complete the research archive and departure handover."
+        },
+        {
+          "id": "archive",
+          "title": "Research archive, handover and departure",
+          "timing": "Maintain throughout the research; complete acceptance before departure",
+          "goal": "Keep research verifiable, restorable and reusable after someone leaves, with clear custody and access responsibilities.",
+          "entry": [
+            "The final thesis, research outputs and official materials are organized.",
+            "The supervisor, project owner or designated recipient has defined archive scope and access permissions."
+          ],
+          "actions": [
+            "Create an index covering thesis versions, raw data, processing scripts, code, environments, configurations, logs, figure/table provenance, licenses and formal records. Distinguish originals from derived files.",
+            "Freeze final versions and generate verification records. Back up and test restoration under agreed rules. If data cannot be transferred in the package, record its storage location, access-request route and custodian.",
+            "Have the recipient sample key results and run instructions. Record unfinished experiments, known defects, collaborations, future output revisions and follow-up owners.",
+            "Complete equipment, funding, account and permission handover. Check retention periods, confidentiality and publication conditions. Personal portfolios and use after departure remain subject to permission."
+          ],
+          "deliverables": [
+            "An archive directory, final snapshot, checksum and restoration records.",
+            "Data/code documentation, result index and permission register.",
+            "Handover acknowledgment, outstanding tasks and access-handling records."
+          ],
+          "review": [
+            "The recipient can locate and open core materials and verify key evidence.",
+            "Passwords are not stored in ordinary documents; sensitive material remains in authorized storage, and public versions are de-identified.",
+            "Responsibilities, retention periods and post-departure contact and usage boundaries are clear."
+          ],
+          "failure": "If materials are missing or checks fail, repair the archive and repeat acceptance. Explain the cause and impact of irrecoverable material. Empty directories or directory screenshots do not constitute handover.",
+          "templates": [
+            "archive",
+            "handover",
+            "outcomes",
+            "learning-review"
+          ],
+          "next": "After archive and handover acceptance, close this cycle of training. Continue any later output revisions under the agreed responsibilities."
+        }
+      ],
+      "growth": {
+        "capabilities": [
+          "Use evidence from real problems and related research to formulate a bounded, testable and feasible question, explaining its relationship to the closest work.",
+          "Independently design and conduct research or practice-based validation suited to the question, checking controls, data quality and contrary evidence and explaining where the findings apply.",
+          "Organize evidence into a coherent thesis, manage training requirements, feedback, achievement status and handover, and progressively develop independent, evidence-based judgment."
+        ],
+        "starting_check": [
+          "Provide your applicable training plan and a checklist of courses, practice, academic activities and degree conditions, with official sources, gaps and contacts for clarification. Check achievement requirements at entry or topic selection, rather than waiting until the thesis is complete.",
+          "Compare a relevant set of closely related studies, citing original passages and distinguishing author-reported results, your own reproductions and unverified interpretations.",
+          "Submit a baseline reproduction, engineering problem analysis or feasibility experiment with actual versions, data sources, results and failures. Use it to propose a plan for missing skills and a next review date."
+        ],
+        "student_role": "Lead the collection of topic evidence, research planning and scheduling. Before discussions, submit your judgment, alternatives and decisions that need input. Seek review when evidence repeatedly contradicts a hypothesis, research boundaries change, or resources or formal requirements threaten the plan; propose a narrower scope, additional evidence or a revised approach.",
+        "support_role": "The supervisor advises on research positioning, methods and quality, helps identify critical assumptions and risks, and agrees on feasible review arrangements. Professional-degree students also confirm practice supervision and institutionally recognized assessment requirements. Peer reproduction and group discussion contribute evidence; formal training and degree reviews follow institutional procedures.",
+        "feedback": "At topic, proposal and midterm checkpoints, review whether the question, method and evidence remain aligned and whether the student can explain the choices made. Turn comments into revision and validation tasks. When new evidence changes the conclusion, revisit positioning or design rather than hide counterexamples to preserve the original plan. Research and writing develop together, and important results are checked again before final submission.",
+        "transition": "For doctoral training, identify a valuable unresolved question emerging from the completed work, then develop the case for original contribution, longer-term feasibility and systematic evidence. For professional work, transfer the research methods to requirements, validation and communication under real constraints. Existing publications or practice outcomes are starting points, not automatic satisfaction of admission or training requirements at the next level."
+      }
+    },
+    {
+      "id": "doctor",
+      "title": "Doctoral Research and Degree Pathway",
+      "subtitle": "Define questions independently, establish contributions through verifiable research, and connect individual studies in a coherent dissertation.",
+      "audience": "Doctoral students across study modes, programme lengths and degree types, including international students. Use the programme regulations that apply to your own enrolment.",
+      "duration": "Plan around formal programme milestones. Foundational study, research, writing and annual reflection overlap; revisit the research direction as evidence develops.",
+      "note": "This is a framework for research and development, not a substitute for institutional procedures. Verify whether a qualifying assessment is required, its order relative to the proposal, annual and interim assessments, the timing of any preliminary defence, recognised outputs and degree application conditions. Annual reflection continues throughout the programme. Academic and professional doctorates may recognise different contributions; this page does not prescribe a common programme length, publication count, publication category or screening threshold.",
+      "page": "doctor.html",
+      "stages": [
+        {
+          "id": "orientation",
+          "title": "Programme Requirements, Supervision and Development Plan",
+          "timing": "Establish on enrolment and when supervision is arranged; review each semester and whenever requirements change",
+          "goal": "Understand the research capabilities, formal conditions and support available, so that you can organise a sustained research programme and seek help when needed.",
+          "entry": [
+            "Your enrolment, degree type, broad research area and supervisor or supervisory team are confirmed.",
+            "You can access the programme regulations, degree requirements and departmental notices applicable to your cohort."
+          ],
+          "actions": [
+            "Register requirements for courses, qualifying assessments, the proposal, annual and interim reviews, teaching or practice, the dissertation and the degree. Record the official source, prerequisites, submission windows and responsible office; list unresolved points for enquiry.",
+            "Assess your theoretical, methodological, technical, academic communication and research integrity skills using existing work or short practical tasks. Specify the capabilities to develop and the work that will demonstrate progress.",
+            "Agree with your supervisor or team how research discussions, feedback, disagreements and progress reviews will be handled. Distinguish routine advice, supervisory approval and a formal assessment decision.",
+            "Set up research folders, a reference library, version records, backups and a permissions register, and complete applicable ethics, safety and integrity training. International students should separately verify the languages of teaching, the dissertation, abstracts and defence, as well as resource access.",
+            "Prepare a semester plan with evidence, a feedback contact and a review date for each task. Address health, resource or supervision difficulties through suitable support channels without disclosing sensitive details in public records."
+          ],
+          "deliverables": [
+            "A register of personal programme requirements, confirmed and unresolved items, and official sources.",
+            "A skills baseline and semester development plan with concrete work, review methods and priorities.",
+            "A supervision and communication agreement, research file index and backup recovery entry point."
+          ],
+          "review": [
+            "You can explain the prerequisites and responsible people for formal milestones; the appropriate programme office has clarified uncertain regulatory points.",
+            "Your supervisor or team has reviewed the direction, skills gaps and working arrangements; any required formal study plan has been approved through the institutional process.",
+            "You can locate your materials and support contacts, and have actually restored a non-sensitive sample from a backup."
+          ],
+          "failure": "Ask the responsible office to clarify uncertain rules and retain a pending status until confirmed. If supervision, language support or skills are insufficient, revise the plan with your supervisor and relevant support service before committing to a completion date.",
+          "templates": [
+            "onboarding",
+            "annual-check",
+            "meeting",
+            "archive"
+          ],
+          "next": "Use the skills gaps to plan foundational study while developing a map of research questions. Maintain the annual record from this stage onward."
+        },
+        {
+          "id": "foundation",
+          "title": "Foundations, Research Methods and a Map of Questions",
+          "timing": "Build an initial foundation early in the programme and extend it as the research questions develop",
+          "goal": "Explain the field's key concepts, methodological assumptions and evidence limits, and judge independently whether a question merits investigation rather than merely repeat published conclusions.",
+          "entry": [
+            "You have a skills baseline and study plan, with access to necessary courses, literature and computing resources.",
+            "You have an initial research area that can change in response to reading and investigation."
+          ],
+          "actions": [
+            "Identify the theoretical and methodological prerequisites for candidate directions. Demonstrate understanding through derivations, implementations, worked explanations or case analyses; reading counts alone do not establish understanding.",
+            "Keep search boundaries and selection criteria. Compare representative studies, conflicting findings and debates, mapping relationships between questions, assumptions, methods, data and evaluation.",
+            "Choose a baseline reproduction, theoretical analysis or field observation that can resolve an important uncertainty. Record actual conditions and failures, distinguishing published reports, your own execution and constructed examples.",
+            "Propose candidate questions and state the practical or theoretical basis, unresolved conditions, alternative explanations and observations that could overturn your current interpretation.",
+            "Explain the central argument to your supervisor or suitable peers and respond to challenges. Identify where you still depend on help and turn these gaps into the next learning tasks."
+          ],
+          "deliverables": [
+            "A knowledge and methods skills checklist with derivations, implementations or analyses and remaining gaps.",
+            "A traceable literature matrix, record of disagreements and map of research questions.",
+            "Initial validation records and a comparison of candidate questions, including negative evidence and resource limits."
+          ],
+          "review": [
+            "You can explain central assumptions, methodological choices and failure conditions without relying on the source text, and distinguish observations, inferences and unknowns.",
+            "Your supervisor or invited specialists review literature coverage, foundational understanding and question selection. Peer comments remain feedback rather than formal assessment decisions.",
+            "Candidate questions have traceable support, and you can explain why existing approaches do not adequately address them under the stated conditions."
+          ],
+          "failure": "If you cannot explain a foundation or complete a minimal investigation, narrow the task, study the missing concepts and demonstrate it again. If prior work already answers the question or the claimed need lacks support, revise the question map and reconsider the direction.",
+          "templates": [
+            "reading",
+            "literature",
+            "experiment",
+            "topic"
+          ],
+          "next": "Once the foundations and question rationale are adequate, prepare for the qualifying assessment, if applicable, and the research proposal in the order required by your institution."
+        },
+        {
+          "id": "qualification",
+          "title": "Qualifying Assessment and Research Readiness, Where Applicable",
+          "timing": "At the formal qualifying assessment window; where no such assessment exists, use a research readiness discussion only",
+          "goal": "Explain disciplinary foundations independently, analyse open problems and answer follow-up questions, establishing the capabilities and formal eligibility needed for the next research stage.",
+          "entry": [
+            "You have verified whether a qualifying assessment applies, its eligibility conditions, format, scope and order relative to the proposal.",
+            "You have foundational work, draft research questions and a skills gap assessment, and meet any applicable registration conditions."
+          ],
+          "actions": [
+            "Prepare the application and study checklist using the official assessment instructions. Confirm language, timing, submission method and permitted assistance; another student's experience is not a substitute for the rules.",
+            "Test understanding through derivations, oral explanations, method comparisons or analyses of open problems. State essential assumptions, counterexamples, limitations and uncertainties.",
+            "Practise questioning: answer independently first, then address gaps using feedback from your supervisor or peers. Record actual weaknesses without treating practice results as a formal pass.",
+            "Attend the formal assessment and obtain the result and any required corrective work from the department or assessment body. If no qualifying assessment applies, keep a research readiness discussion record without inventing a qualification decision."
+          ],
+          "deliverables": [
+            "A record of assessment applicability and eligibility checks.",
+            "Preparation work, question-and-answer records and a skills improvement plan.",
+            "The formal result and follow-up requirements, or a research readiness discussion record where the assessment does not apply."
+          ],
+          "review": [
+            "You can explain key concepts and their conditions of use, and propose a reasoned approach to unfamiliar questions while acknowledging uncertainty.",
+            "Your supervisor reviews preparation and skills gaps; a qualifying assessment is passed only when the institution's designated assessment body records that result.",
+            "Resits, corrective work or non-applicability are accurately recorded, and prerequisites for the next formal stage have been checked."
+          ],
+          "failure": "Address specific skills gaps through further study and review. Following a formal unsuccessful result, use the required remediation, reassessment or other institutional process rather than bypassing a prerequisite.",
+          "templates": [
+            "annual-check",
+            "reading",
+            "meeting",
+            "change-request"
+          ],
+          "next": "Proceed to the proposal when its formal prerequisites are satisfied. If your institution places the proposal first, record the assessment result in the appropriate sequence and continue the research."
+        },
+        {
+          "id": "proposal",
+          "title": "Research Direction, Linked Studies and Formal Proposal",
+          "timing": "Within the institutional proposal window, once the necessary preliminary evidence is available",
+          "goal": "Independently propose a testable central question with contribution potential, explaining how individual studies connect and how the research plan will progressively focus.",
+          "entry": [
+            "You meet the formal proposal conditions, understand the closest related work and have completed necessary preliminary validation.",
+            "There is verifiable evidence that the essential data, equipment, methodological skills and collaboration arrangements are feasible."
+          ],
+          "actions": [
+            "Express the central research question in a concise, discussable form, specifying its subject, conditions and value. Explain how the subsidiary questions jointly address it instead of merely listing technical components.",
+            "Compare intended theoretical, methodological, system or practice contributions with the closest work. For each claim, identify supporting evidence, competing explanations and results that could refute it.",
+            "Specify dependencies between studies, methods, comparators, evaluation criteria and data sources, together with ethics and permissions, cost limits, stopping conditions and alternatives.",
+            "Prepare the report and presentation in the official format, separating completed findings from planned work and using preliminary records to establish minimum feasibility.",
+            "Take part in the proposal assessment. Record each comment, actual revision, remaining disagreement and any need for reassessment. Keep supervisory advice separate from the formal decision."
+          ],
+          "deliverables": [
+            "The proposal and a research direction diagram showing study dependencies and intended contributions.",
+            "A claim–evidence–alternative explanation table, preliminary validation materials and a research risk plan.",
+            "The formal proposal result, responses to feedback and tasks for the next stage."
+          ],
+          "review": [
+            "You can explain why the individual studies form one doctoral investigation and which findings would require a change in the claims or direction.",
+            "Your supervisor or team reviews feasibility and resource commitments; the institution's designated assessment body decides whether the proposal passes.",
+            "Assessment requirements have become concrete revisions or pending review tasks, with evidence, reviewers and the next checkpoint identified for each study."
+          ],
+          "failure": "If the direction is fragmented, contributions overlap or essential evidence is unavailable, reduce and restructure the subsidiary questions. After an unsuccessful assessment or a requirement to resubmit, address the formal feedback and confirm the required process before advancing the affected research.",
+          "templates": [
+            "proposal",
+            "topic",
+            "experiment",
+            "meeting",
+            "change-request"
+          ],
+          "next": "Begin the first study under the confirmed plan while scheduling annual, interim and research direction reviews throughout the programme."
+        },
+        {
+          "id": "research",
+          "title": "Independent Research, Evidence Testing and Iteration",
+          "timing": "Repeat throughout the research period after the proposal; necessary exploratory work may begin earlier",
+          "goal": "Independently complete the cycle from a question to evidence, identify when conclusions hold or fail, and use these findings to revise the research direction.",
+          "entry": [
+            "You have a clear subsidiary question, appropriate prior approvals and accessible research resources.",
+            "You can state the current claim, comparators, decision criteria and original evidence needed."
+          ],
+          "actions": [
+            "Create a task record for the current question, fixing the hypothesis, method, comparison conditions, analysis plan and decision criteria for this iteration. Label analyses added after exploration separately.",
+            "Carry out theoretical derivation, implementation, experiments or field research, preserving actual environments, original records, versions and failures. Separate premises from deductions and observations from interpretations.",
+            "Actively investigate alternative explanations and boundary conditions. Use counterexamples, ablations, robustness analyses, error checks or independent verification as appropriate instead of selecting only favourable cases.",
+            "Before supervision meetings, formulate your own conclusion, reasoning and next-step options. Record disagreements and unresolved questions, revise the plan based on evidence and follow the required process for major scope or resource changes.",
+            "Integrate each iteration into the research direction and dissertation draft, maintaining collaborators' tasks and contribution records. Retain unsuccessful methods and negative findings to support later decisions and avoid repeating failed attempts."
+          ],
+          "deliverables": [
+            "Versioned research records, original evidence, code or derivations, and instructions for running or examining them.",
+            "A claim assessment table covering supporting and conflicting results, alternative explanations and untested conditions.",
+            "A research progress account, individual and collaborative contribution records, and the next iteration's task record."
+          ],
+          "review": [
+            "You can independently explain method choices, principal findings and failures, with claims proportionate to the evidence.",
+            "Your supervisor or team reviews the argument and research value. Suitable peers or designated reviewers check appropriate parts, with the actual scope of their verification recorded.",
+            "Key findings trace to materials and versions. Non-reproducible or access-restricted parts are identified, and replaying a saved record is not described as a new live execution."
+          ],
+          "failure": "If key findings are unstable, alternatives remain unresolved or resources are insufficient, identify the evidence gap and narrow the claim first. When support repeatedly fails, apply the stopping conditions, retain negative findings and propose a revised direction.",
+          "templates": [
+            "research-task",
+            "experiment",
+            "weekly",
+            "meeting",
+            "change-request",
+            "ai-use"
+          ],
+          "next": "Undertake annual or interim reviews at the agreed times. Studies with sufficient evidence can move into contribution synthesis and writing while others continue to iterate."
+        },
+        {
+          "id": "annual-review",
+          "title": "Ongoing Annual Reflection, Interim Assessment and Replanning",
+          "timing": "Maintain from enrolment and submit at institutional annual or interim milestones; research need not be complete",
+          "goal": "Use actual evidence to assess capability growth, research direction and programme progress, identifying unrealistic commitments early and making workable adjustments.",
+          "entry": [
+            "You have the previous agreed study plan, research tasks and upcoming formal milestones.",
+            "You have assembled actual records of coursework, research, academic exchange and other applicable programme activities for this period."
+          ],
+          "actions": [
+            "Compare progress with the previous plan and formal requirements, recording completed, incomplete, changed and unknown items with links to work, original records or official results. Hours worked and publication counts do not replace evidence of capability.",
+            "Compare your current and previous ability to define questions, choose methods, analyse evidence and communicate research. Use concrete work to identify progress and remaining support needs.",
+            "Reconsider links between studies, conflicting evidence and major remaining risks. Explain the reasons and costs of continuing, narrowing, combining or stopping a line of work.",
+            "Submit your self-assessment to your supervisor or team and take part in applicable annual or interim assessments. Convert feedback into corrective tasks with owners, evidence, deadlines and reviewers.",
+            "Update the next-stage plan and expected route to completion. Verify and follow formal procedures for extensions, interruptions, supervision changes or major topic changes when required."
+          ],
+          "deliverables": [
+            "An annual or stage self-assessment with programme status and evidence of capability development.",
+            "An updated research direction and risk assessment, formal assessment materials and actual results.",
+            "A corrective action tracker, next-stage plan and list of formal procedures still required."
+          ],
+          "review": [
+            "You explain differences from the plan and provide justified priorities and feasible next steps.",
+            "Your supervisor or team reviews the research and development plan; annual or interim assessment outcomes come from the institution's designated assessment body.",
+            "Closing a corrective task requires an actual review record. Resource and personal difficulties have appropriate support arrangements without unnecessary disclosure of sensitive information."
+          ],
+          "failure": "Follow the required corrective work and reassessment process after an unsuccessful formal assessment. If research stalls or exceeds available resources, narrow the scope, revise the direction and arrange any necessary extension; do not rewrite the historical plan to conceal deviations.",
+          "templates": [
+            "annual-check",
+            "midterm",
+            "change-request",
+            "meeting",
+            "learning-review"
+          ],
+          "next": "Apply the agreed changes to current research and learning tasks. Move into contribution synthesis when the evidence is sufficient while continuing the next review cycle."
+        },
+        {
+          "id": "contributions",
+          "title": "Original Contributions, Output Recognition and Scholarly Exchange",
+          "timing": "Continue as individual studies yield verifiable findings; check again before the degree application",
+          "goal": "Explain the knowledge or capability your doctoral research adds, integrate individual studies into bounded contributions and accurately assess applicable output requirements.",
+          "entry": [
+            "You have evidence supporting the central claims and records of conflicting findings.",
+            "You have the applicable output recognition requirements and can verify collaboration roles and permissions."
+          ],
+          "actions": [
+            "Connect each contribution to the central question, closest prior work, your own work, key evidence and scope. Check whether the contributions support one another and whether any claims overlap.",
+            "Distinguish theoretical, methodological, system or professional practice contributions from effort alone. Explain what understanding or capability has changed and what remains unresolved.",
+            "Check the recognised output forms and conditions for your degree type. Record work in progress, submitted, accepted, published or otherwise formally recognised as distinct states with supporting documents.",
+            "Confirm contribution records, authorship, intellectual property and material permissions with collaborators. Identify your individual work and required disclosures when using collaborative results in the dissertation.",
+            "Seek external criticism through submissions, presentations or suitable scholarly exchanges. Address substantive comments individually, adding evidence or narrowing claims where needed; acceptance does not remove the need for further scrutiny."
+          ],
+          "deliverables": [
+            "A table connecting the central question, individual studies, original contributions and evidence.",
+            "An output register and requirements check with proof of actual status.",
+            "Collaboration contribution and permissions records, scholarly exchange materials and responses to feedback."
+          ],
+          "review": [
+            "You can explain originality through a complete argument rather than only a list of paper titles or performance gains.",
+            "Your supervisor or team reviews the contribution logic and boundaries of your work. The responsible office determines whether outputs meet application conditions under the applicable rules.",
+            "External feedback corresponds to actual revisions, additional evidence or reasoned explanations; unresolved disagreements and the true status of outputs remain visible."
+          ],
+          "failure": "If contributions are insufficient or disconnected, return to the research to establish the missing links or narrow the claims. Ask the responsible office to resolve recognition uncertainties. Following rejection, address substantive feedback rather than treating resubmission or an exaggerated status as a solution.",
+          "templates": [
+            "outcomes",
+            "topic",
+            "review-response",
+            "meeting"
+          ],
+          "next": "Organise the full dissertation around the verified research direction while addressing research gaps that affect the central argument and any remaining formal application conditions."
+        },
+        {
+          "id": "writing",
+          "title": "Dissertation Synthesis and Academic Integrity Checks",
+          "timing": "Write throughout the research and produce a complete reviewable version before formal submission",
+          "goal": "Produce a coherent doctoral dissertation with sufficient evidence and clear individual contributions, allowing readers to trace central claims and understand their limits.",
+          "entry": [
+            "The research direction and central contributions are supported by evidence, with gaps and unfinished work identified.",
+            "You have verified the dissertation language, format, use of collaborative results and applicable integrity checks."
+          ],
+          "actions": [
+            "Map the argument across chapters, showing how the central question motivates each study and how findings answer it. Include a synthesis across studies rather than directly joining separate papers.",
+            "Link core claims to original evidence, derivations or material locations. Check notation, data, figures and consistency across versions, and incorporate conflicting results and limitations into the argument.",
+            "Clarify your own and collaborators' contributions, sources of published material, citations and necessary permissions. Verify cited originals and record actual AI uses, human checks and applicable disclosure.",
+            "Arrange successive reviews of structure, argument and expression with your supervisor or team, recording revisions and unresolved issues. If language assistance is needed, retain responsibility for the research judgments and content.",
+            "Separately verify academic integrity, any institution-specific non-academic issue screening or other special checks, similarity screening and anonymisation. Record each check's official basis, version, result and corrections; a detection score does not replace academic judgment."
+          ],
+          "deliverables": [
+            "A complete dissertation draft, chapter argument map and evidence index for central claims.",
+            "Review and revision records, with collaborative contribution and material provenance statements.",
+            "Applicable integrity check records, an AI use record and the remaining submission checklist."
+          ],
+          "review": [
+            "You can explain the dissertation's unifying claim, chapter relationships and limitations, with traceable support for the principal conclusions.",
+            "Your supervisor or team has completed the agreed content review; designated institutional personnel or offices confirm formal checks and submission eligibility under the rules.",
+            "Language, citations, figures and contribution statements agree with the underlying materials. Each check refers to a specific version, and unresolved items are not represented as passed."
+          ],
+          "failure": "Return to research or narrow a conclusion if a core claim lacks evidence, and restructure chapters if the argument is fragmented. Correct integrity issues individually and obtain required rechecks; rewriting wording must not conceal provenance or material problems.",
+          "templates": [
+            "thesis",
+            "integrity",
+            "ai-use",
+            "outcomes"
+          ],
+          "next": "Proceed to formal review once the required conditions and reviews are complete. If a preliminary defence is a prerequisite, complete it and its corrective work first under the institutional schedule."
+        },
+        {
+          "id": "review",
+          "title": "Preliminary Defence, Dissertation Review and Responses",
+          "timing": "Follow the institutional sequence and submission windows; verify separately whether and when a preliminary defence applies",
+          "goal": "Submit an accurate and complete account of the research, improve the argument through specific responses and substantive revisions, and maintain a clear formal review status.",
+          "entry": [
+            "You have verified review eligibility, prerequisites, anonymisation scope, required materials and submission channels.",
+            "The dissertation has completed necessary internal reviews and integrity checks, and the intended submission version can be uniquely identified."
+          ],
+          "actions": [
+            "Check whether a preliminary defence applies, its position in the sequence, review application conditions and submission windows. Where required, present the research direction and contributions, then complete the requested revisions and confirmation.",
+            "Freeze the review version and record its date and checksum. Check anonymity in the text, supplements, file metadata and links as required, while preserving appropriate citations and complete evidence.",
+            "Submit through the formal channel and retain the receipt, version, material list and actual review status. Do not contact reviewers through informal channels to influence the assessment.",
+            "Analyse each comment as a factual issue, argument gap, methodological challenge or presentation concern. Provide revision locations, additional evidence or a reasoned explanation and identify unresolved points.",
+            "Use the prescribed channels for major revisions, further review or appeals. Ask your supervisor to check agreement between responses and the dissertation, then await the necessary formal decision before confirming eligibility for the next stage."
+          ],
+          "deliverables": [
+            "Applicable preliminary defence records, a review eligibility checklist and frozen version records.",
+            "The submitted material list, receipt and formal review decision.",
+            "Point-by-point responses, the revised dissertation and further review or correction confirmation records."
+          ],
+          "review": [
+            "The submitted materials match the registered version, and anonymisation follows the requirements without undermining the argument.",
+            "You can explain how each substantive comment changed the research or argument. Your supervisor checks revisions and responses, while the designated review process determines the formal outcome.",
+            "Required further review, corrective work or appeals are recorded through the proper procedure, and the responsible office confirms eligibility for the formal defence."
+          ],
+          "failure": "Return to research or writing when feedback exposes a central flaw. After an unsuccessful review, follow the corrective work, reassessment or appeal process; do not bypass a formal decision by switching versions or treat supervisory agreement as a review pass.",
+          "templates": [
+            "defense",
+            "review-response",
+            "thesis",
+            "annual-check"
+          ],
+          "next": "Apply for the formal defence once the necessary review and correction confirmations are available and all institutional prerequisites are satisfied."
+        },
+        {
+          "id": "defense",
+          "title": "Formal Defence, Revision Approval and Degree Application",
+          "timing": "After formal defence eligibility is confirmed; complete revisions and degree procedures by the applicable deadlines",
+          "goal": "Defend the research direction and original contributions clearly, acknowledge evidence limits honestly and complete the post-defence revisions and formal degree procedures.",
+          "entry": [
+            "Defence eligibility, dissertation review and required corrective work have been confirmed through the institutional process.",
+            "You have the requirements for defence arrangements, materials, language, timing and the subsequent degree application."
+          ],
+          "actions": [
+            "Prepare a presentation around the central question, contributions, decisive evidence, your individual work and limitations. Ensure numbers, figures and claims match the current dissertation version.",
+            "Practise answering questions about alternative explanations, research choices and connections between studies. For demonstrations, prepare suitable offline material and state accurately what the demonstration covers.",
+            "Attend the formal defence and answer using actual evidence. Acknowledge uncertainty and record follow-up checks where needed; the authorised defence body produces the official record and decision.",
+            "Connect each defence comment to a revision and supporting evidence, obtaining approval from the designated reviewer before finalising the dissertation. Follow the formal arrangements if further research or another defence is required.",
+            "Submit the final dissertation and degree application materials as required. Track the defence outcome, acceptance of revisions, graduation review and degree award deliberation separately; passing the defence is not the same as being awarded the degree."
+          ],
+          "deliverables": [
+            "The defence presentation, necessary demonstration materials and a record of their alignment with the current version.",
+            "The formal defence record, responses and revision approval records.",
+            "The final dissertation, degree application materials and a register of the actual status of each procedure."
+          ],
+          "review": [
+            "You can independently explain originality, methodological choices, evidence and limitations, with answers consistent with the dissertation materials.",
+            "The authorised defence body determines the defence outcome and the designated reviewer approves revisions. Supervisory guidance does not replace these formal decisions.",
+            "Degree and graduation statuses are supported by the relevant office records, with pending deliberations or missing materials explicitly identified."
+          ],
+          "failure": "If the defence or revisions are unsuccessful, follow the formal decision on further research, corrections or another defence. Complete missing documents and confirm acceptance; a successful upload alone does not establish approval.",
+          "templates": [
+            "defense",
+            "review-response",
+            "thesis",
+            "annual-check"
+          ],
+          "next": "Use the approved final version to complete institutional archiving and research handover while tracking any remaining graduation and degree procedures."
+        },
+        {
+          "id": "archive",
+          "title": "Research Archive, Handover and Future Development",
+          "timing": "Archive throughout the research; complete formal handover at a stage ending, graduation or departure",
+          "goal": "Make research evidence understandable and verifiable within its access permissions, transfer collaborative responsibilities and turn doctoral capabilities into a plan for the next stage.",
+          "entry": [
+            "You have identified the materials to retain, submit and transfer, including their versions, permissions and recipients.",
+            "You have checked institutional archiving requirements, collaboration agreements and outstanding research or degree procedures."
+          ],
+          "actions": [
+            "Organise the final dissertation, original and processed data, code, environments, derivations, experiment logs, review records and permissions. Create a traceable inventory and retain necessary relationships between versions.",
+            "Arrange appropriate storage and access for restricted data, intellectual property and personal information. Review public materials separately; completing an archive does not confer permission to publish it.",
+            "Write recovery or verification instructions from the entry point to key results. Have the recipient or designated reviewer actually check a sample, recording the environment, successful scope, failures and parts that could not be verified.",
+            "Transfer projects, equipment, services, materials and outstanding work. Adjust access through the relevant management process without sharing personal passwords, and confirm responsibilities for pending submissions and future collaboration.",
+            "Reflect on your growth in defining questions, selecting methods, assessing evidence, communicating and collaborating. Prepare a shareable research account and next-stage learning plan, and confirm actual acceptance of institutional archives and subsequent paperwork."
+          ],
+          "deliverables": [
+            "An archive inventory, version and checksum records, and access and retention instructions.",
+            "Recovery or verification guidance and the recipient's actual sample-check records.",
+            "Handover acceptance, an outstanding responsibility register and institutional archive receipts.",
+            "A review of research capabilities and a next-stage development plan."
+          ],
+          "review": [
+            "The recipient can locate materials, understand key dependencies and complete the agreed sample checks. Anything not actually verified is identified.",
+            "The supervisor or project lead confirms research handover, and the designated institutional office confirms formal archiving. Relevant owners have checked access, equipment and outstanding responsibilities.",
+            "You distinguish public from restricted materials, and degree, graduation and archive statuses all have actual supporting records."
+          ],
+          "failure": "Repair missing files, failed recovery steps or unclear permissions and repeat the relevant checks. Until the recipient confirms acceptance, retain the necessary access and responsibility arrangements; a compressed file or a shared link alone does not complete handover.",
+          "templates": [
+            "archive",
+            "handover",
+            "outcomes",
+            "annual-check",
+            "learning-review"
+          ],
+          "next": "Close this programme record once archiving, handover and required procedures are confirmed complete. Maintain evidence and responsibilities for subsequent research under the agreed permissions and collaboration arrangements."
+        }
+      ],
+      "growth": {
+        "capabilities": [
+          "Develop a sustained research agenda around a valuable unresolved problem, establish the original contribution and its relationship to existing knowledge, and actively examine evidence that could overturn the claims.",
+          "Choose, revise and combine methods under uncertainty so that multiple studies support a coherent agenda, explaining the boundaries of theoretical, empirical or practice-based contributions.",
+          "Exercise independent judgment in research, academic exchange and collaboration, respond substantively to criticism using evidence, and preserve work that others can check and continue."
+        ],
+        "starting_check": [
+          "Use your own training plan to list course, qualification, proposal, annual or midterm, achievement and degree requirements, preserving the applicable documents. Confirm the supervisory structure, decision responsibilities and review arrangements.",
+          "Map the argument of a completed study from questions to claims, key evidence and limitations. Distinguish your own contribution from collaborative work and identify an unresolved problem.",
+          "For the proposed research agenda, compare the closest work and present preliminary evidence or explicitly untested hypotheses, critical resources and failure conditions. Use a small investigation to probe the weakest premise."
+        ],
+        "student_role": "Maintain the research agenda, contribution boundaries and evidence gaps, propose priorities and methodological choices, and arrange necessary checks and scholarly discussion. If a key claim is contradicted, collaboration or data conditions change, or the agenda becomes infeasible, promptly present a diagnosis and alternatives to the supervisory team.",
+        "support_role": "The supervisor or supervisory team established by the program provides sustained challenge and support on originality, methodological quality, scope and development, with clear feedback responsibilities. They help the student engage with different perspectives and obtain necessary resources. Formal assessments and degree evaluations follow institutional procedures; group agreement does not replace independent review.",
+        "feedback": "At reviews, examine whether new evidence changes the claims, how the studies jointly support the agenda, and whether critical objections have received substantive answers. Explain which suggestions will be adopted or deferred and why, then obtain appropriate review after adding evidence or revising the work. Recurring gaps should trigger changes to the agenda or methods rather than merely more experiments.",
+        "transition": "At completion, hand over the central argument, checkable materials, open questions and continuing responsibilities. In independent research or professional work, be able to organize evidence, collaboration and quality control for a new problem. Record publication counts, publication status, defense outcomes and formal degree conferral separately; no single count substitutes for evaluation of research independence or original contribution."
+      }
+    }
+  ]
+}

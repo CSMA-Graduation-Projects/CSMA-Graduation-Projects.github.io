@@ -1,0 +1,979 @@
+{
+  "date": "2026-10-19",
+  "status": "local_verified_awaiting_user_demo_confirmation",
+  "git": {
+    "head": "befdcedb28ab7ad4cc59865f6ebf7bc973c0f4d1",
+    "index_empty": true,
+    "committed_this_iteration": false,
+    "pushed_this_iteration": false
+  },
+  "backup": {
+    "sibling_directory": "CSMA-Graduation-Projects.github.io-backup-20261019-042446",
+    "files": 804,
+    "entries": 1039,
+    "inventory_and_sha256_match": true
+  },
+  "coverage": {
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "tracks_per_language": 5,
+    "stages_per_language": 45,
+    "templates_per_language": 25,
+    "workflow_diagrams_per_language": 11,
+    "shared_tool_scenarios": 7,
+    "top_level_pages": 50,
+    "built_html_pages": 58,
+    "template_bundle_entries": 28,
+    "diagram_bundle_entries": 24
+  },
+  "checks": {
+    "training": {
+      "generatedAt": "2026-10-18T20:39:32.265Z",
+      "assertions": 51,
+      "passed": 51,
+      "failed": 0,
+      "checks": [
+        {
+          "label": "数据版本与顶层结构",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "五条培养路径齐全且没有重复",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "45 个阶段及各路径数量",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "硕士 13 个正式阶段完整且顺序清楚",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "博士 11 个培养阶段完整且顺序清楚",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "路径说明、适用对象、时间边界与真实页面",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "各路径明确能力目标、入门诊断、双方责任和成长衔接",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "阶段字段、行动数量与可验收结构",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "阶段 ID 在各自路径内唯一",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "25 份模板 ID 完整、唯一",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "模板元数据与分类完整",
+          "ok": true,
+          "detail": "25 项"
+        },
+        {
+          "label": "模板分类覆盖四类",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "每份模板均指向安全的实际 Markdown 文件",
+          "ok": true,
+          "detail": "25 项"
+        },
+        {
+          "label": "模板文件不存在重复占位",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "模板正文可填写，包含具体字段及检查语义",
+          "ok": true,
+          "detail": "25 项"
+        },
+        {
+          "label": "模板正文没有整篇复用的假模板",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "所有阶段模板引用都可解析",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "25 份模板均进入实际培养阶段",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "完整成长说明在路径页面直接可读",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "阶段锚点及静态正文真实存在",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "阶段对应模板链接与自检入口准确",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "阶段整改、验收与下一步可直接阅读",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "路径页没有重复 HTML ID",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "每份模板有独立锚点、真实下载与静态全文预览",
+          "ok": true,
+          "detail": "25 项"
+        },
+        {
+          "label": "全套模板与培养手册的下载入口真实",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "首页可抵达五条路径、学习指南、模板与阶段清单",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "自检页无脚本时仍可进入五条完整指南",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "入门诊断要求实际材料而非自报熟练度",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "学生主动求助、指导者支持和反馈复查有明确动作",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "成长目标区分入门、综合工程、团队协作、研究与原创贡献",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "跨路径迁移交代新要求而不自动替代正式资格",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "场景：学生选题有问题证据、贡献边界和失败退路",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：综述有检索、筛选、比较与原始来源",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：本科毕设连接任务书、需求设计、验证和论文",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：查非先核实校本定义，与查重和 AI 分开",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：送审双版本、匿名核验、正式异议程序",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：答辩有资格、意见处理，区分学位授予",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：学硕专硕及专业实践有独立安排和证据",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：科研训练不以计划或截图代替实际完成",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：竞赛核实资格、预算、权属、回执及正式结果",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：博士建立独立研究能力与原创贡献证据",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：博士资格考核依据校本条件并有正式结果与整改",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：博士持续检查研究主线、贡献和学位条件",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：博士送审答辩与资料交接使用正式程序及真实证据",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：归档能定位原始数据、恢复、复查与交接",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：日常管理包含任务、汇报、请假与反馈",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：正式要求有校本核对而非全站统一阈值",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "自主学习指南有诊断、计划、证据、反馈和迁移闭环",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "成长复盘模板记录能力证据、行动与复核",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "离线手册覆盖全部阶段及五条培养路径",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "离线手册保留各层级完整成长说明",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    },
+    "workflow_tools": {
+      "generatedAt": "2026-10-18T20:39:32.435Z",
+      "scope": "source",
+      "assertions": 46,
+      "passed": 46,
+      "failed": 0,
+      "checks": [
+        {
+          "label": "流程与工具数据具有日期和完整结构",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "十一张图覆盖培养路径与共同科研工作",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "七类工具场景覆盖实际研究任务",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "流程目的、适用边界与节点内容可读",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "图中节点唯一，连线无悬空引用",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "从开始可以走到结束及所有分支节点",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "每个判断有通过和未通过路线",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "未通过会整改并返回当前或更早的核查点",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "五条培养图逐一覆盖原有阶段且没有复制阶段",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "45 个阶段图节点指向正确的详细说明",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "所有节点都有可到达的说明或材料",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "流程图中心有标题、分支说明与真实下载入口",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "流程图整包在图中心有明确下载入口",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "十个图示页面默认直接显示流程，无需展开或下载",
+          "ok": true,
+          "detail": "10 项"
+        },
+        {
+          "label": "每条培养页面实际包含本路径图和图中心入口",
+          "ok": true,
+          "detail": "5 项"
+        },
+        {
+          "label": "首页和资源页可抵达流程与工具中心",
+          "ok": true,
+          "detail": "2 项"
+        },
+        {
+          "label": "共用工作流程进入对应指导页面",
+          "ok": true,
+          "detail": "6 项"
+        },
+        {
+          "label": "阶段工具映射恰好覆盖现有45阶段",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "阶段映射都使用实际存在的工具场景",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "每个阶段正文能直接进入它的工具场景",
+          "ok": true,
+          "detail": "45 项"
+        },
+        {
+          "label": "工具场景有操作、产物、核查和替代选择",
+          "ok": true,
+          "detail": "7 项"
+        },
+        {
+          "label": "工具和官方资料引用没有孤立占位项",
+          "ok": true,
+          "detail": "7 项"
+        },
+        {
+          "label": "工具场景关联的模板实际存在且网页可达",
+          "ok": true,
+          "detail": "7 项"
+        },
+        {
+          "label": "工具、场景、来源ID各自唯一",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "工具区分推荐、可选和需另行准备的能力",
+          "ok": true,
+          "detail": "13 项"
+        },
+        {
+          "label": "来源提供明确标题与HTTPS页面",
+          "ok": true,
+          "detail": "13 项"
+        },
+        {
+          "label": "工具页面包含全部场景操作与可检查产物",
+          "ok": true,
+          "detail": "7 项"
+        },
+        {
+          "label": "场景：文献训练有原始来源、检索和逐项核对",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：实验有环境、原始结果和可复查记录",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：工程实现以需求、实际测试和缺陷为依据",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：AI研究记录模型与提示，核实输出和数据权限",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：写作和汇报要求版本、实测演示与证据",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "场景：管理与归档有任务记录、权限和恢复核验",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "公开内容没有本机路径、账号目录或安装盘点",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "流程保留校本顺序、正式审核和授位边界",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "博士流程保留资格考核、原创贡献和正式审核边界",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "博士资格环节有实质判断和可返回的整改路线",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "工具建议说明AI核查和受限材料使用边界",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "新增页面无重复锚点且站内链接均能解析",
+          "ok": true,
+          "detail": "2 项"
+        },
+        {
+          "label": "新增页面无需远程脚本或远程嵌入渲染图",
+          "ok": true,
+          "detail": "2 项"
+        },
+        {
+          "label": "离线手册保留全部流程的分支与核查信息",
+          "ok": true,
+          "detail": "11 项"
+        },
+        {
+          "label": "离线手册包含全部工具场景与检查要求",
+          "ok": true,
+          "detail": "7 项"
+        },
+        {
+          "label": "十一份SVG可解析且内容、连线与说明真实存在",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "十一份draw.io包含可编辑节点及完整连接",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "流程图ZIP真实完整，文件与23项哈希一致",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "label": "模板ZIP内手册与当前完整手册字节一致",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    },
+    "bilingual": {
+      "checks": [
+        {
+          "label": "pathways: translated content preserves every key, list length and stable reference",
+          "passed": true
+        },
+        {
+          "label": "pathways: generated English data matches authored translation",
+          "passed": true
+        },
+        {
+          "label": "templates: translated content preserves every key, list length and stable reference",
+          "passed": true
+        },
+        {
+          "label": "templates: generated English data matches authored translation",
+          "passed": true
+        },
+        {
+          "label": "workflows: translated content preserves every key, list length and stable reference",
+          "passed": true
+        },
+        {
+          "label": "workflows: generated English data matches authored translation",
+          "passed": true
+        },
+        {
+          "label": "research-tools: translated content preserves every key, list length and stable reference",
+          "passed": true
+        },
+        {
+          "label": "research-tools: generated English data matches authored translation",
+          "passed": true
+        },
+        {
+          "label": "research: every translated action, deliverable, review and correction appears online",
+          "passed": true
+        },
+        {
+          "label": "research: complete stage guidance appears in offline handbook",
+          "passed": true
+        },
+        {
+          "label": "research: complete growth guidance appears online and offline",
+          "passed": true
+        },
+        {
+          "label": "bachelor: every translated action, deliverable, review and correction appears online",
+          "passed": true
+        },
+        {
+          "label": "bachelor: complete stage guidance appears in offline handbook",
+          "passed": true
+        },
+        {
+          "label": "bachelor: complete growth guidance appears online and offline",
+          "passed": true
+        },
+        {
+          "label": "competition: every translated action, deliverable, review and correction appears online",
+          "passed": true
+        },
+        {
+          "label": "competition: complete stage guidance appears in offline handbook",
+          "passed": true
+        },
+        {
+          "label": "competition: complete growth guidance appears online and offline",
+          "passed": true
+        },
+        {
+          "label": "master: every translated action, deliverable, review and correction appears online",
+          "passed": true
+        },
+        {
+          "label": "master: complete stage guidance appears in offline handbook",
+          "passed": true
+        },
+        {
+          "label": "master: complete growth guidance appears online and offline",
+          "passed": true
+        },
+        {
+          "label": "doctor: every translated action, deliverable, review and correction appears online",
+          "passed": true
+        },
+        {
+          "label": "doctor: complete stage guidance appears in offline handbook",
+          "passed": true
+        },
+        {
+          "label": "doctor: complete growth guidance appears online and offline",
+          "passed": true
+        },
+        {
+          "label": "onboarding: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "research-task: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "topic: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "bachelor-task: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "literature: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "reading: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "proposal: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "experiment: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "engineering-report: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "professional-practice: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "weekly: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "meeting: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "competition: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "change-request: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "annual-check: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "midterm: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "thesis: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "outcomes: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "integrity: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "ai-use: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "review-response: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "defense: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "archive: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "handover: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "learning-review: usable English template with matching section coverage",
+          "passed": true
+        },
+        {
+          "label": "csma-training-templates.zip: exact membership and all SHA-256 checksums",
+          "passed": true
+        },
+        {
+          "label": "csma-workflow-diagrams.zip: exact membership and all SHA-256 checksums",
+          "passed": true
+        },
+        {
+          "label": "diagrams: all SVG/draw.io graphs preserve every node and correct language links",
+          "passed": true
+        },
+        {
+          "label": "en/csma-training-templates.zip: exact membership and all SHA-256 checksums",
+          "passed": true
+        },
+        {
+          "label": "en/csma-workflow-diagrams.zip: exact membership and all SHA-256 checksums",
+          "passed": true
+        },
+        {
+          "label": "en/diagrams: all SVG/draw.io graphs preserve every node and correct language links",
+          "passed": true
+        },
+        {
+          "label": "English built pages have no untranslated Chinese prose (except the language switch and explained cha-fei term)",
+          "passed": true
+        },
+        {
+          "label": "English planner uses a separate storage namespace and revalidates its current data",
+          "passed": true
+        },
+        {
+          "label": "international guide: substantive passages appear online and in the offline handbook",
+          "passed": true
+        },
+        {
+          "label": "en/international guide: substantive passages appear online and in the offline handbook",
+          "passed": true
+        },
+        {
+          "label": "International guides preserve matching section anchors for language switching",
+          "passed": true
+        },
+        {
+          "label": "learning guide: full substantive guidance is available online and offline",
+          "passed": true
+        },
+        {
+          "label": "en/learning guide: full substantive guidance is available online and offline",
+          "passed": true
+        },
+        {
+          "label": "Learning guides preserve section anchors across language switching",
+          "passed": true
+        }
+      ],
+      "passed": 62,
+      "total": 62,
+      "scope": "Translation completeness and file integrity, not institutional approval or live research results."
+    },
+    "site_links_fragments_metadata_sitemap": "passed",
+    "privacy_pattern_scan": "passed",
+    "git_diff_check": "passed",
+    "repeat_generation": {
+      "compared_files": 203,
+      "changed": [],
+      "passed": true
+    }
+  },
+  "browser": {
+    "method": "Chrome via cua_repl; actual rendered DOM and screenshots",
+    "responsive": {
+      "routes": [
+        "index.html",
+        "en/index.html",
+        "learning.html",
+        "en/learning.html",
+        "doctor.html",
+        "en/doctor.html",
+        "master.html",
+        "en/master.html",
+        "competition.html",
+        "en/competition.html",
+        "undergraduate-research.html",
+        "en/undergraduate-research.html",
+        "bachelor.html",
+        "en/bachelor.html",
+        "templates.html",
+        "en/templates.html",
+        "planner.html?track=doctor&stage=qualification",
+        "en/planner.html?track=doctor&stage=qualification",
+        "workflows.html",
+        "en/workflows.html"
+      ],
+      "widths": [
+        320,
+        390,
+        1280
+      ],
+      "combinations": 60,
+      "horizontal_overflow_failures": 0,
+      "scope": "Headings and content presence, stage/flow/template counts and horizontal overflow; not a claim that every interaction was exercised at every width."
+    },
+    "svg_text_bounds": [
+      {
+        "bad": [],
+        "nodes": 13,
+        "path": "/assets/diagrams/research-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 14,
+        "path": "/assets/diagrams/bachelor-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 12,
+        "path": "/assets/diagrams/competition-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 25,
+        "path": "/assets/diagrams/master-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 21,
+        "path": "/assets/diagrams/doctor-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/assets/diagrams/literature.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/assets/diagrams/reproduction.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/assets/diagrams/engineering.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 13,
+        "path": "/assets/diagrams/submission.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 9,
+        "path": "/assets/diagrams/feedback.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/assets/diagrams/archiving.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 13,
+        "path": "/en/assets/diagrams/research-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 14,
+        "path": "/en/assets/diagrams/bachelor-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 12,
+        "path": "/en/assets/diagrams/competition-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 25,
+        "path": "/en/assets/diagrams/master-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 21,
+        "path": "/en/assets/diagrams/doctor-path.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/en/assets/diagrams/literature.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/en/assets/diagrams/reproduction.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/en/assets/diagrams/engineering.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 13,
+        "path": "/en/assets/diagrams/submission.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 9,
+        "path": "/en/assets/diagrams/feedback.svg"
+      },
+      {
+        "bad": [],
+        "nodes": 10,
+        "path": "/en/assets/diagrams/archiving.svg"
+      }
+    ],
+    "functional": {
+      "doctoral_planner_11_options_and_qualification_8_checks": true,
+      "english_check_persists_after_reload": true,
+      "test_checkbox_restored_unchecked": true,
+      "doctoral_checklist_actual_export": {
+        "checked": 1,
+        "unchecked": 7,
+        "correct_stage_and_english_guide": true,
+        "formal_approval_boundary": true
+      },
+      "planner_language_roundtrip_preserves_doctor_qualification_after_cache_fix": true,
+      "learning_template_anchor_language_roundtrip": true,
+      "english_learning_template_search_single_result": true,
+      "english_preview_full_text": true,
+      "english_clipboard_sha256_matches": true,
+      "zh_download_bytes_match_source": true,
+      "en_download_bytes_match_source": true,
+      "mobile_level_table_stacked_with_labels": true
+    },
+    "fixed_during_verification": [
+      "Cached pathway data could reset a new doctoral selection to the first undergraduate stage; scripts now have content fingerprints and pathway/template fetches revalidate.",
+      "Long diagram text now determines node and footer dimensions in both languages; all 22 SVGs pass actual rendered text bounds."
+    ],
+    "automation_note": "Browser download event wait timed out, but the exported file existed and its content was verified separately. Template files were retrieved through their actual browser download links and compared byte for byte."
+  },
+  "screenshots": [
+    "screenshots/learning-cycle-desktop.jpg",
+    "screenshots/learning-levels-en-mobile.jpg",
+    "screenshots/growth-pathways-desktop.jpg"
+  ],
+  "limitations": [
+    "No student learning-outcome study or institutional approval is claimed.",
+    "draw.io XML structure and content were checked; this iteration did not import every drawing into the draw.io desktop application.",
+    "No GitHub commit, push, deployment or live-site verification was performed for this iteration."
+  ]
+}

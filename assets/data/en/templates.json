@@ -1,0 +1,230 @@
+{
+  "updated": "2026-10-19",
+  "templates": [
+    {
+      "id": "onboarding",
+      "title": "Onboarding and stage plan",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate, master's and doctoral students, including international students",
+      "stage": "Joining a group; starting a stage",
+      "description": "Align requirements, objectives, resources and assessable tasks; includes international student checks for language, programme stages and administrative arrangements.",
+      "file": "assets/templates/onboarding.md"
+    },
+    {
+      "id": "research-task",
+      "title": "Research task card",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate research trainees and master's researchers · Doctoral students where applicable",
+      "stage": "Research training and execution",
+      "description": "Turn one research question into a minimum objective, steps, evidence and follow-up actions.",
+      "file": "assets/templates/research-task.md"
+    },
+    {
+      "id": "topic",
+      "title": "Topic justification and scope",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Topic selection and research-question refinement",
+      "description": "Compare candidate problems and examine real needs, scope, feasibility and stopping conditions.",
+      "file": "assets/templates/topic.md"
+    },
+    {
+      "id": "bachelor-task",
+      "title": "Undergraduate project task brief: working draft",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate graduation-project students",
+      "stage": "After topic selection; before formal task issuance",
+      "description": "Define individual tasks, technical requirements, stage deliverables and review methods before completing the official university form.",
+      "file": "assets/templates/bachelor-task.md"
+    },
+    {
+      "id": "literature",
+      "title": "Literature review and evidence matrix",
+      "category": "Research and progress",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Literature review, proposal and thesis writing",
+      "description": "Preserve search and screening decisions, compare evidence and develop traceable research judgments.",
+      "file": "assets/templates/literature.md"
+    },
+    {
+      "id": "reading",
+      "title": "Paper reading and reproduction decision",
+      "category": "Research and progress",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Reading and reproduction preparation",
+      "description": "Explain a paper's problem, method, evidence and limitations, and decide whether reproduction is worthwhile.",
+      "file": "assets/templates/reading.md"
+    },
+    {
+      "id": "proposal",
+      "title": "Research proposal and review preparation",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate graduation-project and master's students · Doctoral students where applicable",
+      "stage": "Proposal development and review",
+      "description": "Connect questions, methods, evaluation, milestones and review revisions; official university forms take precedence.",
+      "file": "assets/templates/proposal.md"
+    },
+    {
+      "id": "experiment",
+      "title": "Experiments, reproduction and run evidence",
+      "category": "Research and progress",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Experiment design, execution and verification",
+      "description": "Record configurations, raw logs, failures, metrics and checks; distinguish live execution from saved-record replay.",
+      "file": "assets/templates/experiment.md"
+    },
+    {
+      "id": "engineering-report",
+      "title": "Requirements, detailed design and test report",
+      "category": "Research and progress",
+      "audience": "Undergraduate project and competition teams; master's engineering projects · Doctoral students where applicable",
+      "stage": "Requirements, design, implementation and testing",
+      "description": "Connect requirement IDs to design, implementation, actual tests and defects to support an engineering delivery.",
+      "file": "assets/templates/engineering-report.md"
+    },
+    {
+      "id": "professional-practice",
+      "title": "Professional-practice plan and report",
+      "category": "Research and progress",
+      "audience": "Professional master's students",
+      "stage": "Practice application, execution and assessment",
+      "description": "Record formal practice prerequisites, tasks, progress, conclusions and recognition separately from independent internships.",
+      "file": "assets/templates/professional-practice.md"
+    },
+    {
+      "id": "weekly",
+      "title": "Progress report and next-stage plan",
+      "category": "Research and progress",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Day-to-day research and periodic reporting",
+      "description": "Report actual outputs, blockers and evidence against previous commitments, then propose feasible next steps.",
+      "file": "assets/templates/weekly.md"
+    },
+    {
+      "id": "meeting",
+      "title": "Meeting, discussion and decision record",
+      "category": "Collaboration and archiving",
+      "audience": "Undergraduate and master's students; project teams · Doctoral students where applicable",
+      "stage": "Regular meetings, supervision and project collaboration",
+      "description": "Separate suggestions, decisions and pending approvals, with owners, deliverables, dates and verification.",
+      "file": "assets/templates/meeting.md"
+    },
+    {
+      "id": "competition",
+      "title": "Competition planning, submission and reflection",
+      "category": "Research and progress",
+      "audience": "Undergraduate and master's competition participants",
+      "stage": "Participation decision, preparation, submission and reflection",
+      "description": "Verify current competition rules and connect judging criteria to team tasks, validation, submission and archiving.",
+      "file": "assets/templates/competition.md"
+    },
+    {
+      "id": "change-request",
+      "title": "Topic, plan and resource change request",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Changes to scope, schedule, data or resources",
+      "description": "Preserve the original plan and record evidence, impact, alternatives and the actual confirmation status.",
+      "file": "assets/templates/change-request.md"
+    },
+    {
+      "id": "annual-check",
+      "title": "Institutional requirements and annual progress record",
+      "category": "Collaboration and archiving",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Semester, annual and stage reviews",
+      "description": "Record applicable institutional rules, versions and checks for courses, practice, thesis checks, examination, defense and degree procedures.",
+      "file": "assets/templates/annual-check.md"
+    },
+    {
+      "id": "midterm",
+      "title": "Midterm review and corrective actions",
+      "category": "Thesis and graduation",
+      "audience": "Undergraduate graduation-project and master's students · Doctoral students where applicable",
+      "stage": "Midterm review, corrections and follow-up",
+      "description": "Check progress and evidence against the approved plan, assess remaining work and track required corrections.",
+      "file": "assets/templates/midterm.md"
+    },
+    {
+      "id": "thesis",
+      "title": "Thesis writing and version checks",
+      "category": "Thesis and graduation",
+      "audience": "Undergraduate graduation-project and master's students · Doctoral students where applicable",
+      "stage": "Thesis drafting, review and finalization",
+      "description": "Connect chapter claims to evidence and check figures, citations, anonymous copies and final archive versions.",
+      "file": "assets/templates/thesis.md"
+    },
+    {
+      "id": "outcomes",
+      "title": "Output requirements and achievement register",
+      "category": "Thesis and graduation",
+      "audience": "Undergraduates; academic and professional master's students · Doctoral students where applicable",
+      "stage": "Output planning and application-eligibility checks",
+      "description": "Verify requirements for the applicable program and record submission, acceptance and publication as distinct actual states.",
+      "file": "assets/templates/outcomes.md"
+    },
+    {
+      "id": "integrity",
+      "title": "Academic integrity, non-academic-error and similarity checks",
+      "category": "Thesis and graduation",
+      "audience": "Undergraduate graduation-project and master's students · Doctoral students where applicable",
+      "stage": "Before examination, defense and final submission",
+      "description": "Record the applicable rules and corrections for academic integrity, non-academic-error checks, similarity checking and AI disclosure separately.",
+      "file": "assets/templates/integrity.md"
+    },
+    {
+      "id": "ai-use",
+      "title": "AI assistance and disclosure record",
+      "category": "Research and progress",
+      "audience": "Undergraduate and master's students · Doctoral students where applicable",
+      "stage": "Throughout research, writing, competitions and submission",
+      "description": "Record actual purposes, adopted content, input-data boundaries, human verification and applicable disclosure requirements.",
+      "file": "assets/templates/ai-use.md"
+    },
+    {
+      "id": "review-response",
+      "title": "Thesis examination and point-by-point responses",
+      "category": "Thesis and graduation",
+      "audience": "Undergraduate graduation-project and master's students · Doctoral students where applicable",
+      "stage": "Examination submission, revisions and re-examination",
+      "description": "Check the submission version and anonymity requirements; record each comment, thesis change and actual follow-up review.",
+      "file": "assets/templates/review-response.md"
+    },
+    {
+      "id": "defense",
+      "title": "Defense preparation and revision acceptance",
+      "category": "Thesis and graduation",
+      "audience": "Undergraduate graduation-project and master's students · Doctoral students where applicable",
+      "stage": "Pre-defense, formal defense and revisions",
+      "description": "Prepare eligibility documents, the presentation, evidence and demonstrations; record questions and complete the revision process.",
+      "file": "assets/templates/defense.md"
+    },
+    {
+      "id": "archive",
+      "title": "Data, code and graduation-material archive",
+      "category": "Collaboration and archiving",
+      "audience": "Undergraduate and master's students; project teams · Doctoral students where applicable",
+      "stage": "Stage freezes, paper submission and graduation archiving",
+      "description": "Check materials, permissions, versions, SHA-256 checksums and recovery instructions, recording what was actually verified.",
+      "file": "assets/templates/archive.md"
+    },
+    {
+      "id": "handover",
+      "title": "Stage handover and group departure",
+      "category": "Collaboration and archiving",
+      "audience": "Undergraduate and master's students; project teams · Doctoral students where applicable",
+      "stage": "Personnel changes, graduation and group departure",
+      "description": "Transfer materials, systems, access, assets and unfinished work, with actual spot checks by the incoming owner.",
+      "file": "assets/templates/handover.md"
+    },
+    {
+      "id": "learning-review",
+      "title": "Learning review and next-step plan",
+      "category": "Research and progress",
+      "audience": "Undergraduate, master’s and doctoral students, including international students",
+      "stage": "After feedback, at stage completion and when moving to a new task",
+      "description": "Connect your starting point, actual evidence, feedback and a transfer task; agree on the next learning goal and review date.",
+      "file": "assets/templates/learning-review.md"
+    }
+  ]
+}

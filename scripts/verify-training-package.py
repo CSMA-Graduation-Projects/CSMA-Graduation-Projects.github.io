@@ -27,7 +27,7 @@ with zipfile.ZipFile(root / 'assets/downloads/csma-training-templates.zip') as a
         seen.add(name)
     assert archive.read('SHA256SUMS') == (root/'assets/downloads/SHA256SUMS').read_bytes()
 handbook = expected['training-handbook.md'].decode()
-for title in ['日常管理与协作', '学术规范与提交检查', '数据资料归档与交接', '依据与校本要求核对']:
+for title in ['学习与成长', '国际学生指南', '日常管理与协作', '学术规范与提交检查', '数据资料归档与交接', '依据与校本要求核对']:
     assert '## ' + title in handbook, f'Missing shared guide: {title}'
 assert '<section' not in handbook and '<table' not in handbook, 'Unconverted HTML in handbook'
 print(f'ZIP verified: {len(catalog["templates"])} templates, README, complete handbook and SHA256SUMS; {len(expected)} hashes match.')

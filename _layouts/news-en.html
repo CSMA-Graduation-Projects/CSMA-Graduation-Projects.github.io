@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} | CSMA Student Guide</title>
+  <meta name="description" content="{{ page.summary | escape }}">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#14375f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="CSMA Student Guide">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.summary | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="https://csma-graduation-projects.github.io/assets/hero-workflow.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/training.css">
+  <link rel="stylesheet" href="/assets/workflows.css">
+  <link rel="stylesheet" href="/assets/research-tools.css">
+
+
+  <link rel="alternate" hreflang="zh-CN" href="{{ page.url | remove_first: '/en' | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="/assets/essays.css">
+  <link rel="stylesheet" href="/assets/bilingual.css?v=26a146628072">
+</head>
+<body class="training-site">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="/en/index.html" aria-label="CSMA Student Guide home"><span class="brand-mark">CSMA</span><span class="brand-text">Student Guide</span></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open main navigation">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="/en/index.html">Home</a>
+<a class="active" aria-current="true" href="/en/news.html">News</a>
+<a href="/en/bachelor.html">Undergraduate</a>
+<a href="/en/master.html">Master's</a>
+<a href="/en/doctor.html">Doctoral</a>
+<a href="/en/resources.html">Resources</a>
+<a href="/en/outcomes.html">Outcomes</a>
+<a href="/en/students.html">Stories</a>
+<a href="/en/essays.html">Mentoring</a>
+<a href="/en/about.html">About</a></nav><div class="language-switch"><a data-language-switch href="{{ page.url | remove_first: '/en' | relative_url }}" hreflang="zh-CN" lang="zh-CN" title="中文" aria-label="Read this page in Chinese">ZH</a></div>
+  </div></header>
+  <main id="main-content" tabindex="-1"><section class="essay-hero" id="top"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/index.html">Home</a></li><li><a href="/en/news.html">News</a></li><li aria-current="page">Article</li></ol></nav><h1>{{ page.title | escape }}</h1><p class="essay-summary">{{ page.summary | escape }}</p><div class="essay-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time><span>{{ page.kind | escape }}</span><span>{{ page.audience | escape }}</span></div></div></section><section class="section"><div class="container"><article class="essay-reading" aria-label="Article">{{ content }}<div class="essay-related article-back"><a href="/en/news.html">← Back to all news</a><a href="/en/resources.html">Explore the guides →</a></div></article></div></section></main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <div class="footer-copy"><strong>CSMA · Clear steps. Research grounded in evidence.</strong><p>Public guides and blank templates · Revised October 2026</p></div>
+    <ul class="footer-nav" aria-label="Footer navigation"><li><a href="/en/policies.html">Sources and institutional checks</a></li><li><a href="/en/management.html">Routine management</a></li><li><a href="/en/archive.html">Archiving guide</a></li><li><a href="/en/about.html">About</a></li></ul>
+  </div></footer>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <script src="/script.js?v=1f74c4c43ede"></script><script src="/assets/training-en.js?v=361772d297ac"></script>
+</body></html>

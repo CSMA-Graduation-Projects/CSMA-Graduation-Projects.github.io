@@ -1,0 +1,11 @@
+{% assign essay_items = site.essays_en | where: 'published', true | sort: 'date' | reverse %}
+{% assign now = site.time | date: '%s' | plus: 0 %}
+{% assign essay_limit = include.limit | default: essay_items.size %}
+{% assign shown = 0 %}
+<div class="essay-list">
+{% for item in essay_items %}{% assign item_time = item.date | date: '%s' | plus: 0 %}{% if item_time <= now and shown < essay_limit %}
+{% assign shown = shown | plus: 1 %}
+<article class="essay-card"><div class="essay-meta"><span class="essay-topic">{{ item.topic | escape }}</span><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%Y-%m-%d' }}</time><span>{{ item.author | escape }}</span></div><h3><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h3><p>{{ item.summary | escape }}</p><a class="text-link" href="{{ item.url | relative_url }}">Read the article →</a></article>
+{% endif %}{% endfor %}
+{% if shown == 0 %}<p class="collection-empty">Mentoring articles will appear here after publication.</p>{% endif %}
+</div>

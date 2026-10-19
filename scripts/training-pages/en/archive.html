@@ -1,0 +1,71 @@
+<section class="section"><div class="container reading-guide">
+  <div class="guide-intro"><p>Archiving begins when a project starts. It should help the next person understand what the materials are, where they came from, how to use them and what may be shared, and enable them to examine the evidence for key thesis conclusions. Complete the university's degree-document archiving and the group's code and data handover separately. Submitting a thesis does not mean all research materials have been handed over.</p></div>
+  <nav class="inline-links" aria-label="Archiving guide contents"><a href="#repository-structure">Folders and index</a><a href="#visibility-model">Access and publication</a><a href="#archive-metadata">Essential metadata</a><a href="#reproduce-and-verify">Running and verifying</a><a href="#completion-standard">Handover acceptance</a><a href="#retention-and-access">Retention and access</a></nav>
+
+  <h2 id="repository-structure">Create an index that makes materials easy to find</h2>
+  <p>Follow the project's existing conventions. Do not force active repositories to be moved or renamed merely for a uniform appearance. If materials are held across several approved systems, use an archive index to state each location, access conditions, responsible person and version. A public index must not disclose controlled addresses, accounts or individual evaluations. Keep an index requiring permission within the appropriate controlled space.</p>
+  <p>A new project may adapt the structure below, combining or omitting parts that do not apply. Official documents required by the university remain in its designated systems. Clear organisation matters more than the number of folders.</p>
+  <pre><code>project/
+├── README.md              # Contents, scope, entry points and run instructions
+├── requirements/          # Requirements, scope, plans and changes
+├── literature/            # Search records, reference index and reading notes
+├── proposal/              # Research plan and applicable proposal-review materials
+├── code/                  # Source, dependencies and run scripts
+├── data/
+│   ├── raw/               # Original data or approved acquisition instructions
+│   └── derived/           # Cleaned and processed data
+├── experiments/           # Configurations, run logs and environment records
+├── results/               # Result tables, analysis and plotting scripts
+├── thesis/                # Drafts, figure sources and submission versions
+├── reviews/               # Access-controlled feedback and revision records
+└── archive/               # Delivery inventory, checks and acceptance records</code></pre>
+  <p>Use explicit dates and versions for milestone submissions rather than names such as “final2” or “last revision.” Keep separate thesis versions for external review, defense and the corrected final submission, marking their official submission status. Identify the corresponding code commit or release. Matching filenames do not establish matching content; retain checksums for important deliveries.</p>
+
+  <h2 id="visibility-model">Separate source material, working files and public outputs</h2>
+  <div class="table-wrap"><table><caption>Access levels and permitted uses</caption><thead><tr><th scope="col">Material category</th><th scope="col">Typical contents</th><th scope="col">How to handle it</th></tr></thead><tbody>
+    <tr><th scope="row">Controlled source material</th><td>Original collected data, authorisations, participant information and raw experimental outputs.</td><td>Preserve provenance and original form, with restricted access. Analyse copies or derived data without overwriting the originals.</td></tr>
+    <tr><th scope="row">Controlled working material</th><td>Individual plans, progress reports, unpublished papers, review comments, research records and internal handover records.</td><td>Grant access according to responsibility and identify the valid version and owner. Do not place it on a public website.</td></tr>
+    <tr><th scope="row">Approved public outputs</th><td>Papers, code, sample data, demonstrations, blank templates and documentation cleared for release.</td><td>Create a separate release package. Check licences, privacy, attribution and confidentiality restrictions before confirming publication.</td></tr>
+  </tbody></table></div>
+  <p>Even cleaned or anonymised data requires a check of re-identification risks, permission conditions and licences. Removing names alone does not authorise publication. For data that cannot be shared, consider providing a data dictionary, access application procedure, processing scripts and synthetic examples. State clearly that examples are demonstrations, not actual experimental results.</p>
+  <div class="notice"><strong>A file hidden from a webpage is not necessarily private.</strong> Files in a public GitHub repository may remain accessible through the repository and its history even if unlinked, collapsed or excluded from the website build. Store completed personal materials in an approved access-controlled space.</div>
+
+  <h2 id="archive-metadata">Record essential information for each important item</h2>
+  <p>Assign each item a stable identifier in the delivery inventory and record its name, purpose, format, version or date, owner, source, related task or thesis location, storage location, access level, licence conditions and checksum. Explain fields that do not apply; do not use an empty field to hide an unconfirmed status.</p>
+  <p>For data, also record collection or download dates, dataset version, field definitions, units, sample size, cleaning and exclusion rules, split method and generation scripts. For runs, record the code version, dependencies, configuration, data version, command, resources, start and end times, exit status and output location. Link figures and tables to input data and generation scripts, establishing a trace from thesis claim to figure or table, result, run, code and data.</p>
+  <p>For materials that licensing restrictions prevent you from including, document the restriction, an authorised acquisition route and the responsible contact role; do not supply personal account credentials. For materials from a partner organisation, confirm what the group may retain, reuse and publish. Record contributions and authorship agreements for jointly produced code and papers.</p>
+
+  <h2 id="reproduce-and-verify">Write a README the recipient can actually follow</h2>
+  <ol>
+    <li><strong>State the scope.</strong> List the delivered contents, thesis or project version, verified results and known limitations, including features that need external accounts or restricted data.</li>
+    <li><strong>Describe the environment.</strong> Provide the operating system, language and key dependency versions, hardware requirements, installation commands and environment files. Identify model or service versions and access conditions.</li>
+    <li><strong>Explain the data.</strong> Give a lawful acquisition method, destination, preprocessing commands and data verification steps. Do not leave the recipient to guess the directory structure.</li>
+    <li><strong>Provide a minimal run.</strong> Supply a verifiable starting command, expected output, estimated time and resource needs, followed by the entry point for the complete experiment.</li>
+    <li><strong>Explain the results.</strong> Identify output files, metric calculations and plotting procedures, expected tolerances and sources of randomness. For results that cannot be repeated, state why and how they can be checked.</li>
+  </ol>
+  <p>Before delivery, follow the README from a clean directory. If a complete rerun is genuinely infeasible, retain run logs, raw outputs, analysis scripts and an explanation of the limitations. Label a full rerun, recomputation from saved records and file-only inspection separately. A structural check does not establish successful reproduction.</p>
+  <p>Checksums help detect changes to files. Run the following example within the archive directory; the actual file list should match your delivery inventory:</p>
+  <pre><code># macOS: create and verify a SHA-256 manifest
+shasum -a 256 README.md thesis/final.pdf &gt; SHA256SUMS
+shasum -a 256 -c SHA256SUMS
+
+# Equivalent commands on Linux
+sha256sum README.md thesis/final.pdf &gt; SHA256SUMS
+sha256sum -c SHA256SUMS</code></pre>
+  <p>Regenerate the manifest after changing files. A successful checksum comparison shows consistency with the manifest, not that the content is correct or its provenance authentic. After a backup, restore selected important files and check that they open, can be read and have usable permissions. Successful synchronisation does not establish that recovery has been tested.</p>
+
+  <h2 id="completion-standard">Complete the handover through recipient acceptance</h2>
+  <div class="table-wrap"><table><caption>Minimum archive and handover acceptance checks</caption><thead><tr><th scope="col">Check</th><th scope="col">Evidence to retain</th></tr></thead><tbody>
+    <tr><th scope="row">Official documents</th><td>The final thesis, declarations, revision records and other university-required materials have been submitted as required, with the relevant receipts or status.</td></tr>
+    <tr><th scope="row">Completeness and consistency</th><td>Every inventory item is checked; the relationship between thesis, code, data and results is clear; important file checksums match.</td></tr>
+    <tr><th scope="row">Runnable and reviewable materials</th><td>The recipient follows the instructions to run an example or agreed procedure and records commands, environment, results, incomplete items and verification scope.</td></tr>
+    <tr><th scope="row">Permissions and licences</th><td>The recipient has the necessary access, permitted publication and retention are clear, and restricted material has not entered the public package.</td></tr>
+    <tr><th scope="row">Outstanding matters</th><td>Risks, future maintenance responsibilities, costs, expiry dates and support arrangements are documented and acknowledged by the recipient.</td></tr>
+  </tbody></table></div>
+  <p>If a check fails, record the issue, owner, repair date and review method. Uploading a ZIP file alone does not complete a handover. Track university archiving and research-group handover separately, with completion confirmed by their respective recipients.</p>
+
+  <h2 id="retention-and-access">Agree on retention and access after leaving the group</h2>
+  <p>Set retention periods according to university rules, funding conditions, data licences, ethics requirements and collaboration agreements. Record the basis and the person responsible at expiry; do not assign every material a universal retention period. Expiry does not trigger automatic deletion. First check continuing retention duties, review needs and other restrictions, then follow an approved process and retain a record.</p>
+  <p>Transfer responsibilities through organisation ownership transfer, membership permission changes, service-account management and key rotation, without handing over personal passwords. Check the owners, billing and recovery arrangements for repositories, storage, servers, model services, domains and other resources. Confirm the new owner can access them before withdrawing permissions that are no longer needed. If collaboration continues, agree on the scope and duration of continued access.</p>
+  <div class="inline-links"><a class="btn outline" href="templates.html#archive">Data and archive inventory</a><a class="btn outline" href="templates.html#handover">Handover acceptance template</a><a class="btn outline" href="integrity.html">Academic integrity and anonymity checks</a></div>
+</div></section>
