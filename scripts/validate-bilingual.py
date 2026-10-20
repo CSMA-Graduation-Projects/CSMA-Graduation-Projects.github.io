@@ -96,6 +96,26 @@ for prefix, fragment in [('', 'scripts/training-pages/learning.html'), ('en/', '
     offline=re.sub(r'\s+',' ',read(prefix+'assets/downloads/training-handbook.md').replace('**',''))
     check(prefix+'learning guide: full substantive guidance is available online and offline',bool(passages) and all(p in online and p in offline for p in passages))
 check('Learning guides preserve section anchors across language switching',learning_ids[0]==learning_ids[1] and set(learning_ids[0])=={'start','levels','cycle','feedback','review','next'})
+joint_ids=[]
+for prefix, fragment in [('', 'scripts/training-pages/joint-training.html'), ('en/', 'scripts/training-pages/en/joint-training.html')]:
+    authored=read(fragment)
+    joint_ids.append(re.findall(r'\bid="([^"]+)"',authored))
+    parser=Text();parser.feed(authored)
+    passages=[re.sub(r'\s+',' ',part).strip() for part in parser.parts if len(part.strip())>40]
+    online=re.sub(r'\s+',' ',visible(read('_site/'+prefix+'joint-training.html')))
+    offline=re.sub(r'\s+',' ',read(prefix+'assets/downloads/training-handbook.md').replace('**',''))
+    check(prefix+'joint training: substantive guidance is complete online and offline',bool(passages) and all(p in online and p in offline for p in passages))
+check('Joint training preserves all section anchors for language switching',joint_ids[0]==joint_ids[1] and set(joint_ids[0])=={'collaborate','start','types','roles','stages','levels','coordination','outcomes','closure','sources'})
+collaboration_ids=[]
+for prefix, fragment in [('', 'scripts/training-pages/research-collaboration.html'), ('en/', 'scripts/training-pages/en/research-collaboration.html')]:
+    authored=read(fragment)
+    collaboration_ids.append(re.findall(r'\bid="([^"]+)"',authored))
+    parser=Text();parser.feed(authored)
+    passages=[re.sub(r'\s+',' ',part).strip() for part in parser.parts if len(part.strip())>40]
+    online=re.sub(r'\s+',' ',visible(read('_site/'+prefix+'research-collaboration.html')))
+    offline=re.sub(r'\s+',' ',read(prefix+'assets/downloads/training-handbook.md').replace('**',''))
+    check(prefix+'research collaboration: full invitation and practical guidance are available online and offline',bool(passages) and all(p in online and p in offline for p in passages))
+check('Research collaboration preserves all section anchors for language switching',collaboration_ids[0]==collaboration_ids[1] and set(collaboration_ids[0])=={'welcome','directions','formats','fit','contact','getting-started','first-task','next','questions'})
 summary={'checks':results,'passed':sum(x['passed'] for x in results),'total':len(results),'scope':'Translation completeness and file integrity, not institutional approval or live research results.'}
 print(str(summary['passed'])+'/'+str(summary['total'])+' bilingual checks passed.')
 if '--report' in sys.argv:

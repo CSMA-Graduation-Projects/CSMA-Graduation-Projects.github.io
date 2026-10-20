@@ -7,8 +7,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]
 SITE = 'https://csma-graduation-projects.github.io/'
-NAV = [('index.html','首页','Home'),('news.html','新闻','News'),('bachelor.html','学士','Undergraduate'),('master.html','硕士',"Master's"),('doctor.html','博士','Doctoral'),('resources.html','资源','Resources'),('outcomes.html','成果','Outcomes'),('students.html','榜样','Stories'),('essays.html','导引','Mentoring'),('about.html','关于','About')]
-PARENTS = {'undergraduate-research.html':'bachelor.html','competition.html':'bachelor.html','templates.html':'resources.html','archive.html':'resources.html','milestones.html':'resources.html','planner.html':'resources.html','management.html':'resources.html','integrity.html':'resources.html','policies.html':'resources.html','workflows.html':'resources.html','tools.html':'resources.html','projects.html':'outcomes.html','faq.html':'about.html'}
+NAV = [('index.html','首页','Home'),('news.html','新闻','News'),('bachelor.html','学士','Undergraduate'),('master.html','硕士',"Master's"),('doctor.html','博士','Doctoral'),('joint-training.html','联培','Joint Training'),('resources.html','资源','Resources'),('outcomes.html','成果','Outcomes'),('students.html','榜样','Stories'),('essays.html','导引','Mentoring'),('about.html','我们','About')]
+PARENTS = {'research-collaboration.html':'joint-training.html','undergraduate-research.html':'bachelor.html','competition.html':'bachelor.html','templates.html':'resources.html','archive.html':'resources.html','milestones.html':'resources.html','planner.html':'resources.html','management.html':'resources.html','integrity.html':'resources.html','policies.html':'resources.html','workflows.html':'resources.html','tools.html':'resources.html','projects.html':'outcomes.html','faq.html':'about.html'}
 
 def localize(value, language):
     if language != 'en': return value

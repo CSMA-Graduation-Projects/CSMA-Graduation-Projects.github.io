@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "templates": [
     {
       "id": "onboarding",
@@ -225,6 +225,33 @@
       "stage": "After feedback, at stage completion and when moving to a new task",
       "description": "Connect your starting point, actual evidence, feedback and a transfer task; agree on the next learning goal and review date.",
       "file": "assets/templates/learning-review.md"
+    },
+    {
+      "id": "joint-training-plan",
+      "title": "Cross-institution training and supervision agreement: working draft",
+      "category": "Collaboration and archiving",
+      "audience": "Undergraduate research, competition and capstone students; master's and doctoral students, including international students",
+      "stage": "Starting joint training; hosting or sending students; co-supervision and changes",
+      "description": "Agree learning goals, responsibilities, resources, feedback, output permissions and completion arrangements. Record actual confirmations separately; this draft does not replace formal agreements or approvals.",
+      "file": "assets/templates/joint-training-plan.md"
+    },
+    {
+      "id": "joint-training-recognition",
+      "title": "Cross-institution milestone and recognition register",
+      "category": "Collaboration and archiving",
+      "audience": "Undergraduate research, competition and capstone students; master's and doctoral students, including international students",
+      "stage": "Throughout joint training; formal milestones, return and recognition",
+      "description": "Check both institutions’ requirements, sources, deadlines and responsible bodies. Distinguish research completion, supervisory confirmation, institutional approval and formal recognition, with differences and actions tracked.",
+      "file": "assets/templates/joint-training-recognition.md"
+    },
+    {
+      "id": "collaboration-interest",
+      "title": "Research and competition collaboration interest",
+      "category": "Getting started and planning",
+      "audience": "Undergraduate, master's and doctoral students, including students at other institutions and overseas",
+      "stage": "First contact; exploring interests; preparing research or competition collaboration",
+      "description": "Briefly introduce interests, learning goals, shareable work, availability and support needs. Includes an adaptable first-contact message and welcomes students new to research.",
+      "file": "assets/templates/collaboration-interest.md"
     }
   ]
 }

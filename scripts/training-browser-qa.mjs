@@ -261,7 +261,7 @@ try {
   await section('模板筛选、复制与真实下载', async () => {
     await navigate('templates.html');
     await waitFor(`!document.querySelector('[data-template-filter]').hidden`, 'template filter enhancement');
-    record(await evaluate(`document.querySelectorAll('[data-template-card]').length === 25 && [...document.querySelectorAll('[data-template-card]')].every(card => !card.hidden)`), '模板库实际呈现 25 份可用模板');
+    record(await evaluate(`document.querySelectorAll('[data-template-card]').length === 28 && [...document.querySelectorAll('[data-template-card]')].every(card => !card.hidden)`), '模板库实际呈现 28 份可用模板');
     await filterTemplates('实验', '研究与过程');
     record(await evaluate(`(() => { const cards=[...document.querySelectorAll('[data-template-card]')].filter(card=>!card.hidden); return cards.length > 0 && cards.some(card=>card.id==='experiment') && cards.every(card=>card.dataset.category==='研究与过程' && card.dataset.search.includes('实验')); })()`), '关键词与类别组合筛选返回匹配模板');
     await filterTemplates('不存在的模板QA-8766', '论文与毕业');
@@ -298,7 +298,7 @@ try {
     await client.send('Emulation.setScriptExecutionDisabled', { value: true });
     try {
       await navigate('templates.html');
-      record(await evaluate(`document.querySelectorAll('[data-template-card] a[download]').length === 25 && [...document.querySelectorAll('[data-template-card] a[download]')].every(a=>a.getAttribute('href').startsWith('assets/templates/')) && document.querySelector('[data-template-filter]').hidden`), '关闭 JavaScript 后 25 个实际模板链接仍可用');
+      record(await evaluate(`document.querySelectorAll('[data-template-card] a[download]').length === 28 && [...document.querySelectorAll('[data-template-card] a[download]')].every(a=>a.getAttribute('href').startsWith('assets/templates/')) && document.querySelector('[data-template-filter]').hidden`), '关闭 JavaScript 后 28 个实际模板链接仍可用');
       const template = manifest.templates.find(t => t.id === 'topic');
       const response = await fetch(new URL(template.file, baseUrl + '/')); const expected = await response.text();
       const downloaded = await downloadFrom('#topic a[download]');
@@ -318,17 +318,17 @@ try {
     record(await evaluate(`document.documentElement.scrollWidth <= innerWidth + 1 && ['#track-select','#stage-select','#target-date'].every(selector=>{const r=document.querySelector(selector).getBoundingClientRect();return r.width>0 && r.left>=0 && r.right<=innerWidth+1;})`), '390px 清单无横向溢出，路径、阶段和日期控件可用');
     await screenshot('planner-mobile.png');
     await navigate('templates.html');
-    record(await evaluate(`document.documentElement.scrollWidth <= innerWidth + 1 && document.querySelectorAll('[data-template-card] a[download]').length===25`), '390px 模板库无横向溢出，全部下载入口保留');
+    record(await evaluate(`document.documentElement.scrollWidth <= innerWidth + 1 && document.querySelectorAll('[data-template-card] a[download]').length===28`), '390px 模板库无横向溢出，全部下载入口保留');
     record(await evaluate(`(() => { const cards=[...document.querySelectorAll('[data-template-card]')];return cards.every(card=>{const c=card.getBoundingClientRect(),h=card.querySelector('h2').getBoundingClientRect(); return h.width>=c.width*.7 && h.height<160;});})()`), '模板标题保留足够阅读宽度，未被旧样式挤成纵向文字');
     await screenshot('templates-mobile.png');
   });
   await section('流程图展开、返工与真实下载', async () => {
     await client.send('Emulation.setDeviceMetricsOverride', { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
     await navigate('workflows.html');
-    record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===11 && [...document.querySelectorAll('.wf-node')].every(n=>n.getBoundingClientRect().height>0)`), '不点展开、不下载，十一张流程图首次打开即可直接阅读');
+    record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===13 && [...document.querySelectorAll('.wf-node')].every(n=>n.getBoundingClientRect().height>0)`), '不点展开、不下载，十三张流程图首次打开即可直接阅读');
     await navigate('workflows.html#flow-master-path');
     await waitFor(`document.querySelector('#flow-master-path details').open`, 'deep link opens workflow');
-    record(await evaluate(`document.querySelectorAll('.workflow-diagram').length===11 && document.querySelector('#flow-master-path details').open`), '11 张流程可达，硕士图直接链接自动展开');
+    record(await evaluate(`document.querySelectorAll('.workflow-diagram').length===13 && document.querySelector('#flow-master-path details').open`), '13 张流程可达，硕士图直接链接自动展开');
     record(await evaluate(`document.querySelectorAll('#flow-master-path .wf-decision').length>0 && document.querySelectorAll('#flow-master-path .wf-branch').length>0 && [...document.querySelectorAll('#flow-master-path .wf-return')].every(a=>document.getElementById(a.hash.slice(1)))`), '硕士图有真实判断、整改和可定位的返回节点');
     await screenshot('workflows-master-desktop.png');
     await click('#flow-master-path .wf-return');
@@ -368,7 +368,7 @@ try {
     await client.send('Emulation.setScriptExecutionDisabled', { value: true });
     try {
       await navigate('workflows.html');
-      record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===11 && [...document.querySelectorAll('.wf-node')].every(n=>n.getBoundingClientRect().height>0)`), '关闭 JavaScript 后十一张流程仍默认完整显示');
+      record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===13 && [...document.querySelectorAll('.wf-node')].every(n=>n.getBoundingClientRect().height>0)`), '关闭 JavaScript 后十三张流程仍默认完整显示');
       const doc = await client.send('DOM.getDocument');
       const summary = await client.send('DOM.querySelector', { nodeId: doc.root.nodeId, selector: '#flow-master-path summary' });
       await client.send('DOM.focus', { nodeId: summary.nodeId });
@@ -396,7 +396,7 @@ try {
     await client.send('Emulation.setDeviceMetricsOverride', { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
     await navigate('en/templates.html');
     await waitFor(`!document.querySelector('[data-template-filter]').hidden`, 'English template filter enhancement');
-    record(await evaluate(`document.documentElement.lang==='en' && document.querySelectorAll('[data-template-card]').length===25 && [...document.querySelectorAll('[data-template-card]')].every(card=>!card.hidden)`), '英文模板库呈现独立的 25 份完整模板');
+    record(await evaluate(`document.documentElement.lang==='en' && document.querySelectorAll('[data-template-card]').length===28 && [...document.querySelectorAll('[data-template-card]')].every(card=>!card.hidden)`), '英文模板库呈现独立的 28 份完整模板');
     await filterTemplates('experiment', 'Research and progress');
     record(await evaluate(`(() => { const cards=[...document.querySelectorAll('[data-template-card]')].filter(card=>!card.hidden); return cards.length>0 && cards.some(card=>card.id==='experiment') && cards.every(card=>card.dataset.category==='Research and progress' && card.dataset.search.toLowerCase().includes('experiment')); })()`), '英文关键词和类别组合筛选可用');
     await filterTemplates('not-a-template-QA-8766', 'Thesis and graduation');
@@ -469,7 +469,7 @@ try {
 
   await section('英文网页流程与可编辑资源', async () => {
     await navigate('en/workflows.html');
-    record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===11 && [...document.querySelectorAll('.wf-node')].every(node=>node.getBoundingClientRect().height>0)`), '英文网页十一张流程默认直接显示，无需下载');
+    record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===13 && [...document.querySelectorAll('.wf-node')].every(node=>node.getBoundingClientRect().height>0)`), '英文网页十三张流程默认直接显示，无需下载');
     const expected = await (await fetch(`${baseUrl}/en/assets/diagrams/master-path.svg`)).text();
     const actual = await downloadFrom('#flow-master-path a[download][href$=".svg"]');
     const svgLinks = [...actual.text.matchAll(/(?:xlink:)?href=["']([^"']+)["']/g)].map(match => match[1]);
@@ -487,15 +487,15 @@ try {
     await client.send('Emulation.setScriptExecutionDisabled', { value: true });
     try {
       await navigate('en/templates.html');
-      record(await evaluate(`!document.documentElement.classList.contains('js') && getComputedStyle(document.querySelector('#main-nav')).display!=='none' && document.querySelectorAll('#main-nav a').length===10 && document.querySelector('[data-language-switch]')`), '关闭 JavaScript 后英文窄屏导航与语言入口仍可用');
-      record(await evaluate(`document.querySelectorAll('[data-template-card] a[download]').length===25 && document.querySelector('[data-template-filter]').hidden && [...document.querySelectorAll('[data-template-card] a[download]')].every(a=>new URL(a.href).pathname.startsWith('/en/assets/templates/'))`), '无 JavaScript 时 25 个英文完整模板下载入口保留');
+      record(await evaluate(`!document.documentElement.classList.contains('js') && getComputedStyle(document.querySelector('#main-nav')).display!=='none' && document.querySelectorAll('#main-nav a').length===11 && document.querySelector('[data-language-switch]')`), '关闭 JavaScript 后英文窄屏导航与语言入口仍可用');
+      record(await evaluate(`document.querySelectorAll('[data-template-card] a[download]').length===28 && document.querySelector('[data-template-filter]').hidden && [...document.querySelectorAll('[data-template-card] a[download]')].every(a=>new URL(a.href).pathname.startsWith('/en/assets/templates/'))`), '无 JavaScript 时 28 个英文完整模板下载入口保留');
       const item = englishManifest.templates.find(template => template.id === 'topic');
       const response = await fetch(new URL(item.file,`${baseUrl}/en/`));
       const expected = await response.text();
       const actual = await downloadFrom('#topic a[download]');
       record(response.ok && actual.text===expected && !/[\u3400-\u9fff]/u.test(actual.text), '无 JavaScript 时实际下载完整英文选题模板');
       await navigate('en/workflows.html');
-      record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===11 && [...document.querySelectorAll('.wf-node')].every(node=>node.getBoundingClientRect().height>0) && document.documentElement.scrollWidth<=innerWidth+1`), '无 JavaScript 时英文手机流程图仍完整显示且不横向溢出');
+      record(await evaluate(`document.querySelectorAll('[data-flow-disclosure][open]').length===13 && [...document.querySelectorAll('.wf-node')].every(node=>node.getBoundingClientRect().height>0) && document.documentElement.scrollWidth<=innerWidth+1`), '无 JavaScript 时英文手机流程图仍完整显示且不横向溢出');
       await screenshot('en-workflows-nojs-mobile.png');
     } finally { await client.send('Emulation.setScriptExecutionDisabled', { value: false }); }
   });

@@ -68,10 +68,10 @@ try {
   const flowHtml = read('workflows.html');
   const toolHtml = read('tools.html');
   const handbook = read('assets/downloads/training-handbook.md');
-  const expectedFlows = ['research-path', 'bachelor-path', 'competition-path', 'master-path', 'doctor-path', 'literature', 'reproduction', 'engineering', 'submission', 'feedback', 'archiving'];
+  const expectedFlows = ['research-path', 'bachelor-path', 'competition-path', 'master-path', 'doctor-path', 'literature', 'reproduction', 'engineering', 'submission', 'feedback', 'archiving', 'joint-training', 'research-collaboration'];
   const expectedScenarios = ['literature', 'empirical', 'software', 'ai', 'writing', 'collaboration', 'management'];
   check('流程与工具数据具有日期和完整结构', /^\d{4}-\d{2}-\d{2}$/.test(workflow.updated || '') && /^\d{4}-\d{2}-\d{2}$/.test(toolData.updated || '') && tracks.length === 5);
-  check('十一张图覆盖培养路径与共同科研工作', sameMembers(flows.map(f => f.id), expectedFlows));
+  check('十三张图覆盖培养路径与共同科研工作', sameMembers(flows.map(f => f.id), expectedFlows));
   check('七类工具场景覆盖实际研究任务', sameMembers(scenarios.map(s => s.id), expectedScenarios));
   grouped('流程目的、适用边界与节点内容可读', flows, f => ['id', 'title', 'summary', 'note'].every(k => nonempty(f[k])) && Array.isArray(f.nodes) && f.nodes.length >= 3 && f.nodes.every(n => ['id', 'label', 'detail', 'kind', 'href'].every(k => nonempty(n[k]))) && list(f.order));
   grouped('图中节点唯一，连线无悬空引用', flows, f => {
@@ -102,7 +102,7 @@ try {
     return hasId(flowHtml, `flow-${f.id}`) && plain(flowHtml).includes(f.title) && plain(flowHtml).includes(f.note) && ['svg', 'drawio'].every(ext => links.includes(`assets/diagrams/${f.id}.${ext}`) && downloadLink(flowHtml, `assets/diagrams/${f.id}.${ext}`) && fs.existsSync(path.join(root, `assets/diagrams/${f.id}.${ext}`)));
   });
   check('流程图整包在图中心有明确下载入口', downloadLink(flowHtml, 'assets/downloads/csma-workflow-diagrams.zip'));
-  grouped('十个图示页面默认直接显示流程，无需展开或下载', ['workflows.html', ...tracks.map(t => t.page), 'resources.html', 'integrity.html', 'management.html', 'archive.html'], page => {
+  grouped('十二个图示页面默认直接显示流程，无需展开或下载', ['workflows.html', ...tracks.map(t => t.page), 'resources.html', 'integrity.html', 'management.html', 'archive.html', 'joint-training.html', 'research-collaboration.html'], page => {
     const html = read(page);
     const diagrams = [...html.matchAll(/<details\b(?=[^>]*\bdata-flow-disclosure)[^>]*>/g)].map(m => m[0]);
     return diagrams.length > 0 && diagrams.every(tag => /\sopen(?:\s|=|>)/.test(tag));
@@ -151,7 +151,7 @@ try {
     return Boolean(failure && doctorFlow.nodes.some(n => n.id === failure.to && n.kind === 'remedy') && doctorFlow.edges.some(e => e.from === failure.to && e.type === 'return'));
   })());
   check('工具建议说明AI核查和受限材料使用边界', includesAll(toolHtml, [/AI/, /人工|核对|核查/, /未公开|敏感|受限/, /授权|获准|许可/]));
-  const newPages = ['workflows.html', 'tools.html'];
+  const newPages = ['workflows.html', 'tools.html', 'joint-training.html', 'research-collaboration.html'];
   grouped('新增页面无重复锚点且站内链接均能解析', newPages, page => {
     const html = read(page);
     const ids = [...html.matchAll(/\bid=["']([^"']+)["']/g)].map(m => m[1]);
@@ -251,7 +251,7 @@ except Exception as error:
 print(json.dumps(errors, ensure_ascii=False))
 `;
   const artifact = JSON.parse(execFileSync('python3', ['-c', artifactProbe, root], { encoding: 'utf8', maxBuffer: 2 * 1024 * 1024 }));
-  for (const [key, label] of [['svg', '十一份SVG可解析且内容、连线与说明真实存在'], ['drawio', '十一份draw.io包含可编辑节点及完整连接'], ['bundle', '流程图ZIP真实完整，文件与23项哈希一致'], ['handbook', '模板ZIP内手册与当前完整手册字节一致']]) {
+  for (const [key, label] of [['svg', '十三份SVG可解析且内容、连线与说明真实存在'], ['drawio', '十三份draw.io包含可编辑节点及完整连接'], ['bundle', '流程图ZIP真实完整，文件与27项哈希一致'], ['handbook', '模板ZIP内手册与当前完整手册字节一致']]) {
     check(label, artifact[key].length === 0, artifact[key].join('; '));
   }
 } catch (error) {

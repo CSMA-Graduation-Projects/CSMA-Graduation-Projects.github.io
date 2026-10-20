@@ -14,7 +14,7 @@ import shutil
 from html.parser import HTMLParser
 from workflow_diagrams import load_flows, render_flow, generate_diagram_assets, flows_for_track, flow_markdown
 from research_tools import load_tools, render_tools, render_stage_tools, tools_markdown
-from i18n import localize, page_language
+from i18n import localize, page_language, NAV as SHARED_NAV
 
 SOURCE_ROOT = pathlib.Path(__file__).resolve().parents[1]
 ROOT = SOURCE_ROOT
@@ -35,7 +35,7 @@ def esc(value): return html.escape(str(value), quote=True)
 def ul(items): return '<ul>' + ''.join('<li>' + esc(x) + '</li>' for x in items) + '</ul>'
 def aliases(ids): return ''.join(f'<span class="anchor-alias" id="{esc(x)}" aria-hidden="true"></span>' for x in ids)
 
-NAV = [('index.html','首页'),('news.html','新闻'),('bachelor.html','学士'),('master.html','硕士'),('doctor.html','博士'),('resources.html','资源'),('outcomes.html','成果'),('students.html','榜样'),('about.html','关于')]
+NAV = [(target, zh) for target, zh, _ in SHARED_NAV]
 def shell(page, title, description, body, parent=None, home=False):
     parent = parent or page
     links = []
@@ -82,7 +82,7 @@ def shell(page, title, description, body, parent=None, home=False):
   <main id="main-content" tabindex="-1">{body}</main>
   <footer class="site-footer"><div class="container footer-inner">
     <div class="footer-copy"><strong>CSMA · 学习有路径，研究有依据。</strong><p>公共培养指南与空白模板 · 2026 年 10 月修订</p></div>
-    <ul class="footer-nav" aria-label="页脚导航"><li><a href="policies.html">依据与校本核对</a></li><li><a href="management.html">日常管理</a></li><li><a href="archive.html">归档规范</a></li><li><a href="about.html">关于</a></li></ul>
+    <ul class="footer-nav" aria-label="页脚导航"><li><a href="policies.html">依据与校本核对</a></li><li><a href="management.html">日常管理</a></li><li><a href="archive.html">归档规范</a></li><li><a href="about.html">我们</a></li></ul>
   </div></footer>
   <button class="back-to-top" id="back-to-top" type="button" aria-label="返回顶部">↑</button>
   <script src="script.js"></script><script src="assets/training.js"></script>
@@ -122,14 +122,16 @@ def build_home(tracks, templates):
     <section class="section soft" id="templates"><div class="container"><div class="home-heading"><div><p class="section-kicker">QUICK ACCESS</p><h2>常用材料，一步到达</h2></div><a class="text-link" href="assets/downloads/csma-training-templates.zip" download>下载全套模板 ↓</a></div><div class="quick-links">{''.join(f'<a href="templates.html#{i}">{n}<span aria-hidden="true">↗</span></a>' for i,n in [('weekly','周报与反馈'),('literature','文献综述'),('proposal','开题报告'),('midterm','中期检查'),('thesis','论文自检'),('review-response','评阅回复'),('defense','答辩准备'),('archive','归档清单')])}</div><div class="inline-links" id="structure">{aliases(['naming'])}<a href="archive.html">数据与资料归档 →</a><a href="resources.html">全部学习资源 →</a></div></div></section>
     <section class="section" id="news">{aliases(['updates'])}<div class="container"><div class="home-heading"><div><p class="section-kicker">NEWS & UPDATES</p><h2>安排与动态</h2></div><a class="text-link" href="news.html">全部动态 ↗</a></div>{{% include news-list.html limit=3 %}}</div></section>
     <section class="section soft" id="outcomes"><div class="container closing-panel" id="organization"><div><p class="section-kicker">GROW TOGETHER</p><h2>把扎实的过程，沉淀为真实的成长。</h2><p>学生主动探索，导师提供必要的方向、方法与反馈。</p></div><div class="inline-links" id="faq"><a href="outcomes.html">公开成果 ↗</a><a href="students.html">学生故事 ↗</a><a href="about.html">了解 CSMA ↗</a><a href="faq.html">常见问题 ↗</a></div></div></section>'''
-    visual_entry = '<section class="section visual-entry"><div class="container"><div class="home-heading"><div><p class="section-kicker">SEE THE PROCESS / CHOOSE THE TOOLS</p><h2>先看懂流程，再选好工具</h2></div></div><div class="tool-grid">'+tile('流程图总览','沿箭头看清前置条件、审核分支与返工去向；节点可直达阶段说明。','workflows.html','查看 10 张流程图','01 / 看流程')+tile('科研工具指南','从文献、实验、开发到论文，选择最小工具组合，按交付物检查是否完成。','tools.html','按任务选择工具','02 / 选工具')+'</div></div></section>'
+    visual_entry = '<section class="section visual-entry"><div class="container"><div class="home-heading"><div><p class="section-kicker">SEE THE PROCESS / CHOOSE THE TOOLS</p><h2>先看懂流程，再选好工具</h2></div></div><div class="tool-grid">'+tile('流程图总览','沿箭头看清前置条件、审核分支与返工去向；节点可直达阶段说明。','workflows.html','查看 13 张流程图','01 / 看流程')+tile('科研工具指南','从文献、实验、开发到论文，选择最小工具组合，按交付物检查是否完成。','tools.html','按任务选择工具','02 / 选工具')+'</div></div></section>'
     body = body.replace('<section class="section soft" id="timeline">', visual_entry+'<section class="section soft" id="timeline">')
     essays = essay_section(home=True)
     body = body.replace('<section class="section soft" id="outcomes">', essays+'<section class="section soft" id="outcomes">')
     international = ('International students', 'Find the requirements, language arrangements and support that apply to your undergraduate, master’s or doctoral programme.', 'Open the international student guide') if LANG == 'en' else ('国际学生', '按本科、硕士、博士分别核对培养要求、语言安排与支持渠道，再进入对应阶段。', '打开国际学生指南')
     body = body.replace('<section class="section soft" id="templates">', '<section class="section soft" id="international-entry"><div class="container requirement-strip"><div><p class="section-kicker">INTERNATIONAL STUDENTS</p><h2>'+international[0]+'</h2><p>'+international[1]+'</p></div><a class="btn outline" href="international.html">'+international[2]+' ↗</a></div></section><section class="section soft" id="templates">')
     if LANG == 'en': body = body.replace('include news-list.html', 'include news-list-en.html')
-    body = body.replace('查看 10 张流程图', '查看 11 张流程图').replace('<a class="text-link" href="doctor.html">博士培养指南 ↗</a>', '<a class="text-link" href="learning.html">怎样学习与成长 ↗</a>')
+    body = body.replace('<a class="text-link" href="doctor.html">博士培养指南 ↗</a>', '<a class="text-link" href="learning.html">怎样学习与成长 ↗</a>')
+    joint = '<section class="section" id="joint-training-entry"><div class="container requirement-strip"><div><p class="section-kicker">JOINT TRAINING / ACROSS INSTITUTIONS</p><h2>跨越校界，一起做研究</h2><p>欢迎外校及海外的本科生、硕士生与博士生，带着兴趣、问题或作品，交流科研与竞赛合作。</p></div><div class="inline-links"><a class="btn primary" href="research-collaboration.html">探索科研与竞赛合作 ↗</a><a class="btn outline" href="joint-training.html">联合培养指南</a></div></div></section>'
+    body = body.replace('<section class="section soft" id="international-entry">', joint+'<section class="section soft" id="international-entry">')
     write('index.html',shell('index.html','学习有路径，研究有依据','本科科研训练、毕业设计、竞赛、硕士与博士培养的完整阶段指南、流程图、科研工具、真实模板和阶段自检。',body,home=True))
 
 LEGACY = {
@@ -149,6 +151,8 @@ def build_track(track, template_by_id, flowdata, tooldata):
     international_anchor = tid if tid in ['master','doctor'] else 'bachelor'
     international_note = ('International students: confirm the programme rules, language arrangements and eligibility that apply to you.', 'Read the international student guidance') if LANG == 'en' else ('国际学生：先核对适用培养方案、材料与答辩语言，以及项目或竞赛资格。', '查看本阶段国际学生说明')
     body += '<section class="guide-intro"><p>'+international_note[0]+'</p><a class="text-link" href="international.html#'+international_anchor+'">'+international_note[1]+' →</a></section>'
+    joint_note = ('Interested in collaborating across institutions? Start by discussing a research or competition idea. Once an arrangement is agreed, confirm supervision and any formal requirements that apply.', 'Joint training guidance') if LANG == 'en' else ('想跨校一起科研或竞赛，可以先交流兴趣与想法；落实合作时，再确认指导分工和适用的正式安排。', '查看联合培养指南')
+    body += '<section class="guide-intro"><p>'+joint_note[0]+'</p><a class="text-link" href="joint-training.html#levels">'+joint_note[1]+' →</a> <a class="text-link" href="research-collaboration.html">'+('Explore research and competition collaboration' if LANG == 'en' else '探索科研与竞赛合作')+' →</a></section>'
     body += ''.join(render_flow(flow, instance_id='path-'+tid, compact=True) for flow in flows_for_track(flowdata,tid))
     body += '<div id="stage-details">'
     used=set(s['id'] for s in stages)
@@ -194,13 +198,13 @@ def build_milestones(tracks, flowdata):
 
 def build_workflows(flowdata):
     flows=flowdata['flows']
-    body=hero('流程图总览','看清从哪里开始、怎样判断通过，以及遇到问题后回到哪一步。','VISUAL GUIDE / 培养与研究流程','5 条培养路径 · 6 类关键任务 · 网页直接看图 · 源文件可选下载')
+    body=hero('流程图总览','看清从哪里开始、怎样判断通过，以及遇到问题后回到哪一步。','VISUAL GUIDE / 培养与研究流程','5 条培养路径 · 8 类共同流程 · 网页直接看图 · 源文件可选下载')
     body+='<section class="section"><div class="container"><div class="guide-intro"><h2>在网页中直接看图，沿箭头阅读</h2><p>下方全部流程图默认显示，无需下载；点击目录可直接跳到对应图。主线表示通常的工作顺序；决策节点说明通过条件，支路说明整改与返回位置。点击节点进入对应指南。研究可以往返迭代，学校正式环节的顺序与认定以适用规定为准。</p><div class="inline-links"><a href="assets/downloads/csma-workflow-diagrams.zip" download>下载全部流程图与可编辑源文件（可选）↓</a><a href="tools.html">如何选择研究与绘图工具 →</a><button class="text-button" type="button" data-print>打印流程图</button></div></div>'
     for title,items in [('培养路径',[f for f in flows if f.get('track')]),('关键任务',[f for f in flows if not f.get('track')])]:
         body+='<nav class="flow-directory" aria-label="'+title+' / 流程图"><h2>'+title+'</h2><div class="flow-directory-grid">'+''.join(f'<a href="#flow-{esc(f["id"])}"><strong>{esc(f["title"])}</strong><span>{esc(f["summary"])}</span></a>' for f in items)+'</div></nav>'
     body+=''.join(render_flow(flow,compact=True) for flow in flows)
     body+='<section class="guide-intro" id="edit-diagrams"><h2>将图用于自己的项目</h2><p>用 draw.io 打开 .drawio 源文件，复制后修改节点、负责人和本项目条件；导出 SVG 或 PDF 用于论文、汇报。保留源文件，并在图题中记录版本和适用范围。图里的“通过”应对应实际审核记录，不能通过改图替代审批。</p><p>网页流程图无需安装工具即可阅读。SVG 是静态导出图；下载到本地后，节点链接仍指向线上指南。整包附有校验清单，便于确认文件完整。</p><a href="templates.html#research-task">用任务书记录具体负责人、交付物与验收日期 →</a></section></div></section>'
-    write('workflows.html',shell('workflows.html','流程图总览','11 张培养与研究流程图，明确主线、审核条件、返工路径；支持 SVG 和 draw.io 下载。',body,'resources.html'))
+    write('workflows.html',shell('workflows.html','流程图总览','13 张培养与研究流程图，明确主线、审核条件、返工路径；支持 SVG 和 draw.io 下载。',body,'resources.html'))
 
 def build_tools_page(tooldata):
     body=hero('科研工具指南','围绕一项具体任务，选择能留下清晰产物与证据的最小工具组合。','RESEARCH TOOLKIT / 按任务选择','先确定交付物 · 再选择工具 · 保留可复查记录')+render_tools(tooldata)
@@ -212,7 +216,7 @@ def package_diagrams(flowdata):
         for ext in ['svg','drawio']:
             name=flow['id']+'.'+ext
             files[name]=(ROOT/'assets/diagrams'/name).read_bytes()
-    intro='# CSMA 培养与科研流程图\n\n11 张流程图，每张含 SVG 与可编辑 draw.io 源文件。\n\n使用 draw.io 打开 .drawio 文件并另存副本；SVG 可在浏览器阅读，图中链接指向线上阶段指南。学校正式规则以本人适用文件为准。\n\n'
+    intro='# CSMA 培养与科研流程图\n\n13 张流程图，每张含 SVG 与可编辑 draw.io 源文件。\n\n使用 draw.io 打开 .drawio 文件并另存副本；SVG 可在浏览器阅读，图中链接指向线上阶段指南。学校正式规则以本人适用文件为准。\n\n'
     intro+='\n'.join('- '+f['title']+'：['+f['id']+'.svg]('+f['id']+'.svg) / ['+f['id']+'.drawio]('+f['id']+'.drawio)' for f in flowdata['flows'])
     intro+='\n\n完整说明：https://csma-graduation-projects.github.io/workflows.html\n\n文件修改后重新生成校验清单。校验仅说明文件完整，不证明流程已获正式批准。\n'
     files['README.md']=localize(intro,LANG).encode('utf-8')
@@ -225,15 +229,17 @@ def package_diagrams(flowdata):
 
 def build_resources(flowdata):
     body=hero('学习与科研资源','先找到任务，再选择能帮助你完成它的材料。','RESOURCE LIBRARY / 资源导航')
-    entries=[('流程图总览','五条培养路径与六类关键任务；看清分支、整改与下一步。','workflows.html'),('科研工具指南','七类任务的最小组合、操作、交付物与核验方法。','tools.html'),('阶段自检','按路径生成本阶段待办，保存或导出自检记录。','planner.html'),('模板库','25 份实际可填写的 Markdown 模板与整包下载。','templates.html'),('阶段与里程碑','五条路径全景、前置条件和阶段衔接。','milestones.html'),('日常管理','任务、周报、组会、沟通、请假与资源使用。','management.html'),('学术规范与提交检查','查重、查非、AI 使用、引用与匿名评阅。','integrity.html'),('数据资料归档','结构、版本、数据授权、复现与交接验收。','archive.html'),('依据与校本核对','官方来源、年度规则、成果与毕业要求。','policies.html'),('博士培养','从研究基础、资格考核到原创贡献、学位论文与交接。','doctor.html')]
+    entries=[('流程图总览','五条培养路径与八类共同流程；看清分支、整改与下一步。','workflows.html'),('科研工具指南','七类任务的最小组合、操作、交付物与核验方法。','tools.html'),('阶段自检','按路径生成本阶段待办，保存或导出自检记录。','planner.html'),('模板库','28 份实际可填写的 Markdown 模板与整包下载。','templates.html'),('阶段与里程碑','五条路径全景、前置条件和阶段衔接。','milestones.html'),('日常管理','任务、周报、组会、沟通、请假与资源使用。','management.html'),('学术规范与提交检查','查重、查非、AI 使用、引用与匿名评阅。','integrity.html'),('数据资料归档','结构、版本、数据授权、复现与交接验收。','archive.html'),('依据与校本核对','官方来源、年度规则、成果与毕业要求。','policies.html'),('博士培养','从研究基础、资格考核到原创贡献、学位论文与交接。','doctor.html')]
     entries.insert(0, ('学习与成长','诊断起点、制定任务、获取反馈，把能力带到下一阶段。','learning.html'))
+    entries.insert(0, ('联合培养','接收与派出、双方指导、阶段认定、成果和资料交接。','joint-training.html'))
+    entries.insert(0, ('科研与竞赛合作','欢迎外校与海外学生，从研究兴趣、双向交流和小任务开始。','research-collaboration.html'))
     entries.insert(0, ('国际学生指南','本、硕、博的适用要求、语言安排、阶段记录与支持渠道。','international.html'))
     body+='<section class="section" id="resource-directory"><div class="container"><div class="tool-grid">'+''.join(tile(*e,number=f'{i+1:02}') for i,e in enumerate(entries))+'</div><section class="guide-intro"><h2>常用工具的官方文档</h2><p>遇到工具问题，优先查阅对应版本的官方说明。</p><div class="inline-links"><a href="https://git-scm.com/docs/gittutorial">Git 入门 ↗</a><a href="https://code.visualstudio.com/docs">VS Code ↗</a><a href="https://www.zotero.org/support/">Zotero 文献管理 ↗</a></div></section></div></section>'
     body+='<section class="section"><div class="container">'+''.join(render_flow(f,instance_id='resources',compact=True) for f in flowdata['flows'] if f.get('guide')=='resources')+'</div></section>'
     write('resources.html',shell('resources.html','学习与科研资源','培养路径、流程图、科研工具、阶段自检与模板的一站式资源入口。',body))
 
 def build_handbook(tracks, templates, flowdata, tooldata):
-    lines=['# CSMA 学生培养工作手册','', '更新：2026-10-19。通用工作指南；正式要求以本人适用的校院文件为准。','', '在线入口：https://csma-graduation-projects.github.io/','', '填写后的材料存入获准的受控空间；本手册不是校院审批记录。','']
+    lines=['# CSMA 学生培养工作手册','', '更新：2026-10-20。通用工作指南；正式要求以本人适用的校院文件为准。','', '在线入口：https://csma-graduation-projects.github.io/','', '填写后的材料存入获准的受控空间；本手册不是校院审批记录。','']
     for t in tracks:
         lines += ['## '+t['title'],'',t['subtitle'],'',t['audience']+'；'+t['duration'],'',t['note'],'']
         lines += [growth_contract(t, markdown=True),'']
@@ -242,7 +248,7 @@ def build_handbook(tracks, templates, flowdata, tooldata):
             for field,label in [('entry','进入条件'),('actions','操作步骤'),('deliverables','交付材料'),('review','验收标准')]:
                 lines += ['**'+label+'**','']+['- '+x for x in s[field]]+['']
             lines += ['未达要求：'+s['failure'],'','下一步：'+s['next'],'','配套模板：'+ '、'.join(templates[x]['title']+'（'+x+'.md）' for x in s['templates']),'']
-    for name,title in [('learning','学习与成长'),('management','日常管理与协作'),('integrity','学术规范与提交检查'),('archive','数据资料归档与交接'),('policies','依据与校本要求核对'),('international','国际学生指南')]:
+    for name,title in [('learning','学习与成长'),('research-collaboration','科研与竞赛合作'),('joint-training','联合培养'),('management','日常管理与协作'),('integrity','学术规范与提交检查'),('archive','数据资料归档与交接'),('policies','依据与校本要求核对'),('international','国际学生指南')]:
         converter = HandbookMarkdown(name + '.html')
         converter.feed(read(f'scripts/training-pages/{name}.html'))
         lines += ['## '+title,'',converter.result(),'']
@@ -343,11 +349,16 @@ def build_edition(language):
     for track in tracks: build_track(track,by_id,flowdata,tooldata)
     build_templates(templates); build_planner(tracks); build_milestones(tracks,flowdata); build_resources(flowdata)
     build_workflows(flowdata); build_tools_page(tooldata); package_diagrams(flowdata)
-    for page,title,lead in [('learning','学习与成长','从当前能力出发，用行动、证据与反馈形成可以迁移的学习能力。'),('management','日常管理与协作','让任务、沟通、反馈和资源使用形成稳定的工作节奏。'),('integrity','学术规范与提交检查','把研究责任落实到数据、引用、写作和每一次正式提交。'),('archive','数据资料归档与交接','让论文中的每个结论有出处，让接手的人找得到、看得懂、跑得通。'),('policies','依据与校本要求核对','分清正式规定与工作建议，按本人适用的文件安排培养过程。'),('international','国际学生指南','从本科、硕士到博士，明确适用要求、语言安排与每一步的支持。')]:
+    for page,title,lead in [('research-collaboration','科研与竞赛合作','欢迎外校与海外的你，和我们一起探索问题、实现想法、积累真正的研究能力。'),('joint-training','联合培养','跨校相遇，共同研究：从科研与竞赛合作，到有明确指导和衔接的联合培养。'),('learning','学习与成长','从当前能力出发，用行动、证据与反馈形成可以迁移的学习能力。'),('management','日常管理与协作','让任务、沟通、反馈和资源使用形成稳定的工作节奏。'),('integrity','学术规范与提交检查','把研究责任落实到数据、引用、写作和每一次正式提交。'),('archive','数据资料归档与交接','让论文中的每个结论有出处，让接手的人找得到、看得懂、跑得通。'),('policies','依据与校本要求核对','分清正式规定与工作建议，按本人适用的文件安排培养过程。'),('international','国际学生指南','从本科、硕士到博士，明确适用要求、语言安排与每一步的支持。')]:
         fragment=read(f'scripts/training-pages/{page}.html')
         diagrams=''.join(render_flow(f,instance_id=page,compact=True) for f in flowdata['flows'] if f.get('guide')==page)
-        if diagrams: fragment='<section class="section"><div class="container reading-guide">'+diagrams+'</div></section>'+fragment
-        write(page+'.html',shell(page+'.html',title,lead,hero(title,lead)+fragment,'resources.html'))
+        marker = '<!-- '+page.upper().replace('-', '_')+'_FLOW -->'
+        if marker in fragment:
+            fragment = fragment.replace(marker, diagrams)
+        elif diagrams:
+            fragment='<section class="section"><div class="container reading-guide">'+diagrams+'</div></section>'+fragment
+        page_hero = hero(title,lead,'LET’S EXPLORE / 一起探索','本科 · 硕士 · 博士｜科研 · 竞赛 · 交流') if page=='research-collaboration' else hero(title,lead)
+        write(page+'.html',shell(page+'.html',title,lead,page_hero+fragment,'joint-training.html' if page in ['joint-training','research-collaboration'] else 'resources.html'))
     build_handbook(tracks,by_id,flowdata,tooldata); package_templates(templates)
     build_essays()
     print(f'Generated {language}: {len(tracks)} pathways / {sum(len(t["stages"]) for t in tracks)} stages / {len(templates)} templates and shared pages.')

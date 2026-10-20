@@ -15,7 +15,7 @@ exclude:
   - work
 ```
 
-当前配置还排除 `node_modules`、`dist`、`vendor`、`scripts` 和 `docs/content-templates`。不要添加 `.nojekyll`，否则新闻、数据卡片和排除规则都不会经过 Jekyll 处理。
+当前配置还排除 `node_modules`、`dist`、`vendor`、`scripts`、`docs/content-templates` 和 `docs/training-redesign`。不要添加 `.nojekyll`，否则新闻、数据卡片和排除规则都不会经过 Jekyll 处理。
 
 构建排除不等于仓库私有：如果 GitHub 仓库公开，`work/` 源文件仍可能通过仓库界面访问。内部报告不得包含 secret 或敏感原文；真正敏感材料应放在仓库之外。
 
@@ -27,18 +27,18 @@ exclude:
 python -m http.server 8000 --directory _site
 ```
 
-访问 `http://localhost:8000/`，抽查首页、四类培养入口、项目、里程碑、资源、成果、FAQ、About 和归档页。不要直接把源码目录作为发布验收对象。
+访问 `http://localhost:8000/`，抽查中英文首页、五条培养路径、联培及科研合作、流程图、模板、工具、导引和国际学生指南，同时验证原有新闻、项目、成果、榜样与我们等栏目。不要直接把源码目录作为发布验收对象。
 
 ## 4. Pages 等价构建
 
 如果本机已有兼容 Jekyll 环境：
 
 ```sh
-bundle check
-bundle exec jekyll build --trace
+python3 -B scripts/build-training.py
+jekyll build --safe --trace
 ```
 
-仓库当前没有 Gemfile，也不要求维护者为纯静态内容引入前端包管理器。需要临时验证时，可在仓库外创建隔离的 Ruby/Gem 环境；不要把临时依赖或缓存提交进仓库。
+仓库当前没有 Gemfile。使用兼容 GitHub Pages 的 Jekyll 3.10 环境；若已有单独维护的 Bundler 环境，也可在其依赖上下文中使用 `bundle exec jekyll build --safe --trace`。不要把临时依赖或缓存提交进仓库。
 
 构建后必须确认：
 
@@ -55,6 +55,10 @@ node --check script.js
 node --check scripts/validate-site.mjs
 node scripts/validate-site.mjs
 node scripts/validate-site.mjs --build
+node scripts/validate-training.mjs
+node scripts/validate-workflow-tools.mjs --build
+python3 -B scripts/validate-bilingual.py
+python3 -B scripts/verify-training-package.py
 node scripts/privacy-scan.mjs --build
 git diff --check
 ```
@@ -63,7 +67,7 @@ git diff --check
 
 - 所有站内文件和锚点检查；
 - 所有主页面 HTTP 200 检查；
-- 1440、1280、1024、768、390px 视觉和横向溢出检查；
+- 桌面、手机与导航断点的视觉和横向溢出检查，尤其是 320、390、768、1120、1121、1440px；
 - 键盘、焦点、无 JavaScript、reduced-motion 检查；
 - secret/个人信息扫描，只输出路径；
 - 下载文件和外部链接核验；
@@ -71,12 +75,12 @@ git diff --check
 
 ## 6. 发布流程
 
-1. 确认工作区状态；在 `main` 上执行 `git pull --ff-only origin main`，再开始修改。
-2. 完成页面修改，检查内容、链接与构建结果；需要浏览器回归时再执行相应检查。
+1. 先检查工作区并保存完整备份，再 `git fetch origin` 比较远端；已有未提交修改时不要直接覆盖或合并。工作区适合更新时可在 `main` 执行 `git pull --ff-only origin main`。
+2. 完成页面修改，重新生成中英文网页与下载包，检查内容、链接、构建结果及浏览器显示。
 3. 用 `git diff` 审查改动，确认事实来源与公开范围。
-4. 执行 `git add .` 与 `git commit -m "Update site content"`。
+4. 确认用户已授权发布，只暂存审查过的文件，检查 `git diff --cached --check` 与暂存清单后执行 `git commit -m "Update site content"`。
 5. 执行 `git push -u origin main`；已设置上游后可简写为 `git push`。
-6. 在仓库 Actions 中等待 `pages build and deployment` 成功，再核对公开域。
+6. 在仓库 Actions 中等待对应提交的 `pages build and deployment` 成功，再核对公开页面、关键入口以及下载包内容哈希；本地通过不等于线上已更新。
 
 首次发布或发布设置变更时，确认 Settings → Pages → Source 为 `Deploy from a branch`，Branch 为 `main`，Folder 为 `/(root)`。推送其他分支不会更新这条发布来源。
 

@@ -14,7 +14,7 @@ const expectedTracks = {
   master: { page: 'master.html', count: 13 },
   doctor: { page: 'doctor.html', count: 11 },
 };
-const expectedTemplateIds = ['onboarding', 'topic', 'literature', 'reading', 'proposal', 'experiment', 'weekly', 'meeting', 'midterm', 'thesis', 'outcomes', 'integrity', 'review-response', 'defense', 'archive', 'handover', 'competition', 'research-task', 'change-request', 'annual-check', 'ai-use', 'professional-practice', 'engineering-report', 'bachelor-task', 'learning-review'];
+const expectedTemplateIds = ['onboarding', 'topic', 'literature', 'reading', 'proposal', 'experiment', 'weekly', 'meeting', 'midterm', 'thesis', 'outcomes', 'integrity', 'review-response', 'defense', 'archive', 'handover', 'competition', 'research-task', 'change-request', 'annual-check', 'ai-use', 'professional-practice', 'engineering-report', 'bachelor-task', 'learning-review', 'joint-training-plan', 'joint-training-recognition', 'collaboration-interest'];
 const expectedMasterStages = ['orientation', 'topic', 'survey', 'proposal', 'research', 'midterm', 'writing', 'outcomes', 'integrity', 'review', 'defense', 'final', 'archive'];
 const expectedDoctorStages = ['orientation', 'foundation', 'qualification', 'proposal', 'research', 'annual-review', 'contributions', 'writing', 'review', 'defense', 'archive'];
 const growthKeys = ['capabilities', 'starting_check', 'student_role', 'support_role', 'feedback', 'transition'];
@@ -65,7 +65,7 @@ try {
   const stages = tracks.flatMap(t => (t.stages || []).map(s => ({ ...s, id: `${t.id}/${s.id}`, stageId: s.id, track: t })));
   grouped('阶段字段、行动数量与可验收结构', stages, s => ['title', 'timing', 'goal', 'failure', 'next'].every(key => nonempty(s[key])) && [['entry', 1, 3], ['actions', 3, 5], ['deliverables', 2, 4], ['review', 2, 4]].every(([key, min, max]) => Array.isArray(s[key]) && s[key].length >= min && s[key].length <= max && s[key].every(nonempty)) && Array.isArray(s.templates) && s.templates.length > 0);
   grouped('阶段 ID 在各自路径内唯一', tracks, t => new Set(t.stages.map(s => s.id)).size === t.stages.length && t.stages.every(s => /^[a-z][a-z0-9-]*$/.test(s.id)));
-  check('25 份模板 ID 完整、唯一', sameMembers(templates.map(t => t.id), expectedTemplateIds));
+  check('28 份模板 ID 完整、唯一', sameMembers(templates.map(t => t.id), expectedTemplateIds));
   grouped('模板元数据与分类完整', templates, t => ['id', 'title', 'category', 'audience', 'stage', 'description', 'file'].every(key => nonempty(t[key])) && categories.has(t.category));
   check('模板分类覆盖四类', new Set(templates.map(t => t.category)).size === 4);
   grouped('每份模板均指向安全的实际 Markdown 文件', templates, t => /^assets\/templates\/[a-z0-9-]+\.md$/.test(t.file || '') && fs.existsSync(path.join(root, t.file)) && fs.statSync(path.join(root, t.file)).isFile());
@@ -73,12 +73,20 @@ try {
   const contents = new Map(templates.filter(t => t.file && fs.existsSync(path.join(root, t.file))).map(t => [t.id, read(t.file)]));
   grouped('模板正文可填写，包含具体字段及检查语义', templates, t => {
     const body = contents.get(t.id) || '';
-    return body.length >= 500 && /^#\s+\S/m.test(body) && (body.match(/^##\s+/gm) || []).length >= 3 && /填写|填报|使用说明/.test(body) && /验收|审核|复核|检查|确认/.test(body) && /待填写|待确认|待核实|\[ \]|____|填写：|填写:/.test(body);
+    return body.length >= 500 && /^#\s+\S/m.test(body) && (body.match(/^##\s+/gm) || []).length >= 3 && /填写|填报|使用说明/.test(body) && /验收|审核|复核|检查|确认/.test(body) && /待填写|待确认|待核实|待讨论|\[ \]|____|填写：|填写:/.test(body);
   });
   check('模板正文没有整篇复用的假模板', new Set([...contents.values()].map(t => t.trim())).size === expectedTemplateIds.length);
   grouped('所有阶段模板引用都可解析', stages, s => s.templates.every(id => contents.has(id)));
-  check('25 份模板均进入实际培养阶段', sameMembers([...new Set(stages.flatMap(s => s.templates))], expectedTemplateIds));
+  check('25 份模板均进入实际培养阶段', sameMembers([...new Set(stages.flatMap(s => s.templates))], expectedTemplateIds.filter(id => !id.startsWith('joint-training-') && id !== 'collaboration-interest')));
 
+  const jointHtml = read('joint-training.html');
+  check('两份联培模板直接服务跨校培养指南', ['joint-training-plan', 'joint-training-recognition'].every(id => contents.has(id) && links(jointHtml).includes(`templates.html#${id}`)));
+  check('联培指南保留接收派出、分层指导与正式认定的可达章节', ['start','types','roles','stages','levels','coordination','outcomes','closure','sources'].every(id => hasId(jointHtml,id)));
+  check('五条路径均可进入联合培养指南', tracks.every(t => links(read(t.page)).includes('joint-training.html#levels')));
+  const collaborationHtml = read('research-collaboration.html');
+  check('首次合作入口连接真实公开联系、可填写意向与后续指导', ['https://h-jp.github.io/', 'templates.html#collaboration-interest', 'templates.html#research-task', 'templates.html#learning-review', 'joint-training.html'].every(h => links(collaborationHtml).includes(h)) && contents.has('collaboration-interest'));
+  check('从首页、联培及五条路径均能发现科研与竞赛合作', ['index.html', 'joint-training.html', ...tracks.map(t => t.page)].every(p => links(read(p)).includes('research-collaboration.html')));
+  check('合作指南保留分层起点、首次联系、任务与后续选择', ['welcome','directions','formats','fit','contact','getting-started','first-task','next','questions'].every(id => hasId(collaborationHtml,id)) && /本科生/.test(collaborationHtml) && /硕士生/.test(collaborationHtml) && /博士生/.test(collaborationHtml));
   const pageHtml = new Map(tracks.map(t => [t.id, read(t.page)]));
   grouped('完整成长说明在路径页面直接可读', tracks, t => {
     const visible = htmlText(pageHtml.get(t.id));

@@ -1,6 +1,6 @@
 # CSMA Student Guide
 
-更新: 2026-10-19. 通用工作指南; 正式要求以本人适用的校院文件为准.
+更新: 2026-10-20. 通用工作指南; 正式要求以本人适用的校院文件为准.
 
 Online guide: https://csma-graduation-projects.github.io/en/
 
@@ -1964,9 +1964,319 @@ Organize work around problem value, original contributions, connections between 
 
 Maintain one review record and use the [research tools](https://csma-graduation-projects.github.io/en/tools.html) , [day-to-day management](https://csma-graduation-projects.github.io/en/management.html)  and [archiving](https://csma-graduation-projects.github.io/en/archive.html)  guides as needed, so plans, evidence and feedback can be found and reused.
 
+## Research & Competition Collaboration
+
+### Bring a question. Let's turn an idea into something we can test.
+
+We welcome conversations with undergraduate, master's and doctoral students at other universities, in China or overseas, about research and competition collaboration. Bring a question, work you have already started, or a reading note, small experiment or course project. We value thoughtful questions, honest records, practical investigation and a willingness to learn from feedback.
+
+Collaboration can begin with remote discussion. Shared interests, available supervision and practical arrangements can then guide continued research, a competition team or a research visit. Start with one worthwhile question so that both sides can understand each other's goals, working styles and support needs.
+
+[Prepare your first message](https://csma-graduation-projects.github.io/en/research-collaboration.html#contact) [Supervisor profile and public contact](https://h-jp.github.io/) [Explore research interests](https://csma-graduation-projects.github.io/en/research-collaboration.html#directions) [Welcome](https://csma-graduation-projects.github.io/en/research-collaboration.html#welcome) [Research interests](https://csma-graduation-projects.github.io/en/research-collaboration.html#directions) [Ways to collaborate](https://csma-graduation-projects.github.io/en/research-collaboration.html#formats) [Your starting point](https://csma-graduation-projects.github.io/en/research-collaboration.html#fit) [Get in touch](https://csma-graduation-projects.github.io/en/research-collaboration.html#contact) [Getting started](https://csma-graduation-projects.github.io/en/research-collaboration.html#getting-started) [A first small task](https://csma-graduation-projects.github.io/en/research-collaboration.html#first-task) [Continued learning](https://csma-graduation-projects.github.io/en/research-collaboration.html#next) [Common questions](https://csma-graduation-projects.github.io/en/research-collaboration.html#questions)
+
+### Find a question we could explore together
+
+#### AI and multi-agent systems
+
+Discuss agent reasoning, collaboration and verifiable behaviour. One starting point could be comparing collaboration approaches on the same small set of tasks, recording information exchange, failures and actual costs, then explaining when collaboration helps.
+
+#### Intelligent software engineering
+
+Discuss requirements understanding, code generation, debugging and reverse engineering. One starting point could be connecting requirements, code and tests in a public project, reproducing a failure and examining possible explanations with execution records.
+
+#### Intelligent robotics
+
+Discuss perception, planning and human–robot collaboration. One starting point could be defining a simple task in an available simulator or public dataset, checking the relationship between inputs, plans and outcomes, and identifying failure cases and questions for improvement.
+
+These interests draw on the [supervisor's public profile](https://h-jp.github.io/) , checked on 20 October 2026. The tasks above are discussion examples; actual topics are agreed together. You can also choose an item from the [public papers and research outputs](https://h-jp.github.io/publications/) , explain what interests you and propose a question to investigate. If you already have related work, bring it to the conversation.
+
+### Choose an arrangement that fits your goals and time
+
+#### Research training and joint investigation
+
+Begin with a paper or reproducible example to practise reading and experimentation. With research experience, discuss a shared question, compare methods and analyse results. Explain both what you hope to learn and which part you could undertake.
+
+#### Open-source engineering and competitions
+
+Discuss implementation, testing, documentation, reproduction or team integration, or explore topics and roles for an actual competition. Before forming a team, check the current rules on institution, study level, nationality, team composition and use of outputs.
+
+#### Research visits and thesis collaboration
+
+Discuss a stage of research or a collaborative task within a final-year project or thesis. Establish academic fit and supervision first. For formal visits, credit, programme milestones or degrees, use the [joint training guide](https://csma-graduation-projects.github.io/en/joint-training.html)  to connect the institutions' requirements.
+
+**Remote, in person or a mixture:** remote collaboration can use shared records, asynchronous feedback and agreed meetings. Visits require confirmation of hosting conditions and procedures. A mixed arrangement can change with the task stage. For different time zones, share your local time zone and availability early; discuss Chinese, English or another mutually workable communication arrangement.
+
+### Different starting points can lead to meaningful learning tasks
+
+Choose a starting point based on actual experience; a prior publication is not a universal prerequisite for an initial conversation
+
+| Current stage | What you could bring | Progress to work towards together |
+| --- | --- | --- |
+| Undergraduate | A course project, reading notes, programming exercises, competition experience or a question you can describe concretely. | Explain core concepts, complete a reviewable small task, learn recording, verification and team communication, then gradually take responsibility for a complete subtask. |
+| Master's student | Research interests, a literature review, reproduction or experiment records, with your current question, own work and difficulties. | Narrow a researchable question, design suitable comparisons, build traceable evidence, explain limitations and connect the work to a thesis. |
+| Doctoral student | Your research direction, related work and evidence, a question to discuss, and methods or resources the collaboration might complement. | Examine original contributions and alternative explanations, organise complementary studies and clarify the relationship between independent contributions and collaborative research. |
+
+Reliable collaboration grows through sustained effort, accurate progress reports, respect for agreements and proactive communication. If you need more preparation, discuss a learning task first. Describe existing supervision where applicable. If you have not yet established supervision at your home institution, you can still start a conversation and then identify who needs to confirm later arrangements.
+
+### Five things to include in your first message
+
+A concise introduction in Chinese or English is welcome. Use the [contact information published on the supervisor's profile](https://h-jp.github.io/) ; this page does not collect applications. Prefer accessible links to your work and explain which parts you completed.
+
+1. **Who you are:** institution, subject, study level and brief background, including current supervision where applicable.
+2. **What you would like to explore:** choose an interest area or propose your own question, explain why it matters to you and describe previous attempts.
+3. **One representative item:** code, a report, paper, demonstration or competition entry, with your individual contribution. If you do not yet have such work, use a course exercise, reading record and learning plan.
+4. **How you could participate:** estimated weekly availability, preferred start and end arrangements, time zone, remote or visiting preference, and languages you can use.
+5. **What support you hope for:** for example, topic feedback, methodological guidance, experimental resources or teamwork. Also describe available resources and coursework or research commitments to coordinate.
+
+Share only material you are authorised to provide. An initial message does not need identification numbers or other sensitive details. For unpublished projects, begin with a shareable overview. Use the interest template below to organise your introduction, then visit the supervisor's profile to make contact.
+
+[Supervisor profile and public contact](https://h-jp.github.io/) [Collaboration interest and first-contact template](https://csma-graduation-projects.github.io/en/templates.html#collaboration-interest)
+
+### From a first conversation to working together
+
+Get to know each other, agree on a small task and use the experience to decide what comes next. This is a suggested route; specific arrangements depend on the task and both sides' circumstances.
+
+Six actions and a useful record from each
+
+| Action | What to do | What to retain |
+| --- | --- | --- |
+| 1 · Choose an interest | Explore the interests and public research. Select a question you want to understand, test or improve. | A short interest statement with related material or an example. |
+| 2 · Send an introduction | Use the public contact channel to share your background, work, availability and support expectations. | A collaboration outline and material links for discussion. |
+| 3 · Talk with each other | Discuss interests, preparation, supervision capacity and communication. If conditions do not yet fit, adjust the direction or pause. | Shared understanding of goals, unresolved items and a next step. |
+| 4 · Agree on and complete a small task | Set the scope, learning goal, support and feedback date, then undertake reviewable reading, practice or analysis. | A task card, actual output, process and difficulty records. |
+| 5 · Review and reflect | Examine results, learning and the collaboration experience together. Identify needed support and possible changes. | Feedback, revision or learning actions, and views on continuing or ending. |
+| 6 · Confirm continued collaboration | If both sides wish to continue, agree on goals, roles, resources, working rhythm and stage reviews. Complete formal procedures where needed. | A next-stage plan, responsibilities and confirmed arrangements. |
+
+### Make the first small task worthwhile and clear
+
+A small task supports learning and mutual understanding. Its scale should match your preparation, available time and supervision. You might explain one method in a paper, reproduce a public example, add a test or analyse a failure. Agree on the task before beginning.
+
+- **Learning goal and output:** state what you hope to learn, what to submit and how it will be reviewed. List necessary materials and environment; reduce scope if difficulties warrant it.
+- **Guidance and feedback:** agree on who answers questions, the communication channel and the feedback date. Record support needed and attempts already made.
+- **Contributions and use of outputs:** clarify whether work will enter an actual project, how contributions will be recorded, and how publication, reuse and authorship will be confirmed. Actual project deliverables require separate agreement on working arrangements, resources and applicable compensation.
+- **Reflection and choice:** either side can propose changes or conclude the arrangement. Preserve completed work and feedback appropriately. Consider continued collaboration based on actual learning, task results and workable conditions.
+
+[Research task card](https://csma-graduation-projects.github.io/en/templates.html#research-task) [Learning and growth review](https://csma-graduation-projects.github.io/en/templates.html#learning-review) [Competition plan and reflection](https://csma-graduation-projects.github.io/en/templates.html#competition)
+
+### Connect one collaboration to your next stage of growth
+
+Continued research records should connect the question, method, evidence, individual contribution and next step. Topics and tasks can change. At each stage review, discuss both output quality and capability development. Tools, communication and archiving should fit both sides' circumstances.
+
+[Undergraduate research](https://csma-graduation-projects.github.io/en/undergraduate-research.html) [Master's research](https://csma-graduation-projects.github.io/en/master.html) [Doctoral research](https://csma-graduation-projects.github.io/en/doctor.html) [Competition practice](https://csma-graduation-projects.github.io/en/competition.html) [Learning and growth](https://csma-graduation-projects.github.io/en/learning.html) [Research tools](https://csma-graduation-projects.github.io/en/tools.html)
+
+For a final-year project, thesis, formal visit, credit or programme recognition, use [joint training arrangements](https://csma-graduation-projects.github.io/en/joint-training.html)  to confirm institutional responsibilities and procedures. International students studying in or visiting China can consult the [international student guide](https://csma-graduation-projects.github.io/en/international.html)  for applicable support. Students participating remotely from overseas should check requirements relevant to their own institution and task; confirm visit-related procedures such as registration and residence only when they apply.
+
+### Questions you may have before getting started
+
+#### Can I make contact without a paper or finished project?
+
+Yes. Course exercises, reading notes and concrete questions help both sides understand your starting point. Describe honestly what you know and what you are learning. Prior publication is not a prerequisite for every collaboration conversation.
+
+#### What if I have a topic, or no home supervisor yet?
+
+You can start a conversation in either case. For existing work, explain your contribution, supervision and sharing permissions. Without established supervision, begin with interests and learning tasks. Put the necessary supervision and institutional confirmations in place before formal training collaboration.
+
+#### Can we discuss remote collaboration and English communication?
+
+Yes. Share your preferences, time zone and support needs, then agree on feasible arrangements. Teams spanning institutions or countries must meet the actual competition rules. Procedures for international visits require separate confirmation.
+
+#### How are resources, funding and outcomes decided?
+
+Computing, data, travel and funding depend on the actual task and available conditions; confirm them before use. This page opens a conversation. Acceptance, admission, funding, publication and awards depend on their respective procedures and actual outcomes.
+
+If one of these interests connects with a question you are thinking about, write it down and tell us what you would like to learn through working together.
+
+[Supervisor profile and public contact](https://h-jp.github.io/) [Prepare my collaboration interests](https://csma-graduation-projects.github.io/en/templates.html#collaboration-interest)
+
+## Joint Training
+
+RESEARCH TOGETHER
+
+### Different institutions. Shared curiosity.
+
+Undergraduate, master’s and doctoral students from other institutions and around the world are welcome to discuss research and competition ideas with us.
+
+#### I would like to explore a collaboration
+
+Discover research interests, possible ways to participate, and how a first conversation can lead to a small shared task. You can get in touch before you have a complete topic or a home supervisor.
+
+[Explore research and competition collaboration ↗](https://csma-graduation-projects.github.io/en/research-collaboration.html)
+
+#### I am arranging joint training
+
+Use the guide below to coordinate supervision, institutional milestones, resources and handover once the collaboration has taken shape.
+
+[Continue to the joint training guide ↓](https://csma-graduation-projects.github.io/en/joint-training.html#start)
+
+Joint training connects supervision and resources across institutions to support students' development. This guide covers undergraduate, master's and doctoral research collaboration, visits, co-supervision and formal joint training programmes. Whether your institution hosts a visiting student or sends a student elsewhere, bring the research tasks, supervisory responsibilities and formal programme requirements into one plan.
+
+This page provides a practical working framework. Confirm the collaboration type, enrolment, degree-awarding institution and recognition procedures for the actual arrangement. Co-supervision does not automatically establish a joint or dual degree. At every stage, students should know what to do, whom to ask, what to submit and who confirms completion.
+
+[First three steps](https://csma-graduation-projects.github.io/en/joint-training.html#start) [Collaboration types](https://csma-graduation-projects.github.io/en/joint-training.html#types) [Responsibilities](https://csma-graduation-projects.github.io/en/joint-training.html#roles) [Seven stages](https://csma-graduation-projects.github.io/en/joint-training.html#stages) [Study levels](https://csma-graduation-projects.github.io/en/joint-training.html#levels) [Coordination](https://csma-graduation-projects.github.io/en/joint-training.html#coordination) [Resources and outputs](https://csma-graduation-projects.github.io/en/joint-training.html#outcomes) [Changes and handover](https://csma-graduation-projects.github.io/en/joint-training.html#closure) [Sources and templates](https://csma-graduation-projects.github.io/en/joint-training.html#sources)
+
+### Students: complete these three steps first
+
+1. **Describe your status and task**Record your home institution where you are enrolled, cohort and subject, degree type, partner institution, proposed task and dates. Specify whether this is research training, a competition, a visit, an undergraduate project or thesis collaboration. Mark unresolved information as pending confirmation.
+2. **Identify the supervisors and administrators relevant to this arrangement**With the supervisors involved, agree on the main day-to-day contact, supervisory scope and joint discussions. Where institutional procedures apply, ask the relevant school staff about hosting or sending procedures, who organises formal assessments and who recognises the work. Record their functions, official channels and the next confirmation date.
+3. **Agree on the first reviewable task**Choose a reading, reproduction, design or data-checking task. Specify its objective, required permissions, deliverable, review method and feedback date. Add the next formal institutional milestone to the schedule. Begin the relevant activity once its required approvals and permissions are in place.
+
+**Evidence that the starting arrangements are ready:** a supervision plan confirmed by the relevant people, a formal milestone comparison and a review arrangement for the first task. Contacting a supervisor is distinct from obtaining acceptance or formal recognition.
+
+[Joint training and supervision agreement](https://csma-graduation-projects.github.io/en/templates.html#joint-training-plan) [Milestones and recognition record](https://csma-graduation-projects.github.io/en/templates.html#joint-training-recognition) [Plan your current programme tasks](https://csma-graduation-projects.github.io/en/planner.html)
+
+### Choose the collaboration type, then check hosting or sending arrangements
+
+A collaboration label does not establish its training or recognition arrangements
+
+| Type | Confirm before starting | Records to retain |
+| --- | --- | --- |
+| Research collaboration and joint competitions | Task scope, student eligibility, supervisors, resource permissions and individual roles. For competitions, separately check rules on teams from different institutions, supervisors, institutional attribution and submission. | Task plan, applicable rules and version, eligibility confirmation, contributions and submission receipt. Apply separately if credit recognition is needed. |
+| Research visits and placements | Visitor status, dates, arrival and departure procedures, research goals, resources and living arrangements, and evidence required for recognition after returning. | Approval or acceptance documents, stage plan, work records, host evaluation and the home institution's recognition outcome. |
+| Co-supervision of a project or thesis | Eligibility and duties of home and partner supervisors, topic confirmation, formal milestones, thesis materials and permitted use of outputs. | Supervision agreement, formal task or topic documents, feedback from both supervisors, review comments and decisions by the responsible bodies. |
+| Formal joint training programme | Applicable programme and agreement, admissions and enrolment, training responsibilities, courses and credits, funding and degree conditions. For joint or dual degrees, verify the corresponding approvals and awarding arrangements. | Programme documentation, effective agreement, individual training plan, and applications, approvals and recognition records required by each institution. |
+
+#### Hosting a student: establish supervision and access
+
+The host confirms the student's status and permission to undertake the placement, names a partner supervisor and day-to-day contact, and arranges necessary visitor access, accounts, laboratory access and safety training. Both supervisors check the research tasks and upcoming programme milestones together.
+
+**Before work starts:** the student can use authorised resources and knows whom to contact. Both institutions know which evaluations and supporting documents the host will provide. At the end, the host supplies an accurate stage evaluation and completes the agreed handover.
+
+#### Sending a student: connect the placement to the programme
+
+The sending institution confirms acceptance, required departure procedures and continued supervision. Check who organises courses, practice requirements, proposal review, midterm review and other applicable milestones; whether remote participation is allowed; and which materials are required after returning.
+
+**Before work starts:** placement tasks connect to the home programme, official deadlines appear in the calendar, and recognition requests have a responsible department and documented procedural basis. Apply for recognition after completing the work as required.
+
+Hosting and sending describe the direction of collaboration. Use the institutions' full names in your records. The home institution, host and degree-awarding institution may have different responsibilities; record them separately. Collaboration across institutions and across borders also need separate checks. International students should additionally use the guide to [language, registration, residence and other applicable matters](https://csma-graduation-projects.github.io/en/international.html#checklist) .
+
+### Give each task a supervisor and a person who can confirm it
+
+Suggested responsibilities; confirm actual authority under the programme and institutional arrangements
+
+| Participant | Actions | Boundary to confirm |
+| --- | --- | --- |
+| Student | Propose the individual plan, work within permissions, preserve original records, organise feedback from both supervisors and promptly report conflicts, obstacles and risks to deadlines. | Propose adjustments; obtain confirmation from the responsible people for changes to research scope, resource access and formal milestones. |
+| Home supervisor | Connect the home programme and overall thesis plan, follow progress during the placement and coordinate collaborative work with courses, assessments and the degree application. | Agree on supervision and communication responsibilities. Record supervisory advice separately from departmental or university approval. |
+| Partner supervisor | Guide the agreed research tasks and methods, arrange available resources and feedback, evaluate the student's actual work and communicate with the other supervisor. | State what guidance, materials and resources can be provided. Check how additional tasks affect the individual plan, available time and thesis. |
+| Departments and authorised bodies at both institutions | Within their respective authority, handle hosting, sending, course or practice recognition, programme assessments and change applications; explain applicable documents. | Record who organises, approves and recognises each item. Acceptance or assessment by one institution does not establish recognition by the other. |
+| Degree-awarding institution | Conduct degree-related review under applicable standards and procedures, and specify application, thesis review, defence and award requirements. | Check its role separately from the home institution. Evaluation of collaborative work, completion of the defence and award of the degree are distinct states. |
+
+Name one main day-to-day contact so the student can obtain timely help. Share decisions about research direction, major tasks or formal milestones with the relevant supervisors and staff. If supervision changes, reconfirm responsibilities and outstanding work.
+
+### Put joint training into seven practical stages
+
+The diagram and stage table can be read directly on this page. Formal programme arrangements determine the actual order and deadlines. Research and stage review may repeat in a cycle; conclude each review with the next task, support needed and review date.
+
+Actions, deliverables and completion conditions for each stage
+
+| Stage | Actions | Deliverables | Completion condition |
+| --- | --- | --- | --- |
+| 1 · Confirm applicable arrangements | Check status, collaboration type, both supervisors, programme requirements, awarding institution and responsible administrators. List unresolved questions. | Basic information, applicable documents and versions, questions and contacts. | Key duties and requirements have a documented basis. Pending items have a person to consult and a target date; matters awaiting approval retain their actual status. |
+| 2 · Complete procedures and agreements | Complete required hosting, sending and programme procedures. Confirm supervision, funding, resources, data and output arrangements. | Formal applications and receipts, supervision agreement, permissions and resource list. | Approvals and permissions required to begin the relevant activity are in place. The student can find the responsible people and agreed arrangements. |
+| 3 · Agree on a shared plan | Choose tasks based on current capabilities. Map both institutions' milestones and dependencies; agree on deliverables, review methods and feedback dates. | Individual plan, milestones and recognition record, first task and schedule. | The student and relevant supervisors understand objectives, scope and roles. Formal procedures also have named owners and submission dates. |
+| 4 · Carry out and record the work | Complete reading, practice or research. Record inputs, environment, versions, results and assistance. Report progress and seek help as agreed. | Research records, code or analysis, progress reports and meeting actions. | Stage outputs can be located and reviewed; individual contributions are clear; obstacles have an action plan. Failed and incomplete work is recorded accurately. |
+| 5 · Review together and improve | Review evidence against task criteria, student development and the thesis direction. Decide whether to continue, add work or revise; complete change procedures where needed. | Stage evaluation, feedback and responses, revision evidence and updated plan. | Feedback is resolved or assigned follow-up responsibilities and a review date. Conditions needed for the next step have been confirmed. |
+| 6 · Complete formal assessment and recognition | Check whether formal assessment or recognition is required. Where applicable, attend assessments, submit institutional materials and apply for recognition of courses, practice or programme milestones. | Submitted version, receipts, assessment or recognition decisions and revision records; a documented basis if not applicable. | Applicable items follow the authorised body's decision. Further information required, unsuccessful and pending recognition do not count as passed; keep tracking unresolved items. If no formal assessment or recognition applies, record the basis and proceed to handover. |
+| 7 · Close, return and hand over | Summarise learning and contributions, complete departure or return procedures, archive data and outputs, and hand over resources and remaining tasks. | Host evaluation, archive index, handover confirmation, outstanding actions and contacts. | Materials are accessible, permissions and resources have been handled as agreed, and both sides confirm handover. Outstanding recognition or degree matters remain separately tracked. |
+
+### Use the same process with checks appropriate to your study level
+
+#### Undergraduate research and competitions
+
+**Start with:** prerequisites and a small practical task. Choose a question the student can explain, carry out and recheck. Confirm eligibility and rules for teams from different institutions before entering a competition.
+
+**Submit:** reading and practice records, a demonstrable output, rules and submission records, individual contributions and a reflection. Distinguish individual work, joint work and reused components.
+
+**Connect to the next step:** choose more independent tasks based on demonstrated ability. Apply through the home institution for any course or project recognition. See [research training](https://csma-graduation-projects.github.io/en/undergraduate-research.html)  and [the competition pathway](https://csma-graduation-projects.github.io/en/competition.html) .
+
+#### Undergraduate final-year project
+
+**Start with:** external supervision arrangements, the home supervisor, approved topic and formal task brief. Specify the student's individual project scope within the collaboration.
+
+**Submit:** requirements or problem statement, design and implementation, verification, dissertation and demonstration, together with formal proposal, progress and review materials.
+
+**Connect to the next step:** collaborative project evaluation may support the submission; final-year project assessment and defence still follow institutional requirements. See [the final-year project pathway](https://csma-graduation-projects.github.io/en/bachelor.html) .
+
+#### Master's research
+
+**Start with:** the academic or professional degree requirements, research question, accessible data and proposal and midterm arrangements. Separately check the location, tasks and recognition evidence for professional practice.
+
+**Submit:** literature review, research plan, traceable evidence, stage reports, outputs and personal contributions, thesis and responses to feedback.
+
+**Connect to the next step:** connect collaborative findings to the thesis. Confirm output requirements, similarity and other academic-integrity checks, external review and defence. If the institution uses “查非”, ask for its formal name and procedure. See [the master's pathway](https://csma-graduation-projects.github.io/en/master.html) .
+
+#### Doctoral research
+
+**Start with:** how the collaborative subproject supports the longer research programme. Check applicable qualifying examinations, supervisory committee and annual reviews, scheduling them in the required order.
+
+**Submit:** justification of questions and contributions, connected studies and original evidence, checks of alternative explanations, individual contributions, annual or stage progress and thesis materials.
+
+**Connect to the next step:** relevant supervisors or the applicable committee examine the coherence of the overall research. Address scope and collaboration changes promptly; follow the awarding institution's review and degree procedures. See [the doctoral pathway](https://csma-graduation-projects.github.io/en/doctor.html) .
+
+At the end of the arrangement, explain both what was produced and what you can now explain, perform or judge independently, together with support still needed. Reuse the [learning and growth review](https://csma-graduation-projects.github.io/en/templates.html#learning-review) . This page sets no universal publication count, checking threshold or programme duration.
+
+### Share research records and complete formal recognition separately
+
+Within agreed access permissions, both sides use one research plan, task record and set of material versions. Complete separate institutional forms where required, keeping topics, dates, contributions, results and versions consistent. For each institution, record the formal item, organiser, materials, submission date, confirming body, status and evidence of the decision. This prevents the same research from developing into conflicting accounts.
+
+- **Regular feedback:** agree with the main contact on updates, channels, expected feedback time and urgent contacts. Weekly progress notes and monthly joint discussions are possible starting points; adapt them to the task by agreement.
+- **Meeting preparation:** share current outputs, evidence, main obstacles and decisions needed beforehand. Afterwards record actions, owners, review dates and unresolved questions, and ask the relevant people to confirm them.
+- **Separate statuses:** track supervisor agreement, formal approval, research completion and formal recognition separately. An internal readiness check does not automatically change an institutional assessment status.
+- **Language and support:** agree on languages for research discussion, feedback and formal materials. Share terminology and questions in advance; identify specific needs and contacts for written feedback, learning support or resource assistance.
+
+**Example:** a student completes the host's experiments and receives a stage evaluation. The record can state that the research task is complete and the evaluation has been received. Whether it fulfils the home institution's professional practice requirement depends on the required submission and formal decision; update recognition status when that decision arrives.
+
+[Progress record](https://csma-graduation-projects.github.io/en/templates.html#weekly) [Meeting and action record](https://csma-graduation-projects.github.io/en/templates.html#meeting) [Day-to-day management](https://csma-graduation-projects.github.io/en/management.html) [Research tools and collaboration](https://csma-graduation-projects.github.io/en/tools.html)
+
+### Agree on resources, data and outputs at the start
+
+Include these items in the agreement and recheck before actual use or submission
+
+| Item | Agreement needed | Reviewable record |
+| --- | --- | --- |
+| Funding and resources | Identify who covers applicable travel, accommodation, experiments, computing and publication costs, with budgets and procedures. Confirm equipment, accounts, licences, access dates and support contacts. | Confirmed budget, resource list, access checks, usage and appropriate receipts. Confirm responsibility for additional costs before incurring them. |
+| Data and code | Confirm sources, permitted uses, authorised users, storage, transfer between institutions, publication scope, and retention or handover after the collaboration. | Permission basis, data or code version, access list and necessary usage records. Keep restricted material in an approved controlled space. |
+| Contributions, authorship and affiliations | Record actual contributions throughout. Before submission, jointly check authors, order, affiliations and acknowledgements under applicable rules and address questions raised by participants. | Contribution statements, associated outputs, applicable rules, confirmation before submission and the final version. Supervisory relationships alone should not predetermine final authorship. |
+| Publication and use of outputs | Specify review and approval for papers, software, patents or competition materials, intellectual property arrangements, publication and confidentiality requirements, and conditions for using outputs in the student's thesis. | Effective agreements, proposed submissions, review comments and procedural outcomes. Retain controlled evidence and an explanation for material that cannot be published. |
+
+Decisions reserved for an institution, resource owner or authorised project body require that party's confirmation. Working agreements should align with formal agreements. Collaboration alone does not establish unresolved access, publication or output-use permissions. Reuse the [outputs and contributions record](https://csma-graduation-projects.github.io/en/templates.html#outcomes) ; see [research outputs](https://csma-graduation-projects.github.io/en/outcomes.html)  and [academic integrity](https://csma-graduation-projects.github.io/en/integrity.html) .
+
+### Maintain continuity through disagreements, extensions and withdrawal
+
+#### Turn a conflict into a decision that can be made
+
+If institutional dates, supervisory advice or task priorities conflict, the student records the different requirements, their basis, effects on completed work, possible arrangements and the date a decision is needed. Supervisors coordinate research tasks and scope; authorised bodies confirm formal requirements or procedures. Preserve pending status and interim arrangements, and continue work independent of the decision. The student should not be left to choose alone which requirement to disregard.
+
+#### Record a new plan for extensions, changes and withdrawal
+
+If research becomes infeasible, resources fail, supervision changes or personal circumstances affect the plan, record the reason, completed outputs, affected milestones and alternatives. Agree whether to extend, return, reduce scope or end the collaboration. Apply through formal procedures where required and keep explicit responses. Ending a collaboration does not itself change leave or enrolment status, approve a degree application or establish another formal outcome.
+
+#### Keep ownership of unresolved items after handover
+
+1. **Transfer usable materials**Hand over the agreed code, data or locations of restricted materials, environment and execution instructions, thesis versions, evaluations and recognition records. Describe failed work, known limitations and incomplete tasks.
+2. **Check access and resources**The recipient checks the necessary materials and access. Confirm equipment, expenses, accounts and data retention. Transfer or close access as agreed while preserving necessary thesis revision and archiving arrangements.
+3. **Assign follow-up responsibilities**List pending publications, revisions, recognition matters and contacts. Both sides confirm handover status; the student completes a learning review and next-stage plan.
+
+The public portal provides guidance and blank templates. Keep completed plans, personal information, evaluations and unpublished research in a controlled space that both sides are authorised to use.
+
+[Risk and change record](https://csma-graduation-projects.github.io/en/templates.html#change-request) [Research archive checklist](https://csma-graduation-projects.github.io/en/templates.html#archive) [Completion and handover](https://csma-graduation-projects.github.io/en/templates.html#handover) [Archiving guide](https://csma-graduation-projects.github.io/en/archive.html)
+
+### Public sources and how to use this guide
+
+Sources checked on 20 October 2026. Task divisions, records and communication rhythms on this page are working suggestions. Check both institutions' current documents, actual agreements and the programme requirements for your entry cohort.
+
+- [Academic Degrees Law of the People's Republic of China](https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202404/t20240426_1127804.html) : degree-awarding institutions establish and publish their specific award standards; degree applications, thesis review and defence follow applicable requirements and procedures. Co-supervision cannot replace degree conditions.
+- [Northwest University's rules on jointly training graduate students, in its 2024 handbook, printed pages 299–303](https://yjs.nwu.edu.cn/__local/0/A4/C2/4D1D231D52C573C43962FB19314_02A4A057_341F97.pdf#page=305) : an example of organising hosting, sending, dual supervision and programme milestones. This is one institution's implementation, does not automatically apply elsewhere and does not establish that this portal operates such a programme.
+
+Use the two dedicated templates for supervision arrangements and formal recognition, then reuse existing templates for ongoing work. They are working drafts. Complete official systems or forms where required; mark unclear items as pending confirmation and name the person to consult and the follow-up date.
+
+[Joint training and supervision agreement](https://csma-graduation-projects.github.io/en/templates.html#joint-training-plan) [Milestones and recognition record](https://csma-graduation-projects.github.io/en/templates.html#joint-training-recognition) [Check local requirements](https://csma-graduation-projects.github.io/en/policies.html#local-check) [International student guide](https://csma-graduation-projects.github.io/en/international.html) [Learning and growth](https://csma-graduation-projects.github.io/en/learning.html)
+
 ## Routine management and collaboration
 
 Day-to-day coordination gives each task an owner, brings difficulties to light and turns feedback into a next step. First agree with your supervisor on meeting frequency, where to keep materials and how feedback will be provided, then adapt the arrangement to your coursework and research. This page offers working methods. Attendance, leave, practical training, funding and assessment follow the applicable university and department rules.
+
+Working across institutions? Use the [Joint Training guide](https://csma-graduation-projects.github.io/en/joint-training.html)  to agree on hosting or sending arrangements, supervisory responsibilities, shared records and formal recognition.
 
 [Roles and communication](https://csma-graduation-projects.github.io/en/management.html#roles-and-channels) [Working rhythm](https://csma-graduation-projects.github.io/en/management.html#working-rhythm) [Task status](https://csma-graduation-projects.github.io/en/management.html#task-status) [Reports and meetings](https://csma-graduation-projects.github.io/en/management.html#weekly-and-meeting) [Leave and practical training](https://csma-graduation-projects.github.io/en/management.html#leave-and-practice) [Support and corrections](https://csma-graduation-projects.github.io/en/management.html#support-and-correction)
 
@@ -2343,6 +2653,8 @@ This guide is for international students pursuing a bachelor's, master's or doct
 
 EN / ZH changes the page language. It does not determine student status or change programme requirements. Academic integrity, research quality and accurate records matter for everyone; specific courses, assessments and achievement requirements depend on your entry cohort, discipline, degree type and programme. Studying in English does not automatically make English the approved language for every procedure, thesis document or defence.
 
+For cooperation between institutions, start with the [Joint Training guide](https://csma-graduation-projects.github.io/en/joint-training.html)  and then use this page for applicable language, registration, mobility and support arrangements.
+
 [Start here](https://csma-graduation-projects.github.io/en/international.html#start) [Undergraduate study](https://csma-graduation-projects.github.io/en/international.html#bachelor) [Master's study](https://csma-graduation-projects.github.io/en/international.html#master) [Doctoral study](https://csma-graduation-projects.github.io/en/international.html#doctor) [Shared checklist](https://csma-graduation-projects.github.io/en/international.html#checklist) [Communication and support](https://csma-graduation-projects.github.io/en/international.html#support) [Sources and scope](https://csma-graduation-projects.github.io/en/international.html#sources)
 
 ### Confirm your requirements before planning each stage
@@ -2549,7 +2861,7 @@ Online diagram: https://csma-graduation-projects.github.io/en/workflows.html#flo
 2. Exploration and topic selection: Select a question using actual needs, preliminary tests and available resources. [Detailed guide](https://csma-graduation-projects.github.io/en/master.html#topic)
 3. Literature review and research positioning: Search, read and compare work to explain how your study relates to it. [Detailed guide](https://csma-graduation-projects.github.io/en/master.html#survey)
 4. [Decision] Positioning and feasibility still supported?: Check whether the question is already resolved and essential data are accessible. [Detailed guide](https://csma-graduation-projects.github.io/en/master.html#survey)
-   - Not yet met → Return to topic selection with the comparison matrix; reassess literature and resources for the revised question. → Return to topic selection (Exploration and topic selection).
+   - Not met → Return to topic selection with the comparison matrix; reassess literature and resources for the revised question. → Return to topic selection (Exploration and topic selection).
 5. Research plan and formal proposal review: Align the question, methods, evaluation and schedule; attend the formal proposal review. [Detailed guide](https://csma-graduation-projects.github.io/en/master.html#proposal)
 6. [Decision] Is the proposal approved or revision completed?: Use institutional procedures for a new review or substantial changes. [Detailed guide](https://csma-graduation-projects.github.io/en/master.html#proposal)
    - Not yet met → Address feedback, narrowing the topic or changing methods where needed. Apply for a new review if required and retain the official decision. → Return to topic and proposal revisions (Exploration and topic selection).
@@ -2588,22 +2900,22 @@ Online diagram: https://csma-graduation-projects.github.io/en/workflows.html#flo
 2. Foundations, Research Methods and a Map of Questions: Build a literature comparison, problem map and feasibility evidence. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#foundation)
 3. Qualifying Assessment and Research Readiness, Where Applicable: Confirm whether qualification applies, its order and format, then complete the required assessment. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#qualification)
 4. [Decision] Requirements due at this point confirmed and met?: Use your programme sequence: record a later qualification milestone if scheduled after the proposal, or the basis if it does not apply. Uncertainty is not an exemption. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#qualification)
-   - Not yet met → Address foundational gaps, reassessment or plan changes and retain the formal outcome. → Return for evidence and revision (Foundations, Research Methods and a Map of Questions).
+   - Not met → Address foundational gaps, reassessment or plan changes and retain the formal outcome. → Return for evidence and revision (Foundations, Research Methods and a Map of Questions).
 5. Research Direction, Linked Studies and Formal Proposal: Justify the problem, original contribution, methods and contingency plans. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#proposal)
 6. [Decision] Proposal approved and required corrections completed?: Confirm major changes in direction or methods through the required process. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#proposal)
-   - Not yet met → Revise the question, methods and resources in response to review; seek reassessment where required. → Return for evidence and revision (Foundations, Research Methods and a Map of Questions).
+   - Not met → Revise the question, methods and resources in response to review; seek reassessment where required. → Return for evidence and revision (Foundations, Research Methods and a Map of Questions).
 7. Independent Research, Evidence Testing and Iteration: Conduct research and test counterexamples, alternative explanations and key assumptions. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#research)
 8. Ongoing Annual Reflection, Interim Assessment and Replanning: Revisit progress, requirements and the research agenda at scheduled reviews. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#annual-review)
 9. [Decision] Current review and evidence conditions met?: Check formal review status and core evidence separately; repeat at later scheduled reviews. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#annual-review)
-   - Not yet met → Gather evidence, narrow claims or revise the agenda; handle an unsuccessful review through the formal process. → Return for evidence and revision (Independent Research, Evidence Testing and Iteration).
+   - Not met → Gather evidence, narrow claims or revise the agenda; handle an unsuccessful review through the formal process. → Return for evidence and revision (Independent Research, Evidence Testing and Iteration).
 10. Original Contributions, Output Recognition and Scholarly Exchange: Connect studies and verify original contributions and individual responsibility. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#contributions)
 11. Dissertation Synthesis and Academic Integrity Checks: Organize the thesis around evidence and complete applicable submission checks. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#writing)
 12. Preliminary Defence, Dissertation Review and Responses: Follow local requirements for pre-defense, thesis review and responses. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#review)
 13. [Decision] Review resolved and defense eligibility confirmed?: Follow the official outcome for revision, re-review or appeals. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#review)
-   - Not yet met → Respond point by point, add evidence and revise; arrange re-review or deferral as required. → Return for evidence and revision (Dissertation Synthesis and Academic Integrity Checks).
+   - Not met → Respond point by point, add evidence and revise; arrange re-review or deferral as required. → Return for evidence and revision (Dissertation Synthesis and Academic Integrity Checks).
 14. Formal Defence, Revision Approval and Degree Application: Defend after eligibility is confirmed, then complete corrections and degree procedures. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#defense)
 15. [Decision] Post-defense corrections and submissions confirmed?: Record degree-conferral status separately, based on the institution’s official decision. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#defense)
-   - Not yet met → Revise and verify according to the defense decision; follow the required process for any further defense. → Return for evidence and revision (Dissertation Synthesis and Academic Integrity Checks).
+   - Not met → Revise and verify according to the defense decision; follow the required process for any further defense. → Return for evidence and revision (Dissertation Synthesis and Academic Integrity Checks).
 16. Research Archive, Handover and Future Development: Verify recoverable records, handover responsibilities and future research directions. [Detailed guide](https://csma-graduation-projects.github.io/en/doctor.html#archive)
 
 **Scope and limits:**Complete qualification only where required by your programme. Follow institutional rules for its order relative to the proposal, any pre-defense and thesis review. Annual and interim reviews recur throughout research; their position here is for navigation. Research, literature review and writing iterate, and outcome requirements are checked from entry. Passing the defense does not itself confer the degree.
@@ -2755,6 +3067,57 @@ Online diagram: https://csma-graduation-projects.github.io/en/workflows.html#flo
 **Scope and limits:**Submit degree materials and hand over research records separately. Keep public copies apart from controlled originals. Transfer access through organization-approved procedures; do not share personal account passwords.
 
 [Download SVG](https://csma-graduation-projects.github.io/en/assets/diagrams/archiving.svg) · [Editable draw.io source](https://csma-graduation-projects.github.io/en/assets/diagrams/archiving.drawio)
+
+
+### Joint training across institutions
+
+Seven working steps connect hosting or sending arrangements, shared supervision, formal recognition and handover. Three checks show when to revise or seek confirmation.
+
+Online diagram: https://csma-graduation-projects.github.io/en/workflows.html#flow-joint-training
+
+**Main route: continue when conditions are met**
+
+1. Identify the arrangement and roles: Record hosting or sending roles, enrolment, awarding institution and scope. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#types)
+2. Check requirements and procedures: Confirm hosting, supervision eligibility, recognition and responsible offices. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#stages)
+3. [Decision] Ready to start?: Required approvals, resource access and hosting arrangements are documented. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#stages)
+   - Not yet ready → Obtain confirmation from the responsible office before starting dependent work. → Return to requirements and procedures (Check requirements and procedures).
+4. Agree on the individual plan: Set learning goals, tasks, responsibilities, deadlines and review evidence. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#roles)
+5. Work and obtain shared feedback: Use shared task records and versions; track issues and actions on feedback. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#coordination)
+6. Review progress and prepare materials: Self-check, obtain supervisory feedback and prepare required submissions. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#stages)
+7. [Decision] Do outputs meet the agreed checks?: Evidence supports the conclusion; remaining comments and formal requirements are identified. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#stages)
+   - Revision needed → Record gaps, owners and review dates; complete required procedures for formal changes. → Return to the plan and tasks (Agree on the individual plan).
+8. Complete applicable formal recognition: Submit to the authorised offices and keep receipts, decisions and next steps. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#stages)
+9. [Decision] Is recognition status resolved?: Keep formal decisions or a documented basis for non-applicability; do not record an unsuccessful result as a pass. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#stages)
+   - Further action needed → Respond to missing items or use formal review channels; agree on interim and subsequent work. → Return to formal recognition (Complete applicable formal recognition).
+10. Continue or complete the handover: Follow the decisions into the next stage, archive records and confirm retention and access. [Detailed guide](https://csma-graduation-projects.github.io/en/joint-training.html#closure)
+
+**Scope and limits:**This is working guidance, not an approved institutional programme. Supervisory agreement, institutional approval, completed research and formal recognition are distinct. Apply the rules and authorised decisions relevant to each student; shared supervision does not itself confer a joint or double degree.
+
+[Download SVG](https://csma-graduation-projects.github.io/en/assets/diagrams/joint-training.svg) · [Editable draw.io source](https://csma-graduation-projects.github.io/en/assets/diagrams/joint-training.drawio)
+
+
+### From first contact to research collaboration
+
+Six practical steps connect your interests with an agreed research or competition project. Two shared decisions keep the work suitable for both sides.
+
+Online diagram: https://csma-graduation-projects.github.io/en/workflows.html#flow-research-collaboration
+
+**Main route: continue when conditions are met**
+
+1. Choose a question to explore: Use the published research directions to describe your interests and learning goals. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#directions)
+2. Send a short introduction: Describe your background, shareable work, availability, participation mode and language. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#contact)
+3. Discuss interests and expectations: Discuss goals, preparation, supervision, resources and available time. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#fit)
+4. [Decision] Can we agree on a suitable first task?: Both sides understand the task and feedback arrangements, and its conditions can be met. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#fit)
+   - Not a fit yet → Narrow the task or build foundations; either side may close the discussion and reconnect later. → If continuing, return to discussion (Discuss interests and expectations).
+5. Complete the agreed small task: Produce an explainable result, an honest work record and questions against the learning goal. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#first-task)
+6. Review the work together: Discuss the result, difficulties, individual contribution and support needed. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#first-task)
+7. [Decision] Do both sides want and have the capacity to continue?: Confirm research fit, supervision capacity, task conditions and individual commitments. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#next)
+   - Revise or conclude → Record feedback and contributions; discuss a revised plan or finish with a useful summary. → If trying again, discuss anew (Discuss interests and expectations).
+8. Confirm collaboration and continue learning: Agree on tasks and supervision; use the joint training guide when visiting, credit or degree procedures apply. [Detailed guide](https://csma-graduation-projects.github.io/en/research-collaboration.html#next)
+
+**Scope and limits:**This is an invitation to discuss collaboration, not a promise of a place, funding or admission. Timing and arrangements are agreed individually; pausing or concluding is a valid outcome. Formal procedures apply only where relevant.
+
+[Download SVG](https://csma-graduation-projects.github.io/en/assets/diagrams/research-collaboration.svg) · [Editable draw.io source](https://csma-graduation-projects.github.io/en/assets/diagrams/research-collaboration.drawio)
 
 
 ## Research tools guide

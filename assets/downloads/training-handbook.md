@@ -1,6 +1,6 @@
 # CSMA 学生培养工作手册
 
-更新：2026-10-19。通用工作指南；正式要求以本人适用的校院文件为准。
+更新：2026-10-20。通用工作指南；正式要求以本人适用的校院文件为准。
 
 在线入口：https://csma-graduation-projects.github.io/
 
@@ -1964,9 +1964,319 @@
 
 保存一份可持续更新的记录；按需要使用[研究工具](https://csma-graduation-projects.github.io/tools.html) 、[日常管理](https://csma-graduation-projects.github.io/management.html) 和[资料归档](https://csma-graduation-projects.github.io/archive.html) 指南，让计划、证据与反馈能够找到并复用。
 
+## 科研与竞赛合作
+
+### 带着一个问题，一起把想法做出来
+
+欢迎来自其他高校、正在国内或海外学习的本科生、硕士生和博士生，与我们交流科研与竞赛合作。你可以带来正在思考的问题、已经开展的工作，也可以从一次阅读、一个小实验或一份课程作品开始。我们期待认真提问、诚实记录、愿意动手验证，也愿意听取反馈的伙伴。
+
+合作可以从远程交流开始，再根据共同兴趣、指导条件和实际安排讨论持续研究、共同参赛或阶段到访。先找到一个值得一起做的小问题，让双方都了解彼此的目标、工作方式和支持需要。
+
+[准备首次联系](https://csma-graduation-projects.github.io/research-collaboration.html#contact) [导师主页与公开联系](https://h-jp.github.io/) [看看可交流的方向](https://csma-graduation-projects.github.io/research-collaboration.html#directions) [欢迎交流](https://csma-graduation-projects.github.io/research-collaboration.html#welcome) [研究方向](https://csma-graduation-projects.github.io/research-collaboration.html#directions) [合作方式](https://csma-graduation-projects.github.io/research-collaboration.html#formats) [适合怎样的你](https://csma-graduation-projects.github.io/research-collaboration.html#fit) [如何联系](https://csma-graduation-projects.github.io/research-collaboration.html#contact) [开始合作](https://csma-graduation-projects.github.io/research-collaboration.html#getting-started) [第一个小任务](https://csma-graduation-projects.github.io/research-collaboration.html#first-task) [持续成长](https://csma-graduation-projects.github.io/research-collaboration.html#next) [常见问题](https://csma-graduation-projects.github.io/research-collaboration.html#questions)
+
+### 从这些方向找到共同的问题
+
+#### 人工智能与多智能体
+
+交流智能体的推理、协作和可验证行为。一个起点可以是：在同一组小任务上比较不同协作方式，记录沟通信息、失败原因和实际代价，再解释什么条件下协作有帮助。
+
+#### 智能软件工程
+
+交流需求理解、代码生成、调试与软件逆向分析。一个起点可以是：选一个公开项目，将需求、代码和测试对应起来，复现一处失败，并用运行记录检查可能的解释。
+
+#### 智能机器人
+
+交流感知、规划和人机协作。一个起点可以是：在可用的仿真或公开数据上定义简单任务，检查输入、计划与执行结果的关系，并整理失败场景和改进问题。
+
+方向依据[导师公开主页](https://h-jp.github.io/) ，核验于 2026 年 10 月 20 日；上述任务是交流示例，实际选题由双方讨论。你也可以从[公开论文与成果](https://h-jp.github.io/publications/) 中选一项，说明感兴趣的部分和希望进一步验证的问题。已有相关工作，欢迎一起讨论如何衔接。
+
+### 选择与你的目标和时间相称的合作
+
+#### 科研入门与共同研究
+
+入门时可围绕一篇论文、一个可复现例子练习阅读与实验；有研究基础时可共同界定问题、比较方法、分析结果。讨论中同时明确你希望学会什么，以及能够承担哪部分工作。
+
+#### 开源工程与竞赛实践
+
+可交流工具实现、测试、文档、复现和团队集成，也可围绕实际赛事讨论选题与分工。参赛前按当届规则确认学校、年级、国籍、组队和成果使用条件，再确定队伍安排。
+
+#### 阶段访学与论文合作
+
+可讨论阶段研究、毕业设计或学位论文中的合作任务。先确认学术契合和指导安排；涉及正式到访、学分、培养环节或学位事项时，按[联合培养指南](https://csma-graduation-projects.github.io/joint-training.html) 衔接双方学校要求。
+
+**远程、到访或混合：**远程合作可使用共享记录、异步反馈与约定会议；到访需确认接收条件和手续；混合方式可按任务阶段切换。跨时区时先说明所在地时区与可交流时段，沟通语言可在中文、英文及双方可行的安排中协商。
+
+### 不同起点，都可以找到合适的成长任务
+
+结合实际能力确定起点，已有论文不作为首次交流的通用前提
+
+| 当前阶段 | 可以带来什么 | 可以共同争取的进步 |
+| --- | --- | --- |
+| 本科生 | 课程项目、阅读笔记、编程练习、竞赛经历，或一个能够具体说明的问题。 | 解释基本概念，完成可检查的小任务，学会记录、验证与团队沟通，再逐步承担完整子任务。 |
+| 硕士生 | 研究兴趣、文献梳理、复现或实验记录，说明当前问题、本人工作与遇到的困难。 | 收敛可研究的问题，设计适当比较，形成可追溯证据，解释结果的局限并衔接论文。 |
+| 博士生 | 研究主线、相关工作和证据、拟讨论的学术问题，以及合作可能补足的方法或资源。 | 讨论原创贡献与替代解释，组织互补研究，明确独立贡献和合作研究之间的关系。 |
+
+可靠的合作来自持续投入、如实说明进展、尊重约定和主动沟通。基础尚不齐全时，可以先讨论补学任务；已有导师时说明指导安排，尚未确定原校导师也可以先联系交流，再共同判断后续需要谁参与确认。
+
+### 第一次联系，说清这五件事就好
+
+可使用中文或英文，简洁介绍即可。请通过[导师主页公布的联系方式](https://h-jp.github.io/) 发送；本页面不收集申请信息。作品优先提供可访问链接，并说明其中哪些由你完成。
+
+1. **你是谁：**所在学校、专业、学习阶段及简短背景，说明当前指导关系（如有）。
+2. **想一起研究什么：**选择一个方向或提出自己的问题，说明为什么感兴趣、已经做过哪些尝试。
+3. **一份代表性材料：**代码、报告、论文、演示或竞赛作品，并写明个人贡献；暂时没有作品时，可用课程练习、阅读记录和学习计划。
+4. **可以怎样参与：**预计每周可投入时间、希望的起止安排、所在时区、远程或到访偏好，以及可用的交流语言。
+5. **期待怎样的支持：**例如选题反馈、方法指导、实验资源或团队协作，也请说明已有资源和需要协调的课程、研究安排。
+
+只分享你有权提供的材料；首次联系无需提交证件号码等敏感信息，涉及未公开项目时先用可公开的概述。可直接使用下面的意向模板整理信息，再前往导师主页联系。
+
+[导师主页与公开联系](https://h-jp.github.io/) [合作意向与首次联系模板](https://csma-graduation-projects.github.io/templates.html#collaboration-interest)
+
+### 从初次交流走向共同工作
+
+先了解彼此，再约定小任务；完成后用实际体验决定下一步。下面是建议的交流路径，具体安排随任务和双方条件确认。
+
+六步行动与每一步留下的结果
+
+| 行动 | 怎么做 | 留下什么 |
+| --- | --- | --- |
+| 1 · 选一个方向 | 浏览方向与公开成果，选一个想理解、验证或改进的问题。 | 一段兴趣说明，附相关材料或问题例子。 |
+| 2 · 发一份简介 | 通过公开联系渠道发送背景、材料、时间安排和支持期待。 | 可供讨论的合作意向与材料链接。 |
+| 3 · 双向交流 | 共同讨论兴趣、基础、指导条件和沟通方式；条件尚不匹配时，可调整方向或暂缓。 | 双方理解的目标、待确认事项及下一步。 |
+| 4 · 约定并完成小任务 | 确定范围、学习目标、所需支持与反馈日期，再开展可检查的阅读、实践或分析。 | 任务卡、实际产物、过程与困难记录。 |
+| 5 · 反馈与复盘 | 一起检查结果、所学内容和协作体验，说明需要的帮助与可能的调整。 | 反馈、修改或补学安排，以及继续或结束的意见。 |
+| 6 · 确认后持续合作 | 双方确认适合继续后，写清后续目标、分工、资源、节奏和阶段检查；需要正式手续时同步办理。 | 下一阶段计划、责任分工与已确认的合作安排。 |
+
+### 让第一个小任务值得做，也做得明白
+
+小任务用于学习和相互了解，规模应与你的基础、可投入时间和可获得指导相称。可以是解释一篇论文的一项方法、重做一个公开示例、补一个测试或分析一个失败案例。先约定内容，再开始执行。
+
+- **学习目标与产物：**写明希望学会什么、提交什么、怎样检查，并列出必要资料和环境；有困难时允许缩小范围。
+- **指导与反馈：**确认由谁答疑、通过什么渠道、何时反馈；记录需要的帮助和已经尝试的办法。
+- **贡献与成果用途：**提前说明材料是否进入实际项目、如何记录个人贡献，以及公开、复用和署名需怎样确认。涉及实际项目交付时，另行明确工作安排、资源及报酬等适用条件。
+- **复盘与选择：**双方均可提出调整或结束；已完成工作和反馈妥善保留。讨论继续合作时，以实际学习、任务结果和协作条件为依据。
+
+[科研训练任务卡](https://csma-graduation-projects.github.io/templates.html#research-task) [学习与成长复盘](https://csma-graduation-projects.github.io/templates.html#learning-review) [竞赛计划与复盘](https://csma-graduation-projects.github.io/templates.html#competition)
+
+### 把一次合作接到下一步成长
+
+持续合作时，研究记录应能说明问题、方法、证据、个人贡献与下一步。选题和任务可以调整，每次阶段讨论都同时检查成果质量和能力成长。工具使用、协作节奏和归档方式也应与双方条件相适应。
+
+[本科科研训练](https://csma-graduation-projects.github.io/undergraduate-research.html) [硕士研究](https://csma-graduation-projects.github.io/master.html) [博士研究](https://csma-graduation-projects.github.io/doctor.html) [竞赛实践](https://csma-graduation-projects.github.io/competition.html) [学习与成长](https://csma-graduation-projects.github.io/learning.html) [研究工具](https://csma-graduation-projects.github.io/tools.html)
+
+合作涉及毕业设计、学位论文、正式访学、学分或培养环节认定时，转入[联合培养安排](https://csma-graduation-projects.github.io/joint-training.html) 确认双方职责及办理事项。在华学习或到访的国际学生可结合[国际学生指南](https://csma-graduation-projects.github.io/international.html) 核对适用支持。海外远程参与者按所在学校和任务核对适用事项；注册、居留等到访手续在实际需要时确认。
+
+### 开始之前，你可能还想了解
+
+#### 还没有论文或成熟作品，可以联系吗？
+
+可以。课程练习、阅读笔记和具体问题都能帮助双方了解你的起点。请如实说明已经掌握和正在学习的内容；已有论文不作为所有合作交流的前提。
+
+#### 已有课题，或尚未确定原校导师呢？
+
+都可以先交流。已有课题请说明个人工作、指导关系与可分享范围；尚未确定导师时先讨论兴趣和学习任务。进入正式培养合作前，再落实所需指导及学校确认。
+
+#### 远程和英语交流是否可以讨论？
+
+可以提出你的偏好、时区和支持需要，再共同确定可行安排。涉及竞赛时，能否跨校或跨国组队须核对实际规则；国际到访所需手续另行确认。
+
+#### 资源、资助和合作结果如何确定？
+
+计算、数据、差旅、资助等按实际任务与可用条件讨论，并在使用前确认。本页提供合作交流入口；具体接收、录取、资助、发表或获奖均须依实际程序与结果确定。
+
+如果这里有一个方向与你正在思考的问题相遇，欢迎写下它，也告诉我们你希望从合作中学会什么。
+
+[导师主页与公开联系](https://h-jp.github.io/) [整理我的合作意向](https://csma-graduation-projects.github.io/templates.html#collaboration-interest)
+
+## 联合培养
+
+RESEARCH TOGETHER / 一起探索
+
+### 不同学校，共同的好奇心
+
+欢迎外校及海外的本科生、硕士生和博士生，和我们交流科研与竞赛想法，一起把感兴趣的问题做深、做实。
+
+#### 我想寻找科研或竞赛伙伴
+
+了解研究兴趣、参与方式和联系准备，从一次交流与一个小任务开始。尚未确定完整题目、尚无原校导师，也可以先来交流。
+
+[探索科研与竞赛合作 ↗](https://csma-graduation-projects.github.io/research-collaboration.html)
+
+#### 我正在安排联合培养
+
+合作方向逐步明确后，用下方指南衔接指导分工、学校节点、资源使用和资料交接。
+
+[继续阅读联合培养指南 ↓](https://csma-graduation-projects.github.io/joint-training.html#start)
+
+联合培养让不同学校的指导与资源共同支持学生成长。本栏目简称“联培”，面向本科、硕士和博士，覆盖科研合作、访学、共同指导与正式联合培养项目。无论是接收外校学生，还是派出本校学生，都先把研究任务、指导分工和正式培养要求放在同一份计划中。
+
+本页提供可执行的工作框架。合作类型、学籍、学位授予单位与认定程序须根据实际项目确认；共同指导不自动构成联合学位或双学位。学生在每个阶段都应能找到：现在做什么、向谁求助、交什么材料，以及由谁确认完成。
+
+[起步三步](https://csma-graduation-projects.github.io/joint-training.html#start) [合作方式](https://csma-graduation-projects.github.io/joint-training.html#types) [指导职责](https://csma-graduation-projects.github.io/joint-training.html#roles) [七个阶段](https://csma-graduation-projects.github.io/joint-training.html#stages) [分层要求](https://csma-graduation-projects.github.io/joint-training.html#levels) [日常协作](https://csma-graduation-projects.github.io/joint-training.html#coordination) [资源与成果](https://csma-graduation-projects.github.io/joint-training.html#outcomes) [变更与交接](https://csma-graduation-projects.github.io/joint-training.html#closure) [依据与模板](https://csma-graduation-projects.github.io/joint-training.html#sources)
+
+### 学生先完成这三步
+
+1. **写清自己的身份与任务**记录学籍所在学校、年级与专业、学位类型、合作单位、拟开展的任务和起止安排；说明是科研训练、竞赛、访学、毕业设计还是学位论文合作。暂未确定的信息标为“待确认”。
+2. **按合作安排确认指导者和办理人**与参与本次安排的指导者确认日常对接人、指导范围和共同讨论方式；涉及学校手续时，向相关学院人员核实接收或派出手续、正式考核组织方及认定部门。记录联系人职能、官方渠道和下一次确认日期。
+3. **约定第一个可检查的任务**从阅读、复现、设计或数据检查中选一项，写出目标、所需权限、具体产物、检查方法和反馈日期；同时把最近一个学校正式节点加入时间表。所需批准和授权到位后开始相关工作。
+
+**起步完成的证据：**一份经有关人员确认的指导计划、一张正式环节对照表，以及第一个任务的检查安排。不要把“已经联系导师”直接写成“已获接收”或“已经完成认定”。
+
+[联合培养与指导约定](https://csma-graduation-projects.github.io/templates.html#joint-training-plan) [阶段与认定对照表](https://csma-graduation-projects.github.io/templates.html#joint-training-recognition) [安排当前培养任务](https://csma-graduation-projects.github.io/planner.html)
+
+### 先选择合作方式，再核对接收或派出安排
+
+合作名称不能替代具体的培养和认定安排
+
+| 合作方式 | 开始前确认 | 需要留下的记录 |
+| --- | --- | --- |
+| 科研合作与共同竞赛 | 任务范围、学生参与资格、双方指导人、资源权限和个人分工；竞赛另查跨校组队、指导教师、署名单位及提交规则。 | 任务计划、适用规则版本、资格确认、贡献记录和提交回执；需要学分认定时另行申请。 |
+| 短期访学与阶段研究 | 接收身份、期限、到离校手续、研究目标、资源及生活安排，以及返校后哪些材料可申请认定。 | 批准或接收材料、阶段计划、过程记录、接收方评价和返校认定结果。 |
+| 共同指导毕业设计或学位论文 | 校内与合作导师资格及职责、题目确认、学校正式环节、论文材料和成果使用范围。 | 指导约定、正式任务或选题材料、双方反馈、评审意见及有权部门的结论。 |
+| 正式联合培养项目 | 适用项目及协议、招生与学籍安排、培养分工、课程学分、经费和学位条件；涉及联合或双学位时核对相应批准与授予安排。 | 项目依据、有效协议、个人培养方案及各单位要求的申请、审批与认定材料。 |
+
+#### 我校接收：先接好指导与资源
+
+接收方确认学生身份与派出许可，指定合作导师和日常联系人，办理必要的访问、账号、实验室和安全培训手续。与学籍所在学校导师共同核对研究任务和最近的培养节点。
+
+**开始前检查：**学生能够访问获准资源，知道遇到问题联系谁，双方知道接收方需要提供哪些评价和证明。接收结束时按约定出具真实的阶段评价并完成资源交接。
+
+#### 我校派出：先接好培养与认定
+
+派出方确认接收安排、必要的派出手续和持续指导方式，提前核对课程、实践、开题、中期等环节由谁组织、能否异地参加，以及返校时需提交的材料。
+
+**开始前检查：**派出期间的任务与本校培养计划相接，正式截止日期已列入日历，待认定事项有负责部门及书面办理依据。研究完成后按程序申请认定。
+
+“我校接收／我校派出”表示合作方向，具体填写时使用双方学校全称。学籍所在学校、接收单位与学位授予单位可能承担不同职责，应分别登记；跨校与跨境也应分别判断。国际学生在此基础上叠加[语言、注册、居留和其他适用事项](https://csma-graduation-projects.github.io/international.html#checklist) 。
+
+### 让每项任务都有指导者和确认人
+
+建议的职责分工；具体权限按项目和学校安排确认
+
+| 参与方 | 负责的行动 | 需要确认的边界 |
+| --- | --- | --- |
+| 学生 | 提出个人计划，按授权开展工作，保留原始记录，整理双方反馈，主动报告冲突、阻塞和延期风险。 | 可以提出调整建议；研究范围、资源权限和正式节点的变更，交由相应负责人确认。 |
+| 学籍所在学校导师 | 衔接本校培养目标与论文整体安排，持续跟踪校外进展，协调合作任务与课程、考核及学位申请。 | 明确指导责任及沟通安排；导师意见与学院或学校正式审批分别记录。 |
+| 合作学校导师 | 指导约定的研究任务与方法，落实可提供的资源和反馈，评价学生实际工作并与另一位导师沟通。 | 明确本人能提供的指导、材料和资源；额外任务须检查与个人计划、时间及学位论文的关系。 |
+| 双方学院及有权部门 | 按各自权限办理接收、派出、课程与实践认定、培养环节组织及变更申请，解释适用文件。 | 逐项记录组织、审批与认定职责；一方接收或考核完成，不推定另一方已经认定。 |
+| 学位授予单位 | 依据适用标准与程序组织学位相关审核，明确申请、评审、答辩及授予要求。 | 与学籍所在学校分别核对；合作成果评价、答辩完成与学位授予是不同状态。 |
+
+计划中指定一位主要日常对接人，方便学生及时获得帮助；涉及研究方向、主要任务或正式节点的决定，应同步有关导师及负责人员。指导关系发生变化时，重新确认上述分工和未完成事项。
+
+### 把联合培养落实为七个阶段
+
+下图与阶段表可以直接在网页阅读。正式项目的顺序和期限以适用安排为准；研究执行与阶段检查可循环进行。每一轮检查结束，都写明下一任务、支持需求与检查日期。
+
+每个阶段的行动、交付和完成条件
+
+| 阶段 | 具体行动 | 交付材料 | 完成条件 |
+| --- | --- | --- | --- |
+| 1 · 确认适用安排 | 核对身份、合作方式、双方导师、培养方案、学位单位和办理部门；列出尚不清楚的事项。 | 基本信息、适用文件及版本、待确认清单、联系人。 | 关键职责和适用要求已有依据；待确认项有咨询人和处理日期，不影响尚未获准事项的真实状态。 |
+| 2 · 办妥手续与约定 | 按需办理接收、派出及项目手续；确认指导、经费、资源、数据和成果安排。 | 正式申请与回执、指导约定、权限及资源清单。 | 启动相关活动所需的批准和授权已取得，学生能找到负责人员及约定内容。 |
+| 3 · 制订共同计划 | 对照实际能力选择任务，标出两校正式节点及依赖，约定交付、检查方法与反馈日期。 | 个人计划、阶段与认定对照表、首项任务、时间表。 | 学生和相关导师理解目标、范围与分工；正式办理事项另有明确的负责人和提交日期。 |
+| 4 · 开展研究与记录 | 完成阅读、实践或研究；持续记录输入、环境、版本、结果和帮助，按约定汇报与求助。 | 研究记录、代码或分析材料、周报、会议行动项。 | 阶段产物可定位和检查，个人贡献清楚，阻塞事项有处理安排；失败和未完成结果如实保留。 |
+| 5 · 联合检查与改进 | 双方按任务判据查看证据，核对学生能力与论文主线，确认继续、补充或调整；必要时办理变更。 | 阶段评价、逐项反馈与回应、修改证据、更新计划。 | 反馈已解决或明确后续责任与复查安排；进入下一步所需的条件得到确认。 |
+| 6 · 正式考核与认定 | 核对是否需要正式考核或认定；适用时按规定参加考核、提交材料，申请课程、实践或培养环节认定。 | 正式提交版本、审核回执、考核或认定结论、整改记录；不适用时记录依据。 | 适用事项以有权部门结论为准；待补充、未通过与待认定不记为通过，未办结事项继续跟踪。不适用正式考核或认定的任务，记明依据后进入交接。 |
+| 7 · 结项、返校与交接 | 总结学习与贡献，办理结束或返校事项，归档数据和成果，移交资源及后续任务。 | 接收方评价、归档目录、交接确认、待办事项与联系人。 | 材料可访问，权限和资源已按约定处理，双方确认交接；未办结的认定或学位事项继续独立跟踪。 |
+
+### 同一流程，按培养层级检查不同重点
+
+#### 本科科研训练与竞赛
+
+**从哪里开始：**检查先修知识和最小实践能力，将任务限定为可以解释、执行和复查的小问题；竞赛报名前核对跨校组队与参赛资格。
+
+**交什么：**阅读与实践记录、可演示产物、规则与提交记录、个人贡献和复盘。团队作品应能区分个人完成、共同完成与复用部分。
+
+**怎样衔接：**根据实际能力进入更独立的任务；如需课程或项目认定，按本校程序申请。参见[科研训练](https://csma-graduation-projects.github.io/undergraduate-research.html) 与[竞赛路径](https://csma-graduation-projects.github.io/competition.html) 。
+
+#### 本科毕业设计
+
+**从哪里开始：**确认校外指导安排、校内指导人、批准题目和任务书；将合作项目中属于本人毕设的范围单独写清。
+
+**交什么：**需求或问题说明、设计实现、验证记录、论文及演示，配套开题、中期和评阅等正式材料。
+
+**怎样衔接：**合作项目的验收意见可作为材料，毕业设计评价与答辩仍按学校要求完成。参见[毕业设计路径](https://csma-graduation-projects.github.io/bachelor.html) 。
+
+#### 硕士研究
+
+**从哪里开始：**区分学术学位与专业学位，确认研究问题、可用数据、开题与中期安排；专业实践的地点、任务和认定材料单独核对。
+
+**交什么：**综述、研究方案、可追溯证据、阶段报告、成果与本人贡献、论文及逐项反馈回应。
+
+**怎样衔接：**把合作研究结果连到学位论文，逐项确认成果条件、查重及其他规范检查、送审与答辩；“查非”按本校正式名称和程序核实。参见[硕士路径](https://csma-graduation-projects.github.io/master.html) 。
+
+#### 博士研究
+
+**从哪里开始：**说明合作子课题与长期研究主线的关系，核对资格考核、指导委员会及年度检查等适用安排，按实际顺序列入计划。
+
+**交什么：**问题与贡献论证、关联研究及原始证据、替代解释检查、独立贡献记录、年度或阶段进展和论文材料。
+
+**怎样衔接：**由相关导师或适用委员会审视整体研究连贯性，及时处理范围与合作变化；正式评审和学位申请按授予单位要求办理。参见[博士路径](https://csma-graduation-projects.github.io/doctor.html) 。
+
+联合培养结束时，除报告做成什么，还应说明现在能够独立解释、执行或判断什么，以及下一阶段仍需的帮助。可复用[学习与成长复盘](https://csma-graduation-projects.github.io/templates.html#learning-review) ；本页不设置统一的论文数量、检测阈值或培养期限。
+
+### 共用研究记录，分别完成正式认定
+
+双方在授权范围内共用一份研究计划、任务记录和材料版本。学校要求的表格可以分别填写，但其中的题目、日期、贡献、结果与版本应一致。为双方各记录一条“正式事项、组织单位、材料、提交日期、确认部门、当前状态和结果证据”，避免把同一组研究重复组织成两套相互矛盾的记录。
+
+- **日常反馈：**与主要日常对接人约定更新频率、渠道、反馈时间和紧急联系办法。可以从每周简报、每月双方共同讨论开始，再按任务调整；频率是协商建议。
+- **会议准备：**会前发当前产物、证据链接、主要困难和需要决定的事项；会后记录行动、负责人、检查日期和未决问题，请相关人员确认。
+- **状态分开：**“导师同意”“手续获批”“研究完成”“正式认定完成”分别记录。组内检查通过只说明准备程度，不能自动更新学校考核状态。
+- **语言与支持：**约定研究交流、反馈和正式材料语言，提前分享术语及问题；需要书面反馈、学习支持或资源帮助时，说明具体需要与联系人。
+
+**例：**学生完成了接收方安排的实验，并拿到阶段评价，此时可以记录“研究任务完成、评价已取得”。能否计入学籍所在学校的专业实践，应依据其要求提交材料，并在收到正式结果后更新认定状态。
+
+[进展记录](https://csma-graduation-projects.github.io/templates.html#weekly) [会议与行动记录](https://csma-graduation-projects.github.io/templates.html#meeting) [日常管理指南](https://csma-graduation-projects.github.io/management.html) [研究工具与协作](https://csma-graduation-projects.github.io/tools.html)
+
+### 开始时就说清资源、数据与成果
+
+写进指导约定并在实际使用或提交前复核
+
+| 事项 | 具体约定 | 可检查的记录 |
+| --- | --- | --- |
+| 经费与资源 | 列明交通、住宿、实验、计算与发表等适用费用的承担方、预算及办理方式；确认设备、账号、许可、使用期限和支持联系人。 | 获确认的预算、资源清单、访问测试、使用记录与合规票据；新增费用先确认承担安排。 |
+| 数据与代码 | 确认来源、允许用途、可访问人员、保存位置、两校间传递方式、公开范围及结束后的保留与移交办法。 | 授权依据、数据或代码版本、权限清单、必要的使用记录；受限材料保存在获准的受控空间。 |
+| 贡献、署名与单位 | 持续记录实际贡献；投稿或提交前按适用规则共同核对作者、顺序、单位及致谢，处理各方提出的疑问。 | 贡献说明、对应产物、适用规则、提交前确认及最终版本；不要仅凭指导关系预填最终署名。 |
+| 发表与成果使用 | 明确论文、软件、专利或竞赛材料的审阅与批准流程、知识产权安排、公开和保密要求，以及学生将成果用于学位论文的条件。 | 有效约定、拟提交材料、审阅意见及办理结果；不能公开的部分另留受控证明与说明。 |
+
+需要学校、资源所有者或项目有权部门决定的事项，由相应主体确认。个人约定应与正式协议衔接；未明确的数据访问、公开或成果使用权限不能从合作关系中推定。成果认定仍使用[成果与贡献记录](https://csma-graduation-projects.github.io/templates.html#outcomes) ，相关做法见[成果指南](https://csma-graduation-projects.github.io/outcomes.html) 与[学术规范](https://csma-graduation-projects.github.io/integrity.html) 。
+
+### 遇到分歧、延期或退出时，保持培养连续
+
+#### 把冲突变成一项可以决定的事项
+
+两校时间、导师意见或任务优先级发生冲突时，学生整理“不同要求、依据、对已完成工作的影响、可选安排和需决定日期”。双方导师协调研究任务与范围，有权部门确认正式要求或程序。保留未决状态和临时安排，推进不依赖该决定的工作；不让学生独自选择忽略哪一方的要求。
+
+#### 延期、变更和退出都要留下新计划
+
+研究不可行、资源中断、指导关系或个人情况变化时，记录原因、已完成产物、受影响节点及替代方案，确认是否需要延期、返校、缩小范围或结束合作。涉及正式事项时按程序申请，保存明确回复。合作结束不自动代表休学、退学、学位申请获准或其他学籍状态改变。
+
+#### 交接完成后，未办结事项仍有人跟踪
+
+1. **交付可使用的材料**按约定移交代码、数据或受限资料位置、环境与运行说明、论文版本、评价及认定文件；说明失败记录、已知限制和未完成部分。
+2. **核对访问与资源**接收人实际检查所需材料和权限，确认设备、费用、账号及数据保留安排。按约定移交或关闭访问，避免影响必要的论文修改与归档。
+3. **确认后续责任**列出待发表成果、后续修改、待认定事项及联系人；双方确认交接状态，学生完成成长复盘和下一阶段计划。
+
+公共主页只发布指南与空白模板。填写后的计划、个人信息、评价和未公开研究记录，应存放在双方获准访问的受控空间。
+
+[风险与变更记录](https://csma-graduation-projects.github.io/templates.html#change-request) [研究资料归档清单](https://csma-graduation-projects.github.io/templates.html#archive) [毕业与离组交接](https://csma-graduation-projects.github.io/templates.html#handover) [归档操作指南](https://csma-graduation-projects.github.io/archive.html)
+
+### 公开依据与使用方法
+
+资料核验日期：2026 年 10 月 20 日。本页的任务划分、记录方式与协作节奏为工作建议，使用时应核对双方现行文件、实际协议和入学年级的培养方案。
+
+- [《中华人民共和国学位法》](https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202404/t20240426_1127804.html) ：学位授予单位制定并公布具体授予标准，学位申请、评阅和答辩等须依适用要求和程序办理。共同指导本身不能替代学位授予条件。
+- [西北大学《联合培养研究生管理办法》（收录于 2024 年工作手册，印刷页 299—303）](https://yjs.nwu.edu.cn/__local/0/A4/C2/4D1D231D52C573C43962FB19314_02A4A057_341F97.pdf#page=305) ：可参考其接收与派出、双导师协作和培养环节管理的组织方式。这是特定学校的实施案例，不对其他学校自动生效，也不代表本门户已设立相关合作项目。
+
+使用两份专用模板整理指导约定与正式认定，其余过程材料复用已有模板。模板是工作底稿，学校要求使用正式系统或表格时，应按规定办理；不清楚的内容保留“待确认”，并指定询问对象和处理日期。
+
+[联合培养与指导约定](https://csma-graduation-projects.github.io/templates.html#joint-training-plan) [阶段与认定对照表](https://csma-graduation-projects.github.io/templates.html#joint-training-recognition) [本校要求核对](https://csma-graduation-projects.github.io/policies.html#local-check) [国际学生指南](https://csma-graduation-projects.github.io/international.html) [学习与成长](https://csma-graduation-projects.github.io/learning.html)
+
 ## 日常管理与协作
 
 日常管理的目的，是让任务有人推进、问题能够及时发现、指导意见落实到下一步。先与导师约定沟通周期、材料位置和反馈方式，再按实际课程与研究安排执行。本页给出工作方法；出勤、请假、实践、经费和考核，执行学校与学院已生效的规定。
+
+跨校共同指导、接收外校学生或赴合作单位研究时，先使用[联合培养指南](https://csma-graduation-projects.github.io/joint-training.html) 明确接收或派出安排、双方职责、共同研究记录与正式认定。
 
 [角色与沟通](https://csma-graduation-projects.github.io/management.html#roles-and-channels) [工作节奏](https://csma-graduation-projects.github.io/management.html#working-rhythm) [任务状态](https://csma-graduation-projects.github.io/management.html#task-status) [周报与组会](https://csma-graduation-projects.github.io/management.html#weekly-and-meeting) [请假与实践](https://csma-graduation-projects.github.io/management.html#leave-and-practice) [支持与纠正](https://csma-graduation-projects.github.io/management.html#support-and-correction)
 
@@ -2342,6 +2652,8 @@ sha256sum -c SHA256SUMS
 本页面向在中国高校攻读本科、硕士或博士学位的国际学生，帮助你把适用的培养要求落实到课程、研究和学位申请中。交换、访学、联合培养等项目，请先核对协议中的学籍、学分认定、指导责任与学位授予安排，再使用相应部分。
 
 EN / ZH 只切换页面语言，不判断学生身份，也不改变培养要求。学术诚信、研究质量与真实记录的要求一致；具体课程、阶段考核和成果条件，要按入学年级、专业、学位类型及适用项目分别确认。使用英文学习，不代表所有手续、论文材料与答辩都自动采用英文。
+
+涉及跨校合作时，先按[联合培养指南](https://csma-graduation-projects.github.io/joint-training.html) 落实共同计划、双方职责和阶段认定，再按本页核对适用的语言、注册、流动与支持安排。
 
 [从这里开始](https://csma-graduation-projects.github.io/international.html#start) [本科阶段](https://csma-graduation-projects.github.io/international.html#bachelor) [硕士阶段](https://csma-graduation-projects.github.io/international.html#master) [博士阶段](https://csma-graduation-projects.github.io/international.html#doctor) [共同核对表](https://csma-graduation-projects.github.io/international.html#checklist) [沟通与支持](https://csma-graduation-projects.github.io/international.html#support) [依据与适用范围](https://csma-graduation-projects.github.io/international.html#sources)
 
@@ -2755,6 +3067,57 @@ EN / ZH 只切换页面语言，不判断学生身份，也不改变培养要求
 **使用边界：**学位材料提交与研究资料交接分别办理；公开版与受控原件分开，账号权限通过组织批准的方式转移，不要求共享个人账号密码。
 
 [SVG 下载](https://csma-graduation-projects.github.io/assets/diagrams/archiving.svg) · [draw.io 可编辑源文件](https://csma-graduation-projects.github.io/assets/diagrams/archiving.drawio)
+
+
+### 跨校联合培养流程图
+
+七个工作步骤连接接收或派出、共同指导、正式认定与交接；三处判断说明何时补充确认或返回整改。
+
+在线图：https://csma-graduation-projects.github.io/workflows.html#flow-joint-training
+
+**主线（满足条件后向下推进）**
+
+1. 确认合作类型与角色：明确接收或派出、学籍与授位单位及合作范围。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#types)
+2. 核对要求与必要手续：逐项确认接收、指导资格、阶段认定和办理部门。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#stages)
+3. 【判断】具备开始条件？：必要批准、资源权限和接收安排均已有依据。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#stages)
+   - 尚未具备 → 联系对应部门补充确认；相关条件未满足前不启动依赖它的工作。 → 返回要求与手续核对（核对要求与必要手续）。
+4. 共同制订个人计划：明确能力目标、任务、双方职责、截止日与检查证据。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#roles)
+5. 研究执行与联合反馈：共用任务记录和材料版本，跟踪问题与反馈落实。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#coordination)
+6. 阶段检查与材料准备：学生自检，导师复核；按双方要求整理正式提交材料。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#stages)
+7. 【判断】交付和研究检查达到要求？：证据支持约定结论，待处理意见和正式材料缺项已明确。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#stages)
+   - 需要整改 → 写明缺口、负责人和复查日期；涉及正式节点的变化按规定办理。 → 返回计划与任务安排（共同制订个人计划）。
+8. 办理适用的正式认定：向有权部门提交，分别保存回执、结论和下一步要求。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#stages)
+9. 【判断】认定状态已明确？：适用事项有正式结论；无需认定的事项已有依据，未通过不记作通过。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#stages)
+   - 待补充或处理 → 按反馈补充材料，或使用正式复核渠道；约定等待期间与后续安排。 → 返回认定办理（办理适用的正式认定）。
+10. 进入下一阶段或结束交接：根据结论衔接后续培养，归档材料、确认留存与访问权限。 [具体说明](https://csma-graduation-projects.github.io/joint-training.html#closure)
+
+**使用边界：**这是工作指南，不代表已批准的校际项目。导师同意、学校批准、研究完成和正式认定分别记录；按本人适用制度与有权部门结论办理，共同指导不自动产生联合或双学位。
+
+[SVG 下载](https://csma-graduation-projects.github.io/assets/diagrams/joint-training.svg) · [draw.io 可编辑源文件](https://csma-graduation-projects.github.io/assets/diagrams/joint-training.drawio)
+
+
+### 从初次联系到共同科研
+
+六个行动连接研究兴趣、初次交流和科研或竞赛合作；两次共同判断，让任务和支持适合双方。
+
+在线图：https://csma-graduation-projects.github.io/workflows.html#flow-research-collaboration
+
+**主线（满足条件后向下推进）**
+
+1. 找到想探索的问题：结合公开研究方向，写出兴趣与想学习的能力。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#directions)
+2. 发送简短合作意向：介绍背景、可分享作品、时间、参与方式与语言。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#contact)
+3. 双向交流与任务讨论：讨论目标、基础、指导支持、资源和可投入时间。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#fit)
+4. 【判断】能约定合适的起步任务？：双方理解任务与反馈安排，相关条件能够落实。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#fit)
+   - 暂不匹配 → 缩小任务或先补基础；也可结束本次交流，准备好后再联系。 → 如继续，返回讨论（双向交流与任务讨论）。
+5. 完成约定的小任务：按学习目标留下可解释的产物、真实过程和问题。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#first-task)
+6. 共同复盘与获得反馈：交流成果、困难、个人贡献与所需支持。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#first-task)
+7. 【判断】双方愿意且具备条件继续？：确认方向匹配、指导能力、任务条件和各自安排。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#next)
+   - 需调整或结束 → 记录反馈和已有贡献；可调整后再讨论，也可总结后结束。 → 如再尝试，重新讨论（双向交流与任务讨论）。
+8. 确认合作并进入持续培养：写清任务与指导计划；需要访学、学分或学位手续时衔接联培指南。 [具体说明](https://csma-graduation-projects.github.io/research-collaboration.html#next)
+
+**使用边界：**这是合作交流路径，具体任务、时间与支持由双方协商；不预设名额、资助或录取。暂缓或结束也是正常结果，正式手续按实际适用情况办理。
+
+[SVG 下载](https://csma-graduation-projects.github.io/assets/diagrams/research-collaboration.svg) · [draw.io 可编辑源文件](https://csma-graduation-projects.github.io/assets/diagrams/research-collaboration.drawio)
 
 
 ## 科研工具指南

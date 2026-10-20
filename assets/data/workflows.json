@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "flows": [
     {
       "id": "research-path",
@@ -2501,6 +2501,392 @@
           "to": "retain",
           "label": "进入下一步",
           "type": "next"
+        }
+      ]
+    },
+    {
+      "id": "joint-training",
+      "title": "跨校联合培养流程图",
+      "summary": "七个工作步骤连接接收或派出、共同指导、正式认定与交接；三处判断说明何时补充确认或返回整改。",
+      "note": "这是工作指南，不代表已批准的校际项目。导师同意、学校批准、研究完成和正式认定分别记录；按本人适用制度与有权部门结论办理，共同指导不自动产生联合或双学位。",
+      "track": "",
+      "guide": "joint-training",
+      "order": [
+        "scope",
+        "requirements",
+        "entry-check",
+        "plan",
+        "execute",
+        "review",
+        "stage-check",
+        "recognition",
+        "recognition-check",
+        "handover"
+      ],
+      "nodes": [
+        {
+          "id": "scope",
+          "label": "确认合作类型与角色",
+          "detail": "明确接收或派出、学籍与授位单位及合作范围。",
+          "href": "joint-training.html#types",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "requirements",
+          "label": "核对要求与必要手续",
+          "detail": "逐项确认接收、指导资格、阶段认定和办理部门。",
+          "href": "joint-training.html#stages",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "entry-check",
+          "label": "具备开始条件？",
+          "detail": "必要批准、资源权限和接收安排均已有依据。",
+          "href": "joint-training.html#stages",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "entry-revise",
+          "label": "补齐手续和条件",
+          "detail": "联系对应部门补充确认；相关条件未满足前不启动依赖它的工作。",
+          "href": "joint-training.html#stages",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "plan",
+          "label": "共同制订个人计划",
+          "detail": "明确能力目标、任务、双方职责、截止日与检查证据。",
+          "href": "joint-training.html#roles",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "execute",
+          "label": "研究执行与联合反馈",
+          "detail": "共用任务记录和材料版本，跟踪问题与反馈落实。",
+          "href": "joint-training.html#coordination",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "review",
+          "label": "阶段检查与材料准备",
+          "detail": "学生自检，导师复核；按双方要求整理正式提交材料。",
+          "href": "joint-training.html#stages",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "stage-check",
+          "label": "交付和研究检查达到要求？",
+          "detail": "证据支持约定结论，待处理意见和正式材料缺项已明确。",
+          "href": "joint-training.html#stages",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "stage-revise",
+          "label": "整改或调整计划",
+          "detail": "写明缺口、负责人和复查日期；涉及正式节点的变化按规定办理。",
+          "href": "joint-training.html#coordination",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "recognition",
+          "label": "办理适用的正式认定",
+          "detail": "向有权部门提交，分别保存回执、结论和下一步要求。",
+          "href": "joint-training.html#stages",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "recognition-check",
+          "label": "认定状态已明确？",
+          "detail": "适用事项有正式结论；无需认定的事项已有依据，未通过不记作通过。",
+          "href": "joint-training.html#stages",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "recognition-revise",
+          "label": "补件、复核或重新安排",
+          "detail": "按反馈补充材料，或使用正式复核渠道；约定等待期间与后续安排。",
+          "href": "joint-training.html#coordination",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "handover",
+          "label": "进入下一阶段或结束交接",
+          "detail": "根据结论衔接后续培养，归档材料、确认留存与访问权限。",
+          "href": "joint-training.html#closure",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "scope",
+          "to": "requirements",
+          "type": "next",
+          "label": "明确后继续"
+        },
+        {
+          "from": "requirements",
+          "to": "entry-check",
+          "type": "next",
+          "label": "逐项核查"
+        },
+        {
+          "from": "entry-check",
+          "to": "plan",
+          "type": "pass",
+          "label": "满足后继续"
+        },
+        {
+          "from": "entry-check",
+          "to": "entry-revise",
+          "type": "fail",
+          "label": "尚未具备"
+        },
+        {
+          "from": "entry-revise",
+          "to": "requirements",
+          "type": "return",
+          "label": "返回要求与手续核对"
+        },
+        {
+          "from": "plan",
+          "to": "execute",
+          "type": "next",
+          "label": "按约定执行"
+        },
+        {
+          "from": "execute",
+          "to": "review",
+          "type": "next",
+          "label": "按检查点提交"
+        },
+        {
+          "from": "review",
+          "to": "stage-check",
+          "type": "next",
+          "label": "对照证据判断"
+        },
+        {
+          "from": "stage-check",
+          "to": "recognition",
+          "type": "pass",
+          "label": "满足后继续"
+        },
+        {
+          "from": "stage-check",
+          "to": "stage-revise",
+          "type": "fail",
+          "label": "需要整改"
+        },
+        {
+          "from": "stage-revise",
+          "to": "plan",
+          "type": "return",
+          "label": "返回计划与任务安排"
+        },
+        {
+          "from": "recognition",
+          "to": "recognition-check",
+          "type": "next",
+          "label": "核对正式结果"
+        },
+        {
+          "from": "recognition-check",
+          "to": "handover",
+          "type": "pass",
+          "label": "按结论衔接"
+        },
+        {
+          "from": "recognition-check",
+          "to": "recognition-revise",
+          "type": "fail",
+          "label": "待补充或处理"
+        },
+        {
+          "from": "recognition-revise",
+          "to": "recognition",
+          "type": "return",
+          "label": "返回认定办理"
+        }
+      ]
+    },
+    {
+      "id": "research-collaboration",
+      "title": "从初次联系到共同科研",
+      "summary": "六个行动连接研究兴趣、初次交流和科研或竞赛合作；两次共同判断，让任务和支持适合双方。",
+      "note": "这是合作交流路径，具体任务、时间与支持由双方协商；不预设名额、资助或录取。暂缓或结束也是正常结果，正式手续按实际适用情况办理。",
+      "track": "",
+      "guide": "research-collaboration",
+      "order": [
+        "interest",
+        "contact",
+        "discussion",
+        "ready",
+        "task",
+        "feedback",
+        "continue",
+        "collaborate"
+      ],
+      "nodes": [
+        {
+          "id": "interest",
+          "label": "找到想探索的问题",
+          "detail": "结合公开研究方向，写出兴趣与想学习的能力。",
+          "href": "research-collaboration.html#directions",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "contact",
+          "label": "发送简短合作意向",
+          "detail": "介绍背景、可分享作品、时间、参与方式与语言。",
+          "href": "research-collaboration.html#contact",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "discussion",
+          "label": "双向交流与任务讨论",
+          "detail": "讨论目标、基础、指导支持、资源和可投入时间。",
+          "href": "research-collaboration.html#fit",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "ready",
+          "label": "能约定合适的起步任务？",
+          "detail": "双方理解任务与反馈安排，相关条件能够落实。",
+          "href": "research-collaboration.html#fit",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "adjust",
+          "label": "调整方向、时间或准备",
+          "detail": "缩小任务或先补基础；也可结束本次交流，准备好后再联系。",
+          "href": "research-collaboration.html#fit",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "task",
+          "label": "完成约定的小任务",
+          "detail": "按学习目标留下可解释的产物、真实过程和问题。",
+          "href": "research-collaboration.html#first-task",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "feedback",
+          "label": "共同复盘与获得反馈",
+          "detail": "交流成果、困难、个人贡献与所需支持。",
+          "href": "research-collaboration.html#first-task",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "continue",
+          "label": "双方愿意且具备条件继续？",
+          "detail": "确认方向匹配、指导能力、任务条件和各自安排。",
+          "href": "research-collaboration.html#next",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "replan",
+          "label": "调整计划或友好结束",
+          "detail": "记录反馈和已有贡献；可调整后再讨论，也可总结后结束。",
+          "href": "research-collaboration.html#next",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "collaborate",
+          "label": "确认合作并进入持续培养",
+          "detail": "写清任务与指导计划；需要访学、学分或学位手续时衔接联培指南。",
+          "href": "research-collaboration.html#next",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "interest",
+          "to": "contact",
+          "type": "next",
+          "label": "继续"
+        },
+        {
+          "from": "contact",
+          "to": "discussion",
+          "type": "next",
+          "label": "收到联系后的沟通"
+        },
+        {
+          "from": "discussion",
+          "to": "ready",
+          "type": "next",
+          "label": "共同核对"
+        },
+        {
+          "from": "ready",
+          "to": "task",
+          "type": "pass",
+          "label": "双方约定后"
+        },
+        {
+          "from": "ready",
+          "to": "adjust",
+          "type": "fail",
+          "label": "暂不匹配"
+        },
+        {
+          "from": "adjust",
+          "to": "discussion",
+          "type": "return",
+          "label": "如继续，返回讨论"
+        },
+        {
+          "from": "task",
+          "to": "feedback",
+          "type": "next",
+          "label": "带着产物交流"
+        },
+        {
+          "from": "feedback",
+          "to": "continue",
+          "type": "next",
+          "label": "共同判断"
+        },
+        {
+          "from": "continue",
+          "to": "collaborate",
+          "type": "pass",
+          "label": "双方确认后"
+        },
+        {
+          "from": "continue",
+          "to": "replan",
+          "type": "fail",
+          "label": "需调整或结束"
+        },
+        {
+          "from": "replan",
+          "to": "discussion",
+          "type": "return",
+          "label": "如再尝试，重新讨论"
         }
       ]
     }

@@ -46,7 +46,7 @@ Next templates: [Research task card](research-task.md), [Progress report](weekly
 
 ## 5. International student program and language checklist
 
-International students should complete this supplement. Students in joint programs, studying across languages or with similar needs can also use the relevant items. Start with the [international student checklist](../../international.html#checklist), then confirm each item against the documents that apply to you. Students from different backgrounds may need different support; research progress still needs to be supported by actual work. This form sets no universal credit total, language level, publication count or graduation threshold.
+International students should complete this supplement. Students in joint programs, studying across languages or with similar needs can also use the relevant items. Start with the [international student checklist](https://csma-graduation-projects.github.io/en/international.html#checklist), then confirm each item against the documents that apply to you. Students from different backgrounds may need different support; research progress still needs to be supported by actual work. This form sets no universal credit total, language level, publication count or graduation threshold.
 
 Mark every row “Confirmed / To be verified / Not applicable.” Explain why an item does not apply. For an unverified item, name the person responsible and the intended verification date. Record document titles, valid versions, scope and official entry points. Do not substitute examples from another cohort, program category or university for your applicable requirements.
 

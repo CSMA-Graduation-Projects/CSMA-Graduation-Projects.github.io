@@ -4,7 +4,7 @@ from pathlib import Path
 from i18n import localize, page_language, SITE
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ['index','news','bachelor','undergraduate-research','master','doctor','milestones','projects','outcomes','resources','students','templates','archive','faq','about','competition','planner','management','integrity','policies','workflows','tools','essays','international','learning']
+PAGES = ['index','news','bachelor','undergraduate-research','master','doctor','joint-training','research-collaboration','milestones','projects','outcomes','resources','students','templates','archive','faq','about','competition','planner','management','integrity','policies','workflows','tools','essays','international','learning']
 
 def build_editorial(shell):
     for english in [False,True]:

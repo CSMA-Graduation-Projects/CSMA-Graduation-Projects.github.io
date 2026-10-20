@@ -1,6 +1,6 @@
 # 培养流程模板使用说明
 
-这里提供 25 份可以下载、复制和填写的 Markdown 模板，覆盖本科科研训练、毕业设计、竞赛，以及硕士与博士研究、专业实践、学位论文和资料归档。模板用于组织工作与证据；学校、学院当年正式文件及表单优先。博士资格考核、研究主线与多项贡献整合在适用模板中单列填写项。
+这里提供 28 份可以下载、复制和填写的 Markdown 模板，覆盖本科科研训练、毕业设计、竞赛，以及硕士与博士研究、专业实践、学位论文和资料归档。模板用于组织工作与证据；学校、学院当年正式文件及表单优先。博士资格考核、研究主线与多项贡献整合在适用模板中单列填写项。
 
 ## 如何开始
 
@@ -19,6 +19,7 @@
 | 正式任务与方案 | [本科毕设任务书底稿](bachelor-task.md)、[开题方案](proposal.md)、[计划变更](change-request.md) |
 | 研究与工程 | [实验及复现](experiment.md)、[软件工程报告](engineering-report.md)、[专业实践](professional-practice.md) |
 | 协作与竞赛 | [周报](weekly.md)、[会议记录](meeting.md)、[竞赛全过程](competition.md) |
+| 科研合作与跨校培养 | [科研与竞赛合作意向](collaboration-interest.md)、[跨校培养与指导约定](joint-training-plan.md)、[阶段与认定对照表](joint-training-recognition.md) |
 | 进度与论文 | [中期检查](midterm.md)、[论文写作](thesis.md)、[成果要求与台账](outcomes.md) |
 | 审查与答辩 | [学术规范、查非与查重](integrity.md)、[AI 使用](ai-use.md)、[送审及意见回复](review-response.md)、[答辩准备与修改](defense.md) |
 | 完成与交接 | [归档清单](archive.md)、[交接记录](handover.md) |
@@ -32,4 +33,4 @@
 - 模板中不写账号密钥、非必要个人信息或私有绝对路径。受限数据只记录获准使用的说明、版本标识与受控位置。
 - 匿名送审版、答辩版和最终归档版分开管理。归档应包含真实生成的文件清单、校验值、恢复入口和未完成项说明。
 
-模板版本：2026-10-18。索引数据见 [templates.json](../data/templates.json)。
+模板版本：2026-10-20。在线入口见[模板库](https://csma-graduation-projects.github.io/templates.html)，索引数据见 [templates.json](https://csma-graduation-projects.github.io/assets/data/templates.json)。包内模板之间的链接可离线使用；公共网页链接需要联网。

@@ -1,6 +1,6 @@
 # How to use the training templates
 
-These 25 downloadable Markdown templates can be copied and completed for undergraduate research training, graduation projects and competitions, and for master's and doctoral research, professional practice, theses and archiving. They organize work and evidence; current official documents and forms issued by your university or school take precedence. Applicable templates include dedicated fields for doctoral qualification, the research agenda and integration of contributions.
+These 28 downloadable Markdown templates can be copied and completed for undergraduate research training, graduation projects and competitions, and for master's and doctoral research, professional practice, theses and archiving. They organize work and evidence; current official documents and forms issued by your university or school take precedence. Applicable templates include dedicated fields for doctoral qualification, the research agenda and integration of contributions.
 
 ## Getting started
 
@@ -19,6 +19,7 @@ These 25 downloadable Markdown templates can be copied and completed for undergr
 | Formal tasks and proposals | [Undergraduate project task brief](bachelor-task.md), [Research proposal](proposal.md), [Plan changes](change-request.md) |
 | Research and engineering | [Experiments and reproduction](experiment.md), [Software engineering report](engineering-report.md), [Professional practice](professional-practice.md) |
 | Collaboration and competitions | [Progress report](weekly.md), [Meeting record](meeting.md), [Competition lifecycle](competition.md) |
+| Research collaboration and joint training | [Research and competition collaboration enquiry](collaboration-interest.md), [Cross-institution training and supervision draft](joint-training-plan.md), [Milestone and recognition register](joint-training-recognition.md) |
 | Progress and thesis | [Midterm review](midterm.md), [Thesis writing](thesis.md), [Output requirements and register](outcomes.md) |
 | Checks and defense | [Academic integrity, non-academic-error and similarity checks](integrity.md), [AI use](ai-use.md), [Examination and responses](review-response.md), [Defense preparation and revisions](defense.md) |
 | Completion and handover | [Archive checklist](archive.md), [Handover record](handover.md) |
@@ -32,4 +33,4 @@ These 25 downloadable Markdown templates can be copied and completed for undergr
 - Do not put account credentials, unnecessary personal information or private absolute paths in templates. For restricted data, record only authorized-use information, version identifiers and a controlled location.
 - Manage anonymous examination, defense and final archive versions separately. Archives should include an actually generated file inventory, checksums, a recovery entry point and a record of unfinished items.
 
-English portal: [/en/](https://csma-graduation-projects.github.io/en/). Template version: 2026-10-19. The English index is [templates.json](../data/templates.json).
+English portal: [/en/](https://csma-graduation-projects.github.io/en/). Template version: 2026-10-20. Online resources: [template library](https://csma-graduation-projects.github.io/en/templates.html) and [templates.json](https://csma-graduation-projects.github.io/en/assets/data/templates.json). Links between templates work offline within the extracted package; public webpage links require an internet connection.

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "templates": [
     {
       "id": "onboarding",
@@ -225,6 +225,33 @@
       "stage": "反馈后、阶段完成、任务迁移",
       "description": "把起点、实际证据、反馈与迁移任务连起来，明确下一项能力目标和复查日期。",
       "file": "assets/templates/learning-review.md"
+    },
+    {
+      "id": "joint-training-plan",
+      "title": "跨校培养与指导约定：工作底稿",
+      "category": "协作与归档",
+      "audience": "本科科研训练、竞赛、毕业设计、硕士及博士生（含国际学生）",
+      "stage": "联培启动、接收派出、共同指导及安排变更",
+      "description": "共同填写培养目标、双方职责、资源、反馈、成果授权和结束安排，逐项保留真实确认状态；不替代正式协议或审批。",
+      "file": "assets/templates/joint-training-plan.md"
+    },
+    {
+      "id": "joint-training-recognition",
+      "title": "跨校培养阶段与认定对照表",
+      "category": "协作与归档",
+      "audience": "本科科研训练、竞赛、毕业设计、硕士及博士生（含国际学生）",
+      "stage": "联培全过程、正式节点核对、返校与认定",
+      "description": "分别核对两校要求、出处、期限、组织与认定部门，区分研究完成、导师确认、学校批准和正式认定，跟踪差异与待办。",
+      "file": "assets/templates/joint-training-recognition.md"
+    },
+    {
+      "id": "collaboration-interest",
+      "title": "科研与竞赛合作意向",
+      "category": "入门与计划",
+      "audience": "本科生、硕士生、博士生（含外校及海外学生）",
+      "stage": "首次联系、兴趣交流、科研或竞赛合作准备",
+      "description": "用简短介绍说明兴趣、想学的能力、可分享工作、参与时间和支持需求；提供可复制的首次联系短文，适合科研新手。",
+      "file": "assets/templates/collaboration-interest.md"
     }
   ]
 }

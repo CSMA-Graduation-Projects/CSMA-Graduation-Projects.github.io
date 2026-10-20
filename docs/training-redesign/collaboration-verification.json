@@ -1,0 +1,307 @@
+{
+  "date": "2026-10-20",
+  "scope": "Local research and competition collaboration entry, with the preceding unpublished joint training changes",
+  "baseline_commit": "39138ad3b92534a336ae7f4984d30043f7b9b534",
+  "committed": false,
+  "pushed": false,
+  "counts": {
+    "pathways": 5,
+    "stages": 45,
+    "templates_per_language": 28,
+    "flows_per_language": 13,
+    "built_html": 62
+  },
+  "checks": {
+    "training": {
+      "chunk_id": "ce7e65",
+      "wall_time_seconds": 6.041e-06,
+      "exit_code": 0,
+      "original_token_count": 940,
+      "output": "PASS 数据版本与顶层结构\nPASS 五条培养路径齐全且没有重复\nPASS 45 个阶段及各路径数量\nPASS 硕士 13 个正式阶段完整且顺序清楚\nPASS 博士 11 个培养阶段完整且顺序清楚\nPASS 路径说明、适用对象、时间边界与真实页面 — 5 项\nPASS 各路径明确能力目标、入门诊断、双方责任和成长衔接 — 5 项\nPASS 阶段字段、行动数量与可验收结构 — 45 项\nPASS 阶段 ID 在各自路径内唯一 — 5 项\nPASS 28 份模板 ID 完整、唯一\nPASS 模板元数据与分类完整 — 28 项\nPASS 模板分类覆盖四类\nPASS 每份模板均指向安全的实际 Markdown 文件 — 28 项\nPASS 模板文件不存在重复占位\nPASS 模板正文可填写，包含具体字段及检查语义 — 28 项\nPASS 模板正文没有整篇复用的假模板\nPASS 所有阶段模板引用都可解析 — 45 项\nPASS 25 份模板均进入实际培养阶段\nPASS 两份联培模板直接服务跨校培养指南\nPASS 联培指南保留接收派出、分层指导与正式认定的可达章节\nPASS 五条路径均可进入联合培养指南\nPASS 首次合作入口连接真实公开联系、可填写意向与后续指导\nPASS 从首页、联培及五条路径均能发现科研与竞赛合作\nPASS 合作指南保留分层起点、首次联系、任务与后续选择\nPASS 完整成长说明在路径页面直接可读 — 5 项\nPASS 阶段锚点及静态正文真实存在 — 45 项\nPASS 阶段对应模板链接与自检入口准确 — 45 项\nPASS 阶段整改、验收与下一步可直接阅读 — 45 项\nPASS 路径页没有重复 HTML ID — 5 项\nPASS 每份模板有独立锚点、真实下载与静态全文预览 — 28 项\nPASS 全套模板与培养手册的下载入口真实\nPASS 首页可抵达五条路径、学习指南、模板与阶段清单\nPASS 自检页无脚本时仍可进入五条完整指南\nPASS 入门诊断要求实际材料而非自报熟练度 — 5 项\nPASS 学生主动求助、指导者支持和反馈复查有明确动作 — 5 项\nPASS 成长目标区分入门、综合工程、团队协作、研究与原创贡献\nPASS 跨路径迁移交代新要求而不自动替代正式资格 — 5 项\nPASS 场景：学生选题有问题证据、贡献边界和失败退路\nPASS 场景：综述有检索、筛选、比较与原始来源\nPASS 场景：本科毕设连接任务书、需求设计、验证和论文\nPASS 场景：查非先核实校本定义，与查重和 AI 分开\nPASS 场景：送审双版本、匿名核验、正式异议程序\nPASS 场景：答辩有资格、意见处理，区分学位授予\nPASS 场景：学硕专硕及专业实践有独立安排和证据\nPASS 场景：科研训练不以计划或截图代替实际完成\nPASS 场景：竞赛核实资格、预算、权属、回执及正式结果\nPASS 场景：博士建立独立研究能力与原创贡献证据\nPASS 场景：博士资格考核依据校本条件并有正式结果与整改\nPASS 场景：博士持续检查研究主线、贡献和学位条件\nPASS 场景：博士送审答辩与资料交接使用正式程序及真实证据\nPASS 场景：归档能定位原始数据、恢复、复查与交接\nPASS 场景：日常管理包含任务、汇报、请假与反馈\nPASS 场景：正式要求有校本核对而非全站统一阈值\nPASS 自主学习指南有诊断、计划、证据、反馈和迁移闭环\nPASS 成长复盘模板记录能力证据、行动与复核\nPASS 离线手册覆盖全部阶段及五条培养路径\nPASS 离线手册保留各层级完整成长说明\n\nTraining acceptance: 57/57 checks passed.\n边界：语义检查验证关键执行要素；不替代校方资格认定、人工内容审阅或浏览器交互验证。ZIP 内部清单另行核验。\n"
+    },
+    "workflow": {
+      "chunk_id": "762823",
+      "wall_time_seconds": 0.130188416,
+      "exit_code": 0,
+      "original_token_count": 785,
+      "output": "PASS 流程与工具数据具有日期和完整结构\nPASS 十三张图覆盖培养路径与共同科研工作\nPASS 七类工具场景覆盖实际研究任务\nPASS 流程目的、适用边界与节点内容可读 — 13 项\nPASS 图中节点唯一，连线无悬空引用 — 13 项\nPASS 从开始可以走到结束及所有分支节点 — 13 项\nPASS 每个判断有通过和未通过路线 — 13 项\nPASS 未通过会整改并返回当前或更早的核查点 — 13 项\nPASS 五条培养图逐一覆盖原有阶段且没有复制阶段 — 5 项\nPASS 45 个阶段图节点指向正确的详细说明 — 45 项\nPASS 所有节点都有可到达的说明或材料 — 13 项\nPASS 流程图中心有标题、分支说明与真实下载入口 — 13 项\nPASS 流程图整包在图中心有明确下载入口\nPASS 十二个图示页面默认直接显示流程，无需展开或下载 — 12 项\nPASS 每条培养页面实际包含本路径图和图中心入口 — 5 项\nPASS 首页和资源页可抵达流程与工具中心 — 2 项\nPASS 共用工作流程进入对应指导页面 — 8 项\nPASS 阶段工具映射恰好覆盖现有45阶段\nPASS 阶段映射都使用实际存在的工具场景 — 45 项\nPASS 每个阶段正文能直接进入它的工具场景 — 45 项\nPASS 工具场景有操作、产物、核查和替代选择 — 7 项\nPASS 工具和官方资料引用没有孤立占位项 — 7 项\nPASS 工具场景关联的模板实际存在且网页可达 — 7 项\nPASS 工具、场景、来源ID各自唯一\nPASS 工具区分推荐、可选和需另行准备的能力 — 13 项\nPASS 来源提供明确标题与HTTPS页面 — 13 项\nPASS 工具页面包含全部场景操作与可检查产物 — 7 项\nPASS 场景：文献训练有原始来源、检索和逐项核对\nPASS 场景：实验有环境、原始结果和可复查记录\nPASS 场景：工程实现以需求、实际测试和缺陷为依据\nPASS 场景：AI研究记录模型与提示，核实输出和数据权限\nPASS 场景：写作和汇报要求版本、实测演示与证据\nPASS 场景：管理与归档有任务记录、权限和恢复核验\nPASS 公开内容没有本机路径、账号目录或安装盘点\nPASS 流程保留校本顺序、正式审核和授位边界\nPASS 博士流程保留资格考核、原创贡献和正式审核边界\nPASS 博士资格环节有实质判断和可返回的整改路线\nPASS 工具建议说明AI核查和受限材料使用边界\nPASS 新增页面无重复锚点且站内链接均能解析 — 4 项\nPASS 新增页面无需远程脚本或远程嵌入渲染图 — 4 项\nPASS 离线手册保留全部流程的分支与核查信息 — 13 项\nPASS 离线手册包含全部工具场景与检查要求 — 7 项\nPASS 十三份SVG可解析且内容、连线与说明真实存在\nPASS 十三份draw.io包含可编辑节点及完整连接\nPASS 流程图ZIP真实完整，文件与27项哈希一致\nPASS 模板ZIP内手册与当前完整手册字节一致\n\nWorkflow and tool acceptance: 46/46 checks passed.\n边界：结构和任务证据检查不替代浏览器视觉核验、draw.io应用实际导入或校方正式审核。\n"
+    },
+    "privacy": {
+      "chunk_id": "6a3259",
+      "wall_time_seconds": 6.459e-06,
+      "exit_code": 0,
+      "original_token_count": 15,
+      "output": "Privacy scan (build): no configured value-pattern findings.\n"
+    },
+    "package": {
+      "chunk_id": "6721ae",
+      "wall_time_seconds": 7e-06,
+      "exit_code": 0,
+      "original_token_count": 22,
+      "output": "ZIP verified: 28 templates, README, complete handbook and SHA256SUMS; 30 hashes match.\n"
+    },
+    "site": {
+      "chunk_id": "3181ca",
+      "wall_time_seconds": 0.656606,
+      "exit_code": 0,
+      "original_token_count": 82,
+      "output": "Validated 54 HTML pages.\nAll expected pages, local files, fragments, legacy IDs, tables, and baseline metadata passed.\n_site/work is absent\nbuilt pages pass local link/fragment checks and exclude identity-linked labels and validation tooling\n4 published essays pass collection, article metadata, navigation, and sitemap checks\n"
+    },
+    "bilingual": {
+      "chunk_id": "68f910",
+      "wall_time_seconds": 0.49581975,
+      "exit_code": 0,
+      "original_token_count": 1384,
+      "output": "PASS pathways: translated content preserves every key, list length and stable reference\nPASS pathways: generated English data matches authored translation\nPASS templates: translated content preserves every key, list length and stable reference\nPASS templates: generated English data matches authored translation\nPASS workflows: translated content preserves every key, list length and stable reference\nPASS workflows: generated English data matches authored translation\nPASS research-tools: translated content preserves every key, list length and stable reference\nPASS research-tools: generated English data matches authored translation\nPASS research: every translated action, deliverable, review and correction appears online\nPASS research: complete stage guidance appears in offline handbook\nPASS research: complete growth guidance appears online and offline\nPASS bachelor: every translated action, deliverable, review and correction appears online\nPASS bachelor: complete stage guidance appears in offline handbook\nPASS bachelor: complete growth guidance appears online and offline\nPASS competition: every translated action, deliverable, review and correction appears online\nPASS competition: complete stage guidance appears in offline handbook\nPASS competition: complete growth guidance appears online and offline\nPASS master: every translated action, deliverable, review and correction appears online\nPASS master: complete stage guidance appears in offline handbook\nPASS master: complete growth guidance appears online and offline\nPASS doctor: every translated action, deliverable, review and correction appears online\nPASS doctor: complete stage guidance appears in offline handbook\nPASS doctor: complete growth guidance appears online and offline\nPASS onboarding: usable English template with matching section coverage\nPASS research-task: usable English template with matching section coverage\nPASS topic: usable English template with matching section coverage\nPASS bachelor-task: usable English template with matching section coverage\nPASS literature: usable English template with matching section coverage\nPASS reading: usable English template with matching section coverage\nPASS proposal: usable English template with matching section coverage\nPASS experiment: usable English template with matching section coverage\nPASS engineering-report: usable English template with matching section coverage\nPASS professional-practice: usable English template with matching section coverage\nPASS weekly: usable English template with matching section coverage\nPASS meeting: usable English template with matching section coverage\nPASS competition: usable English template with matching section coverage\nPASS change-request: usable English template with matching section coverage\nPASS annual-check: usable English template with matching section coverage\nPASS midterm: usable English template with matching section coverage\nPASS thesis: usable English template with matching section coverage\nPASS outcomes: usable English template with matching section coverage\nPASS integrity: usable English template with matching section coverage\nPASS ai-use: usable English template with matching section coverage\nPASS review-response: usable English template with matching section coverage\nPASS defense: usable English template with matching section coverage\nPASS archive: usable English template with matching section coverage\nPASS handover: usable English template with matching section coverage\nPASS learning-review: usable English template with matching section coverage\nPASS joint-training-plan: usable English template with matching section coverage\nPASS joint-training-recognition: usable English template with matching section coverage\nPASS collaboration-interest: usable English template with matching section coverage\nPASS csma-training-templates.zip: exact membership and all SHA-256 checksums\nPASS csma-workflow-diagrams.zip: exact membership and all SHA-256 checksums\nPASS diagrams: all SVG/draw.io graphs preserve every node and correct language links\nPASS en/csma-training-templates.zip: exact membership and all SHA-256 checksums\nPASS en/csma-workflow-diagrams.zip: exact membership and all SHA-256 checksums\nPASS en/diagrams: all SVG/draw.io graphs preserve every node and correct language links\nPASS English built pages have no untranslated Chinese prose (except the language switch and explained cha-fei term)\nPASS English planner uses a separate storage namespace and revalidates its current data\nPASS international guide: substantive passages appear online and in the offline handbook\nPASS en/international guide: substantive passages appear online and in the offline handbook\nPASS International guides preserve matching section anchors for language switching\nPASS learning guide: full substantive guidance is available online and offline\nPASS en/learning guide: full substantive guidance is available online and offline\nPASS Learning guides preserve section anchors across language switching\nPASS joint training: substantive guidance is complete online and offline\nPASS en/joint training: substantive guidance is complete online and offline\nPASS Joint training preserves all section anchors for language switching\nPASS research collaboration: full invitation and practical guidance are available online and offline\nPASS en/research collaboration: full invitation and practical guidance are available online and offline\nPASS Research collaboration preserves all section anchors for language switching\n71/71 bilingual checks passed.\n"
+    },
+    "syntax_and_diff": {
+      "chunk_id": "4f0585",
+      "wall_time_seconds": 0.00062575,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  "repeat_generation": {
+    "checked_files": 119,
+    "changed": []
+  },
+  "sources": [
+    {
+      "url": "https://h-jp.github.io/",
+      "use": "Published research areas and public contact entry"
+    },
+    {
+      "url": "https://urop.mit.edu/students/",
+      "use": "Reference for goals, discussion and shared research planning"
+    },
+    {
+      "url": "https://dslab.epfl.ch/positions/internship",
+      "use": "Reference for communicating interests, prior projects and availability; institutional criteria not transferred"
+    }
+  ],
+  "independent_content_review": "No blocking findings; bilingual anchors, levels, task boundaries and routes reviewed.",
+  "limitations": [
+    "New files and ZIP packages checked for existence and hashes; no fresh browser download or native draw.io import claimed.",
+    "No new formal admission, funding, partnership or competition eligibility has been established.",
+    "No commit, push or production verification for this increment."
+  ],
+  "browser": {
+    "responsive": [
+      {
+        "active": "联培",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/research-collaboration.html",
+        "tables": 2,
+        "width": 320
+      },
+      {
+        "active": "联培",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/research-collaboration.html",
+        "tables": 2,
+        "width": 390
+      },
+      {
+        "active": "联培",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/research-collaboration.html",
+        "tables": 2,
+        "width": 768
+      },
+      {
+        "active": "联培",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/research-collaboration.html",
+        "tables": 2,
+        "width": 1120
+      },
+      {
+        "active": "联培",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/research-collaboration.html",
+        "tables": 2,
+        "width": 1121
+      },
+      {
+        "active": "联培",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/research-collaboration.html",
+        "tables": 2,
+        "width": 1440
+      },
+      {
+        "active": "Joint Training",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/en/research-collaboration.html",
+        "tables": 2,
+        "width": 320
+      },
+      {
+        "active": "Joint Training",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/en/research-collaboration.html",
+        "tables": 2,
+        "width": 390
+      },
+      {
+        "active": "Joint Training",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/en/research-collaboration.html",
+        "tables": 2,
+        "width": 768
+      },
+      {
+        "active": "Joint Training",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/en/research-collaboration.html",
+        "tables": 2,
+        "width": 1120
+      },
+      {
+        "active": "Joint Training",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/en/research-collaboration.html",
+        "tables": 2,
+        "width": 1121
+      },
+      {
+        "active": "Joint Training",
+        "flowOpen": true,
+        "hiddenNodes": 0,
+        "navOverlap": false,
+        "nodes": 10,
+        "overflow": false,
+        "page": "/en/research-collaboration.html",
+        "tables": 2,
+        "width": 1440
+      }
+    ],
+    "entry_pages": [
+      {
+        "invitationLink": true,
+        "nav": "首页",
+        "overflow": false,
+        "page": "/index.html",
+        "width": 390
+      },
+      {
+        "invitationLink": true,
+        "nav": "首页",
+        "overflow": false,
+        "page": "/index.html",
+        "width": 1440
+      },
+      {
+        "invitationLink": true,
+        "nav": "联培",
+        "overflow": false,
+        "page": "/joint-training.html",
+        "width": 390
+      },
+      {
+        "invitationLink": true,
+        "nav": "联培",
+        "overflow": false,
+        "page": "/joint-training.html",
+        "width": 1440
+      },
+      {
+        "invitationLink": true,
+        "nav": "Home",
+        "overflow": false,
+        "page": "/en/index.html",
+        "width": 390
+      },
+      {
+        "invitationLink": true,
+        "nav": "Home",
+        "overflow": false,
+        "page": "/en/index.html",
+        "width": 1440
+      },
+      {
+        "invitationLink": true,
+        "nav": "Joint Training",
+        "overflow": false,
+        "page": "/en/joint-training.html",
+        "width": 390
+      },
+      {
+        "invitationLink": true,
+        "nav": "Joint Training",
+        "overflow": false,
+        "page": "/en/joint-training.html",
+        "width": 1440
+      }
+    ],
+    "language_hash": "#contact",
+    "template_preview": {
+      "zh": 1898,
+      "en": 5992
+    },
+    "viewport_reset": true
+  },
+  "backup": {
+    "source_unchanged": true,
+    "inventory_matches": true,
+    "git_fsck_passed": true,
+    "files": 1122,
+    "entries": 1419,
+    "head": "39138ad3b92534a336ae7f4984d30043f7b9b534",
+    "directory": "CSMA-Graduation-Projects.github.io-backup-20261020-121104"
+  },
+  "screenshots": [
+    "screenshots/research-collaboration-desktop.jpg",
+    "screenshots/research-collaboration-en-desktop.jpg",
+    "screenshots/research-collaboration-mobile.jpg"
+  ],
+  "jekyll": {
+    "exit_code": 0,
+    "built_html": 62
+  }
+}

@@ -30,6 +30,8 @@ const expectedPages = [
   "essays.html",
   "international.html",
   "learning.html",
+  "joint-training.html",
+  "research-collaboration.html",
 ];
 const legacyIds = {
   "index.html": [
@@ -53,10 +55,10 @@ const legacyIds = {
 
 const navigation = [
   ["index.html", "首页"], ["news.html", "新闻"], ["bachelor.html", "学士"],
-  ["master.html", "硕士"], ["doctor.html", "博士"], ["resources.html", "资源"],
-  ["outcomes.html", "成果"], ["students.html", "榜样"], ["essays.html", "导引"], ["about.html", "关于"],
+  ["master.html", "硕士"], ["doctor.html", "博士"], ["joint-training.html", "联培"], ["resources.html", "资源"],
+  ["outcomes.html", "成果"], ["students.html", "榜样"], ["essays.html", "导引"], ["about.html", "我们"],
 ];
-const englishNavigationLabels = ["Home", "News", "Undergraduate", "Master's", "Doctoral", "Resources", "Outcomes", "Stories", "Mentoring", "About"];
+const englishNavigationLabels = ["Home", "News", "Undergraduate", "Master's", "Doctoral", "Joint Training", "Resources", "Outcomes", "Stories", "Mentoring", "About"];
 const allExpectedPages = [...expectedPages, ...expectedPages.map(page => `en/${page}`)];
 
 const failures = [];
@@ -80,6 +82,7 @@ function checkNavigation(page, source) {
   const nav = source.match(/<nav class="main-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || "";
   const links = [...nav.matchAll(/<a\b([^>]*)>([^<]+)<\/a>/g)];
   const parent = {
+    "research-collaboration.html": "joint-training.html",
     "undergraduate-research.html": "bachelor.html", "templates.html": "resources.html",
     "archive.html": "resources.html", "milestones.html": "resources.html",
     "projects.html": "outcomes.html", "faq.html": "about.html",

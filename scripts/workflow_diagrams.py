@@ -101,7 +101,7 @@ def flow_markdown(flow):
             if e['from'] == nid and e['type'] == 'fail':
                 rem = nodes[e['to']]
                 back = next(b for b in flow['edges'] if b['from'] == rem['id'] and b['type'] == 'return')
-                lines.append('   - 未满足 → ' + rem['detail'] + ' → ' + back['label'] + '（' + nodes[back['to']]['label'] + '）。')
+                lines.append('   - ' + e['label'] + ' → ' + rem['detail'] + ' → ' + back['label'] + '（' + nodes[back['to']]['label'] + '）。')
     lines += ['', '**使用边界：**' + flow['note'], '', '[SVG 下载](' + SITE + 'assets/diagrams/' + flow['id'] + '.svg) · [draw.io 可编辑源文件](' + SITE + 'assets/diagrams/' + flow['id'] + '.drawio)', '']
     return '\n'.join(lines)
 

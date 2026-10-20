@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "flows": [
     {
       "id": "research-path",
@@ -2501,6 +2501,392 @@
           "to": "retain",
           "label": "Next step",
           "type": "next"
+        }
+      ]
+    },
+    {
+      "id": "joint-training",
+      "title": "Joint training across institutions",
+      "summary": "Seven working steps connect hosting or sending arrangements, shared supervision, formal recognition and handover. Three checks show when to revise or seek confirmation.",
+      "note": "This is working guidance, not an approved institutional programme. Supervisory agreement, institutional approval, completed research and formal recognition are distinct. Apply the rules and authorised decisions relevant to each student; shared supervision does not itself confer a joint or double degree.",
+      "track": "",
+      "guide": "joint-training",
+      "order": [
+        "scope",
+        "requirements",
+        "entry-check",
+        "plan",
+        "execute",
+        "review",
+        "stage-check",
+        "recognition",
+        "recognition-check",
+        "handover"
+      ],
+      "nodes": [
+        {
+          "id": "scope",
+          "label": "Identify the arrangement and roles",
+          "detail": "Record hosting or sending roles, enrolment, awarding institution and scope.",
+          "href": "joint-training.html#types",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "requirements",
+          "label": "Check requirements and procedures",
+          "detail": "Confirm hosting, supervision eligibility, recognition and responsible offices.",
+          "href": "joint-training.html#stages",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "entry-check",
+          "label": "Ready to start?",
+          "detail": "Required approvals, resource access and hosting arrangements are documented.",
+          "href": "joint-training.html#stages",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "entry-revise",
+          "label": "Resolve missing conditions",
+          "detail": "Obtain confirmation from the responsible office before starting dependent work.",
+          "href": "joint-training.html#stages",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "plan",
+          "label": "Agree on the individual plan",
+          "detail": "Set learning goals, tasks, responsibilities, deadlines and review evidence.",
+          "href": "joint-training.html#roles",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "execute",
+          "label": "Work and obtain shared feedback",
+          "detail": "Use shared task records and versions; track issues and actions on feedback.",
+          "href": "joint-training.html#coordination",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "review",
+          "label": "Review progress and prepare materials",
+          "detail": "Self-check, obtain supervisory feedback and prepare required submissions.",
+          "href": "joint-training.html#stages",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "stage-check",
+          "label": "Do outputs meet the agreed checks?",
+          "detail": "Evidence supports the conclusion; remaining comments and formal requirements are identified.",
+          "href": "joint-training.html#stages",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "stage-revise",
+          "label": "Revise work or the plan",
+          "detail": "Record gaps, owners and review dates; complete required procedures for formal changes.",
+          "href": "joint-training.html#coordination",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "recognition",
+          "label": "Complete applicable formal recognition",
+          "detail": "Submit to the authorised offices and keep receipts, decisions and next steps.",
+          "href": "joint-training.html#stages",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "recognition-check",
+          "label": "Is recognition status resolved?",
+          "detail": "Keep formal decisions or a documented basis for non-applicability; do not record an unsuccessful result as a pass.",
+          "href": "joint-training.html#stages",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "recognition-revise",
+          "label": "Supplement, request review or replan",
+          "detail": "Respond to missing items or use formal review channels; agree on interim and subsequent work.",
+          "href": "joint-training.html#coordination",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "handover",
+          "label": "Continue or complete the handover",
+          "detail": "Follow the decisions into the next stage, archive records and confirm retention and access.",
+          "href": "joint-training.html#closure",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "scope",
+          "to": "requirements",
+          "type": "next",
+          "label": "Continue after clarification"
+        },
+        {
+          "from": "requirements",
+          "to": "entry-check",
+          "type": "next",
+          "label": "Check each condition"
+        },
+        {
+          "from": "entry-check",
+          "to": "plan",
+          "type": "pass",
+          "label": "Continue when met"
+        },
+        {
+          "from": "entry-check",
+          "to": "entry-revise",
+          "type": "fail",
+          "label": "Not yet ready"
+        },
+        {
+          "from": "entry-revise",
+          "to": "requirements",
+          "type": "return",
+          "label": "Return to requirements and procedures"
+        },
+        {
+          "from": "plan",
+          "to": "execute",
+          "type": "next",
+          "label": "Follow the agreed plan"
+        },
+        {
+          "from": "execute",
+          "to": "review",
+          "type": "next",
+          "label": "Submit at agreed checkpoints"
+        },
+        {
+          "from": "review",
+          "to": "stage-check",
+          "type": "next",
+          "label": "Assess the evidence"
+        },
+        {
+          "from": "stage-check",
+          "to": "recognition",
+          "type": "pass",
+          "label": "Continue when met"
+        },
+        {
+          "from": "stage-check",
+          "to": "stage-revise",
+          "type": "fail",
+          "label": "Revision needed"
+        },
+        {
+          "from": "stage-revise",
+          "to": "plan",
+          "type": "return",
+          "label": "Return to the plan and tasks"
+        },
+        {
+          "from": "recognition",
+          "to": "recognition-check",
+          "type": "next",
+          "label": "Check formal outcomes"
+        },
+        {
+          "from": "recognition-check",
+          "to": "handover",
+          "type": "pass",
+          "label": "Proceed according to the decision"
+        },
+        {
+          "from": "recognition-check",
+          "to": "recognition-revise",
+          "type": "fail",
+          "label": "Further action needed"
+        },
+        {
+          "from": "recognition-revise",
+          "to": "recognition",
+          "type": "return",
+          "label": "Return to formal recognition"
+        }
+      ]
+    },
+    {
+      "id": "research-collaboration",
+      "title": "From first contact to research collaboration",
+      "summary": "Six practical steps connect your interests with an agreed research or competition project. Two shared decisions keep the work suitable for both sides.",
+      "note": "This is an invitation to discuss collaboration, not a promise of a place, funding or admission. Timing and arrangements are agreed individually; pausing or concluding is a valid outcome. Formal procedures apply only where relevant.",
+      "track": "",
+      "guide": "research-collaboration",
+      "order": [
+        "interest",
+        "contact",
+        "discussion",
+        "ready",
+        "task",
+        "feedback",
+        "continue",
+        "collaborate"
+      ],
+      "nodes": [
+        {
+          "id": "interest",
+          "label": "Choose a question to explore",
+          "detail": "Use the published research directions to describe your interests and learning goals.",
+          "href": "research-collaboration.html#directions",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "contact",
+          "label": "Send a short introduction",
+          "detail": "Describe your background, shareable work, availability, participation mode and language.",
+          "href": "research-collaboration.html#contact",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "discussion",
+          "label": "Discuss interests and expectations",
+          "detail": "Discuss goals, preparation, supervision, resources and available time.",
+          "href": "research-collaboration.html#fit",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "ready",
+          "label": "Can we agree on a suitable first task?",
+          "detail": "Both sides understand the task and feedback arrangements, and its conditions can be met.",
+          "href": "research-collaboration.html#fit",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "adjust",
+          "label": "Adjust the direction, timing or preparation",
+          "detail": "Narrow the task or build foundations; either side may close the discussion and reconnect later.",
+          "href": "research-collaboration.html#fit",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "task",
+          "label": "Complete the agreed small task",
+          "detail": "Produce an explainable result, an honest work record and questions against the learning goal.",
+          "href": "research-collaboration.html#first-task",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "feedback",
+          "label": "Review the work together",
+          "detail": "Discuss the result, difficulties, individual contribution and support needed.",
+          "href": "research-collaboration.html#first-task",
+          "kind": "process",
+          "lane": "main"
+        },
+        {
+          "id": "continue",
+          "label": "Do both sides want and have the capacity to continue?",
+          "detail": "Confirm research fit, supervision capacity, task conditions and individual commitments.",
+          "href": "research-collaboration.html#next",
+          "kind": "decision",
+          "lane": "main"
+        },
+        {
+          "id": "replan",
+          "label": "Revise the plan or conclude the collaboration",
+          "detail": "Record feedback and contributions; discuss a revised plan or finish with a useful summary.",
+          "href": "research-collaboration.html#next",
+          "kind": "remedy",
+          "lane": "return"
+        },
+        {
+          "id": "collaborate",
+          "label": "Confirm collaboration and continue learning",
+          "detail": "Agree on tasks and supervision; use the joint training guide when visiting, credit or degree procedures apply.",
+          "href": "research-collaboration.html#next",
+          "kind": "end",
+          "lane": "main"
+        }
+      ],
+      "edges": [
+        {
+          "from": "interest",
+          "to": "contact",
+          "type": "next",
+          "label": "Continue"
+        },
+        {
+          "from": "contact",
+          "to": "discussion",
+          "type": "next",
+          "label": "Discuss after contact is established"
+        },
+        {
+          "from": "discussion",
+          "to": "ready",
+          "type": "next",
+          "label": "Check together"
+        },
+        {
+          "from": "ready",
+          "to": "task",
+          "type": "pass",
+          "label": "When both sides agree"
+        },
+        {
+          "from": "ready",
+          "to": "adjust",
+          "type": "fail",
+          "label": "Not a fit yet"
+        },
+        {
+          "from": "adjust",
+          "to": "discussion",
+          "type": "return",
+          "label": "If continuing, return to discussion"
+        },
+        {
+          "from": "task",
+          "to": "feedback",
+          "type": "next",
+          "label": "Discuss the work"
+        },
+        {
+          "from": "feedback",
+          "to": "continue",
+          "type": "next",
+          "label": "Decide together"
+        },
+        {
+          "from": "continue",
+          "to": "collaborate",
+          "type": "pass",
+          "label": "When both sides confirm"
+        },
+        {
+          "from": "continue",
+          "to": "replan",
+          "type": "fail",
+          "label": "Revise or conclude"
+        },
+        {
+          "from": "replan",
+          "to": "discussion",
+          "type": "return",
+          "label": "If trying again, discuss anew"
         }
       ]
     }

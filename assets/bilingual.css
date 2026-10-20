@@ -16,7 +16,7 @@ html[lang="en"] .guide-meta{line-height:1.8}
  .main-nav{order:3;width:100%;margin-left:0;flex-direction:column;align-items:stretch;padding-bottom:14px}
  .main-nav a{width:100%}
  .js .nav-toggle{display:inline-flex;align-items:center}
- .js .main-nav{display:none}.js .main-nav.open{display:flex}
+ .js .main-nav{display:none}.js .main-nav.open{display:flex;max-height:calc(100vh - 90px);max-height:calc(100dvh - 90px);overflow-y:auto;overscroll-behavior:contain}
 }
 @media(max-width:480px){.brand-text{display:none!important}.language-switch{font-size:.76rem}}
 @media print{.language-switch{display:none}}

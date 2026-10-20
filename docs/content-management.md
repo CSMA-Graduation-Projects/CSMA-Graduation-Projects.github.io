@@ -1,5 +1,7 @@
 # 内容管理指南
 
+当前设计包含中英各 5 条培养路径、45 个阶段、28 份模板和 13 张流程图，已生成 62 个 HTML 页面。“联培 / Joint Training”下新增面向外校、海外及本校本硕博的科研与竞赛合作子页；“我们 / About”介绍栏目保留 `about.html` 地址。完整维护入口和验证命令见[仓库 README](../README.md)，本轮需求与实现见[科研与竞赛合作更新](training-redesign/11-科研与竞赛合作.md)。
+
 ## 1. 总原则
 
 - 只发布真实、可核验、适合公开且获得授权的内容。
@@ -27,24 +29,27 @@
 
 申请材料、兴趣/能力评估、小任务反馈、周报和导师意见不得写进公共条目。论文或获奖只能按真实状态描述，不能承诺。
 
-## 4. 更新硕士培养阶段
+## 4. 更新培养阶段
 
-- 以 `master.html#stage-details` 为权威阶段结构。
-- 新增/修改阶段时保持 Goal / Tasks / Evidence / Review / Exit Criteria。
-- 年级与月份视图在 `master.html#year-view`；正式日期必须补充来源、适用届次和核验状态。
+- 修改 `assets/data/pathways.json` 和 `assets/data/en/pathways.json`，再运行 `python3 scripts/build-training.py`；不要只修改生成后的页面。
+- 五条路径分别为本科科研、毕业设计、竞赛、硕士与博士，当前共 45 个阶段。保持稳定阶段 ID、进入条件、目标、行动、交付、检查、未达要求处理及下一步。
+- 联培是跨路径的工作安排，源文件为两种语言的 `scripts/training-pages/joint-training.html`；不把它增加为第六条学位或研究路径。
+- 科研与竞赛合作子页源为 `scripts/training-pages/research-collaboration.html` 及 `scripts/training-pages/en/research-collaboration.html`，归入联培栏目；介绍参与方式与起步任务，不另建培养路径。
+- 正式日期必须补充来源、适用届次和核验状态，不把参考时间表当作学校统一要求。
 - 课程名、学分、年度考核、预答辩等制度信息只有在正式材料支持时才能写入。
 - 私人培养计划、周报、考核和导师反馈只进入受控系统。
 
 ## 5. 维护里程碑
 
 - 共性模型在 `milestones.html`。
-- 三轨完整流程分别在 `bachelor.html`、`undergraduate-research.html`、`master.html`。
+- 五条完整路径分别在 `undergraduate-research.html`、`bachelor.html`、`competition.html`、`master.html`、`doctor.html`。
+- 跨校培养在 `joint-training.html` 对齐两校节点，学校批准、研究完成、导师确认与正式认定分别记录；不适用的正式环节需注明依据。
 - 首页只保留摘要和深链，不复制完整日期或阶段说明。
 - 里程碑变化需同步检查旧锚点和跨页链接。
 
 ## 6. 上传模板或资源
 
-`resources.html` 为资源总入口，可收录各类指南、课程、工具、数据、文献与材料。`templates.html` 保留现有 7 个材料锚点。新增真实文件时：
+`resources.html` 为资源总入口，可收录各类指南、课程、工具、数据、文献与材料。本轮 `templates.html` 扩展到 28 份模板，保留早期材料锚点。模板源为 `assets/templates/*.md` 和 `assets/templates/en/*.md`，索引为 `assets/data/templates.json` 和 `assets/data/en/templates.json`。新增真实文件时：
 
 1. 使用清楚、不含个人身份的文件名。
 2. 确认文件没有批注、修订记录、作者元数据、个人信息或秘密。
@@ -52,6 +57,8 @@
 4. 使用相对链接并验证下载。
 5. 对 PDF/DOCX 做内容与元数据审查。
 6. 不上传已填写的学生模板、签字材料、成绩或评审意见。
+
+修改后重新生成双语网页、离线手册和下载包。当前每种语言的模板包应包含 28 份模板、README、完整手册与 SHA-256 清单，共 31 个条目，清单校验其余 30 个文件；流程图包包含 13 份 SVG、13 份 draw.io、README 与 SHA-256 清单，共 28 个条目，清单校验其余 27 个文件。运行模板包、流程工具和双语验证，核对真实成员与哈希。
 
 ## 7. 展示公开成果
 
@@ -67,7 +74,7 @@
 
 ## 8. 发布新闻与安排
 
-新闻由 `_posts/YYYY-MM-DD-slug.md` 生成，`news.html` 按日期展示全部条目，首页 `#news`（兼容 `#updates`）展示最新三条。填写标题、日期、类型、适用对象、摘要与正文；有截止时间时填写 `deadline`。具体模板、链接写法和推送步骤见 [发布指南](news-publishing.md)。安排与要求说明真实时间、适用范围和完成方式，不把计划写成已发生的事实。
+中文新闻由 `_posts/YYYY-MM-DD-slug.md` 生成，英文配对稿放在 `_news_en/`，保持相同 slug 和正文锚点。各语言的 `news.html` 按日期展示条目，首页 `#news`（兼容 `#updates`）展示最新三条。填写标题、日期、类型、适用对象、摘要与正文；有截止时间时填写 `deadline`。具体模板、链接写法和推送步骤见 [发布指南](news-publishing.md)。安排与要求说明真实时间、适用范围和完成方式，不把计划写成已发生的事实。
 
 ## 9. 维护优秀学生榜样
 
@@ -98,3 +105,29 @@
 新导引从[中文模板](content-templates/essay.md)与[英文模板](content-templates/essay-en.md)开始；核实作者、来源、公开权限与两语一致性后，再调整明确的 `published` 状态。发布须遵循用户确认后的提交推送流程。英文成果或学生记录采用完整 `en` 字段，不将中文占位内容自动展示到英文页。
 
 国际学生指南使用 `scripts/training-pages/international.html` 及 `scripts/training-pages/en/international.html`，同时生成网页与离线手册。保持本、硕、博锚点一致，补充正式要求时登记发布单位、适用范围与核验日期，不把通用工作建议写成学校规定。入组模板的国际学生附表只保留所需核对字段，个人证件及敏感资料由学校指定系统管理。
+
+## 联培内容与模板维护
+
+联培正文源为 `scripts/training-pages/joint-training.html` 与 `scripts/training-pages/en/joint-training.html`，保持十个章节锚点、七个工作阶段及对应链接一致。流程源为中英 `workflows.json` 中的 `joint-training` 项；正文中的流程占位由生成器替换，网页直接展示，SVG 与 draw.io 作为可选下载。双语全文同步进入离线手册。
+
+专用模板为 `joint-training-plan.md` 与 `joint-training-recognition.md`，中英分别维护在模板源目录。前者记录合作类型、角色、个人能力目标、任务、资源及沟通；后者分别列出双方要求、正式办理安排、四类状态、差异处理和结果。周报、会议、成果、变更、归档和交接继续复用现有模板。
+
+科研与竞赛合作子页源为 `scripts/training-pages/research-collaboration.html` 与 `scripts/training-pages/en/research-collaboration.html`。六步、两处判断的流程源为中英 `workflows.json` 中的 `research-collaboration` 项；与联培主页保持相互入口、当前栏目和双语锚点一致。子页及流程同步进入网页和离线手册。
+
+首联系模板为 `assets/templates/collaboration-interest.md` 及 `assets/templates/en/collaboration-interest.md`，元数据进入中英 `templates.json`，分类沿用“入门与计划 / Getting started and planning”。保持简短、可填写，允许用课程、阅读或小练习说明起点；意向材料通过导师公开主页所列渠道发送，不在站点收集或发布。
+
+维护时逐项检查：
+
+- 区分接收、派出和远程指导，明确参照单位；学籍、接收与授位单位分别登记。
+- 区分国内跨校与跨境事项；国际学生使用同一主流程，再核对适用的语言、注册、居留和支持安排。
+- 每个工作阶段保留具体行动、交付物、完成条件及未完成后的处理；不适用的正式考核或认定记录依据。
+- 导师同意、学校批准、研究完成与正式认定不相互替代，不预设双方已建立合作或共同指导自动产生联合学位。
+- 发布学校要求前核对现行原文与适用人群；建议的沟通频率不写成统一制度，不设置未经核实的学分、时长、论文数量或检测门槛。
+- 公共门户只展示指南及空白模板，填写后的个人计划、协议、评语、认定材料和未公开数据保存在获准的受控空间。
+- 合作参与说明面向不同阶段学生，不把初次交流写成正式录取申请，不要求已拥有两位导师或已发表成果；不添加统一 GPA、论文数量或学校排名门槛。
+- 具体科研任务和竞赛安排需有可执行的起点与成长目标；赛事资格、跨校组队和期限按当届规则核对，不预先承诺参赛、获奖、经费或正式接收。
+- 联系入口链接导师公开主页，不复制可能过期的邮箱；初次联系仅保留必要的兴趣、基础、时间和支持信息，不索取证件、生日、国籍或成绩单。
+
+发布复核通过培养 57/57、流程与工具 46/46、双语 71/71、模板包 20/20，浏览器覆盖 108 个主页面响应式状态及 16 个新增页面断点状态，实际结果见[发布验收](training-redesign/12-发布验收.md)。[合作验收记录](training-redesign/collaboration-verification.json)保留首次实现时的范围。[联培验收记录](training-redesign/joint-training-verification.json)保留上一轮 60 页、27 份模板和 12 张图的历史范围。本轮联培和科研与竞赛合作已获用户发布授权；发布复核见[12 发布验收](training-redesign/12-发布验收.md)。历史报告保留当时快照，不能代替当前部署验证。
+
+本轮编辑前已保存同级完整备份 `CSMA-Graduation-Projects.github.io-backup-20261020-121104`，包含 1122 个文件和 1419 个目录项。恢复时先保留当前工作，再将备份复制到新目录核对。
